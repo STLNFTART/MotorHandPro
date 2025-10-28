@@ -1,0 +1,7 @@
+*.out
+*.o
+*.csv
+*.png
+.tmp*
+results.out
+run.csv
