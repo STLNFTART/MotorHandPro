@@ -1,0 +1,90 @@
+{
+  "coherence_stats": {
+    "mean": 0.9623507331737994,
+    "std": 0.056114597843041396,
+    "trend": 0.00010387012075259288
+  },
+  "decision_stats": {
+    "total": 1252500,
+    "rate_per_step": 2505.0,
+    "final_rate": 5000
+  },
+  "performance_stats": {
+    "avg_step_time": 0.024398452281951904,
+    "total_processing_time": 12.199226140975952,
+    "steps_per_second": 40.98620635620084
+  },
+  "algorithm_performance": {
+    "quantum_superposition": {
+      "total_decisions": 500,
+      "final_trust": 1.0,
+      "total_processing_time": 0.41854190826416016,
+      "decisions_per_second": 1194.6206473158754,
+      "efficiency_score": 1194.6206473158754
+    },
+    "plasma_field": {
+      "total_decisions": 0,
+      "final_trust": 1.0,
+      "total_processing_time": 0.0,
+      "decisions_per_second": 0.0,
+      "efficiency_score": 0.0
+    },
+    "temporal_coherence": {
+      "total_decisions": 500,
+      "final_trust": 0.9500000000000055,
+      "total_processing_time": 5.541233539581299,
+      "decisions_per_second": 90.23260005121178,
+      "efficiency_score": 85.72097004865168
+    },
+    "collective_dynamics": {
+      "total_decisions": 0,
+      "final_trust": 1.0,
+      "total_processing_time": 0.0,
+      "decisions_per_second": 0.0,
+      "efficiency_score": 0.0
+    },
+    "ipu_processing": {
+      "total_decisions": 2000,
+      "final_trust": 0.9505000000000055,
+      "total_processing_time": 0.7556612491607666,
+      "decisions_per_second": 2646.6850795063356,
+      "efficiency_score": 2515.6741680707864
+    },
+    "neural_integration": {
+      "total_decisions": 500,
+      "final_trust": 0.9500000000000055,
+      "total_processing_time": 1.8905212879180908,
+      "decisions_per_second": 264.47717818265846,
+      "efficiency_score": 251.25331927352696
+    },
+    "signal_fusion": {
+      "total_decisions": 500,
+      "final_trust": 1.0,
+      "total_processing_time": 0.05683541297912598,
+      "decisions_per_second": 8797.177263519998,
+      "efficiency_score": 8797.177263519998
+    },
+    "pattern_recognition": {
+      "total_decisions": 500,
+      "final_trust": 1.0,
+      "total_processing_time": 0.09532403945922852,
+      "decisions_per_second": 5245.211571235227,
+      "efficiency_score": 5245.211571235227
+    },
+    "predictive_modeling": {
+      "total_decisions": 500,
+      "final_trust": 1.0,
+      "total_processing_time": 0.18226242065429688,
+      "decisions_per_second": 2743.2822132114,
+      "efficiency_score": 2743.2822132114
+    }
+  },
+  "simulation_time": 12.242098569869995,
+  "total_steps": 500,
+  "parameters_used": {
+    "alpha": 0.5314231560550093,
+    "lambda": 0.11685019281687341,
+    "gamma": 0.2,
+    "epsilon": 0.1
+  }
+}
