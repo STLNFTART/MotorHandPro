@@ -13,3 +13,14 @@ It serves as a Lyapunov-like metric ensuring bounded convergence under Lipschitz
 Implements a contractive update law enforcing clustered zero-crossings and stable limit cycles for ψ–γ coupling.
 
 ## Usage
+
+---
+**Patent Pending:** U.S. Provisional Patent Application No. 63/842,846 — Filed July 12, 2025
+
+---
+> **Notice:** Repository for research evaluation only.  
+> **Patent Pending:** U.S. Provisional Patent Application No. 63/842,846 — Filed July 12, 2025  
+> Method and System for Bounded Autonomous Vehicle Control Using Exponential Memory Weighting  
+> © 2025 Donte Lightfoot — The Phoney Express LLC / Locked In Safety.  
+> Contact: Donte Lightfoot (STLNFTART) for collaboration, licensing, or deployment inquiries.
+
