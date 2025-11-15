@@ -1,0 +1,56 @@
+{
+    "name": "motorhandpro-drug-safety",
+    "description": "High-performance drug safety modeling system with quantum-inspired optimization",
+    "authors": [
+        "Donte Lightfoot (STLNFTART)",
+        "The Phoney Express LLC / Locked In Safety"
+    ],
+    "copyright": "Copyright © 2025, Donte Lightfoot",
+    "license": "proprietary",
+    "version": "1.0.0",
+
+    "homepage": "https://github.com/STLNFTART/MotorHandPro",
+    "repository": "https://github.com/STLNFTART/MotorHandPro.git",
+
+    "targetType": "executable",
+    "targetName": "drug_safety_model",
+    "sourcePaths": ["."],
+    "sourceFiles": ["drug_safety_model.d"],
+
+    "configurations": [
+        {
+            "name": "demo",
+            "targetType": "executable",
+            "sourceFiles": ["drug_safety_model.d"]
+        },
+        {
+            "name": "library",
+            "targetType": "library",
+            "sourceFiles": ["drug_safety_model.d"],
+            "excludedSourceFiles": ["drug_safety_model.d:main"]
+        }
+    ],
+
+    "buildTypes": {
+        "debug": {
+            "buildOptions": ["debugMode", "debugInfo"]
+        },
+        "release": {
+            "buildOptions": ["releaseMode", "optimize", "inline", "noBoundsCheck"]
+        },
+        "unittest": {
+            "buildOptions": ["unittests", "debugMode", "debugInfo"]
+        }
+    },
+
+    "dependencies": {},
+
+    "toolchainRequirements": {
+        "dmd": ">=2.100.0",
+        "ldc": ">=1.30.0"
+    },
+
+    "-ddoxFilterArgs": ["--min-protection=Protected"],
+
+    "ddoxTool": "scod"
+}

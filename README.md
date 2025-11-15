@@ -133,6 +133,31 @@ The Arduino implementation (`MotorHandPro.ino`) computes the Primal Logic consta
 
 - `analysis/heatmap_fit.py`: Visualizes parameter sensitivity
 
+## Additional Modules
+
+### Drug Safety Modeling System (D Language)
+
+A high-performance drug safety modeling system implemented in D programming language with quantum-inspired optimization.
+
+**Location:** `/drug_safety/`
+
+**Features:**
+- Quantum-inspired memory lattice for model state storage
+- Convergence detection with pattern analysis
+- Algorithm integration framework
+- Meta-learning controller for adaptive optimization
+- Native complex number support
+
+**Quick Start:**
+```bash
+cd drug_safety
+./build.sh --run
+```
+
+**Documentation:** See [drug_safety/README.md](drug_safety/README.md) for complete documentation.
+
+---
+
 ## Usage
 
 ---
