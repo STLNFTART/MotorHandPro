@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorHandPro - Primal Logic Control Panel</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://unpkg.com/vtk.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>MotorHandPro Primal Logic Control Panel</h1>
+            <div class="header-info">
+                <span id="connection-status" class="status disconnected">Disconnected</span>
+                <span>Patent Pending: U.S. 63/842,846</span>
+            </div>
+        </header>
+
+        <!-- Main Dashboard -->
+        <div class="dashboard">
+            <!-- Left Panel: System Control -->
+            <div class="panel control-panel">
+                <h2>System Control</h2>
+
+                <!-- Primal Logic Parameters -->
+                <div class="parameter-section">
+                    <h3>Primal Logic Parameters</h3>
+
+                    <div class="parameter-control">
+                        <label for="lambda-slider">λ (Lambda - Lightfoot Constant):</label>
+                        <input type="range" id="lambda-slider" min="0.01" max="1.0" step="0.001" value="0.16905">
+                        <span id="lambda-value">0.16905</span> s⁻¹
+                    </div>
+
+                    <div class="parameter-control">
+                        <label for="ke-slider">KE (Error Gain):</label>
+                        <input type="range" id="ke-slider" min="0.0" max="1.0" step="0.01" value="0.3">
+                        <span id="ke-value">0.3</span>
+                    </div>
+
+                    <div class="parameter-control">
+                        <label for="d-constant">D (Donte Constant):</label>
+                        <input type="number" id="d-constant" value="149.9992314000" step="0.0000000001" readonly>
+                        <span class="constant-label">(Fixed Point)</span>
+                    </div>
+
+                    <button id="update-parameters" class="btn btn-primary">Update Parameters</button>
+                </div>
+
+                <!-- Data Source Selection -->
+                <div class="parameter-section">
+                    <h3>Data Sources</h3>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="source-spacex" checked>
+                            SpaceX API
+                        </label>
+                        <label>
+                            <input type="checkbox" id="source-tesla" checked>
+                            Tesla Repositories
+                        </label>
+                        <label>
+                            <input type="checkbox" id="source-firestorm" checked>
+                            Firestorm/PX4 Drones
+                        </label>
+                        <label>
+                            <input type="checkbox" id="source-carla" checked>
+                            CARLA Simulator
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Control Actions -->
+                <div class="parameter-section">
+                    <h3>Control Actions</h3>
+
+                    <button id="start-capture" class="btn btn-success">Start Data Capture</button>
+                    <button id="stop-capture" class="btn btn-danger">Stop Data Capture</button>
+                    <button id="export-data" class="btn btn-info">Export to LaTeX</button>
+                    <button id="run-validation" class="btn btn-warning">Run Validation</button>
+                </div>
+
+                <!-- System Status -->
+                <div class="parameter-section">
+                    <h3>System Status</h3>
+                    <div id="system-status" class="status-display">
+                        <div>Data Rate: <span id="data-rate">0</span> packets/s</div>
+                        <div>Processing Load: <span id="processing-load">0</span>%</div>
+                        <div>Active Sources: <span id="active-sources">0</span>/4</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Panel: Visualization -->
+            <div class="panel visualization-panel">
+                <h2>Data Visualization</h2>
+
+                <div class="viz-tabs">
+                    <button class="tab-btn active" data-tab="realtime">Real-time Data</button>
+                    <button class="tab-btn" data-tab="3d">3D Visualization</button>
+                    <button class="tab-btn" data-tab="stability">Stability Analysis</button>
+                    <button class="tab-btn" data-tab="trajectory">Trajectory</button>
+                </div>
+
+                <!-- Real-time Chart -->
+                <div id="tab-realtime" class="tab-content active">
+                    <canvas id="realtime-chart"></canvas>
+                </div>
+
+                <!-- 3D Visualization (three.js) -->
+                <div id="tab-3d" class="tab-content">
+                    <div id="threejs-container"></div>
+                </div>
+
+                <!-- Stability Analysis -->
+                <div id="tab-stability" class="tab-content">
+                    <canvas id="stability-chart"></canvas>
+                </div>
+
+                <!-- Trajectory Visualization -->
+                <div id="tab-trajectory" class="tab-content">
+                    <canvas id="trajectory-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Right Panel: Live Data Feed -->
+            <div class="panel data-panel">
+                <h2>Live Data Feed</h2>
+
+                <!-- Repository Links -->
+                <div class="repo-links">
+                    <h3>Connected Repositories</h3>
+
+                    <div class="repo-category">
+                        <h4>SpaceX</h4>
+                        <a href="https://github.com/r-spacex/SpaceX-API" target="_blank">
+                            r-spacex/SpaceX-API
+                        </a>
+                    </div>
+
+                    <div class="repo-category">
+                        <h4>Tesla (Top 5)</h4>
+                        <a href="https://github.com/teslamotors/light-show" target="_blank">
+                            teslamotors/light-show (3.7k ⭐)
+                        </a>
+                        <a href="https://github.com/teslamotors/react-native-camera-kit" target="_blank">
+                            teslamotors/react-native-camera-kit (2.6k ⭐)
+                        </a>
+                        <a href="https://github.com/teslamotors/linux" target="_blank">
+                            teslamotors/linux (1.4k ⭐)
+                        </a>
+                        <a href="https://github.com/teslamotors/roadster" target="_blank">
+                            teslamotors/roadster (1.1k ⭐)
+                        </a>
+                        <a href="https://github.com/teslamotors/informed" target="_blank">
+                            teslamotors/informed (975 ⭐)
+                        </a>
+                    </div>
+
+                    <div class="repo-category">
+                        <h4>Firestorm Drone</h4>
+                        <a href="https://www.launchfirestorm.com" target="_blank">
+                            Firestorm Labs (Official)
+                        </a>
+                        <a href="https://github.com/PX4/PX4-Autopilot" target="_blank">
+                            PX4/PX4-Autopilot (8k+ ⭐)
+                        </a>
+                        <a href="https://github.com/mavlink/qgroundcontrol" target="_blank">
+                            mavlink/qgroundcontrol (3k+ ⭐)
+                        </a>
+                    </div>
+
+                    <div class="repo-category">
+                        <h4>Visualization Tools</h4>
+                        <a href="https://github.com/matplotlib/matplotlib" target="_blank">
+                            matplotlib/matplotlib
+                        </a>
+                        <a href="https://github.com/carla-simulator/carla" target="_blank">
+                            carla-simulator/carla
+                        </a>
+                        <a href="https://github.com/Kitware/VTK" target="_blank">
+                            Kitware/VTK
+                        </a>
+                        <a href="https://github.com/mrdoob/three.js" target="_blank">
+                            mrdoob/three.js
+                        </a>
+                        <a href="https://github.com/latex3/latex2e" target="_blank">
+                            latex3/latex2e
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Live Data Stream -->
+                <div class="live-data">
+                    <h3>Live Data Stream</h3>
+                    <div id="data-stream" class="data-stream-container">
+                        <p class="no-data">Waiting for data...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="control_panel.js"></script>
+</body>
+</html>

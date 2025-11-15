@@ -1,0 +1,31 @@
+# MotorHandPro Integration System Requirements
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+# Core dependencies
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Data handling
+requests>=2.28.0
+websockets>=11.0.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Optional: CARLA simulator (requires separate installation)
+# Install from: https://github.com/carla-simulator/carla
+# carla>=0.9.14
+
+# Optional: VTK for 3D visualization (large package)
+# vtk>=9.2.0
+
+# Optional: LaTeX for PDF generation
+# System package required: sudo apt-get install texlive-full
+
+# Development dependencies
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Documentation
+sphinx>=5.0.0
