@@ -85,6 +85,31 @@ chmod +x build.sh
 ./build.sh
 ```
 
+#### Using DUB (Package Manager):
+
+```bash
+# Build demo executable
+dub build
+
+# Build as library
+dub build --config=library
+
+# Run
+dub run
+
+# Build release (optimized)
+dub build --build=release
+
+# Run with specific compiler
+dub run --compiler=ldc2
+```
+
+**DUB Benefits:**
+- Automatic dependency management
+- Standardized build configurations
+- Easy integration with other D projects
+- Built-in testing framework support
+
 ---
 
 ## Key Features & Architecture
@@ -335,6 +360,76 @@ write("model_state.json", saveState.toString());
 // Load model state (would need implementation for full restoration)
 string jsonText = readText("model_state.json");
 auto loadedState = parseJSON(jsonText);
+```
+
+---
+
+## Using as a DUB Package
+
+### Adding to Your D Project
+
+To use the drug safety modeling system in your D project:
+
+**1. Add dependency to your `dub.json`:**
+
+```json
+{
+  "name": "your-project",
+  "dependencies": {
+    "motorhandpro-drug-safety": "~>1.0.0"
+  }
+}
+```
+
+**2. Or using `dub.sdl`:**
+
+```sdl
+dependency "motorhandpro-drug-safety" version="~>1.0.0"
+```
+
+**3. Import and use:**
+
+```d
+import std.stdio;
+
+// Import the drug safety module
+// Note: When used as a library, import specific components
+// For now, copy drug_safety_model.d to your project and import it
+
+void main() {
+    writeln("Using MotorHandPro Drug Safety System");
+
+    // Initialize controller
+    auto controller = new CardiacMetaController(512);
+
+    // Register your model
+    double[] initialState = [0.5, 0.3, 0.8, 0.2];
+    controller.registerCardiacModel("my_model", "MyPredictor", initialState);
+
+    // Training loop
+    foreach (epoch; 0 .. 100) {
+        // Your training code here
+        double loss = /* calculate loss */;
+
+        auto model = JSONValue(["type": JSONValue("MyModel")]);
+        auto results = controller.analyzeAndUpgradeModel("my_model", model, loss);
+
+        // Use results to guide optimization
+        auto pattern = results.object["convergence_analysis"].object["pattern"].str;
+        writefln("Epoch %d: Pattern = %s", epoch, pattern);
+    }
+}
+```
+
+### Publishing Your Own Extensions
+
+If you create extensions to the drug safety system:
+
+```bash
+# Fork the repository
+# Make your changes
+# Update version in dub.json
+# Create a pull request or publish as separate package
 ```
 
 ---

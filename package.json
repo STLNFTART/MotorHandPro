@@ -1,0 +1,73 @@
+{
+  "name": "@stlnftart/motorhandpro",
+  "version": "1.0.0",
+  "description": "High-precision robotic hand control and analysis framework integrating Primal Logic kernels with exponential memory weighting for bounded stability",
+  "main": "control_panel/motor_control.js",
+  "scripts": {
+    "start": "python3 control_panel/server.py",
+    "test": "python3 -m pytest tests/",
+    "build": "echo 'No build step required for JavaScript components'",
+    "analyze": "python3 analyze_runs.py",
+    "build:drug-safety": "cd drug_safety && ./build.sh",
+    "run:drug-safety": "cd drug_safety && ./build.sh --run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/STLNFTART/MotorHandPro.git"
+  },
+  "keywords": [
+    "robotics",
+    "control-systems",
+    "primal-logic",
+    "exponential-memory-weighting",
+    "motor-control",
+    "stability-analysis",
+    "drug-safety",
+    "quantum-optimization",
+    "D-language",
+    "embedded-systems",
+    "arduino"
+  ],
+  "author": "Donte Lightfoot (STLNFTART) <contact@stlnftart.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/STLNFTART/MotorHandPro/issues"
+  },
+  "homepage": "https://github.com/STLNFTART/MotorHandPro#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "files": [
+    "control_panel/*.js",
+    "control_panel/*.html",
+    "control_panel/*.css",
+    "integrations/*.py",
+    "analysis/*.py",
+    "drug_safety/",
+    "*.ino",
+    "*.h",
+    "README.md",
+    "PRIMAL_LOGIC_FRAMEWORK.md"
+  ],
+  "publishConfig": {
+    "@stlnftart:registry": "https://npm.pkg.github.com"
+  },
+  "private": false,
+  "devDependencies": {},
+  "dependencies": {},
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "directories": {
+    "test": "tests",
+    "doc": ".",
+    "example": "examples"
+  }
+}

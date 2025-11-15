@@ -44,3 +44,22 @@ Thumbs.db
 *.log
 *.out
 *.synctex.gz
+
+# Node.js / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npmrc
+package-lock.json
+yarn.lock
+
+# D language
+.dub/
+dub.selections.json
+*.exe
+*.dll
+*.a
+*.lib
+drug_safety/drug_safety_model
+drug_safety/*.o
