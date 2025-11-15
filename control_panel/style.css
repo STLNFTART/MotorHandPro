@@ -1,0 +1,392 @@
+/* MotorHandPro Control Panel Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #00d4ff;
+}
+
+.header-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.status.connected {
+    background: #00ff88;
+    color: #000;
+}
+
+.status.disconnected {
+    background: #ff3333;
+    color: #fff;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: 350px 1fr 400px;
+    gap: 20px;
+    min-height: calc(100vh - 180px);
+}
+
+.panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.panel h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+}
+
+/* Control Panel */
+.parameter-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.parameter-section h3 {
+    color: #ffaa00;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.parameter-control {
+    margin-bottom: 15px;
+}
+
+.parameter-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.parameter-control input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.parameter-control input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.constant-label {
+    color: #888;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px 5px 5px 0;
+    width: 100%;
+}
+
+.btn-primary {
+    background: #00d4ff;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background: #00a8cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+}
+
+.btn-success {
+    background: #00ff88;
+    color: #000;
+}
+
+.btn-success:hover {
+    background: #00cc6a;
+}
+
+.btn-danger {
+    background: #ff3333;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #cc0000;
+}
+
+.btn-info {
+    background: #ffaa00;
+    color: #000;
+}
+
+.btn-info:hover {
+    background: #cc8800;
+}
+
+.btn-warning {
+    background: #ff6600;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background: #cc5200;
+}
+
+/* System Status */
+.status-display {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.status-display div {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-display span {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+/* Visualization Panel */
+.viz-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background: rgba(0, 212, 255, 0.2);
+}
+
+.tab-btn.active {
+    background: rgba(0, 212, 255, 0.3);
+    border-color: #00d4ff;
+}
+
+.tab-content {
+    display: none;
+    min-height: 500px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+#threejs-container {
+    width: 100%;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+canvas {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Data Panel */
+.repo-links {
+    margin-bottom: 20px;
+}
+
+.repo-links h3 {
+    color: #ffaa00;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.repo-category {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.repo-category h4 {
+    color: #00d4ff;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.repo-category a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.repo-category a:hover {
+    background: rgba(0, 212, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* Live Data Stream */
+.live-data h3 {
+    color: #ffaa00;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.data-stream-container {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+}
+
+.data-stream-container .data-entry {
+    padding: 8px;
+    margin: 5px 0;
+    background: rgba(0, 212, 255, 0.1);
+    border-left: 3px solid #00d4ff;
+    border-radius: 4px;
+}
+
+.data-stream-container .data-entry .timestamp {
+    color: #888;
+    font-size: 0.75rem;
+}
+
+.data-stream-container .data-entry .source {
+    color: #ffaa00;
+    font-weight: bold;
+}
+
+.data-stream-container .data-entry .value {
+    color: #00ff88;
+}
+
+.no-data {
+    color: #888;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 212, 255, 0.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 212, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .dashboard {
+        grid-template-columns: 300px 1fr 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
