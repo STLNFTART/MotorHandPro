@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Constellation Dashboard - 50,000 Satellites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 60px 1fr;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        #header {
+            grid-column: 1 / -1;
+            background: rgba(20, 30, 60, 0.8);
+            border-radius: 10px;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(100, 150, 255, 0.3);
+        }
+
+        #header h1 {
+            font-size: 24px;
+            color: #6495ED;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #4CAF50;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .status-indicator.disconnected {
+            background: #f44336;
+        }
+
+        #sidebar {
+            background: rgba(20, 30, 60, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            overflow-y: auto;
+            border: 1px solid rgba(100, 150, 255, 0.3);
+        }
+
+        #main-view {
+            background: rgba(20, 30, 60, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .panel {
+            background: rgba(30, 40, 70, 0.6);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(100, 150, 255, 0.2);
+        }
+
+        .panel h3 {
+            color: #6495ED;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(100, 150, 255, 0.2);
+            padding-bottom: 5px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(100, 150, 255, 0.1);
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .stat-value {
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .stat-value.highlight {
+            color: #4CAF50;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0;
+            background: linear-gradient(135deg, #6495ED 0%, #4169E1 100%);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(100, 149, 237, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button.secondary {
+            background: linear-gradient(135deg, #555 0%, #333 100%);
+        }
+
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            background: rgba(30, 40, 70, 0.6);
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            border-radius: 5px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        label {
+            color: #aaa;
+            font-size: 13px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        #globe-canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        .coverage-grid {
+            width: 100%;
+            height: 300px;
+            background: rgba(10, 20, 40, 0.8);
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .coverage-cell {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+        }
+
+        .log-container {
+            background: rgba(10, 20, 40, 0.8);
+            border-radius: 5px;
+            padding: 10px;
+            height: 150px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+
+        .log-entry {
+            padding: 3px 0;
+            border-bottom: 1px solid rgba(100, 150, 255, 0.1);
+        }
+
+        .log-entry.info { color: #6495ED; }
+        .log-entry.success { color: #4CAF50; }
+        .log-entry.warning { color: #FFA726; }
+        .log-entry.error { color: #f44336; }
+
+        .chart-container {
+            width: 100%;
+            height: 400px;
+            background: rgba(10, 20, 40, 0.8);
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        #satellite-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .satellite-item {
+            background: rgba(30, 40, 70, 0.4);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border-left: 3px solid #6495ED;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .satellite-item:hover {
+            background: rgba(40, 50, 80, 0.6);
+            transform: translateX(5px);
+        }
+
+        .satellite-item.selected {
+            border-left-color: #4CAF50;
+            background: rgba(50, 60, 90, 0.8);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background: rgba(30, 40, 70, 0.6);
+            border: 1px solid rgba(100, 150, 255, 0.2);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab:hover {
+            background: rgba(40, 50, 80, 0.8);
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #6495ED 0%, #4169E1 100%);
+            border-color: #6495ED;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: rgba(30, 40, 70, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #6495ED 0%, #4CAF50 100%);
+            transition: width 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>
+                <span class="status-indicator" id="connection-status"></span>
+                Satellite Constellation Dashboard
+            </h1>
+            <div style="color: #aaa; font-size: 14px;">
+                <span id="total-sats">0</span> Satellites |
+                <span id="active-sats">0</span> Active |
+                <span id="update-time">--:--:--</span>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div class="panel">
+                <h3>System Status</h3>
+                <div class="stat-row">
+                    <span class="stat-label">Total Satellites:</span>
+                    <span class="stat-value" id="stat-total">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Active Tracking:</span>
+                    <span class="stat-value highlight" id="stat-active">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Propagations/s:</span>
+                    <span class="stat-value" id="stat-prop-rate">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">API Requests:</span>
+                    <span class="stat-value" id="stat-requests">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">WS Clients:</span>
+                    <span class="stat-value" id="stat-ws-clients">0</span>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3>Observer Location</h3>
+                <label>Latitude (°)</label>
+                <input type="number" id="obs-lat" value="40.7128" step="0.1" min="-90" max="90">
+
+                <label>Longitude (°)</label>
+                <input type="number" id="obs-lon" value="-74.0060" step="0.1" min="-180" max="180">
+
+                <label>Altitude (km)</label>
+                <input type="number" id="obs-alt" value="0" step="0.1" min="0">
+
+                <label>Min Elevation (°)</label>
+                <input type="number" id="min-elevation" value="10" step="1" min="0" max="90">
+
+                <button onclick="findVisibleSatellites()">Find Visible Satellites</button>
+            </div>
+
+            <div class="panel">
+                <h3>Quick Actions</h3>
+                <button onclick="refreshStatus()">Refresh Status</button>
+                <button onclick="calculateCoverage()">Calculate Coverage</button>
+                <button onclick="runCoverageAnalysis()">Coverage Analysis Use Case</button>
+                <button onclick="runISLRouting()">ISL Routing Use Case</button>
+                <button onclick="runGroundStationHandoff()">Ground Station Handoff</button>
+            </div>
+
+            <div class="panel">
+                <h3>Activity Log</h3>
+                <div class="log-container" id="log-container"></div>
+            </div>
+        </div>
+
+        <div id="main-view">
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('overview')">Overview</div>
+                <div class="tab" onclick="switchTab('coverage')">Coverage Map</div>
+                <div class="tab" onclick="switchTab('satellites')">Satellites</div>
+                <div class="tab" onclick="switchTab('analytics')">Analytics</div>
+            </div>
+
+            <div id="tab-overview" class="tab-content active">
+                <h2 style="color: #6495ED; margin-bottom: 20px;">Constellation Overview</h2>
+                <div id="canvas-container">
+                    <canvas id="globe-canvas"></canvas>
+                </div>
+            </div>
+
+            <div id="tab-coverage" class="tab-content">
+                <h2 style="color: #6495ED; margin-bottom: 20px;">Global Coverage Analysis</h2>
+                <div class="stat-row">
+                    <span class="stat-label">Average Satellites per Point:</span>
+                    <span class="stat-value" id="coverage-avg">--</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Maximum Coverage:</span>
+                    <span class="stat-value" id="coverage-max">--</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Global Coverage %:</span>
+                    <span class="stat-value highlight" id="coverage-percent">--</span>
+                </div>
+                <div class="coverage-grid" id="coverage-grid"></div>
+            </div>
+
+            <div id="tab-satellites" class="tab-content">
+                <h2 style="color: #6495ED; margin-bottom: 20px;">Visible Satellites</h2>
+                <div class="stat-row">
+                    <span class="stat-label">Satellites in View:</span>
+                    <span class="stat-value highlight" id="visible-count">0</span>
+                </div>
+                <div id="satellite-list"></div>
+            </div>
+
+            <div id="tab-analytics" class="tab-content">
+                <h2 style="color: #6495ED; margin-bottom: 20px;">Performance Analytics</h2>
+                <div class="chart-container" id="chart-container">
+                    <canvas id="performance-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // WebSocket connection
+        let ws = null;
+        let isConnected = false;
+        const API_BASE = 'http://localhost:8080/api';
+        const WS_URL = 'ws://localhost:8080/ws';
+
+        // Initialize
+        window.addEventListener('load', () => {
+            log('Dashboard initialized', 'info');
+            connectWebSocket();
+            refreshStatus();
+            initializeGlobe();
+        });
+
+        // WebSocket connection
+        function connectWebSocket() {
+            log('Connecting to satellite system...', 'info');
+
+            ws = new WebSocket(WS_URL);
+
+            ws.onopen = () => {
+                isConnected = true;
+                document.getElementById('connection-status').classList.remove('disconnected');
+                log('Connected to satellite system', 'success');
+            };
+
+            ws.onmessage = (event) => {
+                const message = JSON.parse(event.data);
+                handleWebSocketMessage(message);
+            };
+
+            ws.onerror = (error) => {
+                log('WebSocket error', 'error');
+                console.error(error);
+            };
+
+            ws.onclose = () => {
+                isConnected = false;
+                document.getElementById('connection-status').classList.add('disconnected');
+                log('Disconnected from satellite system', 'warning');
+
+                // Reconnect after 5 seconds
+                setTimeout(connectWebSocket, 5000);
+            };
+        }
+
+        function handleWebSocketMessage(message) {
+            if (message.type === 'status') {
+                log(message.data.message, 'info');
+                updateStats({ total_satellites: message.data.total_satellites });
+            } else if (message.type === 'constellation_update') {
+                log(`Updated ${message.data.updated_satellites} satellites`, 'info');
+                document.getElementById('update-time').textContent =
+                    new Date(message.data.timestamp).toLocaleTimeString();
+            } else if (message.type === 'statistics') {
+                updateStats(message.data);
+            }
+        }
+
+        // API calls
+        async function refreshStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/status`);
+                const data = await response.json();
+
+                updateStats({
+                    total_satellites: data.constellation.total_satellites,
+                    active_satellites: data.constellation.active_satellites,
+                    propagations_per_second: data.performance.propagations_per_second,
+                    api_requests_total: data.api.total_requests,
+                    websocket_clients: data.api.connected_clients
+                });
+
+                document.getElementById('total-sats').textContent = data.constellation.total_satellites;
+                document.getElementById('active-sats').textContent = data.constellation.active_satellites;
+
+                log('Status refreshed', 'success');
+            } catch (error) {
+                log('Failed to refresh status', 'error');
+                console.error(error);
+            }
+        }
+
+        async function findVisibleSatellites() {
+            const lat = parseFloat(document.getElementById('obs-lat').value);
+            const lon = parseFloat(document.getElementById('obs-lon').value);
+            const alt = parseFloat(document.getElementById('obs-alt').value);
+            const minEl = parseFloat(document.getElementById('min-elevation').value);
+
+            log(`Finding satellites visible from (${lat.toFixed(2)}°, ${lon.toFixed(2)}°)...`, 'info');
+
+            try {
+                const response = await fetch(
+                    `${API_BASE}/visible?lat=${lat}&lon=${lon}&alt=${alt}&min_el=${minEl}`
+                );
+                const data = await response.json();
+
+                displayVisibleSatellites(data.visible_satellites);
+                document.getElementById('visible-count').textContent = data.count;
+
+                log(`Found ${data.count} visible satellites`, 'success');
+                switchTab('satellites');
+
+            } catch (error) {
+                log('Failed to find visible satellites', 'error');
+                console.error(error);
+            }
+        }
+
+        async function calculateCoverage() {
+            log('Calculating global coverage (this may take a moment)...', 'info');
+
+            try {
+                const response = await fetch(`${API_BASE}/coverage?resolution=50`);
+                const data = await response.json();
+
+                displayCoverageData(data);
+                log('Coverage calculation complete', 'success');
+                switchTab('coverage');
+
+            } catch (error) {
+                log('Failed to calculate coverage', 'error');
+                console.error(error);
+            }
+        }
+
+        // UI Updates
+        function updateStats(data) {
+            if (data.total_satellites !== undefined) {
+                document.getElementById('stat-total').textContent = data.total_satellites.toLocaleString();
+            }
+            if (data.active_satellites !== undefined) {
+                document.getElementById('stat-active').textContent = data.active_satellites.toLocaleString();
+            }
+            if (data.propagations_per_second !== undefined) {
+                document.getElementById('stat-prop-rate').textContent =
+                    Math.round(data.propagations_per_second).toLocaleString();
+            }
+            if (data.api_requests_total !== undefined) {
+                document.getElementById('stat-requests').textContent = data.api_requests_total.toLocaleString();
+            }
+            if (data.websocket_clients !== undefined) {
+                document.getElementById('stat-ws-clients').textContent = data.websocket_clients;
+            }
+        }
+
+        function displayVisibleSatellites(satellites) {
+            const container = document.getElementById('satellite-list');
+            container.innerHTML = '';
+
+            satellites.forEach(sat => {
+                const item = document.createElement('div');
+                item.className = 'satellite-item';
+                item.innerHTML = `
+                    <div style="font-weight: bold; color: #6495ED;">Satellite ${sat.satellite_id}</div>
+                    <div style="font-size: 12px; color: #aaa; margin-top: 5px;">
+                        Position: ${sat.latitude.toFixed(2)}°, ${sat.longitude.toFixed(2)}°<br>
+                        Altitude: ${sat.altitude.toFixed(2)} km
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function displayCoverageData(data) {
+            document.getElementById('coverage-avg').textContent = data.avg_satellites_per_point.toFixed(2);
+            document.getElementById('coverage-max').textContent = data.max_satellites_per_point;
+            document.getElementById('coverage-percent').textContent = data.percent_coverage.toFixed(1) + '%';
+
+            // Visualize coverage matrix (simplified heatmap)
+            const grid = document.getElementById('coverage-grid');
+            grid.innerHTML = '<div style="color: #6495ED; padding: 10px;">Coverage heatmap visualization would render here</div>';
+        }
+
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function log(message, type = 'info') {
+            const container = document.getElementById('log-container');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            container.insertBefore(entry, container.firstChild);
+
+            // Keep only last 50 entries
+            while (container.children.length > 50) {
+                container.removeChild(container.lastChild);
+            }
+        }
+
+        function initializeGlobe() {
+            const canvas = document.getElementById('globe-canvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+
+            // Draw simple Earth
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(centerX, centerY) * 0.8;
+
+            ctx.fillStyle = '#0a0e27';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Earth
+            const gradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, radius);
+            gradient.addColorStop(0, '#4169E1');
+            gradient.addColorStop(1, '#1a1f3a');
+
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // Grid lines
+            ctx.strokeStyle = 'rgba(100, 149, 237, 0.2)';
+            ctx.lineWidth = 1;
+
+            for (let i = 0; i < 12; i++) {
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, radius * (i + 1) / 12, 0, 2 * Math.PI);
+                ctx.stroke();
+            }
+
+            ctx.font = '20px Arial';
+            ctx.fillStyle = '#6495ED';
+            ctx.textAlign = 'center';
+            ctx.fillText('3D Globe Visualization', centerX, 40);
+            ctx.font = '14px Arial';
+            ctx.fillStyle = '#aaa';
+            ctx.fillText('50,000 Satellite Constellation', centerX, 65);
+        }
+
+        // Practical Use Cases
+        async function runCoverageAnalysis() {
+            log('Running Coverage Analysis Use Case...', 'info');
+            await calculateCoverage();
+        }
+
+        async function runISLRouting() {
+            log('Running Inter-Satellite Link Routing Use Case...', 'warning');
+            log('ISL routing simulation will be implemented in Python backend', 'info');
+        }
+
+        async function runGroundStationHandoff() {
+            log('Running Ground Station Handoff Use Case...', 'warning');
+            log('Handoff optimization will be implemented in Python backend', 'info');
+        }
+    </script>
+</body>
+</html>
