@@ -53,8 +53,8 @@ class QuantumResonanceField:
         self.alpha = 0.54  # Temporal weighting: 0.52-0.56 range
         self.alpha_min, self.alpha_max = 0.52, 0.56
 
-        # Memory decay (using LAMBDA from primal constants)
-        self.lmbd = LAMBDA  # 0.12 - temporal decay
+        # Memory decay (using LAMBDA from primal constants, centered in range)
+        self.lmbd = 0.115  # 0.115 - centered in 0.11-0.12 range for stability
         self.lambda_min, self.lambda_max = 0.11, 0.12
 
         # Trust floor from primal constants
@@ -305,11 +305,14 @@ class PrimalLAM:
 
         state = self.resonance.get_state()
 
+        # Calculate attractor distance
+        attractor_dist = abs(state['epoch'] - state['donte_attractor'])
+
         return f"""
 TASK: {task_description}
 
 Status: Analyzing with quantum-semantic intelligence
-- Attractor distance: {state['attractor_distance']:.2f}
+- Attractor distance: {attractor_dist:.2f}
 - Stability margin: {1.0 - state['lipschitz_constant']:.9f}
 - Memory window: {1.0/state['lightfoot_constant']:.2f}s
 
