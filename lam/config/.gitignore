@@ -1,0 +1,8 @@
+# Ignore all credential and key files
+credentials.enc
+.key
+*.key
+*.enc
+
+# Keep the directory structure
+!.gitignore
