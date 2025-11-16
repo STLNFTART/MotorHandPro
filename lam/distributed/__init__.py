@@ -1,0 +1,1 @@
+"""LAM Distributed Architecture"""

@@ -1,2 +1,16 @@
+# Core dependencies
 requests>=2.31.0
 cryptography>=41.0.0
+
+# Phase 3: Production & Advanced Features
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=12.0
+python-multipart>=0.0.6
+
+# Voice interface
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+
+# Utilities
+numpy>=1.24.0

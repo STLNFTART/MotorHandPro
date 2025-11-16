@@ -1,0 +1,1 @@
+"""LAM Voice Interface"""
