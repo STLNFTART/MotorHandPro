@@ -1,0 +1,52 @@
+{
+    "name": "motorhandpro-biomedical-framework",
+    "description": "Biomedical Integration Framework - Cardiac models and organ-on-chip experiments with Primal Logic algorithms",
+    "authors": ["MotorHandPro Team"],
+    "copyright": "Copyright © 2025, MotorHandPro",
+    "license": "proprietary",
+    "version": "1.0.0",
+
+    "targetType": "executable",
+    "targetPath": "bin",
+    "targetName": "biomedical_framework",
+
+    "sourceFiles": [
+        "biomedical_framework.d"
+    ],
+
+    "configurations": [
+        {
+            "name": "demo",
+            "targetType": "executable",
+            "mainSourceFile": "biomedical_framework.d"
+        },
+        {
+            "name": "library",
+            "targetType": "library",
+            "excludedSourceFiles": ["biomedical_framework.d"]
+        }
+    ],
+
+    "buildTypes": {
+        "debug": {
+            "buildOptions": ["debugMode", "debugInfo"],
+            "dflags": ["-g", "-w"]
+        },
+        "release": {
+            "buildOptions": ["releaseMode", "optimize", "inline"],
+            "dflags": ["-O3", "-release", "-inline"]
+        },
+        "unittest": {
+            "buildOptions": ["debugMode", "debugInfo", "unittests"],
+            "dflags": ["-g", "-unittest"]
+        }
+    },
+
+    "dependencies": {
+    },
+
+    "toolchainRequirements": {
+        "dub": ">=1.0.0",
+        "frontend": ">=2.0.0"
+    }
+}
