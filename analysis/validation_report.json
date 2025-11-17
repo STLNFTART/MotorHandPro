@@ -1,0 +1,151 @@
+{
+  "timestamp": "2025-11-17T01:46:30.312133",
+  "algorithms": {
+    "primal_logic": {
+      "passed": true,
+      "tests": [
+        {
+          "name": "High decay convergence",
+          "passed": true,
+          "description": "Higher \u03bb should converge faster"
+        },
+        {
+          "name": "Derivative feedback impact",
+          "passed": true,
+          "description": "\u03b1 parameter should affect response"
+        },
+        {
+          "name": "Stability check",
+          "passed": true,
+          "description": "All responses should remain bounded"
+        }
+      ]
+    },
+    "fractional_delay": {
+      "passed": true,
+      "tests": [
+        {
+          "name": "Delay verification",
+          "passed": true,
+          "description": "Output should be delayed relative to input"
+        },
+        {
+          "name": "Energy in reasonable range",
+          "passed": true,
+          "description": "Energy ratio: 0.061 (kernel may attenuate)"
+        },
+        {
+          "name": "Time-varying delay",
+          "passed": true,
+          "description": "Delay variation: \u03c3 = 0.353"
+        }
+      ]
+    },
+    "anchor_field": {
+      "passed": true,
+      "tests": [
+        {
+          "name": "Potential monotonicity",
+          "passed": true,
+          "description": "V(r) should decrease with increasing r"
+        },
+        {
+          "name": "Force direction",
+          "passed": true,
+          "description": "Force should attract toward anchor"
+        },
+        {
+          "name": "Singularity regularization",
+          "passed": true,
+          "description": "V near origin: 9.830 (finite)"
+        },
+        {
+          "name": "Force-gradient consistency",
+          "passed": true,
+          "description": "Force alignment with attraction: 1.000000 (should be ~1.0)"
+        }
+      ]
+    },
+    "orbital": {
+      "passed": true,
+      "tests": [
+        {
+          "name": "Constant orbital radius",
+          "passed": true,
+          "description": "Radius std: 8.67e-15 (should be ~0)"
+        },
+        {
+          "name": "Constant angular velocity",
+          "passed": true,
+          "description": "\u03c9 std: 1.55e-14 (should be ~0)"
+        },
+        {
+          "name": "Velocity tangency",
+          "passed": true,
+          "description": "Velocity should be perpendicular to position"
+        },
+        {
+          "name": "Phase progression",
+          "passed": true,
+          "description": "Phase error: 0.00e+00"
+        }
+      ]
+    },
+    "actuator": {
+      "passed": true,
+      "tests": [
+        {
+          "name": "Steady-state (underdamped)",
+          "passed": true,
+          "description": "Error: 0.000487, Expected: 0.250"
+        },
+        {
+          "name": "Steady-state (critically_damped)",
+          "passed": true,
+          "description": "Error: 0.000000, Expected: 0.250"
+        },
+        {
+          "name": "Steady-state (overdamped)",
+          "passed": true,
+          "description": "Error: 0.000006, Expected: 0.250"
+        },
+        {
+          "name": "Underdamped overshoot",
+          "passed": true,
+          "description": "Peak: 0.418"
+        },
+        {
+          "name": "Overdamped no overshoot",
+          "passed": true,
+          "description": "Peak: 0.250"
+        }
+      ]
+    },
+    "swarm": {
+      "passed": true,
+      "tests": [
+        {
+          "name": "Convergence",
+          "passed": true,
+          "description": "Spread reduced by 43.8% (initial=29.9m)"
+        },
+        {
+          "name": "Centroid conservation",
+          "passed": true,
+          "description": "Centroid drift: 0.000 m"
+        },
+        {
+          "name": "Connectivity maintenance",
+          "passed": true,
+          "description": "Connectivity: 3.3 \u2192 7.7"
+        },
+        {
+          "name": "Overall convergence trend",
+          "passed": true,
+          "description": "58.3% of steps decreased spread, final=16.8m"
+        }
+      ]
+    }
+  },
+  "overall_status": "PASSED"
+}
