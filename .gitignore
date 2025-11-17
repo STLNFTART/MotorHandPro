@@ -66,3 +66,7 @@ drug_safety/*.o
 biomedical_simulation/bin/
 biomedical_simulation/biomedical_framework
 biomedical_simulation/*.o
+
+# Sensor data integration artifacts
+validation_plots/
+sensor_data/
