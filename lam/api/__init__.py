@@ -1,0 +1,1 @@
+"""LAM REST API Server"""

@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  lam:
+    build: .
+    image: motorhandpro/lam:latest
+    container_name: lam-core
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+    volumes:
+      - lam-data:/data/lam
+      - ./lam:/app/lam
+    environment:
+      - LAM_DATA_DIR=/data/lam
+      - LAM_LOG_LEVEL=INFO
+      - PYTHONUNBUFFERED=1
+    networks:
+      - lam-network
+    restart: unless-stopped
+
+  lam-api:
+    build: .
+    image: motorhandpro/lam:latest
+    container_name: lam-api-server
+    command: ["python", "-u", "lam/api/api_server.py"]
+    ports:
+      - "8001:8000"
+    volumes:
+      - lam-data:/data/lam
+    environment:
+      - LAM_DATA_DIR=/data/lam
+      - LAM_LOG_LEVEL=INFO
+    networks:
+      - lam-network
+    depends_on:
+      - lam
+    restart: unless-stopped
+
+  lam-web:
+    image: nginx:alpine
+    container_name: lam-web-ui
+    ports:
+      - "8888:80"
+    volumes:
+      - ./lam/web:/usr/share/nginx/html:ro
+    networks:
+      - lam-network
+    restart: unless-stopped
+
+volumes:
+  lam-data:
+    driver: local
+
+networks:
+  lam-network:
+    driver: bridge
