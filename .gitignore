@@ -63,3 +63,6 @@ dub.selections.json
 *.lib
 drug_safety/drug_safety_model
 drug_safety/*.o
+biomedical_simulation/bin/
+biomedical_simulation/biomedical_framework
+biomedical_simulation/*.o
