@@ -79,7 +79,7 @@ B = B₀(R_E/r)³√(1 + 3sin²λ)
 
 Where:
 - B₀ = 31,000 nT (surface field strength)
-- R_E = 6,371 km (Earth radius)
+- R_E = 6,378.137 km (WGS84 equatorial radius)
 - r = distance from Earth center
 - λ = magnetic latitude
 
