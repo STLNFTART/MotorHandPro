@@ -596,7 +596,7 @@ def run_validation_suite(datasets: List[str] = None, download: bool = False):
                 print(f"✗ No parser for {dataset_key}")
                 continue
 
-            print(f"✓ Loaded {sensor_data.num_samples} samples @ {sensor_data.metadata['rate_hz']} Hz")
+            print(f"✓ Loaded {sensor_data.metadata['num_samples']} samples @ {sensor_data.metadata['rate_hz']} Hz")
             print(f"  Duration: {sensor_data.metadata['duration_s']:.1f} s")
 
         except Exception as e:
