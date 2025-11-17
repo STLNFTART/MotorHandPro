@@ -181,7 +181,7 @@ class LAMSatelliteInterface:
         altitude_km = self.simulator.altitude_km
 
         # Simplified coverage calculation
-        earth_radius = 6371.0  # km
+        earth_radius = 6378.137  # km (WGS84 equatorial radius)
         satellite_radius = earth_radius + altitude_km
 
         # Visible area per satellite (simplified)

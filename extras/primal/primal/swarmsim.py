@@ -10,7 +10,7 @@ BASE_SPEEDS_MS = [6,8,10,12]
 DT = 0.5
 BASE = (37.7749, -122.4194)
 ALT_BANDS_M = [(90,130),(130,170),(170,210),(210,250)]
-R = 6371000.0
+R = 6378137.0  # m (WGS84 equatorial radius)
 
 def move(lat,lon,course_deg,dist_m):
     br=math.radians(course_deg); lat1,lon1=math.radians(lat),math.radians(lon)

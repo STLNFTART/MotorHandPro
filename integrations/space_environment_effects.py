@@ -26,7 +26,7 @@ import math
 
 
 # === CONSTANTS ===
-EARTH_RADIUS = 6371.0  # km
+EARTH_RADIUS = 6378.137  # km (WGS84 equatorial radius)
 MAGNETIC_FIELD_STRENGTH_SURFACE = 31000.0  # nT (nanotesla)
 
 # Van Allen Belt boundaries (km above Earth surface)

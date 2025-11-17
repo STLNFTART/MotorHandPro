@@ -46,7 +46,7 @@ LIPSCHITZ_CONSTANT = 0.000129931830
 # Physical constants
 G_EARTH = 9.81  # m/s² (Earth surface gravity)
 MU_EARTH = 3.986004418e14  # m³/s² (Earth GM)
-R_EARTH = 6371000.0  # m (Earth radius)
+R_EARTH = 6378137.0  # m (WGS84 equatorial radius)
 
 # EM constants (SI units)
 EPSILON_0 = 8.854187817e-12  # F/m (vacuum permittivity)
