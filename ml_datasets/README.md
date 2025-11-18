@@ -212,6 +212,104 @@ await hub.request_access(
 )
 ```
 
+### Per-Experiment Dataset Loading (NEW!)
+
+```python
+from ml_datasets import ExperimentDatasetManager
+
+# Create experiment with isolated dataset context
+exp_manager = ExperimentDatasetManager(
+    experiment_name="cardiac_arrhythmia_classification_v1"
+)
+
+# Load single dataset for this experiment
+mitdb = await exp_manager.load_dataset(
+    dataset_id="mitdb",
+    filters={"record_range": [100, 109]},
+    lock_version=True  # Lock for reproducibility
+)
+
+# Load multiple datasets for experiment
+dataset_specs = [
+    {'dataset_id': 'mitdb', 'filters': {'record_range': [100, 104]}},
+    {'dataset_id': 'ptbdb', 'version': '1.0.0'},
+    {'dataset_id': 'sleep_edf'}
+]
+
+datasets = await exp_manager.load_multiple_datasets(
+    dataset_specs=dataset_specs,
+    parallel=True
+)
+
+# Set experiment parameters
+exp_manager.set_parameters({
+    'model': 'CNN',
+    'learning_rate': 0.001,
+    'batch_size': 32
+})
+
+# Add results
+exp_manager.add_result('accuracy', 0.95)
+exp_manager.add_result('f1_score', 0.93)
+
+# Complete experiment
+exp_manager.complete_experiment(status="completed")
+
+# Get reproducibility config
+repro_config = exp_manager.get_reproducibility_config()
+# Includes exact dataset versions and filters used
+
+# List all experiments
+all_experiments = ExperimentDatasetManager.list_experiments()
+```
+
+### Bulk Dataset Loading (4+ Datasets) (NEW!)
+
+```python
+from ml_datasets import BulkDatasetLoader
+
+# Initialize bulk loader with 10 parallel workers
+bulk_loader = BulkDatasetLoader(max_parallel=10)
+
+# Define 20 datasets to load
+dataset_specs = [
+    {'dataset_id': 'mitdb', 'filters': {'record_range': [100, 109]}},
+    {'dataset_id': 'ptbdb'},
+    {'dataset_id': 'sleep_edf'},
+    {'dataset_id': 'kitti'},
+    {'dataset_id': 'nuscenes'},
+    {'dataset_id': 'waymo_open'},
+    {'dataset_id': 'semantic_kitti'},
+    {'dataset_id': 'apollo_scape'},
+    {'dataset_id': 'mun_frl'},
+    {'dataset_id': 'mars_lvig'},
+    # ... up to 20+ datasets
+]
+
+# Progress callback
+def show_progress(progress):
+    print(f"Progress: {progress.percentage:.1f}% | "
+          f"Completed: {progress.completed}/{progress.total} | "
+          f"ETA: {progress.estimated_remaining_seconds:.0f}s")
+
+# Execute bulk load with real-time progress
+results = await bulk_loader.bulk_load(
+    dataset_specs=dataset_specs,
+    progress_callback=show_progress,
+    resume=True  # Resume interrupted downloads
+)
+
+# Results summary
+print(f"Loaded: {len(results['datasets'])} datasets")
+print(f"Failed: {len(results['failed'])} datasets")
+print(f"Success Rate: {results['summary']['success_rate']:.1f}%")
+print(f"Total Time: {results['summary']['total_time_seconds']:.1f}s")
+
+# Access loaded datasets
+for dataset_id, dataset in results['datasets'].items():
+    print(f"{dataset_id}: {dataset.metadata['name']}")
+```
+
 ### Genomic Data Integration
 
 ```python
