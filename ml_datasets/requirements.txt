@@ -1,0 +1,58 @@
+# MotorHandPro ML Datasets Requirements
+# Core dependencies for dataset infrastructure
+
+# Async HTTP client
+aiohttp>=3.9.0
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# YAML configuration
+PyYAML>=6.0
+
+# Database (PostgreSQL)
+asyncpg>=0.29.0
+sqlalchemy>=2.0.0
+
+# Medical dataset libraries
+wfdb>=4.1.0  # PhysioNet WFDB format
+biopython>=1.81  # Genomic data processing
+
+# Vector database for RAG (optional, choose one)
+# chromadb>=0.4.0  # Local vector DB
+# pinecone-client>=2.2.0  # Pinecone cloud
+# weaviate-client>=3.24.0  # Weaviate
+
+# NLP and embeddings (for RAG)
+# openai>=1.0.0  # OpenAI embeddings
+# sentence-transformers>=2.2.0  # Local embeddings
+
+# Data validation
+pydantic>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Progress bars
+tqdm>=4.66.0
+
+# Date/time utilities
+python-dateutil>=2.8.0
+
+# File format support
+h5py>=3.9.0  # HDF5 files
+pyarrow>=13.0.0  # Parquet files
+scipy>=1.11.0  # MAT files
+
+# Authentication & security
+pyjwt>=2.8.0
+cryptography>=41.0.0
+
+# Logging
+structlog>=23.1.0

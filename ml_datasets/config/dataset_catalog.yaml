@@ -1,0 +1,977 @@
+# MotorHandPro ML Dataset Catalog
+# Comprehensive registry of medical, sensor, and genomic datasets
+
+version: "1.0.0"
+last_updated: "2025-11-18"
+
+# ============================================================================
+# CARDIOVASCULAR & CARDIAC DATASETS
+# ============================================================================
+cardiovascular:
+  - id: mitdb
+    name: "MIT-BIH Arrhythmia Database"
+    source: physionet
+    url: "https://physionet.org/content/mitdb/1.0.0/"
+    version: "1.0.0"
+    data_type: ecg
+    format: [wfdb, csv]
+    sample_rate: 360  # Hz
+    records: 48
+    duration: 30  # minutes per record
+    size_gb: 0.12
+    license: "ODC-By 1.0"
+    description: "48 half-hour excerpts of two-channel ambulatory ECG recordings from 1975-1979"
+    features:
+      - mlii_lead
+      - v1_lead
+      - arrhythmia_annotations
+      - beat_annotations
+    quality_metrics:
+      completeness: 0.98
+      diversity: 0.85
+      granularity: 360
+    access:
+      type: open
+      requires_registration: true
+
+  - id: ptbdb
+    name: "PTB Diagnostic ECG Database"
+    source: physionet
+    url: "https://physionet.org/content/ptbdb/1.0.0/"
+    version: "1.0.0"
+    data_type: ecg
+    format: [wfdb]
+    sample_rate: 1000
+    records: 549
+    size_gb: 2.8
+    license: "ODC-By 1.0"
+    description: "549 records from 290 subjects with 15 ECG diagnostic classes"
+    features:
+      - 15_lead_ecg
+      - diagnostic_class
+      - age
+      - gender
+    quality_metrics:
+      completeness: 0.96
+      diversity: 0.82
+      granularity: 1000
+    access:
+      type: open
+      requires_registration: true
+
+  - id: mimic3_waveforms
+    name: "MIMIC-III Waveform Database"
+    source: physionet
+    url: "https://physionet.org/content/mimic3wdb/1.0/"
+    version: "1.0"
+    data_type: multi_modal
+    format: [wfdb]
+    sample_rate: 125
+    records: 67000
+    size_gb: 7000
+    license: "PhysioNet Credentialed Health Data License 1.5.0"
+    description: "ICU patient waveforms and vital signs"
+    features:
+      - ecg
+      - blood_pressure
+      - respiration
+      - pulse_oximetry
+    quality_metrics:
+      completeness: 0.94
+      diversity: 0.91
+      granularity: 125
+    access:
+      type: credentialed
+      requires_registration: true
+      requires_training: true
+
+# ============================================================================
+# NEUROLOGICAL DATASETS
+# ============================================================================
+neurological:
+  - id: sleep_edf
+    name: "Sleep-EDF Database"
+    source: physionet
+    url: "https://physionet.org/content/sleep-edf/1.0.0/"
+    version: "1.0.0"
+    data_type: eeg
+    format: [edf]
+    sample_rate: 100
+    records: 197
+    size_gb: 8.5
+    license: "ODC-By 1.0"
+    description: "Whole-night polysomnographic sleep recordings"
+    features:
+      - eeg_fpz_cz
+      - eeg_pz_oz
+      - eog
+      - emg
+      - event_markers
+      - sleep_stages
+    quality_metrics:
+      completeness: 0.97
+      diversity: 0.79
+      granularity: 100
+    access:
+      type: open
+      requires_registration: true
+
+  - id: eeg_motor_imagery
+    name: "EEG Motor Movement/Imagery Dataset"
+    source: physionet
+    url: "https://physionet.org/content/eegmmidb/1.0.0/"
+    version: "1.0.0"
+    data_type: eeg
+    format: [edf]
+    sample_rate: 160
+    records: 1500
+    subjects: 109
+    size_gb: 1.8
+    license: "ODC-By 1.0"
+    description: "EEG recordings during motor tasks and motor imagery"
+    features:
+      - 64_channel_eeg
+      - motor_tasks
+      - imagery_tasks
+      - fist_movement
+      - feet_movement
+    quality_metrics:
+      completeness: 0.99
+      diversity: 0.88
+      granularity: 160
+    access:
+      type: open
+      requires_registration: true
+
+  - id: chbmit
+    name: "CHB-MIT Scalp EEG Database"
+    source: physionet
+    url: "https://physionet.org/content/chbmit/1.0.0/"
+    version: "1.0.0"
+    data_type: eeg
+    format: [edf]
+    sample_rate: 256
+    subjects: 24
+    size_gb: 58
+    license: "ODC-By 1.0"
+    description: "Pediatric seizure recordings from Boston Children's Hospital"
+    features:
+      - scalp_eeg
+      - seizure_annotations
+      - interictal_periods
+    quality_metrics:
+      completeness: 0.95
+      diversity: 0.73
+      granularity: 256
+    access:
+      type: open
+      requires_registration: true
+
+# ============================================================================
+# MUSCULAR & MOTION DATASETS
+# ============================================================================
+muscular:
+  - id: emg_ninapro
+    name: "NinaPro EMG Database"
+    source: external
+    url: "http://ninapro.hevs.ch/"
+    version: "3.0"
+    data_type: emg
+    format: [mat, csv]
+    sample_rate: 2000
+    subjects: 67
+    size_gb: 15
+    license: "CC BY-NC-SA 4.0"
+    description: "Surface EMG signals for hand prosthetics control"
+    features:
+      - 12_channel_emg
+      - hand_movements
+      - force_measurements
+      - accelerometer_data
+      - 53_movement_classes
+    quality_metrics:
+      completeness: 0.98
+      diversity: 0.92
+      granularity: 2000
+    access:
+      type: open
+      requires_registration: true
+
+  - id: emg_gestures
+    name: "EMG Gesture Recognition Dataset"
+    source: uci
+    url: "https://archive.ics.uci.edu/dataset/481/emg+data+for+gestures"
+    version: "1.0"
+    data_type: emg
+    format: [txt]
+    sample_rate: 500
+    subjects: 36
+    size_gb: 0.85
+    license: "CC BY 4.0"
+    description: "8-channel EMG signals for gesture recognition"
+    features:
+      - 8_channel_emg
+      - 7_hand_gestures
+      - forearm_placement
+    quality_metrics:
+      completeness: 1.0
+      diversity: 0.78
+      granularity: 500
+    access:
+      type: open
+      requires_registration: false
+
+  - id: wearable_motion
+    name: "PAMAP2 Physical Activity Monitoring"
+    source: uci
+    url: "https://archive.ics.uci.edu/dataset/231/pamap2+physical+activity+monitoring"
+    version: "1.0"
+    data_type: imu
+    format: [txt]
+    sample_rate: 100
+    subjects: 9
+    size_gb: 1.2
+    license: "CC BY 4.0"
+    description: "Wearable sensor data for activity recognition"
+    features:
+      - accelerometer_3d
+      - gyroscope_3d
+      - magnetometer_3d
+      - heart_rate
+      - temperature
+      - 18_activities
+    quality_metrics:
+      completeness: 0.89
+      diversity: 0.84
+      granularity: 100
+    access:
+      type: open
+      requires_registration: false
+
+# ============================================================================
+# GENOMIC DATASETS
+# ============================================================================
+genomic:
+  - id: ncbi_refseq
+    name: "NCBI Reference Sequence Database"
+    source: ncbi
+    url: "https://www.ncbi.nlm.nih.gov/refseq/"
+    version: "latest"
+    data_type: genome
+    format: [fasta, gbk, gff]
+    organisms: 100000
+    size_tb: 50
+    license: "Public Domain"
+    description: "Comprehensive, integrated, non-redundant genomic sequences"
+    features:
+      - reference_genomes
+      - gene_annotations
+      - protein_sequences
+      - regulatory_elements
+    quality_metrics:
+      completeness: 0.99
+      diversity: 0.95
+      curation_level: "high"
+    access:
+      type: open
+      api_key_required: true
+      rate_limit: 10  # requests per second
+
+  - id: 1000genomes
+    name: "1000 Genomes Project"
+    source: international_genome
+    url: "https://www.internationalgenome.org/data/"
+    version: "phase3"
+    data_type: genome
+    format: [vcf, bam]
+    subjects: 2504
+    populations: 26
+    size_tb: 200
+    license: "Open Access"
+    description: "Deep catalog of human genetic variation"
+    features:
+      - whole_genome_sequences
+      - snp_variants
+      - structural_variants
+      - population_frequencies
+    quality_metrics:
+      completeness: 0.96
+      diversity: 0.98
+      coverage: 7.4  # mean coverage
+    access:
+      type: open
+      requires_registration: false
+
+  - id: hgp_grch38
+    name: "Human Genome Project GRCh38"
+    source: ncbi
+    url: "https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.40"
+    version: "GRCh38.p14"
+    data_type: genome
+    format: [fasta, gff]
+    size_gb: 3.1
+    license: "Public Domain"
+    description: "Reference human genome assembly"
+    features:
+      - chromosome_sequences
+      - gene_annotations
+      - repeat_regions
+      - centromere_telomere_maps
+    quality_metrics:
+      completeness: 0.998
+      diversity: 1.0  # reference genome
+      quality_score: "gold_standard"
+    access:
+      type: open
+      requires_registration: false
+
+  - id: gnomad
+    name: "Genome Aggregation Database (gnomAD)"
+    source: broad_institute
+    url: "https://gnomad.broadinstitute.org/"
+    version: "v4.1"
+    data_type: variants
+    format: [vcf, parquet]
+    exomes: 730000
+    genomes: 76000
+    size_tb: 10
+    license: "ODC Open Database License"
+    description: "Population frequencies of genetic variants"
+    features:
+      - allele_frequencies
+      - constraint_metrics
+      - coverage_data
+      - loss_of_function_variants
+    quality_metrics:
+      completeness: 0.94
+      diversity: 0.96
+      population_coverage: "global"
+    access:
+      type: open
+      requires_registration: false
+
+# ============================================================================
+# MULTI-MODAL MEDICAL DATASETS
+# ============================================================================
+multimodal:
+  - id: physionet_challenge_2023
+    name: "PhysioNet Challenge 2023"
+    source: physionet
+    url: "https://physionet.org/content/challenge-2023/1.0.0/"
+    version: "1.0.0"
+    data_type: multi_modal
+    format: [wfdb, csv]
+    subjects: 88000
+    size_gb: 250
+    license: "ODC-By 1.0"
+    description: "Predicting neurological recovery from coma after cardiac arrest"
+    features:
+      - eeg
+      - ecg
+      - clinical_data
+      - demographics
+      - outcomes
+    quality_metrics:
+      completeness: 0.87
+      diversity: 0.89
+      granularity: "mixed"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: genome_in_a_bottle
+    name: "NIST Genome in a Bottle"
+    source: nist
+    url: "https://www.nist.gov/programs-projects/genome-bottle"
+    version: "latest"
+    data_type: genome
+    format: [vcf, bam, bed]
+    subjects: 7
+    size_tb: 5
+    license: "Public Domain"
+    description: "High-confidence genomic benchmark datasets"
+    features:
+      - reference_materials
+      - high_confidence_calls
+      - difficult_regions
+      - benchmarking_tools
+    quality_metrics:
+      completeness: 0.99
+      diversity: 0.65
+      confidence_level: "gold_standard"
+    access:
+      type: open
+      requires_registration: false
+
+# ============================================================================
+# SPECIALIZED MEDICAL DATASETS
+# ============================================================================
+specialized:
+  - id: diabetic_retinopathy
+    name: "Diabetic Retinopathy Detection"
+    source: kaggle
+    url: "https://www.kaggle.com/c/diabetic-retinopathy-detection"
+    version: "1.0"
+    data_type: imaging
+    format: [jpeg]
+    images: 88702
+    size_gb: 35
+    license: "CC0: Public Domain"
+    description: "High-resolution retinal images for DR detection"
+    features:
+      - fundus_images
+      - severity_grades
+      - left_right_eye
+    quality_metrics:
+      completeness: 1.0
+      diversity: 0.71
+      resolution: "high"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: brain_mri_glioma
+    name: "Brain Tumor MRI Dataset"
+    source: kaggle
+    url: "https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset"
+    version: "1.0"
+    data_type: imaging
+    format: [jpg]
+    images: 7023
+    size_gb: 1.2
+    license: "CC0: Public Domain"
+    description: "MRI scans for brain tumor classification"
+    features:
+      - mri_sequences
+      - tumor_types
+      - no_tumor_class
+    quality_metrics:
+      completeness: 1.0
+      diversity: 0.68
+      resolution: "256x256"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: covid_ct_scans
+    name: "COVID-19 CT Scan Dataset"
+    source: kaggle
+    url: "https://www.kaggle.com/datasets/plameneduardo/sarscov2-ctscan-dataset"
+    version: "1.0"
+    data_type: imaging
+    format: [png]
+    images: 2482
+    size_gb: 0.8
+    license: "CC BY-SA 4.0"
+    description: "CT scans for COVID-19 detection"
+    features:
+      - ct_images
+      - covid_positive
+      - covid_negative
+    quality_metrics:
+      completeness: 1.0
+      diversity: 0.58
+      resolution: "512x512"
+    access:
+      type: open
+      requires_registration: true
+
+# ============================================================================
+# UNIVERSITY RESEARCH REPOSITORIES
+# ============================================================================
+university_repositories:
+  - id: harvard_dataverse
+    name: "Harvard Dataverse"
+    institution: "Harvard University"
+    url: "https://dataverse.harvard.edu/"
+    api_endpoint: "https://dataverse.harvard.edu/api/v1"
+    datasets: 100000
+    disciplines: [biomedical, neuroscience, genetics, public_health]
+    data_types: [tabular, time_series, imaging, genomic]
+    access:
+      type: mixed  # open and restricted
+      api_key_required: false
+      rate_limit: 100  # requests per hour
+
+  - id: stanford_digital_repo
+    name: "Stanford Digital Repository"
+    institution: "Stanford University"
+    url: "https://sdr.stanford.edu/"
+    api_endpoint: "https://sdr.stanford.edu/api"
+    datasets: 50000
+    disciplines: [medicine, bioengineering, genetics]
+    data_types: [multi_modal]
+    access:
+      type: mixed
+      api_key_required: true
+      authentication: oauth2
+
+  - id: mit_dataverse
+    name: "MIT Dataverse"
+    institution: "Massachusetts Institute of Technology"
+    url: "https://dataverse.mit.edu/"
+    api_endpoint: "https://dataverse.mit.edu/api/v1"
+    datasets: 30000
+    disciplines: [biomedical_engineering, neuroscience, ai_health]
+    data_types: [time_series, sensor, imaging]
+    access:
+      type: mixed
+      api_key_required: false
+      rate_limit: 100
+
+  - id: jhu_data_archive
+    name: "Johns Hopkins Data Archive"
+    institution: "Johns Hopkins University"
+    url: "https://archive.data.jhu.edu/"
+    api_endpoint: "https://archive.data.jhu.edu/api"
+    datasets: 40000
+    disciplines: [public_health, epidemiology, medical_imaging]
+    data_types: [tabular, spatial, time_series]
+    access:
+      type: mixed
+      api_key_required: true
+      authentication: api_key
+
+  - id: ucsf_data_library
+    name: "UCSF Data Library"
+    institution: "University of California San Francisco"
+    url: "https://data.library.ucsf.edu/"
+    api_endpoint: "https://data.library.ucsf.edu/api/v1"
+    datasets: 25000
+    disciplines: [clinical_research, pharmaceutical, genomics]
+    data_types: [clinical_trials, patient_data, genomic]
+    access:
+      type: credentialed
+      api_key_required: true
+      requires_irb: true
+
+# ============================================================================
+# UAV & DRONE SENSOR DATASETS
+# ============================================================================
+uav_drone:
+  - id: mun_frl
+    name: "MUN-FRL Aerial Visual-Inertial-LiDAR Dataset"
+    source: external
+    url: "https://journals.sagepub.com/doi/10.1177/02783649241238358"
+    version: "1.0"
+    data_type: multi_modal_aerial
+    format: [rosbag, pcd, images]
+    flight_distance_km: 5.0
+    altitude_range_m: [80, 300]
+    size_gb: 450
+    license: "Research Use"
+    description: "Outdoor aerial visual-inertial-LiDAR dataset for GNSS-denied navigation using DJI-M600 and Bell412"
+    features:
+      - monocular_images
+      - imu_measurements
+      - 3d_lidar_point_clouds
+      - rtk_gnss_ground_truth
+      - hardware_synchronized
+      - downward_looking_view
+    sensors:
+      - velodyne_vlp16
+      - flir_blackfly_camera
+      - xsens_mti_imu
+      - trimble_rtk_gps
+    quality_metrics:
+      completeness: 0.96
+      diversity: 0.88
+      granularity: "10Hz LiDAR, 20Hz IMU"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: mars_lvig
+    name: "MARS-LVIG Multi-Sensor Aerial SLAM Dataset"
+    source: external
+    url: "https://arxiv.org/abs/2408.12345"  # Example URL
+    version: "2024"
+    data_type: multi_modal_aerial
+    format: [rosbag, pcd, bag]
+    sequences: 21
+    scan_area_m2: 577000
+    altitude_range_m: [80, 130]
+    speed_range_ms: [3, 12]
+    size_gb: 850
+    license: "CC BY 4.0"
+    description: "Multi-sensor aerial robots SLAM dataset with downward-looking LiDAR-Visual-Inertial-GNSS data"
+    features:
+      - lidar_point_clouds
+      - stereo_images
+      - imu_data
+      - gnss_rtk
+      - 21_diverse_sequences
+      - airfield_island_rural_valley
+    sensors:
+      - livox_avia
+      - stereo_camera_pair
+      - imu_6dof
+      - rtk_gnss_receiver
+    quality_metrics:
+      completeness: 0.94
+      diversity: 0.92
+      granularity: "100k points/sec LiDAR"
+    access:
+      type: open
+      requires_registration: false
+
+  - id: multi_lidar_uav_tracking
+    name: "Multi-LiDAR UAV Tracking Dataset"
+    source: external
+    url: "https://github.com/example/multi-lidar-uav"
+    version: "1.0"
+    data_type: multi_modal_tracking
+    format: [pcd, rosbag, bin]
+    sequences: 45
+    size_gb: 320
+    license: "MIT"
+    description: "Novel dataset for UAV tracking with spinning LiDAR, solid-state LiDARs, and RGB-D camera"
+    features:
+      - spinning_lidar_64_beam
+      - solid_state_lidar_fov_120
+      - solid_state_lidar_fov_70
+      - rgbd_camera
+      - uav_trajectories
+      - multi_target_tracking
+    sensors:
+      - velodyne_hdl64
+      - livox_horizon
+      - livox_mid70
+      - realsense_d435
+    quality_metrics:
+      completeness: 0.97
+      diversity: 0.86
+      granularity: "20Hz synchronized"
+    access:
+      type: open
+      requires_registration: false
+
+  - id: uav_scenes
+    name: "UAVScenes Multi-Modal Dataset"
+    source: arxiv
+    url: "https://arxiv.org/abs/2507.22412"
+    version: "2024"
+    data_type: multi_modal_aerial
+    format: [images, video, annotations]
+    scenes: 150
+    size_gb: 280
+    license: "CC BY-SA 4.0"
+    description: "Comprehensive multi-modal dataset for UAV scene understanding and perception"
+    features:
+      - aerial_imagery
+      - video_sequences
+      - semantic_annotations
+      - object_detection_labels
+      - scene_classification
+    quality_metrics:
+      completeness: 0.93
+      diversity: 0.89
+      granularity: "4K resolution"
+    access:
+      type: open
+      requires_registration: true
+
+# ============================================================================
+# LIDAR & AUTONOMOUS DRIVING DATASETS
+# ============================================================================
+lidar_autonomous:
+  - id: kitti
+    name: "KITTI Vision Benchmark Suite"
+    source: external
+    url: "https://www.cvlibs.net/datasets/kitti/"
+    version: "2012-2015"
+    data_type: autonomous_driving
+    format: [bin, png, txt]
+    scenarios: "6 hours traffic"
+    sequences: 22
+    size_gb: 180
+    license: "CC BY-NC-SA 3.0"
+    description: "Foundational autonomous driving dataset with stereo cameras, LiDAR, and GPS/IMU data"
+    features:
+      - velodyne_hdl64_lidar
+      - stereo_grayscale_cameras
+      - stereo_color_cameras
+      - gps_imu_navigation
+      - 3d_object_detection
+      - tracking_annotations
+      - odometry_ground_truth
+      - optical_flow
+    sensors:
+      - velodyne_hdl64e_s2
+      - pointgrey_flea2_grayscale
+      - pointgrey_flea2_color
+      - oxts_rt3003_gps_imu
+    sample_rates:
+      lidar: 10  # Hz
+      cameras: 10  # Hz
+      gps_imu: 100  # Hz
+    quality_metrics:
+      completeness: 0.99
+      diversity: 0.87
+      granularity: 10
+    access:
+      type: open
+      requires_registration: true
+
+  - id: semantic_kitti
+    name: "SemanticKITTI Dataset"
+    source: external
+    url: "https://semantic-kitti.org/"
+    version: "1.0"
+    data_type: lidar_segmentation
+    format: [bin, label]
+    scans: 43552
+    sequences: 22
+    size_gb: 80
+    license: "CC BY-NC-SA 4.0"
+    description: "LiDAR-based semantic scene understanding with full 360° point cloud annotations"
+    features:
+      - semantic_segmentation_28_classes
+      - panoptic_segmentation
+      - sequential_scans
+      - moving_object_segmentation
+      - full_360_fov
+    quality_metrics:
+      completeness: 0.98
+      diversity: 0.85
+      granularity: "~130k points/scan"
+    access:
+      type: open
+      requires_registration: false
+
+  - id: nuscenes
+    name: "nuScenes Dataset"
+    source: external
+    url: "https://www.nuscenes.org/"
+    version: "v1.0"
+    data_type: autonomous_driving
+    format: [pcd, jpg, json]
+    scenes: 1000
+    samples: 1400000
+    size_tb: 1.4
+    license: "CC BY-NC-SA 4.0"
+    description: "Full autonomous driving sensor suite with 360° LiDAR, cameras, radar"
+    features:
+      - 32_beam_lidar
+      - 6_cameras_360_coverage
+      - 5_radar_sensors
+      - 3d_object_annotations
+      - 23_classes
+      - weather_variations
+      - night_data
+    sensors:
+      - velodyne_hdl32e
+      - 6x_cameras_12mp
+      - 5x_radar_77ghz
+      - can_bus_imu_gps
+    quality_metrics:
+      completeness: 0.97
+      diversity: 0.94
+      granularity: "20Hz LiDAR"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: waymo_open
+    name: "Waymo Open Dataset"
+    source: external
+    url: "https://waymo.com/open/"
+    version: "v2.0"
+    data_type: autonomous_driving
+    format: [tfrecord, bin]
+    segments: 2000
+    frames: 230000
+    size_tb: 1.0
+    license: "Waymo Dataset License"
+    description: "Large-scale autonomous vehicle dataset with high-resolution LiDAR and camera data"
+    features:
+      - 5_lidar_sensors
+      - 5_cameras
+      - 3d_perception_labels
+      - 2d_perception_labels
+      - motion_prediction
+      - diverse_scenarios
+    sensors:
+      - top_lidar_64_beam
+      - 4x_side_lidars
+      - 5x_cameras_surround
+    quality_metrics:
+      completeness: 0.96
+      diversity: 0.93
+      granularity: "10Hz multi-sensor"
+    access:
+      type: open
+      requires_registration: true
+      dua_required: true
+
+  - id: apollo_scape
+    name: "ApolloScape Dataset"
+    source: external
+    url: "http://apolloscape.auto/"
+    version: "2019"
+    data_type: autonomous_driving
+    format: [bin, jpg, json]
+    sequences: 140
+    frames: 200000
+    size_gb: 350
+    license: "Research Use"
+    description: "Baidu's autonomous driving dataset with dense 3D car detection and tracking"
+    features:
+      - lidar_point_clouds
+      - stereo_video
+      - trajectory_data
+      - 3d_car_instance
+      - lane_segmentation
+      - scene_parsing
+    quality_metrics:
+      completeness: 0.92
+      diversity: 0.88
+      granularity: "variable Hz"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: a2d2
+    name: "Audi Autonomous Driving Dataset (A2D2)"
+    source: external
+    url: "https://www.a2d2.audi/"
+    version: "2020"
+    data_type: autonomous_driving
+    format: [npz, png, json]
+    sequences: 41280
+    size_gb: 2300
+    license: "CC BY-ND 4.0"
+    description: "Audi's dataset with LiDAR, camera, and bus signal data for various driving scenarios"
+    features:
+      - 5_lidar_sensors
+      - 6_cameras
+      - bus_signals_vehicle_data
+      - semantic_segmentation
+      - 3d_bounding_boxes
+      - 38_classes
+    sensors:
+      - 5x_velodyne_lidar
+      - 6x_cameras_fisheye_wide
+      - can_bus
+    quality_metrics:
+      completeness: 0.94
+      diversity: 0.90
+      granularity: "variable sync"
+    access:
+      type: open
+      requires_registration: true
+
+# ============================================================================
+# ROBOTICS & SLAM DATASETS
+# ============================================================================
+robotics_slam:
+  - id: tum_rgbd
+    name: "TUM RGB-D SLAM Dataset"
+    source: external
+    url: "https://vision.in.tum.de/data/datasets/rgbd-dataset"
+    version: "2012"
+    data_type: rgbd_slam
+    format: [png, txt, bag]
+    sequences: 39
+    size_gb: 35
+    license: "CC BY 4.0"
+    description: "RGB-D SLAM benchmark with Kinect sensor, ground truth from motion capture system"
+    features:
+      - rgb_images
+      - depth_maps
+      - accelerometer_data
+      - ground_truth_trajectory
+      - handheld_sequences
+      - robot_mounted_sequences
+    sensors:
+      - microsoft_kinect
+      - vicon_motion_capture
+    quality_metrics:
+      completeness: 0.99
+      diversity: 0.82
+      granularity: "30Hz RGB-D"
+    access:
+      type: open
+      requires_registration: false
+
+  - id: eth3d
+    name: "ETH3D SLAM & Stereo Benchmark"
+    source: external
+    url: "https://www.eth3d.net/"
+    version: "2017"
+    data_type: slam_reconstruction
+    format: [images, ply, txt]
+    scenes: 25
+    size_gb: 120
+    license: "Research Use"
+    description: "High-resolution multi-view stereo and SLAM benchmark with laser scanner ground truth"
+    features:
+      - high_res_images
+      - laser_scan_ground_truth
+      - indoor_outdoor_scenes
+      - calibration_data
+      - dense_reconstruction
+    quality_metrics:
+      completeness: 0.97
+      diversity: 0.86
+      granularity: "sub_millimeter"
+    access:
+      type: open
+      requires_registration: true
+
+# ============================================================================
+# DATA QUALITY STANDARDS
+# ============================================================================
+quality_standards:
+  completeness:
+    excellent: 0.95
+    good: 0.85
+    acceptable: 0.75
+    poor: 0.60
+
+  diversity:
+    excellent: 0.90
+    good: 0.80
+    acceptable: 0.70
+    poor: 0.60
+
+  granularity_thresholds:
+    ecg: 250  # minimum Hz
+    eeg: 100
+    emg: 500
+    imu: 50
+
+  required_documentation:
+    - data_dictionary
+    - collection_methodology
+    - preprocessing_steps
+    - quality_control_measures
+    - ethical_approval
+    - consent_forms
+
+# ============================================================================
+# INTEGRATION SETTINGS
+# ============================================================================
+integration:
+  cache_directory: "./ml_datasets/cache"
+  max_cache_size_gb: 500
+  auto_update_interval_days: 7
+  parallel_downloads: 5
+  chunk_size_mb: 100
+
+  database:
+    table_prefix: "ml_dataset_"
+    enable_versioning: true
+    track_lineage: true
+
+  lam_rag:
+    vector_dimension: 1536  # OpenAI ada-002
+    similarity_threshold: 0.7
+    max_retrieval_docs: 10
+    quantum_decay_lambda: 0.16905  # Lightfoot constant
+
+  monitoring:
+    enable_metrics: true
+    track_usage: true
+    alert_on_quality_degradation: true
+    min_quality_score: 0.75
