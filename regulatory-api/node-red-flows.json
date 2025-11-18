@@ -1,0 +1,315 @@
+[
+  {
+    "id": "simulation_complete_flow",
+    "type": "tab",
+    "label": "Simulation Complete Hook",
+    "disabled": false,
+    "info": "Triggered when a MotorHandPro simulation completes. Queries regulatory APIs for relevant real-world context."
+  },
+  {
+    "id": "sim_webhook_in",
+    "type": "http in",
+    "z": "simulation_complete_flow",
+    "name": "Simulation Webhook",
+    "url": "/hooks/simulation-complete",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 140,
+    "y": 100,
+    "wires": [["extract_sim_data"]]
+  },
+  {
+    "id": "extract_sim_data",
+    "type": "function",
+    "z": "simulation_complete_flow",
+    "name": "Extract Simulation Data",
+    "func": "// Extract simulation metadata\nconst simData = msg.payload;\n\nmsg.simId = simData.id || 'unknown';\nmsg.simType = simData.type || 'motor_control';\nmsg.platform = simData.platform || {};\nmsg.failureMode = simData.failureMode || null;\n\n// Store original payload\nmsg.originalSim = simData;\n\nreturn msg;",
+    "outputs": 1,
+    "x": 360,
+    "y": 100,
+    "wires": [["check_device_platform", "check_vehicle_platform", "check_aviation_platform"]]
+  },
+  {
+    "id": "check_device_platform",
+    "type": "switch",
+    "z": "simulation_complete_flow",
+    "name": "Device/Medical?",
+    "property": "platform.type",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "medical_device",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "prosthetic",
+        "vt": "str"
+      }
+    ],
+    "checkall": "false",
+    "repair": false,
+    "outputs": 2,
+    "x": 600,
+    "y": 60,
+    "wires": [["query_fda_device"], ["query_fda_device"]]
+  },
+  {
+    "id": "query_fda_device",
+    "type": "http request",
+    "z": "simulation_complete_flow",
+    "name": "Query FDA Device Recalls",
+    "method": "GET",
+    "ret": "obj",
+    "paytoqs": "ignore",
+    "url": "http://localhost:3000/api/fda/recalls/device?query={{platform.deviceName}}&limit=10",
+    "tls": "",
+    "persist": false,
+    "proxy": "",
+    "authType": "",
+    "x": 870,
+    "y": 60,
+    "wires": [["merge_regulatory_data"]]
+  },
+  {
+    "id": "check_vehicle_platform",
+    "type": "switch",
+    "z": "simulation_complete_flow",
+    "name": "Vehicle/AV?",
+    "property": "platform.type",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "autonomous_vehicle",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "vehicle",
+        "vt": "str"
+      }
+    ],
+    "checkall": "false",
+    "repair": false,
+    "outputs": 2,
+    "x": 600,
+    "y": 140,
+    "wires": [["query_nhtsa_recalls"], ["query_nhtsa_recalls"]]
+  },
+  {
+    "id": "query_nhtsa_recalls",
+    "type": "http request",
+    "z": "simulation_complete_flow",
+    "name": "Query NHTSA Recalls",
+    "method": "GET",
+    "ret": "obj",
+    "paytoqs": "ignore",
+    "url": "http://localhost:3000/api/nhtsa/recalls?make={{platform.make}}&model={{platform.model}}&year={{platform.year}}",
+    "tls": "",
+    "persist": false,
+    "proxy": "",
+    "authType": "",
+    "x": 860,
+    "y": 140,
+    "wires": [["merge_regulatory_data"]]
+  },
+  {
+    "id": "check_aviation_platform",
+    "type": "switch",
+    "z": "simulation_complete_flow",
+    "name": "Aviation/UAV?",
+    "property": "platform.type",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "uav",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "aircraft",
+        "vt": "str"
+      }
+    ],
+    "checkall": "false",
+    "repair": false,
+    "outputs": 2,
+    "x": 600,
+    "y": 220,
+    "wires": [["query_faa_weather"], ["query_faa_weather"]]
+  },
+  {
+    "id": "query_faa_weather",
+    "type": "http request",
+    "z": "simulation_complete_flow",
+    "name": "Query FAA Weather",
+    "method": "GET",
+    "ret": "obj",
+    "paytoqs": "ignore",
+    "url": "http://localhost:3000/api/faa/weather/metar?station={{platform.baseStation}}&hours=6",
+    "tls": "",
+    "persist": false,
+    "proxy": "",
+    "authType": "",
+    "x": 850,
+    "y": 220,
+    "wires": [["merge_regulatory_data"]]
+  },
+  {
+    "id": "merge_regulatory_data",
+    "type": "function",
+    "z": "simulation_complete_flow",
+    "name": "Merge Regulatory Context",
+    "func": "// Aggregate regulatory findings with simulation data\nif (!context.regulatoryFindings) {\n  context.regulatoryFindings = [];\n}\n\nif (msg.payload && msg.payload.data) {\n  context.regulatoryFindings.push(msg.payload);\n}\n\n// After collecting all findings, attach to original sim\nmsg.payload = {\n  simulation: msg.originalSim,\n  regulatoryContext: context.regulatoryFindings,\n  timestamp: new Date().toISOString()\n};\n\n// Clear context for next run\ncontext.regulatoryFindings = [];\n\nreturn msg;",
+    "outputs": 1,
+    "x": 1120,
+    "y": 140,
+    "wires": [["store_enriched_sim"]]
+  },
+  {
+    "id": "store_enriched_sim",
+    "type": "function",
+    "z": "simulation_complete_flow",
+    "name": "Store Enriched Simulation",
+    "func": "// Store to database, file system, or forward to TAK/dashboard\n// For now, just log it\nconsole.log('Enriched simulation:', JSON.stringify(msg.payload, null, 2));\n\n// Could write to file, database, or forward to another service\nreturn msg;",
+    "outputs": 1,
+    "x": 1380,
+    "y": 140,
+    "wires": [["http_response"]]
+  },
+  {
+    "id": "http_response",
+    "type": "http response",
+    "z": "simulation_complete_flow",
+    "name": "Response",
+    "statusCode": "200",
+    "headers": {},
+    "x": 1600,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "weekly_recall_scan_flow",
+    "type": "tab",
+    "label": "Weekly Recall Scan",
+    "disabled": false,
+    "info": "Cron job to scan for new recalls related to tracked platforms"
+  },
+  {
+    "id": "weekly_trigger",
+    "type": "inject",
+    "z": "weekly_recall_scan_flow",
+    "name": "Every Monday 8am",
+    "props": [{"p": "payload"}],
+    "repeat": "0 0 8 * * 1",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 100,
+    "wires": [["load_tracked_platforms"]]
+  },
+  {
+    "id": "load_tracked_platforms",
+    "type": "function",
+    "z": "weekly_recall_scan_flow",
+    "name": "Load Tracked Platforms",
+    "func": "// In production, load from database\n// For now, hardcode example platforms\nmsg.platforms = [\n  { type: 'vehicle', make: 'Tesla', model: 'Model 3', year: 2023 },\n  { type: 'vehicle', make: 'Toyota', model: 'Camry', year: 2022 },\n  { type: 'medical_device', deviceName: 'insulin pump' }\n];\n\nreturn msg;",
+    "outputs": 1,
+    "x": 370,
+    "y": 100,
+    "wires": [["split_platforms"]]
+  },
+  {
+    "id": "split_platforms",
+    "type": "split",
+    "z": "weekly_recall_scan_flow",
+    "name": "Split Platforms",
+    "splt": "\\n",
+    "spltType": "str",
+    "arraySplt": 1,
+    "arraySpltType": "len",
+    "stream": false,
+    "addname": "",
+    "x": 560,
+    "y": 100,
+    "wires": [["check_platform_type"]]
+  },
+  {
+    "id": "check_platform_type",
+    "type": "switch",
+    "z": "weekly_recall_scan_flow",
+    "name": "Platform Type?",
+    "property": "payload.type",
+    "propertyType": "msg",
+    "rules": [
+      {"t": "eq", "v": "vehicle", "vt": "str"},
+      {"t": "eq", "v": "medical_device", "vt": "str"}
+    ],
+    "checkall": "false",
+    "repair": false,
+    "outputs": 2,
+    "x": 750,
+    "y": 100,
+    "wires": [["scan_nhtsa"], ["scan_fda"]]
+  },
+  {
+    "id": "scan_nhtsa",
+    "type": "http request",
+    "z": "weekly_recall_scan_flow",
+    "name": "Scan NHTSA",
+    "method": "GET",
+    "ret": "obj",
+    "url": "http://localhost:3000/api/nhtsa/recalls?make={{payload.make}}&model={{payload.model}}&year={{payload.year}}",
+    "x": 950,
+    "y": 80,
+    "wires": [["notify_if_changed"]]
+  },
+  {
+    "id": "scan_fda",
+    "type": "http request",
+    "z": "weekly_recall_scan_flow",
+    "name": "Scan FDA",
+    "method": "GET",
+    "ret": "obj",
+    "url": "http://localhost:3000/api/fda/recalls/device?query={{payload.deviceName}}&limit=5",
+    "x": 940,
+    "y": 120,
+    "wires": [["notify_if_changed"]]
+  },
+  {
+    "id": "notify_if_changed",
+    "type": "function",
+    "z": "weekly_recall_scan_flow",
+    "name": "Check for Changes",
+    "func": "// Compare with last week's results\n// If new recalls found, trigger notification\nconst newRecalls = msg.payload.data || [];\n\nif (newRecalls.length > 0) {\n  msg.payload = {\n    alert: 'New recalls found',\n    count: newRecalls.length,\n    recalls: newRecalls\n  };\n  return msg;\n}\n\nreturn null;",
+    "outputs": 1,
+    "x": 1160,
+    "y": 100,
+    "wires": [["send_notification"]]
+  },
+  {
+    "id": "send_notification",
+    "type": "debug",
+    "z": "weekly_recall_scan_flow",
+    "name": "Send Alert",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 1350,
+    "y": 100,
+    "wires": []
+  }
+]
