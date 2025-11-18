@@ -310,6 +310,71 @@ for dataset_id, dataset in results['datasets'].items():
     print(f"{dataset_id}: {dataset.metadata['name']}")
 ```
 
+### LAM Integration - Quantum Resonance Dataset Scoring (NEW!)
+
+```python
+from ml_datasets import LAMDatasetBridge
+
+# Initialize LAM-Dataset bridge
+bridge = LAMDatasetBridge()  # Automatically creates LAM instance
+
+# Load dataset as LAM action with quantum resonance tracking
+result = await bridge.load_dataset_with_lam(
+    dataset_id="mitdb",
+    filters={"record_range": [100, 109]}
+)
+
+dataset = result['dataset']
+lam_action = result['lam_action']
+resonance_quality = result['resonance_quality']
+
+print(f"Dataset: {dataset.id}")
+print(f"Resonance Quality: {resonance_quality:.4f}")
+print(f"Attractor Distance: {lam_action['action_record']['details']['attractor_distance']:.2f}")
+
+# LAM uses:
+# - Lightfoot constant (λ=0.16905) for exponential decay
+# - Donte constant (D=149.999...) as fixed-point attractor
+# - Lipschitz constant < 1.0 for stability guarantee
+# - Quantum resonance for dataset quality scoring
+
+# Create experiment with LAM tracking
+exp_result = await bridge.create_lam_experiment(
+    experiment_name="cardiac_analysis_lam_v1",
+    dataset_specs=[
+        {'dataset_id': 'mitdb'},
+        {'dataset_id': 'ptbdb'},
+        {'dataset_id': 'sleep_edf'}
+    ]
+)
+
+exp_manager = exp_result['experiment_manager']
+avg_resonance = exp_result['resonance_quality']
+
+print(f"Experiment: {exp_manager.experiment_name}")
+print(f"Avg Resonance Quality: {avg_resonance:.4f}")
+print(f"Lipschitz Constant: {exp_result['lam_state']['lipschitz_constant']:.9f}")
+print(f"Stability Guaranteed: {exp_result['lam_state']['lipschitz_constant'] < 1.0}")
+
+# Get LAM-enhanced dataset recommendations
+recommendations = await bridge.recommend_datasets_with_lam(
+    query="ECG arrhythmia detection",
+    max_results=10
+)
+
+for rec in recommendations['recommendations'][:5]:
+    print(f"{rec['dataset_info'].title}")
+    print(f"  Resonance Quality: {rec['resonance_quality']:.4f}")
+    print(f"  Attractor Distance: {rec['attractor_distance']:.2f}")
+
+# Get resonance summary
+summary = bridge.get_resonance_summary()
+print(f"System Stable: {summary['stability']['stable']}")
+print(f"Total Operations: {summary['operations']['total_dataset_operations']}")
+print(f"Lightfoot Constant: {summary['quantum_metrics']['lightfoot_constant']}")
+print(f"Donte Attractor: {summary['quantum_metrics']['donte_attractor']:.4f}")
+```
+
 ### Genomic Data Integration
 
 ```python

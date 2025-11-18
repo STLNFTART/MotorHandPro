@@ -12,6 +12,7 @@ Comprehensive medical, robotics, and sensor dataset infrastructure with:
 - Intelligent Data Concierge for unified dataset discovery
 - Per-experiment dataset isolation and tracking
 - Bulk dataset loading (4+ datasets with parallel processing)
+- Full LAM integration with quantum resonance dataset scoring
 """
 
 from ml_datasets.core.dataset_manager import DatasetManager, Dataset
@@ -21,8 +22,9 @@ from ml_datasets.core.bulk_dataset_loader import BulkDatasetLoader
 from ml_datasets.rag.lam_rag_agent import LAMRAGAgent
 from ml_datasets.sources.kaggle_uci_connector import KaggleUCIConnector
 from ml_datasets.sources.uav_lidar_connector import UAVLiDARConnector
+from ml_datasets.integration.lam_dataset_bridge import LAMDatasetBridge
 
-__version__ = "2.1.0"
+__version__ = "2.2.0"
 __all__ = [
     'DatasetManager',
     'Dataset',
@@ -31,5 +33,6 @@ __all__ = [
     'ExperimentDatasetManager',
     'BulkDatasetLoader',
     'KaggleUCIConnector',
-    'UAVLiDARConnector'
+    'UAVLiDARConnector',
+    'LAMDatasetBridge'
 ]
