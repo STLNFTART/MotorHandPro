@@ -1,0 +1,603 @@
+# MotorHandPro ML Dataset Catalog
+# Comprehensive registry of medical, sensor, and genomic datasets
+
+version: "1.0.0"
+last_updated: "2025-11-18"
+
+# ============================================================================
+# CARDIOVASCULAR & CARDIAC DATASETS
+# ============================================================================
+cardiovascular:
+  - id: mitdb
+    name: "MIT-BIH Arrhythmia Database"
+    source: physionet
+    url: "https://physionet.org/content/mitdb/1.0.0/"
+    version: "1.0.0"
+    data_type: ecg
+    format: [wfdb, csv]
+    sample_rate: 360  # Hz
+    records: 48
+    duration: 30  # minutes per record
+    size_gb: 0.12
+    license: "ODC-By 1.0"
+    description: "48 half-hour excerpts of two-channel ambulatory ECG recordings from 1975-1979"
+    features:
+      - mlii_lead
+      - v1_lead
+      - arrhythmia_annotations
+      - beat_annotations
+    quality_metrics:
+      completeness: 0.98
+      diversity: 0.85
+      granularity: 360
+    access:
+      type: open
+      requires_registration: true
+
+  - id: ptbdb
+    name: "PTB Diagnostic ECG Database"
+    source: physionet
+    url: "https://physionet.org/content/ptbdb/1.0.0/"
+    version: "1.0.0"
+    data_type: ecg
+    format: [wfdb]
+    sample_rate: 1000
+    records: 549
+    size_gb: 2.8
+    license: "ODC-By 1.0"
+    description: "549 records from 290 subjects with 15 ECG diagnostic classes"
+    features:
+      - 15_lead_ecg
+      - diagnostic_class
+      - age
+      - gender
+    quality_metrics:
+      completeness: 0.96
+      diversity: 0.82
+      granularity: 1000
+    access:
+      type: open
+      requires_registration: true
+
+  - id: mimic3_waveforms
+    name: "MIMIC-III Waveform Database"
+    source: physionet
+    url: "https://physionet.org/content/mimic3wdb/1.0/"
+    version: "1.0"
+    data_type: multi_modal
+    format: [wfdb]
+    sample_rate: 125
+    records: 67000
+    size_gb: 7000
+    license: "PhysioNet Credentialed Health Data License 1.5.0"
+    description: "ICU patient waveforms and vital signs"
+    features:
+      - ecg
+      - blood_pressure
+      - respiration
+      - pulse_oximetry
+    quality_metrics:
+      completeness: 0.94
+      diversity: 0.91
+      granularity: 125
+    access:
+      type: credentialed
+      requires_registration: true
+      requires_training: true
+
+# ============================================================================
+# NEUROLOGICAL DATASETS
+# ============================================================================
+neurological:
+  - id: sleep_edf
+    name: "Sleep-EDF Database"
+    source: physionet
+    url: "https://physionet.org/content/sleep-edf/1.0.0/"
+    version: "1.0.0"
+    data_type: eeg
+    format: [edf]
+    sample_rate: 100
+    records: 197
+    size_gb: 8.5
+    license: "ODC-By 1.0"
+    description: "Whole-night polysomnographic sleep recordings"
+    features:
+      - eeg_fpz_cz
+      - eeg_pz_oz
+      - eog
+      - emg
+      - event_markers
+      - sleep_stages
+    quality_metrics:
+      completeness: 0.97
+      diversity: 0.79
+      granularity: 100
+    access:
+      type: open
+      requires_registration: true
+
+  - id: eeg_motor_imagery
+    name: "EEG Motor Movement/Imagery Dataset"
+    source: physionet
+    url: "https://physionet.org/content/eegmmidb/1.0.0/"
+    version: "1.0.0"
+    data_type: eeg
+    format: [edf]
+    sample_rate: 160
+    records: 1500
+    subjects: 109
+    size_gb: 1.8
+    license: "ODC-By 1.0"
+    description: "EEG recordings during motor tasks and motor imagery"
+    features:
+      - 64_channel_eeg
+      - motor_tasks
+      - imagery_tasks
+      - fist_movement
+      - feet_movement
+    quality_metrics:
+      completeness: 0.99
+      diversity: 0.88
+      granularity: 160
+    access:
+      type: open
+      requires_registration: true
+
+  - id: chbmit
+    name: "CHB-MIT Scalp EEG Database"
+    source: physionet
+    url: "https://physionet.org/content/chbmit/1.0.0/"
+    version: "1.0.0"
+    data_type: eeg
+    format: [edf]
+    sample_rate: 256
+    subjects: 24
+    size_gb: 58
+    license: "ODC-By 1.0"
+    description: "Pediatric seizure recordings from Boston Children's Hospital"
+    features:
+      - scalp_eeg
+      - seizure_annotations
+      - interictal_periods
+    quality_metrics:
+      completeness: 0.95
+      diversity: 0.73
+      granularity: 256
+    access:
+      type: open
+      requires_registration: true
+
+# ============================================================================
+# MUSCULAR & MOTION DATASETS
+# ============================================================================
+muscular:
+  - id: emg_ninapro
+    name: "NinaPro EMG Database"
+    source: external
+    url: "http://ninapro.hevs.ch/"
+    version: "3.0"
+    data_type: emg
+    format: [mat, csv]
+    sample_rate: 2000
+    subjects: 67
+    size_gb: 15
+    license: "CC BY-NC-SA 4.0"
+    description: "Surface EMG signals for hand prosthetics control"
+    features:
+      - 12_channel_emg
+      - hand_movements
+      - force_measurements
+      - accelerometer_data
+      - 53_movement_classes
+    quality_metrics:
+      completeness: 0.98
+      diversity: 0.92
+      granularity: 2000
+    access:
+      type: open
+      requires_registration: true
+
+  - id: emg_gestures
+    name: "EMG Gesture Recognition Dataset"
+    source: uci
+    url: "https://archive.ics.uci.edu/dataset/481/emg+data+for+gestures"
+    version: "1.0"
+    data_type: emg
+    format: [txt]
+    sample_rate: 500
+    subjects: 36
+    size_gb: 0.85
+    license: "CC BY 4.0"
+    description: "8-channel EMG signals for gesture recognition"
+    features:
+      - 8_channel_emg
+      - 7_hand_gestures
+      - forearm_placement
+    quality_metrics:
+      completeness: 1.0
+      diversity: 0.78
+      granularity: 500
+    access:
+      type: open
+      requires_registration: false
+
+  - id: wearable_motion
+    name: "PAMAP2 Physical Activity Monitoring"
+    source: uci
+    url: "https://archive.ics.uci.edu/dataset/231/pamap2+physical+activity+monitoring"
+    version: "1.0"
+    data_type: imu
+    format: [txt]
+    sample_rate: 100
+    subjects: 9
+    size_gb: 1.2
+    license: "CC BY 4.0"
+    description: "Wearable sensor data for activity recognition"
+    features:
+      - accelerometer_3d
+      - gyroscope_3d
+      - magnetometer_3d
+      - heart_rate
+      - temperature
+      - 18_activities
+    quality_metrics:
+      completeness: 0.89
+      diversity: 0.84
+      granularity: 100
+    access:
+      type: open
+      requires_registration: false
+
+# ============================================================================
+# GENOMIC DATASETS
+# ============================================================================
+genomic:
+  - id: ncbi_refseq
+    name: "NCBI Reference Sequence Database"
+    source: ncbi
+    url: "https://www.ncbi.nlm.nih.gov/refseq/"
+    version: "latest"
+    data_type: genome
+    format: [fasta, gbk, gff]
+    organisms: 100000
+    size_tb: 50
+    license: "Public Domain"
+    description: "Comprehensive, integrated, non-redundant genomic sequences"
+    features:
+      - reference_genomes
+      - gene_annotations
+      - protein_sequences
+      - regulatory_elements
+    quality_metrics:
+      completeness: 0.99
+      diversity: 0.95
+      curation_level: "high"
+    access:
+      type: open
+      api_key_required: true
+      rate_limit: 10  # requests per second
+
+  - id: 1000genomes
+    name: "1000 Genomes Project"
+    source: international_genome
+    url: "https://www.internationalgenome.org/data/"
+    version: "phase3"
+    data_type: genome
+    format: [vcf, bam]
+    subjects: 2504
+    populations: 26
+    size_tb: 200
+    license: "Open Access"
+    description: "Deep catalog of human genetic variation"
+    features:
+      - whole_genome_sequences
+      - snp_variants
+      - structural_variants
+      - population_frequencies
+    quality_metrics:
+      completeness: 0.96
+      diversity: 0.98
+      coverage: 7.4  # mean coverage
+    access:
+      type: open
+      requires_registration: false
+
+  - id: hgp_grch38
+    name: "Human Genome Project GRCh38"
+    source: ncbi
+    url: "https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.40"
+    version: "GRCh38.p14"
+    data_type: genome
+    format: [fasta, gff]
+    size_gb: 3.1
+    license: "Public Domain"
+    description: "Reference human genome assembly"
+    features:
+      - chromosome_sequences
+      - gene_annotations
+      - repeat_regions
+      - centromere_telomere_maps
+    quality_metrics:
+      completeness: 0.998
+      diversity: 1.0  # reference genome
+      quality_score: "gold_standard"
+    access:
+      type: open
+      requires_registration: false
+
+  - id: gnomad
+    name: "Genome Aggregation Database (gnomAD)"
+    source: broad_institute
+    url: "https://gnomad.broadinstitute.org/"
+    version: "v4.1"
+    data_type: variants
+    format: [vcf, parquet]
+    exomes: 730000
+    genomes: 76000
+    size_tb: 10
+    license: "ODC Open Database License"
+    description: "Population frequencies of genetic variants"
+    features:
+      - allele_frequencies
+      - constraint_metrics
+      - coverage_data
+      - loss_of_function_variants
+    quality_metrics:
+      completeness: 0.94
+      diversity: 0.96
+      population_coverage: "global"
+    access:
+      type: open
+      requires_registration: false
+
+# ============================================================================
+# MULTI-MODAL MEDICAL DATASETS
+# ============================================================================
+multimodal:
+  - id: physionet_challenge_2023
+    name: "PhysioNet Challenge 2023"
+    source: physionet
+    url: "https://physionet.org/content/challenge-2023/1.0.0/"
+    version: "1.0.0"
+    data_type: multi_modal
+    format: [wfdb, csv]
+    subjects: 88000
+    size_gb: 250
+    license: "ODC-By 1.0"
+    description: "Predicting neurological recovery from coma after cardiac arrest"
+    features:
+      - eeg
+      - ecg
+      - clinical_data
+      - demographics
+      - outcomes
+    quality_metrics:
+      completeness: 0.87
+      diversity: 0.89
+      granularity: "mixed"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: genome_in_a_bottle
+    name: "NIST Genome in a Bottle"
+    source: nist
+    url: "https://www.nist.gov/programs-projects/genome-bottle"
+    version: "latest"
+    data_type: genome
+    format: [vcf, bam, bed]
+    subjects: 7
+    size_tb: 5
+    license: "Public Domain"
+    description: "High-confidence genomic benchmark datasets"
+    features:
+      - reference_materials
+      - high_confidence_calls
+      - difficult_regions
+      - benchmarking_tools
+    quality_metrics:
+      completeness: 0.99
+      diversity: 0.65
+      confidence_level: "gold_standard"
+    access:
+      type: open
+      requires_registration: false
+
+# ============================================================================
+# SPECIALIZED MEDICAL DATASETS
+# ============================================================================
+specialized:
+  - id: diabetic_retinopathy
+    name: "Diabetic Retinopathy Detection"
+    source: kaggle
+    url: "https://www.kaggle.com/c/diabetic-retinopathy-detection"
+    version: "1.0"
+    data_type: imaging
+    format: [jpeg]
+    images: 88702
+    size_gb: 35
+    license: "CC0: Public Domain"
+    description: "High-resolution retinal images for DR detection"
+    features:
+      - fundus_images
+      - severity_grades
+      - left_right_eye
+    quality_metrics:
+      completeness: 1.0
+      diversity: 0.71
+      resolution: "high"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: brain_mri_glioma
+    name: "Brain Tumor MRI Dataset"
+    source: kaggle
+    url: "https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset"
+    version: "1.0"
+    data_type: imaging
+    format: [jpg]
+    images: 7023
+    size_gb: 1.2
+    license: "CC0: Public Domain"
+    description: "MRI scans for brain tumor classification"
+    features:
+      - mri_sequences
+      - tumor_types
+      - no_tumor_class
+    quality_metrics:
+      completeness: 1.0
+      diversity: 0.68
+      resolution: "256x256"
+    access:
+      type: open
+      requires_registration: true
+
+  - id: covid_ct_scans
+    name: "COVID-19 CT Scan Dataset"
+    source: kaggle
+    url: "https://www.kaggle.com/datasets/plameneduardo/sarscov2-ctscan-dataset"
+    version: "1.0"
+    data_type: imaging
+    format: [png]
+    images: 2482
+    size_gb: 0.8
+    license: "CC BY-SA 4.0"
+    description: "CT scans for COVID-19 detection"
+    features:
+      - ct_images
+      - covid_positive
+      - covid_negative
+    quality_metrics:
+      completeness: 1.0
+      diversity: 0.58
+      resolution: "512x512"
+    access:
+      type: open
+      requires_registration: true
+
+# ============================================================================
+# UNIVERSITY RESEARCH REPOSITORIES
+# ============================================================================
+university_repositories:
+  - id: harvard_dataverse
+    name: "Harvard Dataverse"
+    institution: "Harvard University"
+    url: "https://dataverse.harvard.edu/"
+    api_endpoint: "https://dataverse.harvard.edu/api/v1"
+    datasets: 100000
+    disciplines: [biomedical, neuroscience, genetics, public_health]
+    data_types: [tabular, time_series, imaging, genomic]
+    access:
+      type: mixed  # open and restricted
+      api_key_required: false
+      rate_limit: 100  # requests per hour
+
+  - id: stanford_digital_repo
+    name: "Stanford Digital Repository"
+    institution: "Stanford University"
+    url: "https://sdr.stanford.edu/"
+    api_endpoint: "https://sdr.stanford.edu/api"
+    datasets: 50000
+    disciplines: [medicine, bioengineering, genetics]
+    data_types: [multi_modal]
+    access:
+      type: mixed
+      api_key_required: true
+      authentication: oauth2
+
+  - id: mit_dataverse
+    name: "MIT Dataverse"
+    institution: "Massachusetts Institute of Technology"
+    url: "https://dataverse.mit.edu/"
+    api_endpoint: "https://dataverse.mit.edu/api/v1"
+    datasets: 30000
+    disciplines: [biomedical_engineering, neuroscience, ai_health]
+    data_types: [time_series, sensor, imaging]
+    access:
+      type: mixed
+      api_key_required: false
+      rate_limit: 100
+
+  - id: jhu_data_archive
+    name: "Johns Hopkins Data Archive"
+    institution: "Johns Hopkins University"
+    url: "https://archive.data.jhu.edu/"
+    api_endpoint: "https://archive.data.jhu.edu/api"
+    datasets: 40000
+    disciplines: [public_health, epidemiology, medical_imaging]
+    data_types: [tabular, spatial, time_series]
+    access:
+      type: mixed
+      api_key_required: true
+      authentication: api_key
+
+  - id: ucsf_data_library
+    name: "UCSF Data Library"
+    institution: "University of California San Francisco"
+    url: "https://data.library.ucsf.edu/"
+    api_endpoint: "https://data.library.ucsf.edu/api/v1"
+    datasets: 25000
+    disciplines: [clinical_research, pharmaceutical, genomics]
+    data_types: [clinical_trials, patient_data, genomic]
+    access:
+      type: credentialed
+      api_key_required: true
+      requires_irb: true
+
+# ============================================================================
+# DATA QUALITY STANDARDS
+# ============================================================================
+quality_standards:
+  completeness:
+    excellent: 0.95
+    good: 0.85
+    acceptable: 0.75
+    poor: 0.60
+
+  diversity:
+    excellent: 0.90
+    good: 0.80
+    acceptable: 0.70
+    poor: 0.60
+
+  granularity_thresholds:
+    ecg: 250  # minimum Hz
+    eeg: 100
+    emg: 500
+    imu: 50
+
+  required_documentation:
+    - data_dictionary
+    - collection_methodology
+    - preprocessing_steps
+    - quality_control_measures
+    - ethical_approval
+    - consent_forms
+
+# ============================================================================
+# INTEGRATION SETTINGS
+# ============================================================================
+integration:
+  cache_directory: "./ml_datasets/cache"
+  max_cache_size_gb: 500
+  auto_update_interval_days: 7
+  parallel_downloads: 5
+  chunk_size_mb: 100
+
+  database:
+    table_prefix: "ml_dataset_"
+    enable_versioning: true
+    track_lineage: true
+
+  lam_rag:
+    vector_dimension: 1536  # OpenAI ada-002
+    similarity_threshold: 0.7
+    max_retrieval_docs: 10
+    quantum_decay_lambda: 0.16905  # Lightfoot constant
+
+  monitoring:
+    enable_metrics: true
+    track_usage: true
+    alert_on_quality_degradation: true
+    min_quality_score: 0.75
