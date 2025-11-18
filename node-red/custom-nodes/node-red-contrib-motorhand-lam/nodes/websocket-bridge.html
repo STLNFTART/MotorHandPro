@@ -1,0 +1,155 @@
+<script type="text/javascript">
+    RED.nodes.registerType('websocket-bridge', {
+        category: 'MotorHandPro',
+        color: '#3FADB5',
+        defaults: {
+            name: { value: "" },
+            wsUrl: { value: "ws://host.docker.internal:8765", required: true },
+            autoReconnect: { value: true },
+            reconnectInterval: { value: 5000, validate: RED.validators.number() }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "bridge.png",
+        label: function() {
+            return this.name || "WebSocket Bridge";
+        },
+        labelStyle: function() {
+            return this.name ? "node_label_italic" : "";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="websocket-bridge">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-wsUrl"><i class="fa fa-globe"></i> WebSocket URL</label>
+        <input type="text" id="node-input-wsUrl" placeholder="ws://host.docker.internal:8765">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-autoReconnect">
+            <input type="checkbox" id="node-input-autoReconnect" style="display: inline-block; width: auto; vertical-align: top;">
+            Auto Reconnect
+        </label>
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-reconnectInterval"><i class="fa fa-clock-o"></i> Reconnect Interval (ms)</label>
+        <input type="number" id="node-input-reconnectInterval" placeholder="5000">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="websocket-bridge">
+    <p>Two-way bridge to MotorHandPro LAM WebSocket server for real-time communication.</p>
+
+    <h3>Configuration</h3>
+    <dl class="message-properties">
+        <dt>WebSocket URL <span class="property-type">string</span></dt>
+        <dd>WebSocket server URL (default: ws://host.docker.internal:8765)</dd>
+
+        <dt>Auto Reconnect <span class="property-type">boolean</span></dt>
+        <dd>Automatically reconnect on disconnect</dd>
+
+        <dt>Reconnect Interval <span class="property-type">number</span></dt>
+        <dd>Time between reconnection attempts in milliseconds</dd>
+    </dl>
+
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload <span class="property-type">object | string</span></dt>
+        <dd>Message to send to WebSocket server (objects are JSON-stringified)</dd>
+    </dl>
+
+    <h3>Outputs</h3>
+    <dl class="message-properties">
+        <dt>payload <span class="property-type">object | string</span></dt>
+        <dd>Message received from WebSocket (JSON is parsed)</dd>
+
+        <dt>topic <span class="property-type">string</span></dt>
+        <dd>Message type (from parsed JSON "type" field)</dd>
+
+        <dt>_websocket <span class="property-type">string</span></dt>
+        <dd>Always "incoming" for received messages</dd>
+    </dl>
+
+    <h3>WebSocket Message Types</h3>
+
+    <h4>Control Commands (Send)</h4>
+    <pre>
+{
+  "type": "control_command",
+  "command": "start_capture",
+  "timestamp": "2025-11-18T10:30:00Z"
+}
+
+{
+  "type": "parameter_update",
+  "data": {
+    "lambda": 0.16905,
+    "ke": 0.3,
+    "d_constant": 149.9992314
+  }
+}
+    </pre>
+
+    <h4>Visualization Updates (Receive)</h4>
+    <pre>
+{
+  "type": "visualization_update",
+  "data": {
+    "source": "PX4-Autopilot",
+    "primal_logic_analysis": {
+      "control_energy": 0.1,
+      "lipschitz_estimate": 0.5,
+      "stability_metric": 0.8
+    }
+  }
+}
+    </pre>
+
+    <h3>Example Flows</h3>
+
+    <h4>Send Control Commands</h4>
+    <pre>
+[Dashboard Button: Start]
+  → [Function: Format command]
+  → [WebSocket Bridge]
+    </pre>
+
+    <h4>Receive Telemetry</h4>
+    <pre>
+[WebSocket Bridge]
+  → [Switch: by msg.topic]
+      ├─→ visualization_update → [Dashboard Chart]
+      ├─→ parameter_update → [Debug]
+      └─→ status_update → [Database]
+    </pre>
+
+    <h4>Two-Way Communication</h4>
+    <pre>
+[MQTT In: drone/command]
+  → [WebSocket Bridge]
+  → [Switch: by type]
+      ├─→ success → [MQTT Out: drone/status]
+      └─→ error → [Email: Alert]
+    </pre>
+
+    <h3>Status Indicators</h3>
+    <ul>
+        <li><strong>Green dot</strong>: Connected and ready</li>
+        <li><strong>Yellow ring</strong>: Connecting...</li>
+        <li><strong>Red ring</strong>: Disconnected/error</li>
+    </ul>
+
+    <h3>Notes</h3>
+    <p>The WebSocket bridge maintains a persistent connection to the LAM data capture server.
+    It automatically handles reconnection if the connection is lost (when auto-reconnect is enabled).</p>
+
+    <p>For containerized deployments, use <code>host.docker.internal</code> to reach the host machine's
+    WebSocket server from within the Node-RED container.</p>
+</script>

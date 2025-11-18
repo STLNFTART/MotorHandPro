@@ -1,0 +1,185 @@
+<script type="text/javascript">
+    RED.nodes.registerType('satellite-query', {
+        category: 'MotorHandPro',
+        color: '#3FADB5',
+        defaults: {
+            name: { value: "" },
+            apiUrl: { value: "", required: false },
+            queryType: { value: "status" },
+            satelliteId: { value: "", required: false }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "bridge-dash.png",
+        label: function() {
+            return this.name || `Satellite Query (${this.queryType})`;
+        },
+        labelStyle: function() {
+            return this.name ? "node_label_italic" : "";
+        },
+        oneditprepare: function() {
+            if (!this.apiUrl) {
+                $("#node-input-apiUrl").val(window.location.protocol + "//" + window.location.hostname + ":8000");
+            }
+
+            // Show/hide satellite ID field based on query type
+            $("#node-input-queryType").on("change", function() {
+                const queryType = $(this).val();
+                if (queryType === "satellite") {
+                    $("#satellite-id-row").show();
+                } else {
+                    $("#satellite-id-row").hide();
+                }
+            }).trigger("change");
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="satellite-query">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-apiUrl"><i class="fa fa-server"></i> API URL</label>
+        <input type="text" id="node-input-apiUrl" placeholder="http://localhost:8000">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-queryType"><i class="fa fa-search"></i> Query Type</label>
+        <select id="node-input-queryType">
+            <option value="status">System Status</option>
+            <option value="satellite">Specific Satellite</option>
+            <option value="batch">Batch Query</option>
+            <option value="visible">Visible from Location</option>
+            <option value="coverage">Coverage Analysis</option>
+            <option value="constellation">Constellation Metadata</option>
+        </select>
+    </div>
+
+    <div class="form-row" id="satellite-id-row" style="display:none;">
+        <label for="node-input-satelliteId"><i class="fa fa-satellite"></i> Satellite ID</label>
+        <input type="text" id="node-input-satelliteId" placeholder="e.g., 12345">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="satellite-query">
+    <p>Query the MotorHandPro satellite constellation system.</p>
+
+    <h3>Configuration</h3>
+    <dl class="message-properties">
+        <dt>Query Type</dt>
+        <dd>Type of satellite query to perform</dd>
+
+        <dt>Satellite ID <span class="property-type">number</span></dt>
+        <dd>(For "Specific Satellite" query type) The satellite ID to query</dd>
+    </dl>
+
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt class="optional">queryType <span class="property-type">string</span></dt>
+        <dd>Override configured query type</dd>
+
+        <dt class="optional">satelliteId <span class="property-type">number</span></dt>
+        <dd>Satellite ID for single satellite query</dd>
+
+        <dt class="optional">latitude <span class="property-type">number</span></dt>
+        <dd>Latitude for visible satellites query</dd>
+
+        <dt class="optional">longitude <span class="property-type">number</span></dt>
+        <dd>Longitude for visible satellites query</dd>
+
+        <dt class="optional">altitude <span class="property-type">number</span></dt>
+        <dd>Observer altitude in km (default: 0)</dd>
+
+        <dt class="optional">payload <span class="property-type">object</span></dt>
+        <dd>For batch queries: <code>{satellite_ids: [...]}</code></dd>
+    </dl>
+
+    <h3>Outputs</h3>
+    <dl class="message-properties">
+        <dt>payload <span class="property-type">object | array</span></dt>
+        <dd>Satellite data (format depends on query type)</dd>
+
+        <dt>queryType <span class="property-type">string</span></dt>
+        <dd>The query type that was executed</dd>
+
+        <dt>responseTime <span class="property-type">number</span></dt>
+        <dd>API response time in milliseconds</dd>
+
+        <dt>satelliteCount <span class="property-type">number</span></dt>
+        <dd>Number of satellites in the response</dd>
+    </dl>
+
+    <h3>Query Types</h3>
+
+    <h4>System Status</h4>
+    <p>Returns overall constellation system status and statistics.</p>
+    <pre>
+{
+  "total_satellites": 50000,
+  "active": 49876,
+  "maneuvering": 98,
+  "deorbiting": 26,
+  "last_update": "2025-11-18T10:30:00Z"
+}
+    </pre>
+
+    <h4>Specific Satellite</h4>
+    <p>Returns detailed state for a single satellite.</p>
+    <pre>
+{
+  "satellite_id": 12345,
+  "position": [x, y, z],  // ECI coordinates
+  "velocity": [vx, vy, vz],
+  "altitude_km": 550.3,
+  "status": "active"
+}
+    </pre>
+
+    <h4>Batch Query</h4>
+    <p>Query multiple satellites at once. Send satellite IDs in payload:</p>
+    <pre>msg.payload = { "satellite_ids": [12345, 12346, 12347] }</pre>
+
+    <h4>Visible from Location</h4>
+    <p>Get satellites visible from a ground location.</p>
+    <pre>
+msg.latitude = 40.7128;  // New York City
+msg.longitude = -74.0060;
+    </pre>
+
+    <h4>Coverage Analysis</h4>
+    <p>Analyze global or regional satellite coverage.</p>
+
+    <h4>Constellation Metadata</h4>
+    <p>Get constellation configuration (shells, planes, orbital parameters).</p>
+
+    <h3>Example Flows</h3>
+
+    <h4>Monitor Satellite Position</h4>
+    <pre>
+[Inject: every 10s]
+  → [Satellite Query: satellite 12345]
+  → [Function: Extract altitude]
+  → [Dashboard Chart]
+    </pre>
+
+    <h4>Find Visible Satellites</h4>
+    <pre>
+[Inject]
+  → [Function: Set lat/lon]
+  → [Satellite Query: visible]
+  → [Template: Format list]
+  → [Debug]
+    </pre>
+
+    <h4>Coverage Alert</h4>
+    <pre>
+[Inject: every 5 min]
+  → [Satellite Query: coverage]
+  → [Function: Check coverage %]
+  → [Switch: < 95%?]
+      └─→ [Email: Low coverage alert]
+    </pre>
+</script>

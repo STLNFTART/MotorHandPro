@@ -25,6 +25,15 @@ except ImportError as e:
     print(f"Warning: LAM not fully available: {e}")
     LAM_AVAILABLE = False
 
+# Import webhook support
+try:
+    from api.webhook_routes import router as webhook_router
+    from api.webhook_manager import webhook_manager, emit_action_event, EventType
+    WEBHOOKS_AVAILABLE = True
+except ImportError as e:
+    print(f"Warning: Webhooks not available: {e}")
+    WEBHOOKS_AVAILABLE = False
+
 
 # Pydantic models
 class TripRequest(BaseModel):
@@ -74,6 +83,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Include webhook routes if available
+if WEBHOOKS_AVAILABLE:
+    app.include_router(webhook_router)
+
 # Initialize LAM
 lam_instance = None
 logger = None
@@ -93,6 +106,24 @@ async def startup_event():
     print(f"   Lightfoot constant: 0.16905")
     print(f"   Donte attractor: 149.9992314000")
     print(f"   Status: {'Ready' if lam_instance else 'Limited functionality'}")
+
+    # Start webhook manager
+    if WEBHOOKS_AVAILABLE:
+        await webhook_manager.start()
+        print(f"   Webhooks: Enabled")
+    else:
+        print(f"   Webhooks: Disabled")
+
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    """Shutdown event"""
+    print("🛑 LAM API Server shutting down...")
+
+    # Stop webhook manager
+    if WEBHOOKS_AVAILABLE:
+        await webhook_manager.stop()
+        print("   Webhooks stopped")
 
 
 @app.get("/")
@@ -263,6 +294,12 @@ async def ask_question(request: QuestionRequest, background_tasks: BackgroundTas
     try:
         answer = lam_instance.ask_question(request.question)
 
+        # Get resonance state
+        resonance_state = None
+        if hasattr(lam_instance, 'get_status'):
+            status = lam_instance.get_status()
+            resonance_state = status.get('resonance_field')
+
         if logger:
             background_tasks.add_task(
                 logger.log_action,
@@ -273,10 +310,24 @@ async def ask_question(request: QuestionRequest, background_tasks: BackgroundTas
                 {"answer": answer}
             )
 
+        # Emit webhook event
+        if WEBHOOKS_AVAILABLE:
+            background_tasks.add_task(
+                emit_action_event,
+                "ask_question",
+                "completed",
+                {
+                    "question": request.question,
+                    "answer": answer
+                },
+                resonance_state
+            )
+
         return {
             "success": True,
             "question": request.question,
             "answer": answer,
+            "resonance_state": resonance_state,
             "timestamp": datetime.now().isoformat()
         }
 
@@ -287,6 +338,19 @@ async def ask_question(request: QuestionRequest, background_tasks: BackgroundTas
                 e,
                 {"endpoint": "ask_question", "request": request.dict()}
             )
+
+        # Emit failure event
+        if WEBHOOKS_AVAILABLE:
+            background_tasks.add_task(
+                emit_action_event,
+                "ask_question",
+                "failed",
+                {
+                    "question": request.question,
+                    "error": str(e)
+                }
+            )
+
         raise HTTPException(status_code=500, detail=str(e))
 
 
