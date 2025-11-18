@@ -55,6 +55,66 @@ ml_datasets/
 - **PhysioNet Challenge Datasets**: Annual competition datasets
 - **NIST Genome in a Bottle**: High-confidence genomic benchmarks
 
+### 6. UAV & Drone Sensor Data (NEW!)
+- **MUN-FRL Dataset**: Aerial Visual-Inertial-LiDAR (DJI-M600, VLP-16, 5km flights)
+- **MARS-LVIG**: Multi-sensor Aerial SLAM (21 sequences, 577K m² coverage)
+- **Multi-LiDAR UAV Tracking**: Velodyne HDL-64 + Livox solid-state LiDARs
+- **UAVScenes**: Multi-modal aerial imagery and annotations
+
+### 7. LiDAR & Autonomous Driving (NEW!)
+- **KITTI**: 6 hours traffic, Velodyne HDL-64E, stereo cameras, GPS/IMU
+- **SemanticKITTI**: 43K scans with 28-class semantic segmentation
+- **nuScenes**: 1000 scenes, 32-beam LiDAR, 6 cameras, 5 radars, 1.4M samples
+- **Waymo Open**: 230K frames, 5 LiDARs, 5 cameras, motion prediction
+- **ApolloScape**: Baidu's 200K frames, 3D detection and tracking
+- **Audi A2D2**: 41K sequences, 5 LiDARs, 6 cameras, 2.3TB
+
+### 8. Robotics & SLAM (NEW!)
+- **TUM RGB-D**: Kinect sensor, Vicon motion capture ground truth
+- **ETH3D**: High-res stereo, laser scanner ground truth
+
+### 9. Kaggle & UCI ML Repository (50K+ Datasets via Data Concierge!) (NEW!)
+- **Kaggle**: 50,000+ datasets across all domains
+- **UCI ML Repository**: 600+ curated ML datasets
+- **Aggregate Search**: Unified discovery across all repositories
+- **Popular Datasets**: Heart Disease, Diabetes, Brain MRI, COVID-19 CT, EMG Gestures
+
+## Intelligent Data Concierge (NEW!)
+
+The **Data Concierge** is your intelligent assistant for finding the perfect dataset:
+
+```python
+from ml_datasets import DataConcierge
+
+concierge = DataConcierge()
+
+# Natural language search across ALL repositories
+recommendation = await concierge.find_datasets(
+    query="hand gesture recognition using EMG sensors",
+    domain="medical",
+    data_types=["time_series", "sensor"],
+    max_results=20,
+    include_universities=True
+)
+
+print(recommendation.recommendation_summary)
+print(f"Best match: {recommendation.best_match.title}")
+
+# Search across:
+# - Kaggle (50K+ datasets)
+# - UCI ML Repository (600+ datasets)
+# - University repositories (50+ institutions)
+# - Local curated catalog (30+ datasets)
+# - PhysioNet, NCBI, and more
+```
+
+### Data Concierge Features
+- **Natural Language Queries**: "find cardiac arrhythmia datasets with ECG signals"
+- **Multi-Repository Aggregation**: Search Kaggle, UCI, universities simultaneously
+- **Intelligent Ranking**: Combines relevance, quality, popularity, recency
+- **Task-Based Recommendations**: Get datasets for classification, regression, etc.
+- **Domain Filtering**: Medical, robotics, finance, computer vision, NLP
+
 ## Key Features
 
 ### On-Demand Loading
