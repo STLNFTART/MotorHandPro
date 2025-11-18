@@ -1,0 +1,17 @@
+# MotorHandPro Grafana Dashboards
+# Automatic provisioning of dashboards
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+apiVersion: 1
+
+providers:
+  - name: 'MotorHandPro'
+    orgId: 1
+    folder: 'MotorHandPro'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 30
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards
+      foldersFromFilesStructure: true

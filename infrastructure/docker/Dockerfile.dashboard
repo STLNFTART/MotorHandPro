@@ -1,0 +1,47 @@
+# MotorHandPro React Dashboard
+# Production-ready React dashboard with Nginx
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+# Build stage
+FROM node:20-alpine AS build
+
+LABEL maintainer="Donte Lightfoot <contact@stlnftart.com>"
+LABEL description="MotorHandPro React Dashboard"
+LABEL version="1.0.0"
+
+WORKDIR /app
+
+# Copy package files
+COPY infrastructure/dashboard/package*.json /app/
+
+# Install dependencies
+RUN npm ci
+
+# Copy application code
+COPY infrastructure/dashboard/ /app/
+
+# Build React app
+RUN npm run build
+
+# Production stage
+FROM nginx:alpine
+
+# Copy built React app
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Copy Nginx configuration
+COPY infrastructure/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY infrastructure/nginx/default.conf /etc/nginx/conf.d/default.conf
+
+# Create SSL directory
+RUN mkdir -p /etc/nginx/ssl
+
+# Expose ports
+EXPOSE 80 443
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost/ || exit 1
+
+# Run Nginx
+CMD ["nginx", "-g", "daemon off;"]

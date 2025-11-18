@@ -1,0 +1,23 @@
+# MotorHandPro LAM System Requirements
+# Python dependencies for LAM Orchestrator and Service APIs
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+# Async I/O
+asyncio>=3.4.3
+aiohttp>=3.9.1
+
+# Database
+asyncpg>=0.29.0
+
+# Messaging & Cache
+paho-mqtt>=1.6.1
+redis>=5.0.1
+
+# Docker Management
+docker>=7.0.0
+
+# Security & Cryptography
+cryptography>=41.0.7
+
+# Data Handling
+python-dotenv>=1.0.0

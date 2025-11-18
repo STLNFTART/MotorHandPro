@@ -1,0 +1,48 @@
+# MotorHandPro Grafana Datasources
+# Automatic provisioning of datasources
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+apiVersion: 1
+
+datasources:
+  # Prometheus datasource
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+    editable: true
+    jsonData:
+      timeInterval: "15s"
+      queryTimeout: "60s"
+      httpMethod: POST
+
+  # PostgreSQL / TimescaleDB datasource
+  - name: TimescaleDB
+    type: postgres
+    access: proxy
+    url: timescaledb:5432
+    database: motorhand
+    user: grafana_reader
+    isDefault: false
+    editable: true
+    secureJsonData:
+      password: 'grafana_readonly_password'
+    jsonData:
+      sslmode: 'disable'
+      maxOpenConns: 10
+      maxIdleConns: 5
+      connMaxLifetime: 14400
+      postgresVersion: 1500
+      timescaledb: true
+
+  # Optional: MQTT datasource (requires plugin)
+  # - name: MQTT
+  #   type: mqtt-datasource
+  #   access: proxy
+  #   url: tcp://mqtt:1883
+  #   editable: true
+  #   jsonData:
+  #     username: grafana
+  #   secureJsonData:
+  #     password: 'grafana_mqtt_password'

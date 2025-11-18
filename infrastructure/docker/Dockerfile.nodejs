@@ -1,0 +1,66 @@
+# MotorHandPro Node.js API Gateway
+# Production-ready Node.js container for integration gateway
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+FROM node:20-alpine
+
+LABEL maintainer="Donte Lightfoot <contact@stlnftart.com>"
+LABEL description="MotorHandPro Node.js Integration Gateway"
+LABEL version="1.0.0"
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apk add --no-cache \
+    git \
+    python3 \
+    make \
+    g++ \
+    curl
+
+# Copy package files
+COPY infrastructure/api/package*.json /app/
+
+# Install Node.js dependencies
+RUN npm ci --only=production && \
+    npm cache clean --force
+
+# Install additional production dependencies
+RUN npm install --save \
+    express@4.18.2 \
+    cors@2.8.5 \
+    helmet@7.1.0 \
+    compression@1.7.4 \
+    jsonwebtoken@9.0.2 \
+    bcryptjs@2.4.3 \
+    pg@8.11.3 \
+    mqtt@5.3.0 \
+    ws@8.15.0 \
+    axios@1.6.2 \
+    dotenv@16.3.1 \
+    prom-client@15.1.0 \
+    morgan@1.10.0 \
+    joi@17.11.0
+
+# Copy application code
+COPY infrastructure/api/ /app/
+COPY integrations/ /app/integrations/
+
+# Create directories
+RUN mkdir -p /app/logs /app/config
+
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=3000
+ENV LOG_LEVEL=info
+
+# Expose port
+EXPOSE 3000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+    CMD curl -f http://localhost:3000/health || exit 1
+
+# Run Node.js server
+CMD ["node", "server.js"]

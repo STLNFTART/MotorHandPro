@@ -1,0 +1,318 @@
+version: '3.8'
+
+# MotorHandPro Production Infrastructure
+# Comprehensive multi-service deployment with monitoring, databases, APIs, and real-time communication
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+services:
+  # 1. PostgreSQL + TimescaleDB - Time-series database for telemetry
+  timescaledb:
+    image: timescale/timescaledb:latest-pg15
+    container_name: motorhand-timescaledb
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=motorhand
+      - POSTGRES_USER=motorhand
+      - POSTGRES_PASSWORD=motorhand_secure_password_change_in_production
+      - TIMESCALEDB_TELEMETRY=off
+    volumes:
+      - timescale-data:/var/lib/postgresql/data
+      - ./infrastructure/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - motorhand-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U motorhand"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # 2. MQTT Broker - Real-time messaging
+  mqtt:
+    image: eclipse-mosquitto:2
+    container_name: motorhand-mqtt
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./infrastructure/mqtt/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./infrastructure/mqtt/passwd:/mosquitto/config/passwd
+      - mqtt-data:/mosquitto/data
+      - mqtt-logs:/mosquitto/log
+    networks:
+      - motorhand-network
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_pub -h localhost -t test -m test"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # 3. Node-RED - Workflow Orchestration
+  nodered:
+    image: nodered/node-red:latest
+    container_name: motorhand-nodered
+    ports:
+      - "1880:1880"
+    volumes:
+      - nodered-data:/data
+      - ./node-red/flows:/data/flows
+      - ./node-red/custom-nodes:/data/node_modules
+    environment:
+      - TZ=UTC
+      - NODE_RED_ENABLE_PROJECTS=true
+    networks:
+      - motorhand-network
+    depends_on:
+      - mqtt
+      - timescaledb
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:1880/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # 4. Python FastAPI - Core LAM API
+  fastapi:
+    build:
+      context: .
+      dockerfile: ./infrastructure/docker/Dockerfile.fastapi
+    image: motorhandpro/fastapi:latest
+    container_name: motorhand-fastapi
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./lam:/app/lam
+      - ./extras:/app/extras
+      - lam-data:/data/lam
+    environment:
+      - DATABASE_URL=postgresql://motorhand:motorhand_secure_password_change_in_production@timescaledb:5432/motorhand
+      - MQTT_BROKER=mqtt://mqtt:1883
+      - JWT_SECRET=change_this_secret_in_production
+      - LOG_LEVEL=INFO
+      - PYTHONUNBUFFERED=1
+    networks:
+      - motorhand-network
+    depends_on:
+      timescaledb:
+        condition: service_healthy
+      mqtt:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # 5. Node.js API - Integration Gateway
+  nodejs-api:
+    build:
+      context: .
+      dockerfile: ./infrastructure/docker/Dockerfile.nodejs
+    image: motorhandpro/nodejs-api:latest
+    container_name: motorhand-nodejs-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./infrastructure/api:/app
+      - ./integrations:/app/integrations
+    environment:
+      - DATABASE_URL=postgresql://motorhand:motorhand_secure_password_change_in_production@timescaledb:5432/motorhand
+      - MQTT_BROKER=mqtt://mqtt:1883
+      - FASTAPI_URL=http://fastapi:8000
+      - JWT_SECRET=change_this_secret_in_production
+      - NODE_ENV=production
+    networks:
+      - motorhand-network
+    depends_on:
+      - timescaledb
+      - mqtt
+      - fastapi
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # 6. React Dashboard - Web Control Panel
+  dashboard:
+    build:
+      context: .
+      dockerfile: ./infrastructure/docker/Dockerfile.dashboard
+    image: motorhandpro/dashboard:latest
+    container_name: motorhand-dashboard
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./infrastructure/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./infrastructure/nginx/ssl:/etc/nginx/ssl:ro
+    environment:
+      - REACT_APP_API_URL=http://localhost:3000
+      - REACT_APP_FASTAPI_URL=http://localhost:8000
+      - REACT_APP_MQTT_URL=ws://localhost:9001
+    networks:
+      - motorhand-network
+    depends_on:
+      - nodejs-api
+      - fastapi
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # 7. WebSocket Server - Real-time bi-directional communication
+  websocket:
+    build:
+      context: .
+      dockerfile: ./infrastructure/docker/Dockerfile.websocket
+    image: motorhandpro/websocket:latest
+    container_name: motorhand-websocket
+    ports:
+      - "8765:8765"
+    volumes:
+      - ./infrastructure/websocket:/app
+    environment:
+      - MQTT_BROKER=mqtt://mqtt:1883
+      - DATABASE_URL=postgresql://motorhand:motorhand_secure_password_change_in_production@timescaledb:5432/motorhand
+      - JWT_SECRET=change_this_secret_in_production
+    networks:
+      - motorhand-network
+    depends_on:
+      - mqtt
+      - timescaledb
+    healthcheck:
+      test: ["CMD-SHELL", "python /app/health_check.py || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # 8. Prometheus - Metrics collection
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: motorhand-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./infrastructure/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./infrastructure/prometheus/alerts:/etc/prometheus/alerts
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=30d'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    networks:
+      - motorhand-network
+    depends_on:
+      - fastapi
+      - nodejs-api
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:9090/-/healthy || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # 9. Grafana - Metrics visualization and dashboards
+  grafana:
+    image: grafana/grafana:latest
+    container_name: motorhand-grafana
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./infrastructure/grafana/provisioning:/etc/grafana/provisioning
+      - ./infrastructure/grafana/dashboards:/var/lib/grafana/dashboards
+      - grafana-data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin_change_in_production
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+    networks:
+      - motorhand-network
+    depends_on:
+      - prometheus
+      - timescaledb
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:3000/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # 10. Redis - Caching and session management
+  redis:
+    image: redis:7-alpine
+    container_name: motorhand-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes --requirepass motorhand_redis_password
+    networks:
+      - motorhand-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # 11. PgAdmin - Database management UI
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: motorhand-pgadmin
+    ports:
+      - "5050:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@motorhand.local
+      - PGADMIN_DEFAULT_PASSWORD=admin_change_in_production
+      - PGADMIN_CONFIG_SERVER_MODE=False
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    networks:
+      - motorhand-network
+    depends_on:
+      - timescaledb
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:80/misc/ping || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  timescale-data:
+    driver: local
+  mqtt-data:
+    driver: local
+  mqtt-logs:
+    driver: local
+  nodered-data:
+    driver: local
+  lam-data:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+  redis-data:
+    driver: local
+  pgadmin-data:
+    driver: local
+
+networks:
+  motorhand-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
