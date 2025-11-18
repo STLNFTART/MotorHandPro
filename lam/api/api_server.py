@@ -34,6 +34,15 @@ except ImportError as e:
     print(f"Warning: Webhooks not available: {e}")
     WEBHOOKS_AVAILABLE = False
 
+# Import research mail room
+try:
+    from api.research_routes import router as research_router
+    from research_mailroom import research_mailroom, get_all_feeds
+    RESEARCH_AVAILABLE = True
+except ImportError as e:
+    print(f"Warning: Research mail room not available: {e}")
+    RESEARCH_AVAILABLE = False
+
 
 # Pydantic models
 class TripRequest(BaseModel):
@@ -87,6 +96,10 @@ app.add_middleware(
 if WEBHOOKS_AVAILABLE:
     app.include_router(webhook_router)
 
+# Include research routes if available
+if RESEARCH_AVAILABLE:
+    app.include_router(research_router)
+
 # Initialize LAM
 lam_instance = None
 logger = None
@@ -114,6 +127,18 @@ async def startup_event():
     else:
         print(f"   Webhooks: Disabled")
 
+    # Initialize research mail room
+    if RESEARCH_AVAILABLE:
+        # Register all feeds
+        for feed in get_all_feeds():
+            research_mailroom.register_feed(feed)
+
+        # Start monitoring
+        await research_mailroom.start()
+        print(f"   Research Mail Room: Monitoring {len(get_all_feeds())} feeds")
+    else:
+        print(f"   Research Mail Room: Disabled")
+
 
 @app.on_event("shutdown")
 async def shutdown_event():
@@ -124,6 +149,11 @@ async def shutdown_event():
     if WEBHOOKS_AVAILABLE:
         await webhook_manager.stop()
         print("   Webhooks stopped")
+
+    # Stop research mail room
+    if RESEARCH_AVAILABLE:
+        await research_mailroom.stop()
+        print("   Research mail room stopped")
 
 
 @app.get("/")
