@@ -1,0 +1,115 @@
+version: '3.8'
+
+services:
+  # Node-RED - Visual workflow orchestration
+  nodered:
+    image: nodered/node-red:latest
+    container_name: motorhand-nodered
+    restart: unless-stopped
+    ports:
+      - "1880:1880"
+    volumes:
+      - nodered-data:/data
+      - ./custom-nodes:/custom-nodes:ro
+      - ./flows:/flows:ro
+      - ./settings.js:/data/settings.js:ro
+    environment:
+      - TZ=America/Chicago
+      - NODE_RED_ENABLE_PROJECTS=true
+      - LAM_API_URL=http://host.docker.internal:8000
+      - MQTT_BROKER=mqtt://mosquitto:1883
+    env_file:
+      - .env
+    networks:
+      - motorhand-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - mosquitto
+      - timescaledb
+
+  # Mosquitto MQTT Broker - IoT messaging
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: motorhand-mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - mosquitto-data:/mosquitto/data
+      - mosquitto-logs:/mosquitto/log
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./mosquitto/passwd:/mosquitto/config/passwd:ro
+    networks:
+      - motorhand-network
+
+  # TimescaleDB - Time-series database for telemetry
+  timescaledb:
+    image: timescale/timescaledb:latest-pg14
+    container_name: motorhand-timescaledb
+    restart: unless-stopped
+    ports:
+      - "5433:5432"  # Different port to avoid conflict with main PostgreSQL
+    environment:
+      - POSTGRES_DB=motorhand_telemetry
+      - POSTGRES_USER=nodered
+      - POSTGRES_PASSWORD=${TIMESCALE_PASSWORD:-changeme}
+    volumes:
+      - timescale-data:/var/lib/postgresql/data
+      - ./timescaledb/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - motorhand-network
+
+  # Grafana - Advanced visualization (optional)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: motorhand-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+    networks:
+      - motorhand-network
+    depends_on:
+      - timescaledb
+
+  # Nginx - Reverse proxy with TLS termination (optional)
+  nginx:
+    image: nginx:alpine
+    container_name: motorhand-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    networks:
+      - motorhand-network
+    depends_on:
+      - nodered
+      - grafana
+    profiles:
+      - production
+
+volumes:
+  nodered-data:
+    driver: local
+  mosquitto-data:
+    driver: local
+  mosquitto-logs:
+    driver: local
+  timescale-data:
+    driver: local
+  grafana-data:
+    driver: local
+
+networks:
+  motorhand-network:
+    driver: bridge

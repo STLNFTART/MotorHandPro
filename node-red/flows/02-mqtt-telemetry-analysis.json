@@ -1,0 +1,310 @@
+[
+    {
+        "id": "mqtt_telemetry_flow",
+        "type": "tab",
+        "label": "MQTT Telemetry Analysis",
+        "disabled": false,
+        "info": "Receives drone/sensor telemetry via MQTT, analyzes with LAM, and pushes to dashboard."
+    },
+    {
+        "id": "mqtt_in",
+        "type": "mqtt in",
+        "z": "mqtt_telemetry_flow",
+        "name": "Drone Telemetry",
+        "topic": "drone/telemetry",
+        "qos": "1",
+        "datatype": "json",
+        "broker": "mqtt_broker_config",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "validate_telemetry"
+            ]
+        ]
+    },
+    {
+        "id": "validate_telemetry",
+        "type": "function",
+        "z": "mqtt_telemetry_flow",
+        "name": "Validate & Parse",
+        "func": "// Validate incoming telemetry\nif (!msg.payload) {\n    node.warn('Empty payload received');\n    return null;\n}\n\ntry {\n    // Parse if string\n    if (typeof msg.payload === 'string') {\n        msg.payload = JSON.parse(msg.payload);\n    }\n\n    // Validate required fields\n    const required = ['altitude', 'velocity', 'position'];\n    for (const field of required) {\n        if (!(field in msg.payload)) {\n            node.error(`Missing required field: ${field}`);\n            return null;\n        }\n    }\n\n    // Store original for later\n    msg.telemetry = msg.payload;\n    msg.timestamp = new Date().toISOString();\n\n    return msg;\n\n} catch (err) {\n    node.error('Failed to parse telemetry: ' + err.message);\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "format_question",
+                "store_raw_telemetry"
+            ]
+        ]
+    },
+    {
+        "id": "format_question",
+        "type": "function",
+        "z": "mqtt_telemetry_flow",
+        "name": "Format LAM Question",
+        "func": "// Create analysis question for LAM\nconst t = msg.telemetry;\n\nmsg.payload = {\n    question: `Analyze drone flight telemetry: altitude=${t.altitude}m, velocity=${t.velocity}m/s, position=[${t.position.lat}, ${t.position.lon}]. Assess flight stability and safety. Consider weather conditions if available.`\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 100,
+        "wires": [
+            [
+                "lam_analyze"
+            ]
+        ]
+    },
+    {
+        "id": "lam_analyze",
+        "type": "lam-api-call",
+        "z": "mqtt_telemetry_flow",
+        "name": "LAM Analyze",
+        "apiUrl": "http://host.docker.internal:8000",
+        "endpoint": "/ask",
+        "method": "POST",
+        "timeout": 15000,
+        "x": 880,
+        "y": 100,
+        "wires": [
+            [
+                "extract_analysis"
+            ],
+            [
+                "analysis_error"
+            ]
+        ]
+    },
+    {
+        "id": "extract_analysis",
+        "type": "function",
+        "z": "mqtt_telemetry_flow",
+        "name": "Extract Analysis",
+        "func": "// Extract stability assessment\nconst analysis = {\n    telemetry: msg.telemetry,\n    lam_answer: msg.payload.answer,\n    resonance: msg.payload.resonance_state,\n    timestamp: msg.timestamp,\n    response_time: msg.responseTime\n};\n\n// Simple stability score based on resonance field\nanalysis.stability_score = msg.payload.resonance_state?.stable ? 1.0 : 0.5;\n\n// Check for warning keywords in answer\nconst warnings = ['unsafe', 'unstable', 'critical', 'danger'];\nanalysis.has_warnings = warnings.some(w => msg.payload.answer.toLowerCase().includes(w));\n\nmsg.payload = analysis;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "warning_check",
+                "update_dashboard"
+            ]
+        ]
+    },
+    {
+        "id": "warning_check",
+        "type": "switch",
+        "z": "mqtt_telemetry_flow",
+        "name": "Has Warnings?",
+        "property": "payload.has_warnings",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "send_warning"
+            ],
+            [
+                "log_safe"
+            ]
+        ]
+    },
+    {
+        "id": "send_warning",
+        "type": "function",
+        "z": "mqtt_telemetry_flow",
+        "name": "Format Warning",
+        "func": "msg.payload = {\n    severity: 'warning',\n    source: 'drone_telemetry',\n    title: 'Flight Instability Detected',\n    message: msg.payload.lam_answer,\n    telemetry: msg.payload.telemetry,\n    timestamp: msg.timestamp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "mqtt_alert_out",
+                "store_alert",
+                "debug_warning"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_alert_out",
+        "type": "mqtt out",
+        "z": "mqtt_telemetry_flow",
+        "name": "Alert Channel",
+        "topic": "alerts/drone",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "broker": "mqtt_broker_config",
+        "x": 930,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "debug_warning",
+        "type": "debug",
+        "z": "mqtt_telemetry_flow",
+        "name": "Warning",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "log_safe",
+        "type": "debug",
+        "z": "mqtt_telemetry_flow",
+        "name": "Safe",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "update_dashboard",
+        "type": "function",
+        "z": "mqtt_telemetry_flow",
+        "name": "Format for Dashboard",
+        "func": "// Prepare data for dashboard chart\nmsg.payload = {\n    timestamp: msg.timestamp,\n    altitude: msg.payload.telemetry.altitude,\n    velocity: msg.payload.telemetry.velocity,\n    stability_score: msg.payload.stability_score,\n    has_warnings: msg.payload.has_warnings\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "dashboard_chart",
+                "dashboard_gauge"
+            ]
+        ]
+    },
+    {
+        "id": "dashboard_chart",
+        "type": "comment",
+        "z": "mqtt_telemetry_flow",
+        "name": "TODO: Add dashboard chart node (altitude/velocity over time)",
+        "info": "Add ui_chart node from node-red-dashboard",
+        "x": 800,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "dashboard_gauge",
+        "type": "comment",
+        "z": "mqtt_telemetry_flow",
+        "name": "TODO: Add dashboard gauge (stability score)",
+        "info": "Add ui_gauge node from node-red-dashboard",
+        "x": 770,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "store_raw_telemetry",
+        "type": "comment",
+        "z": "mqtt_telemetry_flow",
+        "name": "TODO: Store to TimescaleDB (motorhand.motor_telemetry)",
+        "info": "Add PostgreSQL node for time-series storage",
+        "x": 740,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "store_alert",
+        "type": "comment",
+        "z": "mqtt_telemetry_flow",
+        "name": "TODO: Store to TimescaleDB (motorhand.alert_history)",
+        "info": "Add PostgreSQL node for alert logging",
+        "x": 1130,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "analysis_error",
+        "type": "debug",
+        "z": "mqtt_telemetry_flow",
+        "name": "LAM Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "mqtt_broker_config",
+        "type": "mqtt-broker",
+        "name": "Local Mosquitto",
+        "broker": "mosquitto",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]

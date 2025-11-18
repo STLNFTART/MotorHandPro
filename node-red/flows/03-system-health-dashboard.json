@@ -1,0 +1,323 @@
+[
+    {
+        "id": "health_dashboard_flow",
+        "type": "tab",
+        "label": "System Health Dashboard",
+        "disabled": false,
+        "info": "Real-time LAM system health monitoring with auto-scaling alerts."
+    },
+    {
+        "id": "poll_status",
+        "type": "inject",
+        "z": "health_dashboard_flow",
+        "name": "Every 10s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "get_lam_status"
+            ]
+        ]
+    },
+    {
+        "id": "get_lam_status",
+        "type": "lam-status",
+        "z": "health_dashboard_flow",
+        "name": "LAM Status",
+        "apiUrl": "http://host.docker.internal:8000",
+        "interval": 0,
+        "includeMetrics": true,
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "process_status"
+            ]
+        ]
+    },
+    {
+        "id": "process_status",
+        "type": "function",
+        "z": "health_dashboard_flow",
+        "name": "Process Status",
+        "func": "// Extract key metrics\nconst rf = msg.payload.resonance_field;\nconst metrics = msg.payload.metrics || {};\n\n// Calculate health score (0-100)\nlet health_score = 100;\n\n// Penalize for resonance field instability\nif (!rf.stable) {\n    health_score -= 30;\n}\n\n// Check alpha bounds (0.52-0.56)\nif (rf.alpha < 0.52 || rf.alpha > 0.56) {\n    health_score -= 20;\n}\n\n// Check lambda bounds (0.11-0.12)\nif (rf.lambda < 0.11 || rf.lambda > 0.12) {\n    health_score -= 20;\n}\n\n// Check Lipschitz constant\nif (rf.lipschitz_constant >= 1.0) {\n    health_score -= 40;  // Critical stability issue\n}\n\n// Calculate success rate if metrics available\nlet success_rate = 1.0;\nif (metrics.actions_total > 0) {\n    success_rate = metrics.actions_success / metrics.actions_total;\n    if (success_rate < 0.95) {\n        health_score -= (1.0 - success_rate) * 100;\n    }\n}\n\nhealth_score = Math.max(0, health_score);\n\n// Determine status level\nlet status_level = 'healthy';\nif (health_score < 50) {\n    status_level = 'critical';\n} else if (health_score < 80) {\n    status_level = 'warning';\n}\n\nmsg.payload = {\n    health_score: health_score,\n    status_level: status_level,\n    resonance_field: rf,\n    metrics: metrics,\n    success_rate: success_rate,\n    action_count: msg.payload.action_count,\n    timestamp: msg.payload.timestamp\n};\n\n// Store in flow context for trending\nconst history = flow.get('health_history') || [];\nhistory.push({\n    timestamp: msg.payload.timestamp,\n    score: health_score,\n    status: status_level\n});\n\n// Keep only last 100 readings (for charts)\nif (history.length > 100) {\n    history.shift();\n}\n\nflow.set('health_history', history);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "status_switch",
+                "update_gauges",
+                "update_chart"
+            ]
+        ]
+    },
+    {
+        "id": "status_switch",
+        "type": "switch",
+        "z": "health_dashboard_flow",
+        "name": "Status Level",
+        "property": "payload.status_level",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "critical",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "warning",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "healthy",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 750,
+        "y": 100,
+        "wires": [
+            [
+                "critical_alert"
+            ],
+            [
+                "warning_log"
+            ],
+            [
+                "healthy_log"
+            ]
+        ]
+    },
+    {
+        "id": "critical_alert",
+        "type": "function",
+        "z": "health_dashboard_flow",
+        "name": "Format Critical Alert",
+        "func": "const status = msg.payload;\n\n// Check if alert was already sent recently (debounce)\nconst last_alert = flow.get('last_critical_alert') || 0;\nconst now = Date.now();\n\nif (now - last_alert < 300000) {  // 5 minutes\n    // Don't send duplicate alerts\n    return null;\n}\n\nflow.set('last_critical_alert', now);\n\nmsg.payload = {\n    severity: 'critical',\n    source: 'lam_health_monitor',\n    title: '🚨 LAM System Health Critical',\n    message: `Health score: ${status.health_score.toFixed(1)}%\\n\\nResonance Field:\\n- Alpha: ${status.resonance_field.alpha.toFixed(4)}\\n- Lambda: ${status.resonance_field.lambda.toFixed(4)}\\n- Stable: ${status.resonance_field.stable}\\n\\nSuccess Rate: ${(status.success_rate * 100).toFixed(2)}%\\nAction Count: ${status.action_count}`,\n    timestamp: status.timestamp\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 60,
+        "wires": [
+            [
+                "send_email",
+                "send_slack",
+                "log_critical"
+            ]
+        ]
+    },
+    {
+        "id": "send_email",
+        "type": "comment",
+        "z": "health_dashboard_flow",
+        "name": "TODO: Email alert node",
+        "info": "",
+        "x": 1230,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "send_slack",
+        "type": "comment",
+        "z": "health_dashboard_flow",
+        "name": "TODO: Slack webhook node",
+        "info": "",
+        "x": 1240,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "log_critical",
+        "type": "debug",
+        "z": "health_dashboard_flow",
+        "name": "CRITICAL",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "warning_log",
+        "type": "debug",
+        "z": "health_dashboard_flow",
+        "name": "WARNING",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "healthy_log",
+        "type": "debug",
+        "z": "health_dashboard_flow",
+        "name": "HEALTHY",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.health_score",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "update_gauges",
+        "type": "function",
+        "z": "health_dashboard_flow",
+        "name": "Prepare Gauges",
+        "func": "// Prepare separate messages for different gauges\nconst status = msg.payload;\n\n// Health score gauge (0-100)\nconst health_msg = {\n    payload: status.health_score,\n    topic: 'health_score'\n};\n\n// Success rate gauge (0-100)\nconst success_msg = {\n    payload: status.success_rate * 100,\n    topic: 'success_rate'\n};\n\n// Alpha gauge (0.52-0.56 mapped to 0-100)\nconst alpha_normalized = ((status.resonance_field.alpha - 0.52) / 0.04) * 100;\nconst alpha_msg = {\n    payload: alpha_normalized,\n    topic: 'resonance_alpha'\n};\n\nreturn [health_msg, success_msg, alpha_msg];",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 200,
+        "wires": [
+            [
+                "gauge_health"
+            ],
+            [
+                "gauge_success"
+            ],
+            [
+                "gauge_alpha"
+            ]
+        ]
+    },
+    {
+        "id": "gauge_health",
+        "type": "comment",
+        "z": "health_dashboard_flow",
+        "name": "TODO: Health Score Gauge (0-100, red<50, yellow<80, green≥80)",
+        "info": "",
+        "x": 1110,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "gauge_success",
+        "type": "comment",
+        "z": "health_dashboard_flow",
+        "name": "TODO: Success Rate Gauge (0-100%, red<90, yellow<95, green≥95)",
+        "info": "",
+        "x": 1130,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "gauge_alpha",
+        "type": "comment",
+        "z": "health_dashboard_flow",
+        "name": "TODO: Resonance Alpha Gauge (normalized 0-100, target=50)",
+        "info": "",
+        "x": 1110,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "update_chart",
+        "type": "function",
+        "z": "health_dashboard_flow",
+        "name": "Prepare Chart Data",
+        "func": "// Get history from flow context\nconst history = flow.get('health_history') || [];\n\n// Prepare data series for chart\nconst chart_data = [\n    {\n        series: ['Health Score'],\n        data: [history.map(h => ({x: h.timestamp, y: h.score}))],\n        labels: ['Health %']\n    }\n];\n\nmsg.payload = chart_data;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "chart_trends"
+            ]
+        ]
+    },
+    {
+        "id": "chart_trends",
+        "type": "comment",
+        "z": "health_dashboard_flow",
+        "name": "TODO: Line Chart - Health Score Over Time (last 100 readings)",
+        "info": "",
+        "x": 1100,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "manual_trigger",
+        "type": "inject",
+        "z": "health_dashboard_flow",
+        "name": "Manual Check",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "get_lam_status"
+            ]
+        ]
+    },
+    {
+        "id": "system_info",
+        "type": "comment",
+        "z": "health_dashboard_flow",
+        "name": "System Health Monitor - Polls LAM every 10s, displays gauges, charts, and sends alerts",
+        "info": "## Configuration Required\n\n1. Install node-red-dashboard:\n   ```\n   npm install node-red-dashboard\n   ```\n\n2. Add Dashboard Nodes:\n   - Replace gauge comments with ui_gauge nodes\n   - Replace chart comment with ui_chart node\n\n3. Configure Alerts:\n   - Add email node for critical alerts\n   - Add slack webhook node (optional)\n\n4. Dashboard Access:\n   - http://localhost:1880/ui",
+        "x": 360,
+        "y": 40,
+        "wires": []
+    }
+]

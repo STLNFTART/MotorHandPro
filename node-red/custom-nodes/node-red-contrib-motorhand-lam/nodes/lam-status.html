@@ -1,0 +1,155 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lam-status', {
+        category: 'MotorHandPro',
+        color: '#3FADB5',
+        defaults: {
+            name: { value: "" },
+            apiUrl: { value: "", required: false },
+            interval: { value: 0, validate: RED.validators.number() },
+            includeMetrics: { value: true }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "status.png",
+        label: function() {
+            if (this.name) {
+                return this.name;
+            } else if (this.interval > 0) {
+                return `LAM Status (every ${this.interval}ms)`;
+            } else {
+                return "LAM Status";
+            }
+        },
+        labelStyle: function() {
+            return this.name ? "node_label_italic" : "";
+        },
+        oneditprepare: function() {
+            if (!this.apiUrl) {
+                $("#node-input-apiUrl").val(window.location.protocol + "//" + window.location.hostname + ":8000");
+            }
+
+            // Show/hide interval-related UI
+            $("#node-input-interval").on("change", function() {
+                const val = parseInt($(this).val());
+                if (val > 0) {
+                    $("#interval-info").show();
+                } else {
+                    $("#interval-info").hide();
+                }
+            }).trigger("change");
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="lam-status">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-apiUrl"><i class="fa fa-server"></i> API URL</label>
+        <input type="text" id="node-input-apiUrl" placeholder="http://localhost:8000">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-interval"><i class="fa fa-repeat"></i> Poll Interval (ms)</label>
+        <input type="number" id="node-input-interval" placeholder="0 = manual only" min="0">
+    </div>
+
+    <div class="form-row" id="interval-info" style="display:none;">
+        <div class="form-tips">
+            <strong>Tip:</strong> Setting an interval enables automatic polling. Set to 0 to poll only on input.
+        </div>
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-includeMetrics">
+            <input type="checkbox" id="node-input-includeMetrics" style="display: inline-block; width: auto; vertical-align: top;">
+            Include Metrics
+        </label>
+    </div>
+</script>
+
+<script type="text/html" data-help-name="lam-status">
+    <p>Retrieves MotorHandPro LAM system status including quantum resonance field state.</p>
+
+    <h3>Configuration</h3>
+    <dl class="message-properties">
+        <dt>API URL <span class="property-type">string</span></dt>
+        <dd>LAM API base URL (default: http://localhost:8000)</dd>
+
+        <dt>Poll Interval <span class="property-type">number</span></dt>
+        <dd>Auto-poll interval in milliseconds (0 = manual trigger only)</dd>
+
+        <dt>Include Metrics <span class="property-type">boolean</span></dt>
+        <dd>Also fetch performance metrics (action counts, response times)</dd>
+    </dl>
+
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload <span class="property-type">any</span></dt>
+        <dd>Trigger status fetch (payload is ignored)</dd>
+    </dl>
+
+    <h3>Outputs</h3>
+    <dl class="message-properties">
+        <dt>payload.status <span class="property-type">string</span></dt>
+        <dd>System status ("ok", "degraded", etc.)</dd>
+
+        <dt>payload.resonance_field <span class="property-type">object</span></dt>
+        <dd>Quantum resonance field state</dd>
+
+        <dt>payload.resonance_field.alpha <span class="property-type">number</span></dt>
+        <dd>Temporal weighting parameter (bounds: 0.52-0.56)</dd>
+
+        <dt>payload.resonance_field.lambda <span class="property-type">number</span></dt>
+        <dd>Memory decay parameter (bounds: 0.11-0.12)</dd>
+
+        <dt>payload.resonance_field.stable <span class="property-type">boolean</span></dt>
+        <dd>Stability status</dd>
+
+        <dt>payload.resonance_field.lipschitz_constant <span class="property-type">number</span></dt>
+        <dd>Lipschitz constant (stability guarantee)</dd>
+
+        <dt>payload.action_count <span class="property-type">number</span></dt>
+        <dd>Total actions executed (epoch)</dd>
+
+        <dt class="optional">payload.metrics <span class="property-type">object</span></dt>
+        <dd>Performance metrics (if includeMetrics is true)</dd>
+
+        <dt>payload.timestamp <span class="property-type">string</span></dt>
+        <dd>ISO 8601 timestamp of status fetch</dd>
+    </dl>
+
+    <h3>Details</h3>
+    <p>This node provides real-time access to the LAM system's quantum resonance field state,
+    which governs the Primal Logic control framework.</p>
+
+    <h4>Resonance Field Parameters</h4>
+    <ul>
+        <li><strong>alpha (α)</strong>: Temporal weighting in [0.52, 0.56]</li>
+        <li><strong>lambda (λ)</strong>: Memory decay in [0.11, 0.12]</li>
+        <li><strong>lightfoot_constant</strong>: Exponential decay rate (0.16905)</li>
+        <li><strong>donte_attractor</strong>: Fixed-point attractor (149.9992314)</li>
+        <li><strong>lipschitz_constant</strong>: Stability guarantee (&lt; 1.0)</li>
+    </ul>
+
+    <h4>Stability Monitoring</h4>
+    <p>The node's visual status indicator shows:</p>
+    <ul>
+        <li><strong>Green dot</strong>: System stable</li>
+        <li><strong>Yellow dot</strong>: System unstable (parameters drifting)</li>
+        <li><strong>Red ring</strong>: Connection error</li>
+    </ul>
+
+    <h3>Example Flow</h3>
+    <pre>
+[Inject: every 10s]
+  → [LAM Status]
+  → [Function: Check Stability]
+  → [Switch: stable?]
+      ├─→ [Debug: OK]
+      └─→ [Email: Alert Unstable]
+    </pre>
+</script>

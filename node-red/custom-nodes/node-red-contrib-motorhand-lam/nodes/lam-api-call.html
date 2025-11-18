@@ -1,0 +1,159 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lam-api-call', {
+        category: 'MotorHandPro',
+        color: '#3FADB5',
+        defaults: {
+            name: { value: "" },
+            apiUrl: { value: "", required: false },
+            endpoint: { value: "/status", required: true },
+            method: { value: "POST" },
+            timeout: { value: 30000 }
+        },
+        inputs: 1,
+        outputs: 2,
+        outputLabels: ["success", "error"],
+        icon: "bridge.png",
+        label: function() {
+            return this.name || `LAM ${this.method} ${this.endpoint}`;
+        },
+        labelStyle: function() {
+            return this.name ? "node_label_italic" : "";
+        },
+        oneditprepare: function() {
+            // Set default API URL from environment
+            if (!this.apiUrl) {
+                $("#node-input-apiUrl").val(window.location.protocol + "//" + window.location.hostname + ":8000");
+            }
+
+            // Populate endpoint dropdown with common endpoints
+            $("#node-input-endpoint").autocomplete({
+                source: [
+                    "/health",
+                    "/status",
+                    "/trip/plan",
+                    "/reservation/make",
+                    "/food/order",
+                    "/ask",
+                    "/task",
+                    "/metrics",
+                    "/api/status",
+                    "/api/satellite/{id}",
+                    "/api/satellites/batch",
+                    "/api/visible",
+                    "/api/coverage",
+                    "/api/constellation"
+                ],
+                minLength: 0
+            }).focus(function() {
+                $(this).autocomplete("search", "");
+            });
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="lam-api-call">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-apiUrl"><i class="fa fa-server"></i> API URL</label>
+        <input type="text" id="node-input-apiUrl" placeholder="http://localhost:8000">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-method"><i class="fa fa-tasks"></i> Method</label>
+        <select id="node-input-method">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-endpoint"><i class="fa fa-link"></i> Endpoint</label>
+        <input type="text" id="node-input-endpoint" placeholder="/status">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-timeout"><i class="fa fa-clock-o"></i> Timeout (ms)</label>
+        <input type="number" id="node-input-timeout" placeholder="30000">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="lam-api-call">
+    <p>Makes HTTP requests to MotorHandPro LAM API endpoints.</p>
+
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload <span class="property-type">object</span></dt>
+        <dd>Request body for POST/PUT requests</dd>
+
+        <dt class="optional">endpoint <span class="property-type">string</span></dt>
+        <dd>Override configured endpoint</dd>
+
+        <dt class="optional">query <span class="property-type">object</span></dt>
+        <dd>Query parameters for GET requests</dd>
+
+        <dt class="optional">headers <span class="property-type">object</span></dt>
+        <dd>Additional HTTP headers</dd>
+    </dl>
+
+    <h3>Outputs</h3>
+    <ol class="node-ports">
+        <li>Success Output
+            <dl class="message-properties">
+                <dt>payload <span class="property-type">object</span></dt>
+                <dd>API response data</dd>
+
+                <dt>statusCode <span class="property-type">number</span></dt>
+                <dd>HTTP status code</dd>
+
+                <dt>responseTime <span class="property-type">number</span></dt>
+                <dd>Response time in milliseconds</dd>
+            </dl>
+        </li>
+        <li>Error Output
+            <dl class="message-properties">
+                <dt>error <span class="property-type">object</span></dt>
+                <dd>Error details including message, code, and API response</dd>
+            </dl>
+        </li>
+    </ol>
+
+    <h3>Details</h3>
+    <p>This node makes HTTP requests to the MotorHandPro LAM API. Common endpoints include:</p>
+    <ul>
+        <li><code>/health</code> - Health check</li>
+        <li><code>/status</code> - System status with resonance field</li>
+        <li><code>/trip/plan</code> - Plan trips</li>
+        <li><code>/ask</code> - Ask questions</li>
+        <li><code>/task</code> - Execute tasks</li>
+        <li><code>/api/satellite/{id}</code> - Query satellite by ID</li>
+        <li><code>/api/visible</code> - Get visible satellites</li>
+    </ul>
+
+    <h3>Examples</h3>
+    <h4>Get LAM Status</h4>
+    <pre>
+Method: GET
+Endpoint: /status
+Payload: (empty)
+    </pre>
+
+    <h4>Ask Question</h4>
+    <pre>
+Method: POST
+Endpoint: /ask
+Payload: { "question": "What is the satellite coverage over New York?" }
+    </pre>
+
+    <h4>Query Satellite</h4>
+    <pre>
+Method: GET
+Endpoint: /api/satellite/12345
+Payload: (empty)
+    </pre>
+</script>

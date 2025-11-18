@@ -1,0 +1,44 @@
+{
+  "name": "node-red-contrib-motorhand-lam",
+  "version": "1.0.0",
+  "description": "Node-RED nodes for MotorHandPro LAM API integration",
+  "author": "MotorHandPro Team",
+  "license": "MIT",
+  "keywords": [
+    "node-red",
+    "motorhandpro",
+    "lam",
+    "satellite",
+    "quantum",
+    "primal-logic"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/STLNFTART/MotorHandPro.git"
+  },
+  "node-red": {
+    "version": ">=2.0.0",
+    "nodes": {
+      "lam-api-call": "nodes/lam-api-call.js",
+      "lam-status": "nodes/lam-status.js",
+      "satellite-query": "nodes/satellite-query.js",
+      "websocket-bridge": "nodes/websocket-bridge.js",
+      "experiment-tracker": "nodes/experiment-tracker.js"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ws": "^8.14.0"
+  },
+  "devDependencies": {
+    "node-red": "^3.1.0",
+    "node-red-node-test-helper": "^0.3.0"
+  },
+  "scripts": {
+    "test": "mocha test/**/*_spec.js",
+    "lint": "eslint nodes/**/*.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

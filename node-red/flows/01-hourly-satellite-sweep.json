@@ -1,0 +1,298 @@
+[
+    {
+        "id": "satellite_sweep_flow",
+        "type": "tab",
+        "label": "Hourly Satellite Sweep",
+        "disabled": false,
+        "info": "Automated hourly satellite configuration sweep.\nTests 5 satellite configurations every hour and aggregates results."
+    },
+    {
+        "id": "inject_hourly",
+        "type": "inject",
+        "z": "satellite_sweep_flow",
+        "name": "Every Hour",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "generate_configs"
+            ]
+        ]
+    },
+    {
+        "id": "generate_configs",
+        "type": "function",
+        "z": "satellite_sweep_flow",
+        "name": "Generate Configs",
+        "func": "// Define satellite configurations to test\nmsg.configs = [\n    { altitude: 550, inclination: 53.0, shell: 1 },\n    { altitude: 540, inclination: 53.2, shell: 2 },\n    { altitude: 570, inclination: 70.0, shell: 3 },\n    { altitude: 560, inclination: 97.6, shell: 4 },\n    { altitude: 340, inclination: 42.0, shell: 5 }\n];\n\nmsg.sweep_id = `sweep_${Date.now()}`;\nmsg.start_time = new Date().toISOString();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 100,
+        "wires": [
+            [
+                "split_configs"
+            ]
+        ]
+    },
+    {
+        "id": "split_configs",
+        "type": "split",
+        "z": "satellite_sweep_flow",
+        "name": "Split Configs",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "format_query"
+            ]
+        ]
+    },
+    {
+        "id": "format_query",
+        "type": "function",
+        "z": "satellite_sweep_flow",
+        "name": "Format Query",
+        "func": "// Format as LAM question\nconst config = msg.payload;\n\nmsg.payload = {\n    question: `Analyze satellite constellation at altitude ${config.altitude}km with inclination ${config.inclination}° for orbital stability and coverage.`\n};\n\nmsg.config = config;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 100,
+        "wires": [
+            [
+                "lam_ask"
+            ]
+        ]
+    },
+    {
+        "id": "lam_ask",
+        "type": "lam-api-call",
+        "z": "satellite_sweep_flow",
+        "name": "LAM Ask",
+        "apiUrl": "http://host.docker.internal:8000",
+        "endpoint": "/ask",
+        "method": "POST",
+        "timeout": 30000,
+        "x": 940,
+        "y": 100,
+        "wires": [
+            [
+                "extract_results"
+            ],
+            [
+                "log_error"
+            ]
+        ]
+    },
+    {
+        "id": "extract_results",
+        "type": "function",
+        "z": "satellite_sweep_flow",
+        "name": "Extract Results",
+        "func": "// Extract key metrics from LAM response\nconst result = {\n    sweep_id: msg.sweep_id,\n    config: msg.config,\n    answer: msg.payload.answer,\n    resonance_alpha: msg.payload.resonance_state?.alpha,\n    resonance_lambda: msg.payload.resonance_state?.lambda,\n    response_time: msg.responseTime,\n    timestamp: new Date().toISOString()\n};\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "join_results"
+            ]
+        ]
+    },
+    {
+        "id": "join_results",
+        "type": "join",
+        "z": "satellite_sweep_flow",
+        "name": "Join Results",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "calculate_summary"
+            ]
+        ]
+    },
+    {
+        "id": "calculate_summary",
+        "type": "function",
+        "z": "satellite_sweep_flow",
+        "name": "Calculate Summary",
+        "func": "// Aggregate results\nconst results = msg.payload;\n\nconst summary = {\n    sweep_id: results[0].sweep_id,\n    start_time: msg.start_time,\n    end_time: new Date().toISOString(),\n    total_configs: results.length,\n    avg_response_time: results.reduce((sum, r) => sum + r.response_time, 0) / results.length,\n    avg_alpha: results.reduce((sum, r) => sum + r.resonance_alpha, 0) / results.length,\n    avg_lambda: results.reduce((sum, r) => sum + r.resonance_lambda, 0) / results.length,\n    results: results\n};\n\n// Check for anomalies\nsummary.anomalies = results.filter(r => r.response_time > 5000 || r.resonance_alpha < 0.52 || r.resonance_alpha > 0.56);\nsummary.has_anomalies = summary.anomalies.length > 0;\n\nmsg.payload = summary;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 200,
+        "wires": [
+            [
+                "anomaly_check",
+                "store_results"
+            ]
+        ]
+    },
+    {
+        "id": "anomaly_check",
+        "type": "switch",
+        "z": "satellite_sweep_flow",
+        "name": "Has Anomalies?",
+        "property": "payload.has_anomalies",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 880,
+        "y": 200,
+        "wires": [
+            [
+                "send_alert"
+            ],
+            [
+                "log_ok"
+            ]
+        ]
+    },
+    {
+        "id": "send_alert",
+        "type": "function",
+        "z": "satellite_sweep_flow",
+        "name": "Format Alert",
+        "func": "const summary = msg.payload;\n\nmsg.payload = {\n    subject: `[ALERT] Satellite Sweep Anomalies Detected`,\n    body: `Sweep ID: ${summary.sweep_id}\\n\\nAnomalies found: ${summary.anomalies.length}\\n\\nDetails:\\n${JSON.stringify(summary.anomalies, null, 2)}`\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "email_alert",
+                "debug_alert"
+            ]
+        ]
+    },
+    {
+        "id": "email_alert",
+        "type": "comment",
+        "z": "satellite_sweep_flow",
+        "name": "TODO: Configure email node here",
+        "info": "Add email node with SMTP settings",
+        "x": 410,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "debug_alert",
+        "type": "debug",
+        "z": "satellite_sweep_flow",
+        "name": "Alert",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "log_ok",
+        "type": "debug",
+        "z": "satellite_sweep_flow",
+        "name": "OK",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "store_results",
+        "type": "comment",
+        "z": "satellite_sweep_flow",
+        "name": "TODO: Add PostgreSQL/TimescaleDB storage",
+        "info": "Add database node to store results",
+        "x": 930,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "log_error",
+        "type": "debug",
+        "z": "satellite_sweep_flow",
+        "name": "Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 140,
+        "wires": []
+    }
+]
