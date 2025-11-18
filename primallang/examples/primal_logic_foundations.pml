@@ -47,9 +47,7 @@ print("   Converged value: ")
 print(R_converged)
 
 // Meta-constraint: Verify convergence to golden ratio region
-meta => (
-  (R_converged > 0.5 and R_converged < 0.8) implies true
-)
+meta => ((R_converged > 0.5 and R_converged < 0.8) implies true)
 
 print("   ✓ Verified: Converges to golden ratio region\n")
 
@@ -105,10 +103,12 @@ define alpha_feedback(delta_x, gain) {
   // Saturate to ensure Lipschitz continuity
   if feedback > 1.0 then {
     return 1.0
-  } else if feedback < -1.0 then {
-    return -1.0
   } else {
-    return feedback
+    if feedback < -1.0 then {
+      return -1.0
+    } else {
+      return feedback
+    }
   }
 }
 
@@ -162,9 +162,7 @@ print("   Change: ")
 print(d_psi_dt * DT)
 
 // Meta-constraint: Control signal remains bounded
-meta => (
-  (abs(psi_next) < 10.0) implies true
-)
+meta => ((abs(psi_next) < 10.0) implies true)
 
 print("   ✓ Verified: Control signal bounded\n")
 

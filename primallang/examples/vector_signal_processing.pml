@@ -62,9 +62,7 @@ print("\nNormalized correlation: ")
 print(normalized_corr)
 
 // Meta-constraint: Verify normalized correlation is in [-1, 1]
-meta => (
-  (normalized_corr >= -1.0 and normalized_corr <= 1.0) implies true
-)
+meta => ((normalized_corr >= -1.0 and normalized_corr <= 1.0) implies true)
 
 print("\n✓ Signal processing verified: Correlation within valid bounds")
 
