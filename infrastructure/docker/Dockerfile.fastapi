@@ -1,0 +1,72 @@
+# MotorHandPro FastAPI Service
+# Production-ready FastAPI container for LAM core API
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+FROM python:3.11-slim
+
+LABEL maintainer="Donte Lightfoot <contact@stlnftart.com>"
+LABEL description="MotorHandPro FastAPI Core Service"
+LABEL version="1.0.0"
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    build-essential \
+    libpq-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements files
+COPY requirements.txt /app/requirements.txt
+COPY lam/requirements.txt /app/lam/requirements.txt
+
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r /app/requirements.txt && \
+    pip install --no-cache-dir -r /app/lam/requirements.txt
+
+# Install additional production dependencies
+RUN pip install --no-cache-dir \
+    fastapi==0.104.1 \
+    uvicorn[standard]==0.24.0 \
+    pydantic==2.5.0 \
+    pydantic-settings==2.1.0 \
+    python-jose[cryptography]==3.3.0 \
+    passlib[bcrypt]==1.7.4 \
+    python-multipart==0.0.6 \
+    psycopg2-binary==2.9.9 \
+    sqlalchemy==2.0.23 \
+    alembic==1.13.0 \
+    paho-mqtt==1.6.1 \
+    prometheus-client==0.19.0 \
+    python-dotenv==1.0.0 \
+    aiohttp==3.9.1 \
+    asyncpg==0.29.0 \
+    redis==5.0.1
+
+# Copy application code
+COPY lam/ /app/lam/
+COPY extras/ /app/extras/
+COPY infrastructure/api/fastapi_server.py /app/fastapi_server.py
+
+# Create data directories
+RUN mkdir -p /data/lam/config /data/lam/logs /data/lam/experiments /data/lam/telemetry
+
+# Set environment variables
+ENV PYTHONPATH=/app
+ENV LAM_DATA_DIR=/data/lam
+ENV LOG_LEVEL=INFO
+ENV PYTHONUNBUFFERED=1
+
+# Expose port
+EXPOSE 8000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+# Run FastAPI with uvicorn
+CMD ["uvicorn", "fastapi_server:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]

@@ -1,0 +1,105 @@
+# MotorHandPro Prometheus Configuration
+# Metrics collection and alerting
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+global:
+  scrape_interval: 15s # Default scrape interval
+  evaluation_interval: 15s # Evaluate rules every 15s
+  external_labels:
+    cluster: 'motorhand-production'
+    replica: '1'
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+          # - alertmanager:9093
+
+# Load rules once and periodically evaluate them
+rule_files:
+  - "/etc/prometheus/alerts/*.yml"
+
+# Scrape configurations
+scrape_configs:
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # FastAPI metrics
+  - job_name: 'fastapi'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['fastapi:8000']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'fastapi'
+
+  # Node.js API metrics
+  - job_name: 'nodejs-api'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['nodejs-api:3000']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'nodejs-api'
+
+  # PostgreSQL / TimescaleDB exporter
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['timescaledb:5432']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'timescaledb'
+
+  # MQTT Broker metrics (if exporter is available)
+  - job_name: 'mqtt'
+    static_configs:
+      - targets: ['mqtt:9001']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'mqtt'
+
+  # Node-RED metrics (if available)
+  - job_name: 'nodered'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['nodered:1880']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'nodered'
+
+  # WebSocket server metrics
+  - job_name: 'websocket'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['websocket:8765']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'websocket'
+
+  # Redis metrics (if exporter is available)
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'redis'
+
+  # Dashboard (Nginx) metrics
+  - job_name: 'dashboard'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['dashboard:80']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'dashboard'

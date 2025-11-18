@@ -1,0 +1,106 @@
+# MotorHandPro Alert Rules
+# Prometheus alerting rules for production monitoring
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+groups:
+  - name: motorhand_critical
+    interval: 30s
+    rules:
+      # Service availability alerts
+      - alert: ServiceDown
+        expr: up{job=~"fastapi|nodejs-api|websocket"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Service {{ $labels.job }} is down"
+          description: "{{ $labels.job }} on {{ $labels.instance }} has been down for more than 1 minute."
+
+      - alert: DatabaseDown
+        expr: up{job="postgres"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "PostgreSQL database is down"
+          description: "TimescaleDB is unreachable. All data ingestion is stopped."
+
+      # Performance alerts
+      - alert: HighAPILatency
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{job=~"fastapi|nodejs-api"}[5m])) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High API latency detected"
+          description: "95th percentile latency for {{ $labels.job }} is {{ $value }}s (threshold: 100ms)."
+
+      - alert: LipschitzStabilityViolation
+        expr: motorhand_lipschitz_constant > 1.0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Lipschitz stability bound violated"
+          description: "System Lipschitz constant L = {{ $value }} exceeds stability threshold of 1.0. AGP may be unstable!"
+
+      # Resource utilization alerts
+      - alert: HighCPUUsage
+        expr: rate(process_cpu_seconds_total{job=~"fastapi|nodejs-api"}[5m]) > 0.8
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "{{ $labels.job }} CPU usage is {{ $value | humanizePercentage }} for 5 minutes."
+
+      - alert: HighMemoryUsage
+        expr: process_resident_memory_bytes{job=~"fastapi|nodejs-api"} / 1e9 > 2
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "{{ $labels.job }} is using {{ $value }}GB of memory."
+
+  - name: motorhand_warnings
+    interval: 1m
+    rules:
+      # Data quality alerts
+      - alert: TelemetryDataGap
+        expr: rate(motorhand_telemetry_points_total[5m]) == 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "No telemetry data received"
+          description: "No telemetry points received for {{ $labels.spacecraft_id }} in the last 2 minutes."
+
+      - alert: SensorQualityDegraded
+        expr: avg(motorhand_sensor_quality) < 90
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Sensor data quality degraded"
+          description: "Average sensor quality is {{ $value }}% (threshold: 90%)."
+
+      # Integration health
+      - alert: IntegrationError
+        expr: rate(motorhand_integration_errors_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High integration error rate"
+          description: "Integration {{ $labels.integration }} is experiencing {{ $value }} errors/sec."
+
+      # Experiment monitoring
+      - alert: ExperimentFailed
+        expr: motorhand_experiment_status{status="failed"} > 0
+        for: 1m
+        labels:
+          severity: info
+        annotations:
+          summary: "Experiment failed"
+          description: "Experiment {{ $labels.experiment_name }} has failed."

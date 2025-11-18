@@ -1,0 +1,247 @@
+{
+  "dashboard": {
+    "title": "MotorHandPro System Overview",
+    "uid": "motorhand-overview",
+    "tags": ["motorhand", "overview", "production"],
+    "timezone": "browser",
+    "schemaVersion": 38,
+    "version": 1,
+    "refresh": "5s",
+    "time": {
+      "from": "now-15m",
+      "to": "now"
+    },
+    "panels": [
+      {
+        "id": 1,
+        "title": "System Health",
+        "type": "stat",
+        "gridPos": {"h": 4, "w": 6, "x": 0, "y": 0},
+        "targets": [
+          {
+            "expr": "up{job=~\"fastapi|nodejs-api|websocket\"}",
+            "legendFormat": "{{job}}",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {"value": 0, "color": "red"},
+                {"value": 1, "color": "green"}
+              ]
+            },
+            "mappings": [
+              {"type": "value", "value": "0", "text": "DOWN"},
+              {"type": "value", "value": "1", "text": "UP"}
+            ]
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "API Request Rate",
+        "type": "graph",
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 4},
+        "targets": [
+          {
+            "expr": "rate(http_requests_total{job=~\"fastapi|nodejs-api\"}[1m])",
+            "legendFormat": "{{job}} - {{method}} {{path}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {"format": "reqps", "label": "Requests/sec"},
+          {"format": "short"}
+        ]
+      },
+      {
+        "id": 3,
+        "title": "API Latency (p95)",
+        "type": "graph",
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 4},
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{job=~\"fastapi|nodejs-api\"}[5m]))",
+            "legendFormat": "{{job}} p95",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {"format": "s", "label": "Latency"},
+          {"format": "short"}
+        ],
+        "alert": {
+          "conditions": [
+            {
+              "evaluator": {"params": [0.1], "type": "gt"},
+              "query": {"params": ["A", "5m", "now"]},
+              "type": "query"
+            }
+          ],
+          "frequency": "1m",
+          "name": "High API Latency Alert"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Lipschitz Stability Constant",
+        "type": "gauge",
+        "gridPos": {"h": 6, "w": 6, "x": 6, "y": 0},
+        "targets": [
+          {
+            "expr": "motorhand_lipschitz_constant",
+            "legendFormat": "L",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "max": 2,
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {"value": 0, "color": "green"},
+                {"value": 0.8, "color": "yellow"},
+                {"value": 1.0, "color": "red"}
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 5,
+        "title": "Spacecraft Position (3D)",
+        "type": "timeseries",
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 12},
+        "targets": [
+          {
+            "expr": "motorhand_spacecraft_position_x",
+            "legendFormat": "X Position",
+            "refId": "A"
+          },
+          {
+            "expr": "motorhand_spacecraft_position_y",
+            "legendFormat": "Y Position",
+            "refId": "B"
+          },
+          {
+            "expr": "motorhand_spacecraft_position_z",
+            "legendFormat": "Z Position",
+            "refId": "C"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "m"
+          }
+        }
+      },
+      {
+        "id": 6,
+        "title": "AGP Control Mode",
+        "type": "stat",
+        "gridPos": {"h": 4, "w": 6, "x": 12, "y": 0},
+        "targets": [
+          {
+            "expr": "motorhand_agp_control_mode",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "mappings": [
+              {"type": "value", "value": "0", "text": "IDLE"},
+              {"type": "value", "value": "1", "text": "NULL-G HOLD"},
+              {"type": "value", "value": "2", "text": "STATION-KEEP"},
+              {"type": "value", "value": "3", "text": "TRAJECTORY"}
+            ]
+          }
+        }
+      },
+      {
+        "id": 7,
+        "title": "Telemetry Data Rate",
+        "type": "graph",
+        "gridPos": {"h": 6, "w": 12, "x": 0, "y": 20},
+        "targets": [
+          {
+            "expr": "rate(motorhand_telemetry_points_total[1m])",
+            "legendFormat": "{{spacecraft_id}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {"format": "pps", "label": "Points/sec"},
+          {"format": "short"}
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Integration Status",
+        "type": "table",
+        "gridPos": {"h": 6, "w": 12, "x": 12, "y": 20},
+        "targets": [
+          {
+            "expr": "motorhand_integration_status",
+            "format": "table",
+            "instant": true,
+            "refId": "A"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Database Connections",
+        "type": "graph",
+        "gridPos": {"h": 6, "w": 8, "x": 0, "y": 26},
+        "targets": [
+          {
+            "expr": "pg_stat_activity_count",
+            "legendFormat": "Active Connections",
+            "refId": "A"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "MQTT Messages/sec",
+        "type": "graph",
+        "gridPos": {"h": 6, "w": 8, "x": 8, "y": 26},
+        "targets": [
+          {
+            "expr": "rate(mqtt_messages_received_total[1m])",
+            "legendFormat": "Received",
+            "refId": "A"
+          },
+          {
+            "expr": "rate(mqtt_messages_sent_total[1m])",
+            "legendFormat": "Sent",
+            "refId": "B"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Memory Usage",
+        "type": "graph",
+        "gridPos": {"h": 6, "w": 8, "x": 16, "y": 26},
+        "targets": [
+          {
+            "expr": "process_resident_memory_bytes{job=~\"fastapi|nodejs-api\"} / 1e9",
+            "legendFormat": "{{job}}",
+            "refId": "A"
+          }
+        ],
+        "yaxes": [
+          {"format": "decgbytes", "label": "Memory"},
+          {"format": "short"}
+        ]
+      }
+    ]
+  },
+  "overwrite": true
+}
