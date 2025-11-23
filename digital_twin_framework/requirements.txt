@@ -1,0 +1,25 @@
+# Digital Twin Framework - Dependencies
+#
+# Core functionality works without any external dependencies
+# Optional dependencies for enhanced features listed below
+
+# Optional: Full encryption support (AES-256-GCM)
+# cryptography>=41.0.0
+
+# Optional: Enhanced HTTP requests
+# requests>=2.31.0
+
+# Optional: Data analysis and visualization
+# pandas>=2.0.0
+# numpy>=1.24.0
+# matplotlib>=3.7.0
+
+# Optional: Advanced satellite orbit propagation
+# skyfield>=1.46
+# sgp4>=2.21
+
+# Note: The framework is designed to work with Python standard library only.
+# All optional dependencies provide enhanced features but are not required
+# for basic operation.
+
+# Python version requirement: >= 3.7
