@@ -16,13 +16,36 @@ Features:
 Author: MotorHandPro Biomedical Team
 """
 
-import numpy as np
 from datetime import datetime, timedelta
 from typing import Dict, List, Tuple, Optional, Any
 from dataclasses import dataclass, field
 from collections import deque
 import json
 import csv
+import math
+import random
+
+# NumPy fallback for basic operations
+try:
+    import numpy as np
+except ImportError:
+    class NumpyMock:
+        @staticmethod
+        def mean(values):
+            vals = list(values) if hasattr(values, '__iter__') else [values]
+            return sum(vals) / len(vals) if vals else 0
+        @staticmethod
+        def std(values):
+            vals = list(values) if hasattr(values, '__iter__') else [values]
+            if not vals: return 0
+            mean_val = sum(vals) / len(vals)
+            return math.sqrt(sum((x - mean_val) ** 2 for x in vals) / len(vals))
+        @staticmethod
+        def normal(mu, sigma): return random.gauss(mu, sigma)
+        @staticmethod
+        def exp(x): return math.exp(x)
+    np = NumpyMock()
+    np.random = NumpyMock()
 
 # PRIMAL Logic constants
 LAMBDA_LIGHTFOOT = 0.16905  # s⁻¹
