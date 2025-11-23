@@ -1,0 +1,1785 @@
+{
+  "simulation_config": {
+    "mission_days": 120,
+    "drift_tolerance": 0.05,
+    "spe_schedule": [
+      {
+        "day": 45,
+        "dose_msv": 150,
+        "description": "Moderate Solar Flare"
+      },
+      {
+        "day": 72,
+        "dose_msv": 320,
+        "description": "Major CME (Coronal Mass Ejection)"
+      },
+      {
+        "day": 89,
+        "dose_msv": 95,
+        "description": "Minor Solar Particle Event"
+      },
+      {
+        "day": 105,
+        "dose_msv": 200,
+        "description": "Strong Solar Flare"
+      }
+    ],
+    "crew_count": 3
+  },
+  "primal_constants": {
+    "golden_ratio": 1.618033988749,
+    "lambda_lightfoot": 0.16905
+  },
+  "summary": {
+    "total_days": 120,
+    "total_spe_events": 4,
+    "crew_summary": {
+      "CDR-ALPHA": {
+        "consciousness_final": 0.8164146869159112,
+        "consciousness_target": 0.9,
+        "hbc_baseline": 14.837056406075778,
+        "hbc_final": 14.15300255125052,
+        "hbc_drop_percent": 4.610441829587828,
+        "tremor_baseline": 0.48573430913779275,
+        "tremor_final": 0.5629927793863708,
+        "tremor_increase_percent": 15.905499940022036,
+        "cumulative_radiation_dose": 824.5,
+        "spe_exposure_count": 4,
+        "alerts_critical": 17,
+        "alerts_warning": 40,
+        "interventions": {
+          "IMMEDIATE": 6,
+          "URGENT": 28,
+          "SCHEDULED": 52,
+          "NONE": 34
+        },
+        "effective_threshold_sigma": 1.5140197712143624,
+        "effective_critical_sigma": 2.271029656821544
+      },
+      "SCI-BETA": {
+        "consciousness_final": 0.8316336038713565,
+        "consciousness_target": 0.7,
+        "hbc_baseline": 14.1600773245515,
+        "hbc_final": 13.600617608855085,
+        "hbc_drop_percent": 3.950965117446028,
+        "tremor_baseline": 0.5673741173503678,
+        "tremor_final": 0.581591041831941,
+        "tremor_increase_percent": 2.505740753202861,
+        "cumulative_radiation_dose": 824.5,
+        "spe_exposure_count": 4,
+        "alerts_critical": 19,
+        "alerts_warning": 49,
+        "interventions": {
+          "IMMEDIATE": 4,
+          "URGENT": 33,
+          "SCHEDULED": 49,
+          "NONE": 34
+        },
+        "effective_threshold_sigma": 1.4863131693409515,
+        "effective_critical_sigma": 2.2294697540114274
+      },
+      "ENG-GAMMA": {
+        "consciousness_final": 0.8268206655100492,
+        "consciousness_target": 0.5,
+        "hbc_baseline": 14.506462033910374,
+        "hbc_final": 13.772375227762273,
+        "hbc_drop_percent": 5.060412417804534,
+        "tremor_baseline": 0.5219730696206868,
+        "tremor_final": 0.4496941286709537,
+        "tremor_increase_percent": -13.847254802294215,
+        "cumulative_radiation_dose": 824.5,
+        "spe_exposure_count": 4,
+        "alerts_critical": 11,
+        "alerts_warning": 48,
+        "interventions": {
+          "IMMEDIATE": 4,
+          "URGENT": 28,
+          "SCHEDULED": 52,
+          "NONE": 36
+        },
+        "effective_threshold_sigma": 1.494965025744691,
+        "effective_critical_sigma": 2.2424475386170366
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "day": 86,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8462624942347852,
+      "hbc": 14.348539282959623,
+      "tremor": 0.42370100180830006,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 87,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8359063163160367,
+      "hbc": 14.296156068924391,
+      "tremor": 0.5008064279278727,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 87,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8609638902912727,
+      "hbc": 14.028996690687993,
+      "tremor": 0.6470732038423802,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.4561236173500343,
+          "value": 0.6470732038423802,
+          "baseline": 0.5527596882165146,
+          "increase_percent": 17.062299881195983
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 87,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8462625581975516,
+      "hbc": 14.250228420735702,
+      "tremor": 0.5348613525841432,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 88,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8362968967079545,
+      "hbc": 14.656402111325376,
+      "tremor": 0.4940346505384243,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 88,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8617459046116677,
+      "hbc": 14.365781298740869,
+      "tremor": 0.6268158591744398,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 88,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8469319132309314,
+      "hbc": 14.916248029620824,
+      "tremor": 0.4550786245343356,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 89,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.83619512968384,
+      "hbc": 14.507672413286253,
+      "tremor": 0.4587872225462956,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 89,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8621546113186658,
+      "hbc": 14.07326673781475,
+      "tremor": 0.6008188683322467,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 89,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8462802263988325,
+      "hbc": 14.100888084767316,
+      "tremor": 0.4714028227343041,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 90,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8370851383852714,
+      "hbc": 14.9630416530594,
+      "tremor": 0.5320704144195222,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 90,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8591119778150792,
+      "hbc": 13.449978951735712,
+      "tremor": 0.5804090564581608,
+      "intervention_level": "IMMEDIATE",
+      "intervention_score": 3.2360679774992365,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "CRITICAL",
+          "deviation": -2.1625582408555433,
+          "value": 13.449978951735712,
+          "baseline": 14.322745635993487,
+          "drop_percent": 6.093571068276781
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.5791421785825699,
+          "value": 282.5125012660224,
+          "baseline": 261.87329342813297
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 90,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8447687104866738,
+      "hbc": 13.936641804226506,
+      "tremor": 0.5847609313672064,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.6175805043951472,
+          "value": 13.936641804226506,
+          "baseline": 14.673544594811029,
+          "drop_percent": 5.0219821517775065
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 91,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8363356345385065,
+      "hbc": 14.354376151250253,
+      "tremor": 0.5091900071077392,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 91,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8573077063462016,
+      "hbc": 13.58934464515185,
+      "tremor": 0.578273986093761,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.2360679775004733,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.7757427507597514,
+          "value": 13.58934464515185,
+          "baseline": 14.314773886093034,
+          "drop_percent": 5.067696120900284
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.4809998036913437,
+          "value": 281.57473418433045,
+          "baseline": 262.08743952330906
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 91,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8441113185987579,
+      "hbc": 14.076519970879692,
+      "tremor": 0.40230220674879186,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 92,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8371078349154839,
+      "hbc": 15.190665708749618,
+      "tremor": 0.5767818679102938,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.9663176845539565,
+          "value": 0.5767818679102938,
+          "baseline": 0.47703670532298054,
+          "increase_percent": 20.909326572633493
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 92,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8570642331274884,
+      "hbc": 13.854971846188892,
+      "tremor": 0.5613361012689124,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 92,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8442497807798632,
+      "hbc": 14.261102304462991,
+      "tremor": 0.6403861802323989,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.618033988749,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "CRITICAL",
+          "deviation": 2.4120496385049637,
+          "value": 0.6403861802323989,
+          "baseline": 0.5098581985885751,
+          "increase_percent": 25.60083999927048
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 93,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.837695946812981,
+      "hbc": 14.738213397362603,
+      "tremor": 0.4336836887521144,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 93,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8571507913095027,
+      "hbc": 13.934294074640537,
+      "tremor": 0.6279762744181918,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 93,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8424277507847248,
+      "hbc": 13.854284845885518,
+      "tremor": 0.5085073995007756,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.731871409490784,
+          "value": 13.854284845885518,
+          "baseline": 14.654090055840765,
+          "drop_percent": 5.457897466901837
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 94,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8383966812636474,
+      "hbc": 14.805642272291017,
+      "tremor": 0.5005857462155082,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 2.135251051041614,
+          "value": 289.21728461385055,
+          "baseline": 262.6550881957056
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 94,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8565105195223477,
+      "hbc": 13.758219573512111,
+      "tremor": 0.555972081963717,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 94,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8421882348195668,
+      "hbc": 14.14152904114372,
+      "tremor": 0.5148748166573547,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 95,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8350124222886091,
+      "hbc": 13.916880864730652,
+      "tremor": 0.5451814680141165,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -2.1613145048243365,
+          "value": 13.916880864730652,
+          "baseline": 14.985625864474791,
+          "drop_percent": 7.131800896469236
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 95,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8527605379490643,
+      "hbc": 13.29502364235125,
+      "tremor": 0.6232740194993406,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.618033988749,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "CRITICAL",
+          "deviation": -2.3635472725763513,
+          "value": 13.29502364235125,
+          "baseline": 14.289601111013042,
+          "drop_percent": 6.960148578921965
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 95,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8410232748255247,
+      "hbc": 13.94009851929486,
+      "tremor": 0.5809648756885722,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.506286501163803,
+          "value": 13.94009851929486,
+          "baseline": 14.641313466765318,
+          "drop_percent": 4.789289902590797
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 96,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8329431626925984,
+      "hbc": 14.079341744959311,
+      "tremor": 0.5361146421833688,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.792526512056918,
+          "value": 14.079341744959311,
+          "baseline": 14.976282729222053,
+          "drop_percent": 5.989076197877931
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 96,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.851179101694301,
+      "hbc": 13.558155243235053,
+      "tremor": 0.6614308947386925,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.2360679775004733,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.7029304290576353,
+          "value": 13.558155243235053,
+          "baseline": 14.282060431963783,
+          "drop_percent": 5.0686327240893325
+        },
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.623633364900019,
+          "value": 0.6614308947386925,
+          "baseline": 0.5573109247938222,
+          "increase_percent": 18.68256395357577
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 96,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8410333160938812,
+      "hbc": 14.190956415825212,
+      "tremor": 0.5474367107924372,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 97,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8328239580699573,
+      "hbc": 14.455945703302252,
+      "tremor": 0.46012685244289125,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 97,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8504271590428794,
+      "hbc": 13.691652648763919,
+      "tremor": 0.5817922832053499,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 97,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8413597834288405,
+      "hbc": 14.289575344310345,
+      "tremor": 0.5527691447479322,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 98,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8330014231487083,
+      "hbc": 14.540375401766061,
+      "tremor": 0.4456984913107665,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.5044918597683594,
+          "value": 281.59693509371607,
+          "baseline": 262.9583280497398
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 98,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8490539121266542,
+      "hbc": 13.567455982583077,
+      "tremor": 0.5555894699207038,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.628313414071791,
+          "value": 13.567455982583077,
+          "baseline": 14.268878490220546,
+          "drop_percent": 4.915750793716567
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 98,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8407066711961088,
+      "hbc": 14.018962487726327,
+      "tremor": 0.550585648207916,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 99,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8329553913438139,
+      "hbc": 14.467155412698055,
+      "tremor": 0.5358055799175603,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 99,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8481601540996894,
+      "hbc": 13.64167665679818,
+      "tremor": 0.6189664662453211,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.8402764416225288,
+          "value": 286.35729189067774,
+          "baseline": 262.43606081211493
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 99,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8390971105847673,
+      "hbc": 13.826693999206249,
+      "tremor": 0.5322793994138296,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.6839974164535318,
+          "value": 13.826693999206249,
+          "baseline": 14.618922810565389,
+          "drop_percent": 5.419201001503202
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 100,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8328780715066697,
+      "hbc": 14.452927214431469,
+      "tremor": 0.520205273182153,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 100,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8483503483620358,
+      "hbc": 13.899374754673751,
+      "tremor": 0.5634505375032403,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.618033988749,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "CRITICAL",
+          "deviation": 2.2186000395962138,
+          "value": 292.1596034043703,
+          "baseline": 262.73035331302833
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 100,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8385458061613714,
+      "hbc": 14.018893297996197,
+      "tremor": 0.5347832049991255,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 101,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8322135285958114,
+      "hbc": 14.296974020989719,
+      "tremor": 0.5203129988480221,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 101,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8486633858814578,
+      "hbc": 13.941138365563905,
+      "tremor": 0.6500270710983672,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 101,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8383137962386263,
+      "hbc": 14.088907114031114,
+      "tremor": 0.5621699524155259,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 102,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8329671702556906,
+      "hbc": 14.826255150040069,
+      "tremor": 0.519833184456557,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 102,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8465736450276973,
+      "hbc": 13.416988860039567,
+      "tremor": 0.6602690534702769,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.2360679775004733,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.9002005632316803,
+          "value": 13.416988860039567,
+          "baseline": 14.247749021057372,
+          "drop_percent": 5.830816922659069
+        },
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.565570044458412,
+          "value": 0.6602690534702769,
+          "baseline": 0.5600898503538254,
+          "increase_percent": 17.886273613629182
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 102,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8381097956813168,
+      "hbc": 14.090229956716547,
+      "tremor": 0.5251436076248746,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 103,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8294049260637728,
+      "hbc": 13.791300908161087,
+      "tremor": 0.447896812373009,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.618033988749,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "CRITICAL",
+          "deviation": -2.2495091442364576,
+          "value": 13.791300908161087,
+          "baseline": 14.937791909095457,
+          "drop_percent": 7.6751035756247505
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 103,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8470119596696555,
+      "hbc": 13.98075485571737,
+      "tremor": 0.6247630142404675,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.7212123462788498,
+          "value": 285.96675165438705,
+          "baseline": 263.0810728906183
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 103,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8386483546199808,
+      "hbc": 14.353543523517386,
+      "tremor": 0.5011845368738385,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 104,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8290449959651749,
+      "hbc": 14.339883993299907,
+      "tremor": 0.46482604506753633,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 104,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8467112355752157,
+      "hbc": 13.737885188301291,
+      "tremor": 0.5910052661154988,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.4618198933126494,
+          "value": 282.8148152995743,
+          "baseline": 263.2690132945131
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 104,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8375111642062139,
+      "hbc": 13.869488237997672,
+      "tremor": 0.6025514530797111,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.2360679775004733,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.5265466021451073,
+          "value": 13.869488237997672,
+          "baseline": 14.593460411302836,
+          "drop_percent": 4.960935603350371
+        },
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.681754292611141,
+          "value": 0.6025514530797111,
+          "baseline": 0.5136196497022798,
+          "increase_percent": 17.31471983772053
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 105,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8284862231119953,
+      "hbc": 14.281935652363998,
+      "tremor": 0.5549922806419489,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.5013737224830812,
+          "value": 0.5549922806419489,
+          "baseline": 0.4797139307400258,
+          "increase_percent": 15.692341847524794
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 105,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8463620818296624,
+      "hbc": 13.71948848565784,
+      "tremor": 0.5639986849895504,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 105,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8371278988922011,
+      "hbc": 14.025156153998925,
+      "tremor": 0.6565670866710729,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.618033988749,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "CRITICAL",
+          "deviation": 2.602239751032451,
+          "value": 0.6565670866710729,
+          "baseline": 0.5149682104284005,
+          "increase_percent": 27.496624718810654
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 106,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8267941307519575,
+      "hbc": 14.034986537701581,
+      "tremor": 0.5597052300912436,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.8541019662507099,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.7080325497601556,
+          "value": 14.034986537701581,
+          "baseline": 14.917637053544794,
+          "drop_percent": 5.916825249703163
+        },
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.569342424802912,
+          "value": 0.5597052300912436,
+          "baseline": 0.48046151297695305,
+          "increase_percent": 16.49324971386246
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.509738448583131,
+          "value": 282.5533569922757,
+          "baseline": 263.8576740928705
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 106,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8467358484896677,
+      "hbc": 13.944151801829866,
+      "tremor": 0.6636561401026121,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.2360679775004733,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.5904497901340966,
+          "value": 0.6636561401026121,
+          "baseline": 0.5619876419803004,
+          "increase_percent": 18.09087789974491
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.6183320755297268,
+          "value": 285.43918919634666,
+          "baseline": 263.61253719422905
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 106,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8368956995866558,
+      "hbc": 14.058071504475878,
+      "tremor": 0.7030540638478129,
+      "intervention_level": "IMMEDIATE",
+      "intervention_score": 3.2360679774992365,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "CRITICAL",
+          "deviation": 3.2630099029391726,
+          "value": 0.7030540638478129,
+          "baseline": 0.5167260221426007,
+          "increase_percent": 36.05934938840594
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.7056079839493026,
+          "value": 282.38659982514275,
+          "baseline": 262.4453169937919
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 107,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8259371786255476,
+      "hbc": 14.188458520861555,
+      "tremor": 0.5523906500332565,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 107,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8403600594604096,
+      "hbc": 12.849323731191413,
+      "tremor": 0.6381243998158227,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.2360679774992365,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "CRITICAL",
+          "deviation": -3.0188155561689998,
+          "value": 12.849323731191413,
+          "baseline": 14.219905122514879,
+          "drop_percent": 9.638470717736194
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.534830147211864,
+          "value": 284.64227702614505,
+          "baseline": 263.8072570074875
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 107,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8362519868973575,
+      "hbc": 13.947950000756789,
+      "tremor": 0.6390733225596088,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 2.088696755368157,
+          "value": 0.6390733225596088,
+          "baseline": 0.5178588675168322,
+          "increase_percent": 23.406851295992674
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 108,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8249778888246231,
+      "hbc": 14.154782027602069,
+      "tremor": 0.4599789506122675,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 108,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8409056375202846,
+      "hbc": 14.003091052743347,
+      "tremor": 0.6575185472304725,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.655110334161856,
+          "value": 286.67065937902714,
+          "baseline": 264.0170129925475
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 108,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8355461615139219,
+      "hbc": 13.92468241819762,
+      "tremor": 0.6464339820304171,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 2.157305044487883,
+          "value": 0.6464339820304171,
+          "baseline": 0.5190384557233788,
+          "increase_percent": 24.544525536068118
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 109,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8247763869260256,
+      "hbc": 14.335370914131481,
+      "tremor": 0.5488948688901708,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 109,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8408753681794725,
+      "hbc": 13.768335458581156,
+      "tremor": 0.6102502643812652,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 109,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8348962254539483,
+      "hbc": 13.928527085878121,
+      "tremor": 0.485941542124984,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 110,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8246795733819972,
+      "hbc": 14.361217643712088,
+      "tremor": 0.5467913098125617,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 110,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8384043201703701,
+      "hbc": 13.267516080128367,
+      "tremor": 0.5543383898314888,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -2.042651006884281,
+          "value": 13.267516080128367,
+          "baseline": 14.205303565973512,
+          "drop_percent": 6.60167156224287
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 110,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8339808006900005,
+      "hbc": 13.859271457134152,
+      "tremor": 0.5843250963604821,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.5688776293773576,
+          "value": 281.0971493933316,
+          "baseline": 262.77544677776865
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 111,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8234103226088623,
+      "hbc": 14.0621277011682,
+      "tremor": 0.5793806166472839,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.2360679775004733,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.567979796708207,
+          "value": 14.0621277011682,
+          "baseline": 14.886510013721148,
+          "drop_percent": 5.537780929130479
+        },
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.8728895695238366,
+          "value": 0.5793806166472839,
+          "baseline": 0.4830073061118707,
+          "increase_percent": 19.952764547435624
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 111,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8352568501647925,
+      "hbc": 13.148552520854006,
+      "tremor": 0.719880647205471,
+      "intervention_level": "IMMEDIATE",
+      "intervention_score": 4.854101966248237,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "CRITICAL",
+          "deviation": -2.239124902104358,
+          "value": 13.148552520854006,
+          "baseline": 14.195868288784947,
+          "drop_percent": 7.377609784942455
+        },
+        {
+          "metric": "TREMOR",
+          "severity": "CRITICAL",
+          "deviation": 2.365674765774701,
+          "value": 0.719880647205471,
+          "baseline": 0.565292767324613,
+          "increase_percent": 27.346516498430205
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.8025619193616185,
+          "value": 289.19425622450643,
+          "baseline": 264.39262447733597
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 111,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8324726009245497,
+      "hbc": 13.728163963512802,
+      "tremor": 0.5312421066780337,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.2360679775004733,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.6890005159456838,
+          "value": 13.728163963512802,
+          "baseline": 14.551653265810286,
+          "drop_percent": 5.659077269469482
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.671784551812457,
+          "value": 282.63832316967586,
+          "baseline": 262.95279388841067
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 112,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.822960187345485,
+      "hbc": 14.241923216527853,
+      "tremor": 0.5337628915832316,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 112,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8358634640139632,
+      "hbc": 14.017341300217558,
+      "tremor": 0.6449774480222024,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.5684072653248824,
+          "value": 286.3106569560786,
+          "baseline": 264.58658936652836
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 112,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8314212995721569,
+      "hbc": 13.805888799317012,
+      "tremor": 0.6221635968067325,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.8541019662507099,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.5072775936518856,
+          "value": 13.805888799317012,
+          "baseline": 14.545053580266098,
+          "drop_percent": 5.081897958436827
+        },
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.7198471087081215,
+          "value": 0.6221635968067325,
+          "baseline": 0.5203439293435268,
+          "increase_percent": 19.567763112305897
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.8586171732977201,
+          "value": 285.2828574606912,
+          "baseline": 263.1504050704662
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 113,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.821926333407164,
+      "hbc": 14.090868059638579,
+      "tremor": 0.49358845342162366,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.9763227619567734,
+          "value": 289.6515258712589,
+          "baseline": 264.6981771953871
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 113,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8351449606596055,
+      "hbc": 13.547751519711428,
+      "tremor": 0.5460486901562178,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 113,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8303598323269874,
+      "hbc": 13.792326946812357,
+      "tremor": 0.5386571261168791,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.5126346956216636,
+          "value": 13.792326946812357,
+          "baseline": 14.538450715060364,
+          "drop_percent": 5.13207206786551
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 114,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8180650237880549,
+      "hbc": 13.58585740592216,
+      "tremor": 0.543152509272626,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.618033988749,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "CRITICAL",
+          "deviation": -2.360946119205255,
+          "value": 13.58585740592216,
+          "baseline": 14.862676262772668,
+          "drop_percent": 8.590773520705845
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 114,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8353792954858271,
+      "hbc": 13.818276373716465,
+      "tremor": 0.5196623533402905,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 114,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.83044337495565,
+      "hbc": 14.088482813622301,
+      "tremor": 0.580963402751194,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.7816642809594048,
+          "value": 285.02024625653144,
+          "baseline": 263.4917954883887
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 115,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8184445356682162,
+      "hbc": 14.49156496439224,
+      "tremor": 0.5459313079487411,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 115,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8357888098794144,
+      "hbc": 13.895152046203144,
+      "tremor": 0.5753799775497058,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 115,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8297094033322292,
+      "hbc": 13.850137415434709,
+      "tremor": 0.5584674271419716,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 116,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8181443177108569,
+      "hbc": 14.240749811712234,
+      "tremor": 0.4922101241665198,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 116,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.836196720305971,
+      "hbc": 13.894885585548204,
+      "tremor": 0.6113563738464156,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.618033988749,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "CRITICAL",
+          "deviation": 2.6940747438928487,
+          "value": 303.02322164802007,
+          "baseline": 265.0399205345281
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 116,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.830106602323186,
+      "hbc": 14.209979818386643,
+      "tremor": 0.5620460624199395,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 117,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8182965189363103,
+      "hbc": 14.387503574296737,
+      "tremor": 0.5480923007896646,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.6707037729033365,
+          "value": 286.4164905334487,
+          "baseline": 265.1848568799152
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 117,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8335995485572973,
+      "hbc": 13.177038283285365,
+      "tremor": 0.6686968177863999,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.2360679775004733,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -2.109415634240457,
+          "value": 13.177038283285365,
+          "baseline": 14.171929605530478,
+          "drop_percent": 7.0201542763581415
+        },
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.5662696731147434,
+          "value": 0.6686968177863999,
+          "baseline": 0.5667704372971007,
+          "increase_percent": 17.98371506025982
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 117,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8293575293314359,
+      "hbc": 13.834310147583148,
+      "tremor": 0.614289516716647,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.2360679775004733,
+      "alerts": [
+        {
+          "metric": "TREMOR",
+          "severity": "WARNING",
+          "deviation": 1.5545059907532839,
+          "value": 0.614289516716647,
+          "baseline": 0.5224854877200437,
+          "increase_percent": 17.570637109406846
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.789802874955051,
+          "value": 285.39268441286987,
+          "baseline": 263.69643830578406
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 118,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.816941243185861,
+      "hbc": 13.966177608584823,
+      "tremor": 0.47156844543684634,
+      "intervention_level": "URGENT",
+      "intervention_score": 1.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.6131636879753029,
+          "value": 13.966177608584823,
+          "baseline": 14.842804757796998,
+          "drop_percent": 5.9060747851694115
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 118,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8319642798937364,
+      "hbc": 13.320967884728411,
+      "tremor": 0.6243914391542875,
+      "intervention_level": "NONE",
+      "intervention_score": 0.6180339887502366,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.7725711251456784,
+          "value": 13.320967884728411,
+          "baseline": 14.164778666700208,
+          "drop_percent": 5.957105309068476
+        }
+      ],
+      "drift_exceeded": false
+    },
+    {
+      "day": 118,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8277346100584907,
+      "hbc": 13.636777129574197,
+      "tremor": 0.5337866748463109,
+      "intervention_level": "URGENT",
+      "intervention_score": 2.2360679775004733,
+      "alerts": [
+        {
+          "metric": "HBC",
+          "severity": "WARNING",
+          "deviation": -1.7516905794398543,
+          "value": 13.636777129574197,
+          "baseline": 14.512630830600695,
+          "drop_percent": 6.0351132144814965
+        },
+        {
+          "metric": "REACTION_TIME",
+          "severity": "WARNING",
+          "deviation": 1.6875219118877556,
+          "value": 284.49177934784024,
+          "baseline": 263.87118907084334
+        }
+      ],
+      "drift_exceeded": true
+    },
+    {
+      "day": 119,
+      "crew_id": "CDR-ALPHA",
+      "consciousness": 0.8164146869159112,
+      "hbc": 14.15300255125052,
+      "tremor": 0.5629927793863708,
+      "intervention_level": "NONE",
+      "intervention_score": 0.0,
+      "alerts": [],
+      "drift_exceeded": false
+    },
+    {
+      "day": 119,
+      "crew_id": "SCI-BETA",
+      "consciousness": 0.8316336038713565,
+      "hbc": 13.600617608855085,
+      "tremor": 0.581591041831941,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    },
+    {
+      "day": 119,
+      "crew_id": "ENG-GAMMA",
+      "consciousness": 0.8268206655100492,
+      "hbc": 13.772375227762273,
+      "tremor": 0.4496941286709537,
+      "intervention_level": "SCHEDULED",
+      "intervention_score": 1.0,
+      "alerts": [],
+      "drift_exceeded": true
+    }
+  ]
+}
