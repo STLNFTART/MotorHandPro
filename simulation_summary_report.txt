@@ -2,7 +2,7 @@
 PRIMAL LOGIC MARS MISSION SIMULATION - COMPREHENSIVE SUMMARY REPORT
 ====================================================================================================
 
-Generated: 2025-11-23 05:52:04
+Generated: 2025-11-23 13:07:33
 
 SIMULATION SUITE COMPONENTS:
 ----------------------------------------------------------------------------------------------------
@@ -97,11 +97,11 @@ DATA FILES GENERATED:
 ====================================================================================================
 
   Ec_clean.csv                                                                0.1 KB
-  consciousness_adaptation_events.csv                                        16.5 KB
+  consciousness_adaptation_events.csv                                        16.6 KB
   consciousness_evolution_curves.csv                                          6.5 KB
   crew_extended_180day_intense_spe.csv                                      116.5 KB
   crew_simulation_phi_consciousness.csv                                      57.8 KB
-  enhanced_consciousness_180day.csv                                         192.0 KB
+  enhanced_consciousness_180day.csv                                         192.6 KB
   mars_full_mission_860d_moderate.csv                                         0.7 KB
   mars_surface_500d_moderate.csv                                              0.3 KB
   mars_transit_180d_high.csv                                                  0.4 KB
@@ -115,15 +115,15 @@ DATA FILES GENERATED:
   nasa_compliant_moderate_shield5gcm2_adaptation_events.csv                  23.5 KB
   nasa_compliant_moderate_shield5gcm2_consciousness_curves.csv                9.1 KB
   nasa_compliant_moderate_shield5gcm2_mission_data.csv                      199.6 KB
-  realistic_adaptation_events_full.csv                                       26.9 KB
-  realistic_adaptation_events_high.csv                                       27.3 KB
-  realistic_adaptation_events_moderate.csv                                   24.0 KB
-  realistic_consciousness_curves_full.csv                                    10.5 KB
-  realistic_consciousness_curves_high.csv                                    10.7 KB
-  realistic_consciousness_curves_moderate.csv                                 9.4 KB
-  realistic_mars_full_mission_860d.csv                                      937.0 KB
-  realistic_mars_transit_high.csv                                           199.6 KB
-  realistic_mars_transit_moderate.csv                                       199.7 KB
+  realistic_adaptation_events_full.csv                                       28.3 KB
+  realistic_adaptation_events_high.csv                                       21.1 KB
+  realistic_adaptation_events_moderate.csv                                   21.4 KB
+  realistic_consciousness_curves_full.csv                                    11.0 KB
+  realistic_consciousness_curves_high.csv                                     8.3 KB
+  realistic_consciousness_curves_moderate.csv                                 8.4 KB
+  realistic_mars_full_mission_860d.csv                                      935.5 KB
+  realistic_mars_transit_high.csv                                           199.7 KB
+  realistic_mars_transit_moderate.csv                                       199.3 KB
   run.clean.csv                                                              15.7 KB
   run.fixed.csv                                                              15.7 KB
   run_default.csv                                                            22.1 KB
