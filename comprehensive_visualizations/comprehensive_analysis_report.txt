@@ -7,13 +7,13 @@ DATASETS ANALYZED:
 
 
 MARS MISSIONS:
-  - realistic_mars_full_mission_860d.csv                         (   935.5 KB)
+  - realistic_mars_full_mission_860d.csv                         (   935.9 KB)
   - realistic_mars_transit_high.csv                              (   199.7 KB)
-  - realistic_mars_transit_moderate.csv                          (   199.3 KB)
+  - realistic_mars_transit_moderate.csv                          (   199.1 KB)
 
 PRIMAL KERNEL:
   - run_default.csv                                              (    22.1 KB)
-  - run_ke05.csv                                                 (     0.0 KB)
+  - run_ke05.csv                                                 (    21.6 KB)
   - run_mu015_ke03.csv                                           (    22.1 KB)
   - run_mu02.csv                                                 (    22.1 KB)
 
@@ -21,12 +21,12 @@ CREW HEALTH:
   - crew_extended_180day_intense_spe.csv                         (   116.5 KB)
 
 CONSCIOUSNESS:
-  - consciousness_adaptation_events.csv                          (    16.6 KB)
-  - consciousness_evolution_curves.csv                           (     6.5 KB)
+  - consciousness_adaptation_events.csv                          (    15.8 KB)
+  - consciousness_evolution_curves.csv                           (     6.2 KB)
   - crew_simulation_phi_consciousness.csv                        (    57.8 KB)
-  - enhanced_consciousness_180day.csv                            (   192.6 KB)
-  - realistic_consciousness_curves_full.csv                      (    11.0 KB)
-  - realistic_consciousness_curves_high.csv                      (     8.3 KB)
+  - enhanced_consciousness_180day.csv                            (   191.4 KB)
+  - realistic_consciousness_curves_full.csv                      (     7.6 KB)
+  - realistic_consciousness_curves_high.csv                      (     9.9 KB)
   - realistic_consciousness_curves_moderate.csv                  (     8.4 KB)
 
 NASA COMPLIANT:
@@ -46,17 +46,17 @@ ANALYSIS OUTPUTS:
 
 Generated 11 visualization files:
 
-  - consciousness_evolution_curves_plot.png                                (   214.1 KB)
+  - consciousness_evolution_curves_plot.png                                (   219.5 KB)
   - crew_extended_180day_intense_spe_analysis.png                          (  1446.2 KB)
   - nasa_compliant_moderate_shield10gcm2_mission_data_analysis.png         (  1706.4 KB)
   - nasa_compliant_moderate_shield20gcm2_mission_data_analysis.png         (  1699.6 KB)
   - nasa_compliant_moderate_shield5gcm2_mission_data_analysis.png          (  1705.2 KB)
-  - primal_kernel_analysis.png                                             (   669.5 KB)
-  - realistic_consciousness_curves_full_plot.png                           (   241.1 KB)
-  - realistic_consciousness_curves_high_plot.png                           (   220.1 KB)
-  - realistic_consciousness_curves_moderate_plot.png                       (   230.1 KB)
-  - realistic_mars_transit_high_analysis.png                               (  1645.6 KB)
-  - realistic_mars_transit_moderate_analysis.png                           (  1699.0 KB)
+  - primal_kernel_analysis.png                                             (   923.9 KB)
+  - realistic_consciousness_curves_full_plot.png                           (   222.6 KB)
+  - realistic_consciousness_curves_high_plot.png                           (   233.6 KB)
+  - realistic_consciousness_curves_moderate_plot.png                       (   223.9 KB)
+  - realistic_mars_transit_high_analysis.png                               (  1686.1 KB)
+  - realistic_mars_transit_moderate_analysis.png                           (  1715.9 KB)
 
 ====================================================================================================
 END OF REPORT
