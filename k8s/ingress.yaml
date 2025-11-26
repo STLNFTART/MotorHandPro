@@ -11,10 +11,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - lam.yourdomain.com
-    secretName: lam-tls
+    - www.primaltechinvest.com
+    - primaltechinvest.com
+    secretName: primaltechinvest-tls
   rules:
-  - host: lam.yourdomain.com
+  - host: www.primaltechinvest.com
     http:
       paths:
       - path: /api
