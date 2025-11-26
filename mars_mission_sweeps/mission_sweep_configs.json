@@ -1,0 +1,5046 @@
+{
+  "total_configurations": 720,
+  "configurations": [
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew2_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew2_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew2_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew2_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew2_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew2_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew2_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew2_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew2_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew2_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew2_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew2_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew2_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew2_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew2_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew2_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew2_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew2_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew2_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew2_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew2_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew2_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew2_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew2_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew3_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew3_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew3_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew3_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew3_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew3_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew3_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew3_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew3_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew3_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew3_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew3_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew3_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew3_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew3_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew3_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew3_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew3_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew3_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew3_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew3_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew3_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew3_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew3_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew4_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew4_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew4_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew4_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew4_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew4_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew4_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew4_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew4_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew4_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew4_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew4_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew4_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew4_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew4_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew4_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew4_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew4_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew4_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew4_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew4_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew4_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew4_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew4_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew5_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew5_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew5_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew5_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew5_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew5_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew5_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew5_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew5_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew5_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew5_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew5_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew5_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew5_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew5_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew5_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew5_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew5_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew5_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew5_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew5_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew5_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew5_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew5_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew6_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew6_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew6_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew6_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew6_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew6_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew6_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew6_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew6_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew6_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew6_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew6_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew6_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew6_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew6_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew6_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew6_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew6_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_90d_crew6_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_90d_crew6_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_90d_crew6_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_90d_crew6_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_90d_crew6_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 90,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_90d_crew6_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew2_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew2_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew2_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew2_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew2_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew2_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew2_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew2_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew2_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew2_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew2_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew2_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew2_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew2_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew2_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew2_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew2_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew2_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew2_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew2_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew2_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew2_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew2_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew2_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew3_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew3_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew3_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew3_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew3_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew3_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew3_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew3_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew3_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew3_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew3_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew3_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew3_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew3_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew3_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew3_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew3_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew3_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew3_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew3_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew3_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew3_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew3_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew3_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew4_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew4_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew4_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew4_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew4_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew4_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew4_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew4_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew4_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew4_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew4_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew4_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew4_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew4_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew4_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew4_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew4_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew4_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew4_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew4_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew4_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew4_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew4_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew4_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew5_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew5_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew5_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew5_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew5_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew5_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew5_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew5_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew5_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew5_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew5_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew5_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew5_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew5_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew5_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew5_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew5_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew5_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew5_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew5_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew5_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew5_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew5_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew5_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew6_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew6_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew6_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew6_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew6_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew6_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew6_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew6_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew6_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew6_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew6_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew6_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew6_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew6_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew6_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew6_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew6_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew6_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_180d_crew6_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_180d_crew6_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_180d_crew6_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_180d_crew6_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_180d_crew6_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 180,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_180d_crew6_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew2_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew2_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew2_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew2_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew2_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew2_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew2_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew2_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew2_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew2_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew2_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew2_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew2_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew2_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew2_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew2_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew2_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew2_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew2_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew2_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew2_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew2_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew2_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew2_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew3_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew3_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew3_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew3_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew3_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew3_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew3_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew3_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew3_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew3_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew3_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew3_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew3_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew3_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew3_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew3_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew3_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew3_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew3_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew3_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew3_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew3_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew3_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew3_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew4_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew4_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew4_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew4_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew4_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew4_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew4_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew4_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew4_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew4_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew4_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew4_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew4_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew4_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew4_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew4_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew4_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew4_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew4_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew4_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew4_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew4_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew4_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew4_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew5_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew5_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew5_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew5_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew5_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew5_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew5_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew5_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew5_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew5_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew5_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew5_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew5_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew5_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew5_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew5_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew5_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew5_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew5_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew5_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew5_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew5_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew5_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew5_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew6_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew6_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew6_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew6_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew6_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew6_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew6_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew6_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew6_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew6_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew6_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew6_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew6_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew6_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew6_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew6_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew6_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew6_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_270d_crew6_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_270d_crew6_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_270d_crew6_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_270d_crew6_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_270d_crew6_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 270,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_270d_crew6_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew2_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew2_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew2_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew2_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew2_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew2_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew2_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew2_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew2_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew2_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew2_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew2_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew2_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew2_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew2_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew2_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew2_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew2_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew2_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew2_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew2_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew2_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew2_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew2_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew3_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew3_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew3_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew3_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew3_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew3_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew3_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew3_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew3_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew3_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew3_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew3_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew3_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew3_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew3_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew3_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew3_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew3_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew3_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew3_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew3_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew3_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew3_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew3_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew4_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew4_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew4_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew4_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew4_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew4_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew4_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew4_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew4_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew4_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew4_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew4_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew4_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew4_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew4_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew4_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew4_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew4_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew4_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew4_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew4_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew4_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew4_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew4_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew5_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew5_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew5_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew5_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew5_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew5_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew5_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew5_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew5_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew5_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew5_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew5_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew5_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew5_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew5_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew5_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew5_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew5_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew5_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew5_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew5_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew5_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew5_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew5_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew6_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew6_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew6_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew6_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew6_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew6_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew6_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew6_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew6_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew6_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew6_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew6_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew6_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew6_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew6_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew6_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew6_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew6_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_360d_crew6_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_360d_crew6_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_360d_crew6_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_360d_crew6_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_360d_crew6_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 360,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_360d_crew6_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew2_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew2_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew2_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew2_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew2_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew2_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew2_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew2_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew2_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew2_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew2_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew2_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew2_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew2_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew2_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew2_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew2_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew2_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew2_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew2_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew2_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew2_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew2_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew2_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew3_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew3_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew3_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew3_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew3_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew3_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew3_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew3_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew3_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew3_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew3_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew3_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew3_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew3_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew3_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew3_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew3_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew3_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew3_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew3_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew3_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew3_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew3_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew3_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew4_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew4_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew4_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew4_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew4_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew4_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew4_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew4_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew4_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew4_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew4_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew4_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew4_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew4_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew4_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew4_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew4_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew4_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew4_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew4_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew4_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew4_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew4_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew4_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew5_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew5_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew5_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew5_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew5_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew5_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew5_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew5_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew5_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew5_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew5_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew5_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew5_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew5_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew5_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew5_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew5_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew5_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew5_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew5_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew5_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew5_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew5_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew5_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew6_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew6_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew6_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew6_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew6_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew6_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew6_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew6_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew6_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew6_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew6_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew6_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew6_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew6_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew6_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew6_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew6_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew6_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_500d_crew6_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_500d_crew6_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_500d_crew6_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_500d_crew6_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_500d_crew6_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 500,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_500d_crew6_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew2_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew2_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew2_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew2_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew2_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew2_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew2_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew2_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew2_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew2_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew2_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew2_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew2_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew2_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew2_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew2_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew2_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew2_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew2_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew2_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew2_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew2_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew2_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 2,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew2_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew3_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew3_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew3_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew3_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew3_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew3_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew3_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew3_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew3_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew3_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew3_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew3_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew3_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew3_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew3_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew3_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew3_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew3_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew3_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew3_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew3_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew3_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew3_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 3,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew3_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew4_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew4_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew4_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew4_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew4_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew4_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew4_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew4_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew4_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew4_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew4_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew4_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew4_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew4_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew4_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew4_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew4_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew4_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew4_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew4_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew4_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew4_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew4_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 4,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew4_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew5_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew5_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew5_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew5_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew5_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew5_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew5_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew5_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew5_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew5_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew5_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew5_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew5_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew5_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew5_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew5_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew5_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew5_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew5_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew5_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew5_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew5_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew5_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 5,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew5_extreme_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew6_low_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew6_low_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew6_low_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew6_low_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew6_low_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "low",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew6_low_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew6_moderate_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew6_moderate_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew6_moderate_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew6_moderate_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew6_moderate_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "moderate",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew6_moderate_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew6_high_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew6_high_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew6_high_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew6_high_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew6_high_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "high",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew6_high_shield30gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 5,
+      "config_id": "mars_860d_crew6_extreme_shield5gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 10,
+      "config_id": "mars_860d_crew6_extreme_shield10gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 15,
+      "config_id": "mars_860d_crew6_extreme_shield15gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 20,
+      "config_id": "mars_860d_crew6_extreme_shield20gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 25,
+      "config_id": "mars_860d_crew6_extreme_shield25gcm2"
+    },
+    {
+      "mission_duration_days": 860,
+      "crew_size": 6,
+      "solar_activity": "extreme",
+      "shielding_gcm2": 30,
+      "config_id": "mars_860d_crew6_extreme_shield30gcm2"
+    }
+  ],
+  "generated": "2025-11-26T06:07:54.558556"
+}

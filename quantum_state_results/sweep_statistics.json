@@ -1,0 +1,15 @@
+{
+  "total_configurations": 847,
+  "stable_configurations": 847,
+  "stability_rate": 100.0,
+  "reached_target": 0,
+  "target_rate": 0.0,
+  "final_error_min": 5.269290811473496,
+  "final_error_max": 8.242747944252017,
+  "final_error_mean": 6.697327148484901,
+  "convergence_rate_mean": 0.0011477951021553452,
+  "best_alpha": 0.6,
+  "best_lambda": 0.1,
+  "best_epochs": 100,
+  "best_final_error": 5.269290811473496
+}

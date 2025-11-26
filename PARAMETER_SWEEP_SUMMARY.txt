@@ -1,0 +1,43 @@
+
+================================================================================
+COMPREHENSIVE PARAMETER SWEEP SUMMARY
+Maximum Output Mode - All Iterations and Combinations
+================================================================================
+
+PARAMETER SPACE COVERAGE:
+
+1. Primal Logic Kernel Parameters:
+   - MU (λ) sweep: 7 values [0.100 - 0.300]
+   - KE sweep: 11 values [0.0 - 1.0]
+   - D0 sweep: 5 values [140.0 - 160.0]
+   - Total combinations: 385
+
+2. Mars Mission Parameters:
+   - Durations: 6 values [90, 180, 270, 360, 500, 860]
+   - Crew sizes: 5 values [2, 3, 4, 5, 6]
+   - Solar activity: 4 levels ['low', 'moderate', 'high', 'extreme']
+   - Shielding: 6 configs [5, 10, 15, 20, 25, 30]
+   - Total combinations: 720
+
+3. Consciousness Baseline Parameters:
+   - Baselines: 10 values [0.500 - 0.900]
+   - Crew sizes: 5 values [2, 3, 4, 5, 6]
+   - Total combinations: 50
+
+4. Field Coupling Parameters:
+   - Alpha: 9 values [0.5200 - 0.5600]
+   - Lambda: 9 values [0.1100 - 0.1200]
+   - Field strengths: 7 values [0.0, 0.1, 0.5, 1.0, 2.0, 5.0, 10.0]
+   - Total combinations: 567
+
+5. Quantum State Parameters:
+   - Alpha: 11 values [0.500 - 0.600]
+   - Lambda: 11 values [0.100 - 0.150]
+   - Epochs: 7 values [5, 10, 15, 20, 30, 50, 100]
+   - Total combinations: 847
+
+================================================================================
+GRAND TOTAL: 2,569 parameter combinations
+================================================================================
+
+Generated: 2025-11-26T06:07:54.578561

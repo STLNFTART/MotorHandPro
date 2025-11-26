@@ -1,0 +1,3408 @@
+{
+  "total_configurations": 567,
+  "configurations": [
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5200_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5200_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5200_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5200_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5200_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5200_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5200_lambda0.1200_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5250_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5250_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5250_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5250_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5250_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5250_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.525,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5250_lambda0.1200_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5300_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5300_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5300_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5300_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5300_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5300_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5300_lambda0.1200_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5350_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5350_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5350_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5350_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5350_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5350_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.535,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5350_lambda0.1200_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5400_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5400_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5400_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5400_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5400_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5400_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5400_lambda0.1200_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5450_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5450_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5450_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5450_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5450_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5450_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.545,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5450_lambda0.1200_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5500_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5500_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5500_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5500_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5500_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5500_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5500_lambda0.1200_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5550_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5550_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5550_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5550_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5550_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5550_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.555,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5550_lambda0.1200_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1100_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1100_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1100_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1100_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1100_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1100_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1100_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1113_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1113_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1113_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1113_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1113_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1113_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1113_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1125,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1125_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1125,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1125_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1125,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1125_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1125,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1125_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1125,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1125_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1125,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1125_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1125,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1125_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11375,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1138_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11375,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1138_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11375,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1138_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11375,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1138_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11375,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1138_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11375,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1138_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11375,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1138_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1150_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1150_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11499999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1150_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11499999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1150_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11499999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1150_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11499999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1150_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11499999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1150_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1162_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1162_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11624999999999999,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1162_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11624999999999999,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1162_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11624999999999999,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1162_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11624999999999999,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1162_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11624999999999999,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1162_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1175,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1175_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1175,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1175_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1175,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1175_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1175,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1175_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1175,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1175_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1175,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1175_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.1175,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1175_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11875,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1187_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11875,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1187_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11875,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1187_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11875,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1187_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11875,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1187_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11875,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1187_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.11875,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1187_strength10.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.12,
+      "field_strength": 0.0,
+      "config_id": "field_alpha0.5600_lambda0.1200_strength0.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.12,
+      "field_strength": 0.1,
+      "config_id": "field_alpha0.5600_lambda0.1200_strength0.1"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.12,
+      "field_strength": 0.5,
+      "config_id": "field_alpha0.5600_lambda0.1200_strength0.5"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.12,
+      "field_strength": 1.0,
+      "config_id": "field_alpha0.5600_lambda0.1200_strength1.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.12,
+      "field_strength": 2.0,
+      "config_id": "field_alpha0.5600_lambda0.1200_strength2.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.12,
+      "field_strength": 5.0,
+      "config_id": "field_alpha0.5600_lambda0.1200_strength5.0"
+    },
+    {
+      "alpha": 0.56,
+      "lambda": 0.12,
+      "field_strength": 10.0,
+      "config_id": "field_alpha0.5600_lambda0.1200_strength10.0"
+    }
+  ],
+  "generated": "2025-11-26T06:07:54.566014"
+}

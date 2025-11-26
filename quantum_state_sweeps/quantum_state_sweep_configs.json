@@ -1,0 +1,5088 @@
+{
+  "total_configurations": 847,
+  "configurations": [
+    {
+      "alpha": 0.5,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.500_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.500_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.500_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.500_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.500_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.500_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.5,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.500_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.510_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.510_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.510_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.510_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.510_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.510_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.51,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.510_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.520_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.520_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.520_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.520_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.520_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.520_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.52,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.520_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.530_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.530_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.530_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.530_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.530_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.530_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.53,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.530_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.540_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.540_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.540_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.540_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.540_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.540_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.54,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.540_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.550_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.550_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.550_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.550_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.550_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.550_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.55,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.550_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.560_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.560_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.560_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.560_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.560_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.560_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.5599999999999999,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.560_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.570_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.570_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.570_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.570_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.570_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.570_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.57,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.570_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.580_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.580_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.580_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.580_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.580_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.580_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.58,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.580_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.590_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.590_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.590_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.590_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.590_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.590_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.59,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.590_lambda0.150_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.1,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.100_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.1,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.100_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.1,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.100_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.1,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.100_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.1,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.100_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.1,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.100_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.1,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.100_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.10500000000000001,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.105_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.10500000000000001,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.105_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.10500000000000001,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.105_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.10500000000000001,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.105_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.10500000000000001,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.105_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.10500000000000001,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.105_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.10500000000000001,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.105_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.11,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.110_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.11,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.110_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.11,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.110_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.11,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.110_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.11,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.110_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.11,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.110_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.11,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.110_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.115,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.115_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.115,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.115_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.115,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.115_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.115,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.115_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.115,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.115_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.115,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.115_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.115,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.115_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.12,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.120_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.12,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.120_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.12,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.120_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.12,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.120_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.12,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.120_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.12,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.120_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.12,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.120_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.125,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.125_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.125,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.125_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.125,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.125_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.125,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.125_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.125,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.125_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.125,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.125_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.125,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.125_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.13,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.130_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.13,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.130_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.13,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.130_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.13,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.130_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.13,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.130_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.13,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.130_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.13,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.130_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.135,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.135_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.135,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.135_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.135,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.135_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.135,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.135_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.135,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.135_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.135,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.135_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.135,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.135_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.14,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.140_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.14,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.140_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.14,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.140_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.14,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.140_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.14,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.140_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.14,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.140_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.14,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.140_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.145,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.145_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.145,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.145_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.145,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.145_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.145,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.145_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.145,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.145_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.145,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.145_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.145,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.145_epochs100"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.15,
+      "epochs": 5,
+      "config_id": "quantum_alpha0.600_lambda0.150_epochs5"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.15,
+      "epochs": 10,
+      "config_id": "quantum_alpha0.600_lambda0.150_epochs10"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.15,
+      "epochs": 15,
+      "config_id": "quantum_alpha0.600_lambda0.150_epochs15"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.15,
+      "epochs": 20,
+      "config_id": "quantum_alpha0.600_lambda0.150_epochs20"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.15,
+      "epochs": 30,
+      "config_id": "quantum_alpha0.600_lambda0.150_epochs30"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.15,
+      "epochs": 50,
+      "config_id": "quantum_alpha0.600_lambda0.150_epochs50"
+    },
+    {
+      "alpha": 0.6,
+      "lambda": 0.15,
+      "epochs": 100,
+      "config_id": "quantum_alpha0.600_lambda0.150_epochs100"
+    }
+  ],
+  "generated": "2025-11-26T06:07:54.573653"
+}

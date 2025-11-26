@@ -1,0 +1,9 @@
+{
+  "total_configurations": 567,
+  "stable_configurations": 567,
+  "stability_rate": 100.0,
+  "lipschitz_min": 0.1287054728525734,
+  "lipschitz_max": 0.5717484474677267,
+  "lipschitz_mean": 0.4292826744677409,
+  "lipschitz_median": 0.5177495094896809
+}

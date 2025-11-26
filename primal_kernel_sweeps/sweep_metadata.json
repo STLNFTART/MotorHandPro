@@ -1,0 +1,3885 @@
+{
+  "total_combinations": 385,
+  "mu_values": [
+    0.1,
+    0.12,
+    0.15,
+    0.16905,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "ke_values": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "d0_values": [
+    149.9992314,
+    140.0,
+    145.0,
+    155.0,
+    160.0
+  ],
+  "generated": "2025-11-26T06:07:54.553291",
+  "combinations": [
+    {
+      "mu": 0.1,
+      "ke": 0.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6063789448611849,
+      "final_Ec": 0.006304173972762685
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.0,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6063789448611849,
+      "final_Ec": 0.006304173972762685
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.0,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6063789448611849,
+      "final_Ec": 0.006304173972762685
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.0,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6063789448611849,
+      "final_Ec": 0.006304173972762685
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.0,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6063789448611849,
+      "final_Ec": 0.006304173972762685
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.1,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.10_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.10_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.606903751944605,
+      "final_Ec": 0.006306534538094806
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.1,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.10_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.10_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.606903751944605,
+      "final_Ec": 0.006306534538094806
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.1,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.10_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.10_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.606903751944605,
+      "final_Ec": 0.006306534538094806
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.1,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.10_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.10_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.606903751944605,
+      "final_Ec": 0.006306534538094806
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.1,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.10_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.10_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.606903751944605,
+      "final_Ec": 0.006306534538094806
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.2,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.20_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.20_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6074285590280266,
+      "final_Ec": 0.006308895103426953
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.2,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.20_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.20_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6074285590280266,
+      "final_Ec": 0.006308895103426953
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.2,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.20_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.20_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6074285590280266,
+      "final_Ec": 0.006308895103426953
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.2,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.20_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.20_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6074285590280266,
+      "final_Ec": 0.006308895103426953
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.2,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.20_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.20_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6074285590280266,
+      "final_Ec": 0.006308895103426953
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.3,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.30_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.30_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6079533661114472,
+      "final_Ec": 0.006311255668759067
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.3,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.30_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.30_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6079533661114472,
+      "final_Ec": 0.006311255668759067
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.3,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.30_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.30_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6079533661114472,
+      "final_Ec": 0.006311255668759067
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.3,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.30_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.30_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6079533661114472,
+      "final_Ec": 0.006311255668759067
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.3,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.30_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.30_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6079533661114472,
+      "final_Ec": 0.006311255668759067
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.4,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.40_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.40_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6084781731948682,
+      "final_Ec": 0.006313616234091214
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.4,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.40_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.40_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6084781731948682,
+      "final_Ec": 0.006313616234091214
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.4,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.40_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.40_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6084781731948682,
+      "final_Ec": 0.006313616234091214
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.4,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.40_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.40_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6084781731948682,
+      "final_Ec": 0.006313616234091214
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.4,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.40_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.40_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6084781731948682,
+      "final_Ec": 0.006313616234091214
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.5,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.50_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.50_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6090029802782901,
+      "final_Ec": 0.006315976799423334
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.5,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.50_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.50_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6090029802782901,
+      "final_Ec": 0.006315976799423334
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.5,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.50_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.50_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6090029802782901,
+      "final_Ec": 0.006315976799423334
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.5,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.50_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.50_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6090029802782901,
+      "final_Ec": 0.006315976799423334
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.5,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.50_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.50_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6090029802782901,
+      "final_Ec": 0.006315976799423334
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.6,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.60_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.60_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6095277873617109,
+      "final_Ec": 0.006318337364755471
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.6,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.60_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.60_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6095277873617109,
+      "final_Ec": 0.006318337364755471
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.6,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.60_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.60_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6095277873617109,
+      "final_Ec": 0.006318337364755471
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.6,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.60_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.60_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6095277873617109,
+      "final_Ec": 0.006318337364755471
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.6,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.60_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.60_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6095277873617109,
+      "final_Ec": 0.006318337364755471
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.7,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.70_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.70_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6100525944451314,
+      "final_Ec": 0.006320697930087591
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.7,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.70_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.70_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6100525944451314,
+      "final_Ec": 0.006320697930087591
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.7,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.70_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.70_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6100525944451314,
+      "final_Ec": 0.006320697930087591
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.7,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.70_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.70_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6100525944451314,
+      "final_Ec": 0.006320697930087591
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.7,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.70_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.70_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6100525944451314,
+      "final_Ec": 0.006320697930087591
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.8,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.80_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.80_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6105774015285522,
+      "final_Ec": 0.006323058495419729
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.8,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.80_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.80_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6105774015285522,
+      "final_Ec": 0.006323058495419729
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.8,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.80_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.80_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6105774015285522,
+      "final_Ec": 0.006323058495419729
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.8,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.80_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.80_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6105774015285522,
+      "final_Ec": 0.006323058495419729
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.8,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.80_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.80_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6105774015285522,
+      "final_Ec": 0.006323058495419729
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.9,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke0.90_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.90_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6111022086119734,
+      "final_Ec": 0.0063254190607518615
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.9,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke0.90_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.90_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6111022086119734,
+      "final_Ec": 0.0063254190607518615
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.9,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke0.90_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.90_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6111022086119734,
+      "final_Ec": 0.0063254190607518615
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.9,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke0.90_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.90_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6111022086119734,
+      "final_Ec": 0.0063254190607518615
+    },
+    {
+      "mu": 0.1,
+      "ke": 0.9,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke0.90_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke0.90_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6111022086119734,
+      "final_Ec": 0.0063254190607518615
+    },
+    {
+      "mu": 0.1,
+      "ke": 1.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.10000_ke1.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke1.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.6116270156953942,
+      "final_Ec": 0.0063277796260839975
+    },
+    {
+      "mu": 0.1,
+      "ke": 1.0,
+      "d0": 140.0,
+      "filename": "run_mu0.10000_ke1.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke1.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6116270156953942,
+      "final_Ec": 0.0063277796260839975
+    },
+    {
+      "mu": 0.1,
+      "ke": 1.0,
+      "d0": 145.0,
+      "filename": "run_mu0.10000_ke1.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke1.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6116270156953942,
+      "final_Ec": 0.0063277796260839975
+    },
+    {
+      "mu": 0.1,
+      "ke": 1.0,
+      "d0": 155.0,
+      "filename": "run_mu0.10000_ke1.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke1.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6116270156953942,
+      "final_Ec": 0.0063277796260839975
+    },
+    {
+      "mu": 0.1,
+      "ke": 1.0,
+      "d0": 160.0,
+      "filename": "run_mu0.10000_ke1.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.10000_ke1.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.6116270156953942,
+      "final_Ec": 0.0063277796260839975
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5486139413205845,
+      "final_Ec": 0.0061306537303205955
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.0,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5486139413205845,
+      "final_Ec": 0.0061306537303205955
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.0,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5486139413205845,
+      "final_Ec": 0.0061306537303205955
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.0,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5486139413205845,
+      "final_Ec": 0.0061306537303205955
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.0,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5486139413205845,
+      "final_Ec": 0.0061306537303205955
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.1,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.10_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.10_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5491055645625633,
+      "final_Ec": 0.006132955883046579
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.1,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.10_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.10_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5491055645625633,
+      "final_Ec": 0.006132955883046579
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.1,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.10_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.10_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5491055645625633,
+      "final_Ec": 0.006132955883046579
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.1,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.10_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.10_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5491055645625633,
+      "final_Ec": 0.006132955883046579
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.1,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.10_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.10_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5491055645625633,
+      "final_Ec": 0.006132955883046579
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.2,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.20_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.20_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5495971878045427,
+      "final_Ec": 0.006135258035772573
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.2,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.20_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.20_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5495971878045427,
+      "final_Ec": 0.006135258035772573
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.2,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.20_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.20_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5495971878045427,
+      "final_Ec": 0.006135258035772573
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.2,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.20_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.20_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5495971878045427,
+      "final_Ec": 0.006135258035772573
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.2,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.20_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.20_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5495971878045427,
+      "final_Ec": 0.006135258035772573
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.3,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.30_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.30_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5500888110465221,
+      "final_Ec": 0.006137560188498554
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.3,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.30_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.30_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5500888110465221,
+      "final_Ec": 0.006137560188498554
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.3,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.30_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.30_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5500888110465221,
+      "final_Ec": 0.006137560188498554
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.3,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.30_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.30_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5500888110465221,
+      "final_Ec": 0.006137560188498554
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.3,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.30_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.30_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5500888110465221,
+      "final_Ec": 0.006137560188498554
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.4,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.40_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.40_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5505804342885013,
+      "final_Ec": 0.00613986234122455
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.4,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.40_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.40_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5505804342885013,
+      "final_Ec": 0.00613986234122455
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.4,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.40_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.40_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5505804342885013,
+      "final_Ec": 0.00613986234122455
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.4,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.40_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.40_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5505804342885013,
+      "final_Ec": 0.00613986234122455
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.4,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.40_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.40_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5505804342885013,
+      "final_Ec": 0.00613986234122455
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.5,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.50_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.50_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5510720575304804,
+      "final_Ec": 0.006142164493950537
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.5,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.50_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.50_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5510720575304804,
+      "final_Ec": 0.006142164493950537
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.5,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.50_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.50_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5510720575304804,
+      "final_Ec": 0.006142164493950537
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.5,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.50_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.50_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5510720575304804,
+      "final_Ec": 0.006142164493950537
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.5,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.50_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.50_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5510720575304804,
+      "final_Ec": 0.006142164493950537
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.6,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.60_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.60_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.55156368077246,
+      "final_Ec": 0.006144466646676523
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.6,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.60_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.60_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.55156368077246,
+      "final_Ec": 0.006144466646676523
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.6,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.60_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.60_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.55156368077246,
+      "final_Ec": 0.006144466646676523
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.6,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.60_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.60_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.55156368077246,
+      "final_Ec": 0.006144466646676523
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.6,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.60_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.60_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.55156368077246,
+      "final_Ec": 0.006144466646676523
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.7,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.70_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.70_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5520553040144388,
+      "final_Ec": 0.006146768799402509
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.7,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.70_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.70_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5520553040144388,
+      "final_Ec": 0.006146768799402509
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.7,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.70_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.70_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5520553040144388,
+      "final_Ec": 0.006146768799402509
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.7,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.70_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.70_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5520553040144388,
+      "final_Ec": 0.006146768799402509
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.7,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.70_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.70_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5520553040144388,
+      "final_Ec": 0.006146768799402509
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.8,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.80_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.80_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5525469272564186,
+      "final_Ec": 0.006149070952128491
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.8,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.80_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.80_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5525469272564186,
+      "final_Ec": 0.006149070952128491
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.8,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.80_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.80_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5525469272564186,
+      "final_Ec": 0.006149070952128491
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.8,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.80_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.80_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5525469272564186,
+      "final_Ec": 0.006149070952128491
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.8,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.80_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.80_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5525469272564186,
+      "final_Ec": 0.006149070952128491
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.9,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke0.90_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.90_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5530385504983978,
+      "final_Ec": 0.006151373104854486
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.9,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke0.90_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.90_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5530385504983978,
+      "final_Ec": 0.006151373104854486
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.9,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke0.90_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.90_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5530385504983978,
+      "final_Ec": 0.006151373104854486
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.9,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke0.90_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.90_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5530385504983978,
+      "final_Ec": 0.006151373104854486
+    },
+    {
+      "mu": 0.12,
+      "ke": 0.9,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke0.90_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke0.90_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5530385504983978,
+      "final_Ec": 0.006151373104854486
+    },
+    {
+      "mu": 0.12,
+      "ke": 1.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.12000_ke1.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke1.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.5535301737403769,
+      "final_Ec": 0.0061536752575804595
+    },
+    {
+      "mu": 0.12,
+      "ke": 1.0,
+      "d0": 140.0,
+      "filename": "run_mu0.12000_ke1.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke1.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5535301737403769,
+      "final_Ec": 0.0061536752575804595
+    },
+    {
+      "mu": 0.12,
+      "ke": 1.0,
+      "d0": 145.0,
+      "filename": "run_mu0.12000_ke1.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke1.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5535301737403769,
+      "final_Ec": 0.0061536752575804595
+    },
+    {
+      "mu": 0.12,
+      "ke": 1.0,
+      "d0": 155.0,
+      "filename": "run_mu0.12000_ke1.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke1.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5535301737403769,
+      "final_Ec": 0.0061536752575804595
+    },
+    {
+      "mu": 0.12,
+      "ke": 1.0,
+      "d0": 160.0,
+      "filename": "run_mu0.12000_ke1.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.12000_ke1.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.5535301737403769,
+      "final_Ec": 0.0061536752575804595
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4721006554151494,
+      "final_Ec": 0.005885236181839121
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.0,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4721006554151494,
+      "final_Ec": 0.005885236181839121
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.0,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4721006554151494,
+      "final_Ec": 0.005885236181839121
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.0,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4721006554151494,
+      "final_Ec": 0.005885236181839121
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.0,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4721006554151494,
+      "final_Ec": 0.005885236181839121
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.1,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.10_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.10_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4725469740368354,
+      "final_Ec": 0.005887455184743355
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.1,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.10_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.10_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4725469740368354,
+      "final_Ec": 0.005887455184743355
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.1,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.10_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.10_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4725469740368354,
+      "final_Ec": 0.005887455184743355
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.1,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.10_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.10_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4725469740368354,
+      "final_Ec": 0.005887455184743355
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.1,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.10_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.10_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4725469740368354,
+      "final_Ec": 0.005887455184743355
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.2,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.20_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.20_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4729932926585194,
+      "final_Ec": 0.0058896741876475825
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.2,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.20_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.20_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4729932926585194,
+      "final_Ec": 0.0058896741876475825
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.2,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.20_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.20_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4729932926585194,
+      "final_Ec": 0.0058896741876475825
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.2,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.20_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.20_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4729932926585194,
+      "final_Ec": 0.0058896741876475825
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.2,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.20_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.20_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4729932926585194,
+      "final_Ec": 0.0058896741876475825
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.3,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.30_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.30_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4734396112802052,
+      "final_Ec": 0.005891893190551833
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.3,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.30_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.30_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4734396112802052,
+      "final_Ec": 0.005891893190551833
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.3,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.30_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.30_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4734396112802052,
+      "final_Ec": 0.005891893190551833
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.3,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.30_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.30_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4734396112802052,
+      "final_Ec": 0.005891893190551833
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.3,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.30_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.30_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4734396112802052,
+      "final_Ec": 0.005891893190551833
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.4,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.40_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.40_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4738859299018917,
+      "final_Ec": 0.005894112193456063
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.4,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.40_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.40_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4738859299018917,
+      "final_Ec": 0.005894112193456063
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.4,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.40_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.40_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4738859299018917,
+      "final_Ec": 0.005894112193456063
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.4,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.40_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.40_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4738859299018917,
+      "final_Ec": 0.005894112193456063
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.4,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.40_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.40_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4738859299018917,
+      "final_Ec": 0.005894112193456063
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.5,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.50_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.50_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4743322485235762,
+      "final_Ec": 0.005896331196360303
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.5,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.50_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.50_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4743322485235762,
+      "final_Ec": 0.005896331196360303
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.5,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.50_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.50_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4743322485235762,
+      "final_Ec": 0.005896331196360303
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.5,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.50_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.50_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4743322485235762,
+      "final_Ec": 0.005896331196360303
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.5,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.50_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.50_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4743322485235762,
+      "final_Ec": 0.005896331196360303
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.6,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.60_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.60_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.47477856714526223,
+      "final_Ec": 0.005898550199264534
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.6,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.60_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.60_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.47477856714526223,
+      "final_Ec": 0.005898550199264534
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.6,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.60_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.60_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.47477856714526223,
+      "final_Ec": 0.005898550199264534
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.6,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.60_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.60_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.47477856714526223,
+      "final_Ec": 0.005898550199264534
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.6,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.60_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.60_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.47477856714526223,
+      "final_Ec": 0.005898550199264534
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.7,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.70_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.70_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4752248857669477,
+      "final_Ec": 0.005900769202168777
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.7,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.70_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.70_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4752248857669477,
+      "final_Ec": 0.005900769202168777
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.7,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.70_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.70_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4752248857669477,
+      "final_Ec": 0.005900769202168777
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.7,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.70_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.70_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4752248857669477,
+      "final_Ec": 0.005900769202168777
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.7,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.70_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.70_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4752248857669477,
+      "final_Ec": 0.005900769202168777
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.8,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.80_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.80_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4756712043886337,
+      "final_Ec": 0.005902988205073007
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.8,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.80_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.80_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4756712043886337,
+      "final_Ec": 0.005902988205073007
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.8,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.80_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.80_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4756712043886337,
+      "final_Ec": 0.005902988205073007
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.8,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.80_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.80_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4756712043886337,
+      "final_Ec": 0.005902988205073007
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.8,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.80_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.80_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4756712043886337,
+      "final_Ec": 0.005902988205073007
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.9,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke0.90_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.90_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.47611752301032,
+      "final_Ec": 0.005905207207977243
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.9,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke0.90_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.90_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.47611752301032,
+      "final_Ec": 0.005905207207977243
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.9,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke0.90_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.90_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.47611752301032,
+      "final_Ec": 0.005905207207977243
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.9,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke0.90_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.90_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.47611752301032,
+      "final_Ec": 0.005905207207977243
+    },
+    {
+      "mu": 0.15,
+      "ke": 0.9,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke0.90_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke0.90_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.47611752301032,
+      "final_Ec": 0.005905207207977243
+    },
+    {
+      "mu": 0.15,
+      "ke": 1.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.15000_ke1.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke1.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4765638416320048,
+      "final_Ec": 0.005907426210881472
+    },
+    {
+      "mu": 0.15,
+      "ke": 1.0,
+      "d0": 140.0,
+      "filename": "run_mu0.15000_ke1.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke1.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4765638416320048,
+      "final_Ec": 0.005907426210881472
+    },
+    {
+      "mu": 0.15,
+      "ke": 1.0,
+      "d0": 145.0,
+      "filename": "run_mu0.15000_ke1.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke1.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4765638416320048,
+      "final_Ec": 0.005907426210881472
+    },
+    {
+      "mu": 0.15,
+      "ke": 1.0,
+      "d0": 155.0,
+      "filename": "run_mu0.15000_ke1.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke1.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4765638416320048,
+      "final_Ec": 0.005907426210881472
+    },
+    {
+      "mu": 0.15,
+      "ke": 1.0,
+      "d0": 160.0,
+      "filename": "run_mu0.15000_ke1.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.15000_ke1.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4765638416320048,
+      "final_Ec": 0.005907426210881472
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4291429264006274,
+      "final_Ec": 0.005738036892672174
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.0,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4291429264006274,
+      "final_Ec": 0.005738036892672174
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.0,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4291429264006274,
+      "final_Ec": 0.005738036892672174
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.0,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4291429264006274,
+      "final_Ec": 0.005738036892672174
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.0,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4291429264006274,
+      "final_Ec": 0.005738036892672174
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.1,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.10_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.10_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.42956301531431174,
+      "final_Ec": 0.0057402057136445835
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.1,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.10_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.10_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.42956301531431174,
+      "final_Ec": 0.0057402057136445835
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.1,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.10_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.10_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.42956301531431174,
+      "final_Ec": 0.0057402057136445835
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.1,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.10_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.10_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.42956301531431174,
+      "final_Ec": 0.0057402057136445835
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.1,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.10_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.10_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.42956301531431174,
+      "final_Ec": 0.0057402057136445835
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.2,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.20_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.20_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.42998310422799685,
+      "final_Ec": 0.005742374534616984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.2,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.20_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.20_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.42998310422799685,
+      "final_Ec": 0.005742374534616984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.2,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.20_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.20_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.42998310422799685,
+      "final_Ec": 0.005742374534616984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.2,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.20_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.20_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.42998310422799685,
+      "final_Ec": 0.005742374534616984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.2,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.20_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.20_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.42998310422799685,
+      "final_Ec": 0.005742374534616984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.3,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.30_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.30_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4304031931416834,
+      "final_Ec": 0.005744543355589389
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.3,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.30_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.30_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4304031931416834,
+      "final_Ec": 0.005744543355589389
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.3,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.30_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.30_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4304031931416834,
+      "final_Ec": 0.005744543355589389
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.3,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.30_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.30_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4304031931416834,
+      "final_Ec": 0.005744543355589389
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.3,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.30_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.30_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4304031931416834,
+      "final_Ec": 0.005744543355589389
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.4,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.40_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.40_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.43082328205536813,
+      "final_Ec": 0.005746712176561782
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.4,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.40_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.40_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43082328205536813,
+      "final_Ec": 0.005746712176561782
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.4,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.40_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.40_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43082328205536813,
+      "final_Ec": 0.005746712176561782
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.4,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.40_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.40_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43082328205536813,
+      "final_Ec": 0.005746712176561782
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.4,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.40_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.40_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43082328205536813,
+      "final_Ec": 0.005746712176561782
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.5,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.50_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.50_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.431243370969054,
+      "final_Ec": 0.00574888099753418
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.5,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.50_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.50_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.431243370969054,
+      "final_Ec": 0.00574888099753418
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.5,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.50_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.50_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.431243370969054,
+      "final_Ec": 0.00574888099753418
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.5,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.50_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.50_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.431243370969054,
+      "final_Ec": 0.00574888099753418
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.5,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.50_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.50_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.431243370969054,
+      "final_Ec": 0.00574888099753418
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.6,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.60_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.60_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.43166345988273896,
+      "final_Ec": 0.005751049818506582
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.6,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.60_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.60_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43166345988273896,
+      "final_Ec": 0.005751049818506582
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.6,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.60_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.60_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43166345988273896,
+      "final_Ec": 0.005751049818506582
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.6,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.60_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.60_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43166345988273896,
+      "final_Ec": 0.005751049818506582
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.6,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.60_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.60_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43166345988273896,
+      "final_Ec": 0.005751049818506582
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.7,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.70_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.70_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.43208354879642485,
+      "final_Ec": 0.005753218639478984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.7,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.70_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.70_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43208354879642485,
+      "final_Ec": 0.005753218639478984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.7,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.70_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.70_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43208354879642485,
+      "final_Ec": 0.005753218639478984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.7,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.70_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.70_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43208354879642485,
+      "final_Ec": 0.005753218639478984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.7,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.70_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.70_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43208354879642485,
+      "final_Ec": 0.005753218639478984
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.8,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.80_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.80_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4325036377101093,
+      "final_Ec": 0.005755387460451374
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.8,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.80_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.80_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4325036377101093,
+      "final_Ec": 0.005755387460451374
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.8,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.80_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.80_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4325036377101093,
+      "final_Ec": 0.005755387460451374
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.8,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.80_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.80_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4325036377101093,
+      "final_Ec": 0.005755387460451374
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.8,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.80_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.80_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4325036377101093,
+      "final_Ec": 0.005755387460451374
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.9,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke0.90_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.90_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.43292372662379464,
+      "final_Ec": 0.005757556281423783
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.9,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke0.90_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.90_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43292372662379464,
+      "final_Ec": 0.005757556281423783
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.9,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke0.90_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.90_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43292372662379464,
+      "final_Ec": 0.005757556281423783
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.9,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke0.90_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.90_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43292372662379464,
+      "final_Ec": 0.005757556281423783
+    },
+    {
+      "mu": 0.16905,
+      "ke": 0.9,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke0.90_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke0.90_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.43292372662379464,
+      "final_Ec": 0.005757556281423783
+    },
+    {
+      "mu": 0.16905,
+      "ke": 1.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.16905_ke1.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke1.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.4333438155374798,
+      "final_Ec": 0.005759725102396182
+    },
+    {
+      "mu": 0.16905,
+      "ke": 1.0,
+      "d0": 140.0,
+      "filename": "run_mu0.16905_ke1.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke1.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4333438155374798,
+      "final_Ec": 0.005759725102396182
+    },
+    {
+      "mu": 0.16905,
+      "ke": 1.0,
+      "d0": 145.0,
+      "filename": "run_mu0.16905_ke1.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke1.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4333438155374798,
+      "final_Ec": 0.005759725102396182
+    },
+    {
+      "mu": 0.16905,
+      "ke": 1.0,
+      "d0": 155.0,
+      "filename": "run_mu0.16905_ke1.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke1.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4333438155374798,
+      "final_Ec": 0.005759725102396182
+    },
+    {
+      "mu": 0.16905,
+      "ke": 1.0,
+      "d0": 160.0,
+      "filename": "run_mu0.16905_ke1.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.16905_ke1.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.4333438155374798,
+      "final_Ec": 0.005759725102396182
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.3675112548571592,
+      "final_Ec": 0.005512108572791928
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.0,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3675112548571592,
+      "final_Ec": 0.005512108572791928
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.0,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3675112548571592,
+      "final_Ec": 0.005512108572791928
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.0,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3675112548571592,
+      "final_Ec": 0.005512108572791928
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.0,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3675112548571592,
+      "final_Ec": 0.005512108572791928
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.1,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.10_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.10_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.36789250738171536,
+      "final_Ec": 0.005514199906034811
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.1,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.10_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.10_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.36789250738171536,
+      "final_Ec": 0.005514199906034811
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.1,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.10_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.10_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.36789250738171536,
+      "final_Ec": 0.005514199906034811
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.1,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.10_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.10_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.36789250738171536,
+      "final_Ec": 0.005514199906034811
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.1,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.10_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.10_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.36789250738171536,
+      "final_Ec": 0.005514199906034811
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.2,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.20_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.20_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.3682737599062701,
+      "final_Ec": 0.005516291239277683
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.2,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.20_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.20_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3682737599062701,
+      "final_Ec": 0.005516291239277683
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.2,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.20_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.20_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3682737599062701,
+      "final_Ec": 0.005516291239277683
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.2,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.20_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.20_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3682737599062701,
+      "final_Ec": 0.005516291239277683
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.2,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.20_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.20_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3682737599062701,
+      "final_Ec": 0.005516291239277683
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.3,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.30_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.30_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.3686550124308264,
+      "final_Ec": 0.0055183825725205644
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.3,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.30_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.30_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3686550124308264,
+      "final_Ec": 0.0055183825725205644
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.3,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.30_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.30_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3686550124308264,
+      "final_Ec": 0.0055183825725205644
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.3,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.30_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.30_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3686550124308264,
+      "final_Ec": 0.0055183825725205644
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.3,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.30_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.30_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3686550124308264,
+      "final_Ec": 0.0055183825725205644
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.4,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.40_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.40_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.36903626495538217,
+      "final_Ec": 0.005520473905763442
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.4,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.40_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.40_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.36903626495538217,
+      "final_Ec": 0.005520473905763442
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.4,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.40_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.40_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.36903626495538217,
+      "final_Ec": 0.005520473905763442
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.4,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.40_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.40_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.36903626495538217,
+      "final_Ec": 0.005520473905763442
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.4,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.40_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.40_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.36903626495538217,
+      "final_Ec": 0.005520473905763442
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.5,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.50_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.50_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.3694175174799386,
+      "final_Ec": 0.005522565239006325
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.5,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.50_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.50_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3694175174799386,
+      "final_Ec": 0.005522565239006325
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.5,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.50_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.50_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3694175174799386,
+      "final_Ec": 0.005522565239006325
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.5,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.50_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.50_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3694175174799386,
+      "final_Ec": 0.005522565239006325
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.5,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.50_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.50_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3694175174799386,
+      "final_Ec": 0.005522565239006325
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.6,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.60_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.60_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.3697987700044937,
+      "final_Ec": 0.005524656572249205
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.6,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.60_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.60_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3697987700044937,
+      "final_Ec": 0.005524656572249205
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.6,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.60_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.60_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3697987700044937,
+      "final_Ec": 0.005524656572249205
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.6,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.60_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.60_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3697987700044937,
+      "final_Ec": 0.005524656572249205
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.6,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.60_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.60_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3697987700044937,
+      "final_Ec": 0.005524656572249205
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.7,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.70_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.70_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.3701800225290497,
+      "final_Ec": 0.005526747905492077
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.7,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.70_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.70_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3701800225290497,
+      "final_Ec": 0.005526747905492077
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.7,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.70_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.70_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3701800225290497,
+      "final_Ec": 0.005526747905492077
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.7,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.70_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.70_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3701800225290497,
+      "final_Ec": 0.005526747905492077
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.7,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.70_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.70_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3701800225290497,
+      "final_Ec": 0.005526747905492077
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.8,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.80_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.80_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.3705612750536058,
+      "final_Ec": 0.0055288392387349726
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.8,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.80_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.80_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3705612750536058,
+      "final_Ec": 0.0055288392387349726
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.8,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.80_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.80_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3705612750536058,
+      "final_Ec": 0.0055288392387349726
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.8,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.80_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.80_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3705612750536058,
+      "final_Ec": 0.0055288392387349726
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.8,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.80_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.80_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.3705612750536058,
+      "final_Ec": 0.0055288392387349726
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.9,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke0.90_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.90_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.37094252757816104,
+      "final_Ec": 0.005530930571977842
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.9,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke0.90_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.90_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.37094252757816104,
+      "final_Ec": 0.005530930571977842
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.9,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke0.90_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.90_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.37094252757816104,
+      "final_Ec": 0.005530930571977842
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.9,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke0.90_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.90_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.37094252757816104,
+      "final_Ec": 0.005530930571977842
+    },
+    {
+      "mu": 0.2,
+      "ke": 0.9,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke0.90_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke0.90_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.37094252757816104,
+      "final_Ec": 0.005530930571977842
+    },
+    {
+      "mu": 0.2,
+      "ke": 1.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.20000_ke1.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke1.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.37132378010271766,
+      "final_Ec": 0.005533021905220715
+    },
+    {
+      "mu": 0.2,
+      "ke": 1.0,
+      "d0": 140.0,
+      "filename": "run_mu0.20000_ke1.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke1.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.37132378010271766,
+      "final_Ec": 0.005533021905220715
+    },
+    {
+      "mu": 0.2,
+      "ke": 1.0,
+      "d0": 145.0,
+      "filename": "run_mu0.20000_ke1.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke1.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.37132378010271766,
+      "final_Ec": 0.005533021905220715
+    },
+    {
+      "mu": 0.2,
+      "ke": 1.0,
+      "d0": 155.0,
+      "filename": "run_mu0.20000_ke1.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke1.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.37132378010271766,
+      "final_Ec": 0.005533021905220715
+    },
+    {
+      "mu": 0.2,
+      "ke": 1.0,
+      "d0": 160.0,
+      "filename": "run_mu0.20000_ke1.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.20000_ke1.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.37132378010271766,
+      "final_Ec": 0.005533021905220715
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.2860567363303612,
+      "final_Ec": 0.005178513705328597
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.0,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2860567363303612,
+      "final_Ec": 0.005178513705328597
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.0,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2860567363303612,
+      "final_Ec": 0.005178513705328597
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.0,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2860567363303612,
+      "final_Ec": 0.005178513705328597
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.0,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2860567363303612,
+      "final_Ec": 0.005178513705328597
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.1,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.10_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.10_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.286383912130185,
+      "final_Ec": 0.005180489553432108
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.1,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.10_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.10_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.286383912130185,
+      "final_Ec": 0.005180489553432108
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.1,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.10_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.10_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.286383912130185,
+      "final_Ec": 0.005180489553432108
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.1,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.10_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.10_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.286383912130185,
+      "final_Ec": 0.005180489553432108
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.1,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.10_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.10_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.286383912130185,
+      "final_Ec": 0.005180489553432108
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.2,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.20_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.20_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.28671108793000916,
+      "final_Ec": 0.005182465401535614
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.2,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.20_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.20_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28671108793000916,
+      "final_Ec": 0.005182465401535614
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.2,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.20_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.20_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28671108793000916,
+      "final_Ec": 0.005182465401535614
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.2,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.20_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.20_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28671108793000916,
+      "final_Ec": 0.005182465401535614
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.2,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.20_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.20_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28671108793000916,
+      "final_Ec": 0.005182465401535614
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.3,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.30_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.30_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.28703826372983365,
+      "final_Ec": 0.005184441249639127
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.3,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.30_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.30_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28703826372983365,
+      "final_Ec": 0.005184441249639127
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.3,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.30_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.30_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28703826372983365,
+      "final_Ec": 0.005184441249639127
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.3,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.30_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.30_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28703826372983365,
+      "final_Ec": 0.005184441249639127
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.3,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.30_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.30_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28703826372983365,
+      "final_Ec": 0.005184441249639127
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.4,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.40_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.40_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.2873654395296576,
+      "final_Ec": 0.005186417097742648
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.4,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.40_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.40_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2873654395296576,
+      "final_Ec": 0.005186417097742648
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.4,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.40_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.40_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2873654395296576,
+      "final_Ec": 0.005186417097742648
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.4,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.40_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.40_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2873654395296576,
+      "final_Ec": 0.005186417097742648
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.4,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.40_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.40_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2873654395296576,
+      "final_Ec": 0.005186417097742648
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.5,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.50_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.50_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.2876926153294815,
+      "final_Ec": 0.005188392945846163
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.5,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.50_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.50_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2876926153294815,
+      "final_Ec": 0.005188392945846163
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.5,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.50_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.50_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2876926153294815,
+      "final_Ec": 0.005188392945846163
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.5,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.50_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.50_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2876926153294815,
+      "final_Ec": 0.005188392945846163
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.5,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.50_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.50_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2876926153294815,
+      "final_Ec": 0.005188392945846163
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.6,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.60_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.60_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.2880197911293059,
+      "final_Ec": 0.005190368793949672
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.6,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.60_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.60_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2880197911293059,
+      "final_Ec": 0.005190368793949672
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.6,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.60_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.60_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2880197911293059,
+      "final_Ec": 0.005190368793949672
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.6,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.60_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.60_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2880197911293059,
+      "final_Ec": 0.005190368793949672
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.6,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.60_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.60_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2880197911293059,
+      "final_Ec": 0.005190368793949672
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.7,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.70_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.70_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.28834696692913,
+      "final_Ec": 0.00519234464205318
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.7,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.70_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.70_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28834696692913,
+      "final_Ec": 0.00519234464205318
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.7,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.70_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.70_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28834696692913,
+      "final_Ec": 0.00519234464205318
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.7,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.70_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.70_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28834696692913,
+      "final_Ec": 0.00519234464205318
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.7,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.70_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.70_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28834696692913,
+      "final_Ec": 0.00519234464205318
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.8,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.80_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.80_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.28867414272895403,
+      "final_Ec": 0.005194320490156696
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.8,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.80_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.80_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28867414272895403,
+      "final_Ec": 0.005194320490156696
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.8,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.80_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.80_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28867414272895403,
+      "final_Ec": 0.005194320490156696
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.8,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.80_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.80_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28867414272895403,
+      "final_Ec": 0.005194320490156696
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.8,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.80_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.80_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28867414272895403,
+      "final_Ec": 0.005194320490156696
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.9,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke0.90_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.90_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.28900131852877853,
+      "final_Ec": 0.005196296338260214
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.9,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke0.90_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.90_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28900131852877853,
+      "final_Ec": 0.005196296338260214
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.9,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke0.90_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.90_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28900131852877853,
+      "final_Ec": 0.005196296338260214
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.9,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke0.90_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.90_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28900131852877853,
+      "final_Ec": 0.005196296338260214
+    },
+    {
+      "mu": 0.25,
+      "ke": 0.9,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke0.90_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke0.90_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.28900131852877853,
+      "final_Ec": 0.005196296338260214
+    },
+    {
+      "mu": 0.25,
+      "ke": 1.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.25000_ke1.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke1.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.2893284943286027,
+      "final_Ec": 0.005198272186363728
+    },
+    {
+      "mu": 0.25,
+      "ke": 1.0,
+      "d0": 140.0,
+      "filename": "run_mu0.25000_ke1.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke1.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2893284943286027,
+      "final_Ec": 0.005198272186363728
+    },
+    {
+      "mu": 0.25,
+      "ke": 1.0,
+      "d0": 145.0,
+      "filename": "run_mu0.25000_ke1.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke1.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2893284943286027,
+      "final_Ec": 0.005198272186363728
+    },
+    {
+      "mu": 0.25,
+      "ke": 1.0,
+      "d0": 155.0,
+      "filename": "run_mu0.25000_ke1.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke1.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2893284943286027,
+      "final_Ec": 0.005198272186363728
+    },
+    {
+      "mu": 0.25,
+      "ke": 1.0,
+      "d0": 160.0,
+      "filename": "run_mu0.25000_ke1.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.25000_ke1.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2893284943286027,
+      "final_Ec": 0.005198272186363728
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22262767757661106,
+      "final_Ec": 0.004879147675702857
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.0,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22262767757661106,
+      "final_Ec": 0.004879147675702857
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.0,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22262767757661106,
+      "final_Ec": 0.004879147675702857
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.0,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22262767757661106,
+      "final_Ec": 0.004879147675702857
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.0,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22262767757661106,
+      "final_Ec": 0.004879147675702857
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.1,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.10_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.10_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22290978920888385,
+      "final_Ec": 0.004881018753772991
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.1,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.10_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.10_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22290978920888385,
+      "final_Ec": 0.004881018753772991
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.1,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.10_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.10_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22290978920888385,
+      "final_Ec": 0.004881018753772991
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.1,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.10_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.10_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22290978920888385,
+      "final_Ec": 0.004881018753772991
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.1,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.10_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.10_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22290978920888385,
+      "final_Ec": 0.004881018753772991
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.2,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.20_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.20_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22319190084115623,
+      "final_Ec": 0.004882889831843125
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.2,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.20_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.20_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22319190084115623,
+      "final_Ec": 0.004882889831843125
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.2,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.20_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.20_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22319190084115623,
+      "final_Ec": 0.004882889831843125
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.2,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.20_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.20_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22319190084115623,
+      "final_Ec": 0.004882889831843125
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.2,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.20_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.20_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22319190084115623,
+      "final_Ec": 0.004882889831843125
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.3,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.30_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.30_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22347401247342974,
+      "final_Ec": 0.004884760909913276
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.3,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.30_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.30_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22347401247342974,
+      "final_Ec": 0.004884760909913276
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.3,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.30_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.30_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22347401247342974,
+      "final_Ec": 0.004884760909913276
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.3,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.30_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.30_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22347401247342974,
+      "final_Ec": 0.004884760909913276
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.3,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.30_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.30_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22347401247342974,
+      "final_Ec": 0.004884760909913276
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.4,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.40_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.40_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22375612410570167,
+      "final_Ec": 0.004886631987983418
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.4,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.40_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.40_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22375612410570167,
+      "final_Ec": 0.004886631987983418
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.4,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.40_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.40_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22375612410570167,
+      "final_Ec": 0.004886631987983418
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.4,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.40_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.40_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22375612410570167,
+      "final_Ec": 0.004886631987983418
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.4,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.40_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.40_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22375612410570167,
+      "final_Ec": 0.004886631987983418
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.5,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.50_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.50_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.2240382357379746,
+      "final_Ec": 0.004888503066053556
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.5,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.50_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.50_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2240382357379746,
+      "final_Ec": 0.004888503066053556
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.5,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.50_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.50_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2240382357379746,
+      "final_Ec": 0.004888503066053556
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.5,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.50_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.50_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2240382357379746,
+      "final_Ec": 0.004888503066053556
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.5,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.50_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.50_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2240382357379746,
+      "final_Ec": 0.004888503066053556
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.6,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.60_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.60_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22432034737024728,
+      "final_Ec": 0.004890374144123704
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.6,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.60_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.60_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22432034737024728,
+      "final_Ec": 0.004890374144123704
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.6,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.60_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.60_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22432034737024728,
+      "final_Ec": 0.004890374144123704
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.6,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.60_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.60_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22432034737024728,
+      "final_Ec": 0.004890374144123704
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.6,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.60_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.60_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22432034737024728,
+      "final_Ec": 0.004890374144123704
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.7,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.70_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.70_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22460245900251968,
+      "final_Ec": 0.004892245222193839
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.7,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.70_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.70_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22460245900251968,
+      "final_Ec": 0.004892245222193839
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.7,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.70_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.70_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22460245900251968,
+      "final_Ec": 0.004892245222193839
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.7,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.70_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.70_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22460245900251968,
+      "final_Ec": 0.004892245222193839
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.7,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.70_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.70_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22460245900251968,
+      "final_Ec": 0.004892245222193839
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.8,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.80_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.80_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.2248845706347926,
+      "final_Ec": 0.004894116300263978
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.8,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.80_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.80_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2248845706347926,
+      "final_Ec": 0.004894116300263978
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.8,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.80_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.80_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2248845706347926,
+      "final_Ec": 0.004894116300263978
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.8,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.80_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.80_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2248845706347926,
+      "final_Ec": 0.004894116300263978
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.8,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.80_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.80_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.2248845706347926,
+      "final_Ec": 0.004894116300263978
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.9,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke0.90_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.90_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22516668226706496,
+      "final_Ec": 0.004895987378334124
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.9,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke0.90_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.90_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22516668226706496,
+      "final_Ec": 0.004895987378334124
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.9,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke0.90_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.90_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22516668226706496,
+      "final_Ec": 0.004895987378334124
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.9,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke0.90_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.90_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22516668226706496,
+      "final_Ec": 0.004895987378334124
+    },
+    {
+      "mu": 0.3,
+      "ke": 0.9,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke0.90_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke0.90_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22516668226706496,
+      "final_Ec": 0.004895987378334124
+    },
+    {
+      "mu": 0.3,
+      "ke": 1.0,
+      "d0": 149.9992314,
+      "filename": "run_mu0.30000_ke1.00_d0149.9992.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke1.00_d0149.9992.csv",
+      "n_steps": 501,
+      "final_psi": 0.22544879389933795,
+      "final_Ec": 0.004897858456404264
+    },
+    {
+      "mu": 0.3,
+      "ke": 1.0,
+      "d0": 140.0,
+      "filename": "run_mu0.30000_ke1.00_d0140.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke1.00_d0140.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22544879389933795,
+      "final_Ec": 0.004897858456404264
+    },
+    {
+      "mu": 0.3,
+      "ke": 1.0,
+      "d0": 145.0,
+      "filename": "run_mu0.30000_ke1.00_d0145.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke1.00_d0145.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22544879389933795,
+      "final_Ec": 0.004897858456404264
+    },
+    {
+      "mu": 0.3,
+      "ke": 1.0,
+      "d0": 155.0,
+      "filename": "run_mu0.30000_ke1.00_d0155.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke1.00_d0155.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22544879389933795,
+      "final_Ec": 0.004897858456404264
+    },
+    {
+      "mu": 0.3,
+      "ke": 1.0,
+      "d0": 160.0,
+      "filename": "run_mu0.30000_ke1.00_d0160.0000.csv",
+      "filepath": "primal_kernel_sweeps/run_mu0.30000_ke1.00_d0160.0000.csv",
+      "n_steps": 501,
+      "final_psi": 0.22544879389933795,
+      "final_Ec": 0.004897858456404264
+    }
+  ]
+}
