@@ -1,0 +1,54 @@
+version: '3.8'
+
+# Production override for www.primaltechinvest.com
+# Usage: docker-compose -f docker-compose.production.yml -f docker-compose.primaltechinvest.yml up -d
+
+services:
+  # Dashboard with domain-specific configuration
+  dashboard:
+    environment:
+      - REACT_APP_API_URL=https://www.primaltechinvest.com/integration
+      - REACT_APP_FASTAPI_URL=https://www.primaltechinvest.com/api
+      - REACT_APP_MQTT_URL=wss://www.primaltechinvest.com/ws
+      - REACT_APP_DOMAIN=www.primaltechinvest.com
+    volumes:
+      - ./infrastructure/nginx/primaltechinvest.conf:/etc/nginx/conf.d/primaltechinvest.conf:ro
+      - certbot-conf:/etc/nginx/ssl:ro
+      - certbot-www:/var/www/certbot:ro
+
+  # FastAPI with domain configuration
+  fastapi:
+    environment:
+      - ALLOWED_ORIGINS=https://www.primaltechinvest.com,https://primaltechinvest.com
+      - DOMAIN=www.primaltechinvest.com
+      - CORS_ORIGINS=https://www.primaltechinvest.com,https://primaltechinvest.com
+
+  # Node.js API with domain configuration
+  nodejs-api:
+    environment:
+      - ALLOWED_ORIGINS=https://www.primaltechinvest.com,https://primaltechinvest.com
+      - DOMAIN=www.primaltechinvest.com
+      - PUBLIC_URL=https://www.primaltechinvest.com
+
+  # Certbot for SSL certificate management
+  certbot:
+    image: certbot/certbot:latest
+    container_name: motorhand-certbot
+    volumes:
+      - certbot-conf:/etc/letsencrypt
+      - certbot-www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+    networks:
+      - motorhand-network
+    depends_on:
+      - dashboard
+
+volumes:
+  certbot-conf:
+    driver: local
+  certbot-www:
+    driver: local
+
+networks:
+  motorhand-network:
+    external: true
