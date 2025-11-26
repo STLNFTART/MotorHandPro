@@ -1,0 +1,8 @@
+# Ignore experiment run outputs (large datasets)
+runs/*/
+
+# Keep the directory structure
+!runs/.gitkeep
+
+# Allow example runs for documentation
+!runs/example_*/
