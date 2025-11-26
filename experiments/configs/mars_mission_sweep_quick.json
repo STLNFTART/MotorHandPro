@@ -1,0 +1,12 @@
+{
+  "description": "Quick Mars mission consciousness sweep",
+  "sim_name": "mars_mission",
+  "tag": "quick_test",
+  "params": {
+    "mission_days": [180],
+    "consciousness_target": [0.55, 0.82],
+    "learning_rate": [0.05],
+    "spe_intensity": [1.0],
+    "shield_thickness_gcm2": [10.0]
+  }
+}

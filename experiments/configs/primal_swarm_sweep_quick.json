@@ -1,0 +1,12 @@
+{
+  "description": "Quick primal swarm parameter sweep for testing",
+  "sim_name": "primal_swarm",
+  "tag": "quick_test",
+  "params": {
+    "n_drones": [10, 25],
+    "duration_s": [20.0],
+    "dt": [0.5],
+    "lambda_val": [0.0893, 0.15],
+    "tau_val": [0.0997]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "description": "Comprehensive Mars mission parameter sweep",
+  "sim_name": "mars_mission",
+  "tag": "full_sweep",
+  "params": {
+    "mission_days": [180, 360, 540],
+    "consciousness_target": [0.50, 0.60, 0.70, 0.80, 0.90],
+    "learning_rate": [0.02, 0.04, 0.06, 0.08],
+    "spe_intensity": [0.5, 1.0, 1.5, 2.0],
+    "shield_thickness_gcm2": [5.0, 10.0, 15.0, 20.0]
+  },
+  "notes": [
+    "Tests missions from 6-18 months",
+    "Consciousness targets from 0.5-0.9",
+    "Learning rates from 0.02-0.08",
+    "SPE intensity from low (0.5×) to extreme (2.0×)",
+    "Shield thickness from 5-20 g/cm²",
+    "960 total configurations (3×5×4×4×4)",
+    "Expected runtime: ~15 minutes"
+  ]
+}

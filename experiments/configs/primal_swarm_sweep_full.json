@@ -1,0 +1,18 @@
+{
+  "description": "Comprehensive primal swarm parameter sweep",
+  "sim_name": "primal_swarm",
+  "tag": "full_sweep",
+  "params": {
+    "n_drones": [10, 25, 50, 100, 200],
+    "duration_s": [60.0],
+    "dt": [0.5],
+    "lambda_val": [0.05, 0.0893, 0.12, 0.15, 0.20],
+    "tau_val": [0.05, 0.0997, 0.12, 0.15]
+  },
+  "notes": [
+    "Tests swarm size from 10-200 drones",
+    "Varies trust decay (lambda) and minimum trust (tau)",
+    "400 total configurations (5×1×1×5×4)",
+    "Expected runtime: ~30 minutes"
+  ]
+}
