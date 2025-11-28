@@ -2,7 +2,7 @@
 
 from .gotrax_hoverboard_integration import (
     GoTraxHoverboardController,
-    HyderabadSmartContractInterface,
+    HederaSmartContractInterface,
     LAMHoverboardInterface,
     HoverboardMotorSpec,
     TokenBurnConfig,
@@ -10,4 +10,10 @@ from .gotrax_hoverboard_integration import (
     ActuationResult,
     ActuationMode,
     HoverboardMotorType
+)
+
+from .hedera_config import (
+    load_hedera_config,
+    validate_hedera_config,
+    print_hedera_config_status
 )

@@ -31,3 +31,6 @@ scikit-learn>=1.3.0
 
 # Utilities
 python-dotenv>=1.0.0
+
+# Blockchain Integration
+hedera-sdk-py>=2.0.0  # Hedera Hashgraph SDK for smart contract integration
