@@ -377,6 +377,98 @@ class SubscriptionManager(ActionExecutor):
         ]
 
 
+class HoverboardController(ActionExecutor):
+    """
+    GoTrax Edge Hoverboard Control
+    Token-based actuation: 1 token = 1 second of smooth robotic actuation
+    """
+    def __init__(self, credentials: Optional[Dict[str, str]] = None):
+        super().__init__(credentials)
+        self._interface = None
+
+    def _get_interface(self):
+        """Lazy initialization of hoverboard interface"""
+        if self._interface is None:
+            try:
+                from lam.integrations.gotrax_hoverboard_integration import LAMHoverboardInterface
+                self._interface = LAMHoverboardInterface()
+            except ImportError:
+                self._interface = None
+        return self._interface
+
+    def deposit_tokens(self, amount: float) -> Dict[str, Any]:
+        """Deposit tokens for actuation (1 token = 1 second)"""
+        interface = self._get_interface()
+        if interface is None:
+            return {"success": False, "error": "Hoverboard interface not available"}
+
+        result = interface.deposit_tokens(amount)
+        self._record_execution("deposit_tokens", {"amount": amount}, result)
+        return result
+
+    def move_forward(self, duration: float, power: float = 0.5) -> Dict[str, Any]:
+        """Move hoverboard forward"""
+        return self._execute_move("forward", duration, power)
+
+    def move_reverse(self, duration: float, power: float = 0.5) -> Dict[str, Any]:
+        """Move hoverboard in reverse"""
+        return self._execute_move("reverse", duration, power)
+
+    def turn_left(self, duration: float, power: float = 0.4) -> Dict[str, Any]:
+        """Turn hoverboard left"""
+        return self._execute_move("turn_left", duration, power)
+
+    def turn_right(self, duration: float, power: float = 0.4) -> Dict[str, Any]:
+        """Turn hoverboard right"""
+        return self._execute_move("turn_right", duration, power)
+
+    def spin(self, duration: float, power: float = 0.3) -> Dict[str, Any]:
+        """Spin hoverboard in place"""
+        return self._execute_move("spin", duration, power)
+
+    def stop(self) -> Dict[str, Any]:
+        """Stop all hoverboard movement"""
+        return self._execute_move("stop", 0.0, 0.0)
+
+    def _execute_move(self, mode: str, duration: float, power: float) -> Dict[str, Any]:
+        """Execute a movement command"""
+        interface = self._get_interface()
+        if interface is None:
+            return {"success": False, "error": "Hoverboard interface not available"}
+
+        # Execute synchronously (wrap async call)
+        import asyncio
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                # If already in async context, create task
+                import concurrent.futures
+                with concurrent.futures.ThreadPoolExecutor() as pool:
+                    result = pool.submit(
+                        asyncio.run,
+                        interface.execute_move(mode, duration, power)
+                    ).result()
+            else:
+                result = asyncio.run(interface.execute_move(mode, duration, power))
+        except RuntimeError:
+            result = asyncio.run(interface.execute_move(mode, duration, power))
+
+        self._record_execution(f"hoverboard_{mode}", {
+            "duration": duration,
+            "power": power
+        }, result)
+
+        return result
+
+    def get_status(self) -> Dict[str, Any]:
+        """Get hoverboard status"""
+        interface = self._get_interface()
+        if interface is None:
+            return {"success": False, "error": "Hoverboard interface not available"}
+
+        return interface.get_status()
+
+
 class ActionOrchestrator:
     """
     Orchestrates multiple action executors
@@ -389,6 +481,7 @@ class ActionOrchestrator:
         self.reservation_manager = ReservationManager(self.credentials.get('reservations'))
         self.food_orderer = FoodOrderer(self.credentials.get('food_delivery'))
         self.subscription_manager = SubscriptionManager(self.credentials.get('subscriptions'))
+        self.hoverboard_controller = HoverboardController(self.credentials.get('hoverboard'))
 
     def execute_action(self, action_type: str, **kwargs) -> Dict[str, Any]:
         """
@@ -401,7 +494,16 @@ class ActionOrchestrator:
             "order_food": self.food_orderer.order_food,
             "cancel_subscription": self.subscription_manager.cancel_subscription,
             "modify_subscription": self.subscription_manager.modify_subscription,
-            "list_subscriptions": self.subscription_manager.list_subscriptions
+            "list_subscriptions": self.subscription_manager.list_subscriptions,
+            # Hoverboard actions
+            "hoverboard_deposit_tokens": self.hoverboard_controller.deposit_tokens,
+            "hoverboard_forward": self.hoverboard_controller.move_forward,
+            "hoverboard_reverse": self.hoverboard_controller.move_reverse,
+            "hoverboard_turn_left": self.hoverboard_controller.turn_left,
+            "hoverboard_turn_right": self.hoverboard_controller.turn_right,
+            "hoverboard_spin": self.hoverboard_controller.spin,
+            "hoverboard_stop": self.hoverboard_controller.stop,
+            "hoverboard_status": self.hoverboard_controller.get_status
         }
 
         if action_type not in action_map:
