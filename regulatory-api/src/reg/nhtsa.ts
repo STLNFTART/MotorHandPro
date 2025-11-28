@@ -56,8 +56,10 @@ export class NHTSAClient {
    * @param vin Vehicle Identification Number (17 characters)
    */
   async decodeVin(vin: string): Promise<RegulatoryFinding> {
-    if (vin.length !== 17) {
-      throw new Error('VIN must be exactly 17 characters');
+    // VIN must be 17 characters and only contain allowed VIN characters: A-H, J-N, P, R-Z, 0-9 (I,O,Q excluded)
+    const vinRegex = /^[A-HJ-NPR-Z0-9]{17}$/i;
+    if (!vinRegex.test(vin)) {
+      throw new Error('VIN must be exactly 17 characters and contain only allowed VIN characters (A-H, J-N, P, R-Z, 0-9; I, O, Q excluded)');
     }
 
     try {
