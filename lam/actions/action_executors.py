@@ -439,19 +439,21 @@ class HoverboardController(ActionExecutor):
         # Execute synchronously (wrap async call)
         import asyncio
         try:
-            loop = asyncio.get_event_loop()
-            if loop.is_running():
-                # If already in async context, create task
-                import concurrent.futures
-                with concurrent.futures.ThreadPoolExecutor() as pool:
-                    result = pool.submit(
-                        asyncio.run,
-                        interface.execute_move(mode, duration, power)
-                    ).result()
-            else:
+            # Try to get existing event loop
+            try:
+                loop = asyncio.get_running_loop()
+                # If we're in an async context, use nest_asyncio pattern
+                import nest_asyncio
+                nest_asyncio.apply()
                 result = asyncio.run(interface.execute_move(mode, duration, power))
-        except RuntimeError:
+            except RuntimeError:
+                # No running loop - safe to use asyncio.run directly
+                result = asyncio.run(interface.execute_move(mode, duration, power))
+        except ImportError:
+            # nest_asyncio not available, fall back to simple asyncio.run
             result = asyncio.run(interface.execute_move(mode, duration, power))
+        except Exception as e:
+            return {"success": False, "error": f"Execution error: {str(e)}"}
 
         self._record_execution(f"hoverboard_{mode}", {
             "duration": duration,

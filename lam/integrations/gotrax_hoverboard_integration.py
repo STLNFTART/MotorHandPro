@@ -372,8 +372,11 @@ class GoTraxHoverboardController:
             self.left_motor_state["rpm"] = point["left_duty"] * self.motor_spec.max_rpm
             self.right_motor_state["rpm"] = point["right_duty"] * self.motor_spec.max_rpm
 
-            # Small delay to simulate real-time execution
-            await asyncio.sleep(0.001)  # 1ms simulation step
+            # Small delay to simulate real-time execution (skip every 10th point for performance)
+            if len(trajectory) > 100 and (trajectory.index(point) % 10 == 0):
+                await asyncio.sleep(0.001)
+            elif len(trajectory) <= 100:
+                await asyncio.sleep(0.001)  # 1ms simulation step for short trajectories
 
         end_time = datetime.now()
         actual_duration = (end_time - start_time).total_seconds()
@@ -498,7 +501,7 @@ class HyderabadSmartContractInterface:
             "tokens_burned": amount,
             "actuation_seconds": actuation_duration,
             "remaining_balance": self._mock_balance,
-            "transaction_hash": f"0x{'0' * 64}",  # Mock hash
+            "transaction_hash": f"0x{'0' * 10}MOCK{'0' * 50}",  # Clearly marked mock hash
             "timestamp": datetime.now().isoformat()
         }
 
