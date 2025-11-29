@@ -2,7 +2,7 @@
 """
 GoTrax Edge Hoverboard Integration Module
 Enables MotorHandPro actuators to control GoTrax Edge hoverboard motors
-with Hyderabad smart contract token burn integration.
+with Hedera smart contract token burn integration.
 
 1 Token = 1 Second of smooth robotic actuation
 
@@ -13,11 +13,16 @@ import sys
 import json
 import math
 import asyncio
+import os
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Callable
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Add parent paths
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -76,8 +81,8 @@ class HoverboardMotorSpec:
 
 @dataclass
 class TokenBurnConfig:
-    """Hyderabad Smart Contract Token Burn Configuration"""
-    contract_address: str = ""  # Hyderabad smart contract address
+    """Hedera Smart Contract Token Burn Configuration"""
+    contract_address: str = ""  # Hedera smart contract address
     token_rate: float = 1.0  # 1 token = 1 second of actuation
     min_tokens_required: float = 0.1  # Minimum tokens for any operation
     burn_callback: Optional[Callable] = None  # Callback for token burn events
@@ -197,7 +202,7 @@ class GoTraxHoverboardController:
     def _burn_tokens(self, amount: float) -> bool:
         """
         Burn tokens for actuation.
-        Calls Hyderabad smart contract callback if configured.
+        Calls Hedera smart contract callback if configured.
         """
         if amount > self.token_balance:
             return False
@@ -454,25 +459,37 @@ class GoTraxHoverboardController:
         }
 
 
-class HyderabadSmartContractInterface:
+class HederaSmartContractInterface:
     """
-    Interface to Hyderabad smart contract for token burn operations.
+    Interface to Hedera smart contract for token burn operations.
     Implements token burn mechanism: 1 token = 1 second of actuation.
     """
 
     def __init__(self, contract_address: str = "",
-                 rpc_endpoint: str = ""):
+                 network: str = "testnet",
+                 operator_id: str = "",
+                 operator_key: str = ""):
         """Initialize smart contract interface"""
-        self.contract_address = contract_address
-        self.rpc_endpoint = rpc_endpoint
+        # Load from environment if not provided
+        self.contract_address = contract_address or os.getenv("HEDERA_CONTRACT_ID", "")
+        self.network = network or os.getenv("HEDERA_NETWORK", "testnet")
+        self.operator_id = operator_id or os.getenv("HEDERA_OPERATOR_ID", "")
+        self.operator_key = operator_key or os.getenv("HEDERA_OPERATOR_KEY", "")
+        self.evm_address = os.getenv("HEDERA_EVM_ADDRESS", "")
+
         self.is_connected = False
 
         # Mock balance for simulation
         self._mock_balance = 100.0  # Default 100 tokens
 
     def connect(self) -> bool:
-        """Connect to the blockchain network"""
-        # In production, this would establish Web3 connection
+        """Connect to the Hedera network"""
+        # In production, this would establish Hedera SDK connection
+        # using the operator ID and key to create a client
+        print(f"Connecting to Hedera {self.network}...")
+        print(f"  Operator ID: {self.operator_id}")
+        print(f"  Contract: {self.contract_address}")
+        print(f"  EVM Address: {self.evm_address}")
         self.is_connected = True
         return True
 
@@ -508,8 +525,11 @@ class HyderabadSmartContractInterface:
     def get_contract_info(self) -> Dict[str, Any]:
         """Get smart contract information"""
         return {
+            "network": self.network,
+            "operator_id": self.operator_id,
             "contract_address": self.contract_address or "Not configured",
-            "token_name": "Hyderabad Actuation Token",
+            "evm_address": self.evm_address or "Not configured",
+            "token_name": "Hedera Actuation Token",
             "token_symbol": "HAT",
             "token_rate": "1 HAT = 1 second of actuation",
             "is_connected": self.is_connected
@@ -524,8 +544,18 @@ class LAMHoverboardInterface:
 
     def __init__(self):
         """Initialize LAM interface"""
-        self.controller = GoTraxHoverboardController()
-        self.smart_contract = HyderabadSmartContractInterface()
+        # Load token configuration from environment
+        token_config = TokenBurnConfig(
+            contract_address=os.getenv("HEDERA_CONTRACT_ID", ""),
+            token_rate=float(os.getenv("TOKEN_RATE", "1.0")),
+            min_tokens_required=float(os.getenv("MIN_TOKENS_REQUIRED", "0.1"))
+        )
+
+        self.controller = GoTraxHoverboardController(token_config=token_config)
+        self.smart_contract = HederaSmartContractInterface()
+
+        # Connect to Hedera network
+        self.smart_contract.connect()
 
     async def execute_move(self, mode: str, duration: float,
                            power: float = 0.5) -> Dict[str, Any]:

@@ -70,3 +70,6 @@ biomedical_simulation/*.o
 # Sensor data integration artifacts
 validation_plots/
 sensor_data/
+
+# Environment variables (contains sensitive credentials)
+.env
