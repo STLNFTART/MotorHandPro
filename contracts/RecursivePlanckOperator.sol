@@ -2,6 +2,7 @@
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
@@ -18,7 +19,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  *   - Legal Fund: 8.3% with 6mo cliff + 6mo vest
  *   - Development: 8.4% with 2yr linear vest
  */
-contract RecursivePlanckOperator is ERC20, Ownable {
+contract RecursivePlanckOperator is ERC20, ERC20Burnable, Ownable {
     uint256 public constant TOTAL_SUPPLY = 100_000_000_000 * 10**18; // 100 Billion tokens
     uint256 public constant IMMEDIATE_RELEASE_PERCENT = 35; // 35%
     uint256 public constant IMMEDIATE_RELEASE_AMOUNT = (TOTAL_SUPPLY * IMMEDIATE_RELEASE_PERCENT) / 100;

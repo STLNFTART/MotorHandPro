@@ -12,7 +12,9 @@
     "run:drug-safety": "cd drug_safety && ./build.sh --run",
     "compile": "hardhat compile",
     "deploy:testnet": "hardhat run scripts/deploy-rpo.ts --network hederaTestnet",
-    "deploy:mainnet": "hardhat run scripts/deploy-rpo.ts --network hederaMainnet"
+    "deploy:mainnet": "hardhat run scripts/deploy-rpo.ts --network hederaMainnet",
+    "demo:token-burn": "ts-node integrations/motor_token_burn.ts",
+    "check:burn-history": "cat burn-history.json || echo 'No burn history yet'"
   },
   "repository": {
     "type": "git",
