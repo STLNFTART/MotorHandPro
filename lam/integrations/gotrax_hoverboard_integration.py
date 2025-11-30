@@ -680,7 +680,8 @@ class HederaSmartContractInterface:
         if self.client:
             try:
                 self.client.close()
-            except:
+            except Exception:
+
                 pass
         self.is_connected = False
         self.client = None
