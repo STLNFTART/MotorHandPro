@@ -21,8 +21,10 @@ async function main() {
 
   console.log("📍 TOKEN ALLOCATION ADDRESSES:");
   console.log("━".repeat(60));
-  console.log("Immediate Release (35%):", IMMEDIATE_RELEASE_ADDRESS);
-  console.log("Founder/Team (25%):", FOUNDER_ADDRESS);
+  console.log("Immediate Release (35% split):");
+  console.log("  ├─ Founder (17.5B):", FOUNDER_ADDRESS);
+  console.log("  └─ Specified (17.5B):", IMMEDIATE_RELEASE_ADDRESS);
+  console.log("Founder/Team Vesting (25%):", FOUNDER_ADDRESS);
   console.log("Treasury (50%):", TREASURY_ADDRESS);
   console.log("Community (8.3%):", COMMUNITY_ADDRESS);
   console.log("Legal Fund (8.3%):", LEGAL_ADDRESS);
@@ -55,8 +57,10 @@ async function main() {
 
   console.log("\n📊 TOKEN ALLOCATION (100 Billion $RPO)");
   console.log("━".repeat(60));
-  console.log("💰 Immediate Release: 35B (35%) → ", IMMEDIATE_RELEASE_ADDRESS);
-  console.log("   └─ Execute with: executeImmediateRelease()");
+  console.log("💰 Immediate Release: 35B (35%) - SPLIT:");
+  console.log("   ├─ Founder: 17.5B →", FOUNDER_ADDRESS.substring(0, 10) + "...");
+  console.log("   └─ Specified: 17.5B →", IMMEDIATE_RELEASE_ADDRESS.substring(0, 10) + "...");
+  console.log("   Execute with: executeImmediateRelease()");
   console.log();
   console.log("📅 Vesting Allocations:");
   console.log("   Founder/Team: 25B (25%) - 1yr cliff + 1.5yr vest");
@@ -68,7 +72,9 @@ async function main() {
 
   console.log("\n🎯 NEXT STEPS:");
   console.log("━".repeat(60));
-  console.log("1. Call executeImmediateRelease() to release 35B to", IMMEDIATE_RELEASE_ADDRESS.substring(0, 10) + "...");
+  console.log("1. Call executeImmediateRelease() to release 35B split:");
+  console.log("   ├─ 17.5B to founder:", FOUNDER_ADDRESS.substring(0, 10) + "...");
+  console.log("   └─ 17.5B to specified:", IMMEDIATE_RELEASE_ADDRESS.substring(0, 10) + "...");
   console.log("2. Call distributeTreasury() to release 50B treasury allocation");
   console.log("3. Vesting beneficiaries can claim tokens via release functions:");
   console.log("   - releaseFounderTokens(address)");
@@ -80,11 +86,12 @@ async function main() {
   console.log("━".repeat(60));
 
   // Automatically execute immediate release after deployment
-  console.log("\n⚡ Executing immediate release of 35B tokens...");
+  console.log("\n⚡ Executing immediate release of 35B tokens (split)...");
   const tx = await rpo.executeImmediateRelease();
   await tx.wait();
   console.log("✅ Immediate release executed!");
-  console.log(`   ${IMMEDIATE_RELEASE_ADDRESS} received 35,000,000,000 $RPO`);
+  console.log(`   ├─ Founder (${FOUNDER_ADDRESS.substring(0, 10)}...) received 17,500,000,000 $RPO`);
+  console.log(`   └─ Specified (${IMMEDIATE_RELEASE_ADDRESS.substring(0, 10)}...) received 17,500,000,000 $RPO`);
 }
 
 main()
