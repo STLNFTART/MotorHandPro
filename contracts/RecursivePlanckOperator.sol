@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  * Total Supply: 100,000,000,000 (100 Billion) $RPO
  *
  * Allocation:
- * - 35% (35B) Immediate Release to specified address
+ * - 35% (35B) Immediate Release split: 17.5B to founder, 17.5B to specified address
  * - 65% (65B) Distributed across vesting schedules:
  *   - Founder/Team: 25% with 1yr cliff + 1.5yr vest
  *   - Treasury: 50% governance controlled
@@ -49,6 +49,7 @@ contract RecursivePlanckOperator is ERC20, Ownable {
     bool public treasuryDistributed;
 
     address public immediateReleaseAddress;
+    address public founderImmediateReleaseAddress;
     bool public immediateReleaseExecuted;
 
     event TokensReleased(address indexed beneficiary, uint256 amount, string vestingType);
@@ -57,8 +58,8 @@ contract RecursivePlanckOperator is ERC20, Ownable {
 
     /**
      * @dev Constructor that sets up all allocations
-     * @param _immediateReleaseAddr Address to receive 35% immediate release
-     * @param _founderAddress Address for founder/team allocation
+     * @param _immediateReleaseAddr Address to receive 17.5B immediate release (half of 35%)
+     * @param _founderAddress Address for founder/team allocation (also receives 17.5B immediate)
      * @param _treasuryAddress Address for treasury allocation
      * @param _communityAddress Address for community allocation
      * @param _legalAddress Address for legal fund allocation
@@ -80,6 +81,7 @@ contract RecursivePlanckOperator is ERC20, Ownable {
         require(_developmentAddress != address(0), "Invalid development address");
 
         immediateReleaseAddress = _immediateReleaseAddr;
+        founderImmediateReleaseAddress = _founderAddress;
         treasuryAddress = _treasuryAddress;
 
         // Mint total supply to contract
@@ -130,15 +132,23 @@ contract RecursivePlanckOperator is ERC20, Ownable {
     }
 
     /**
-     * @dev Execute the immediate release of 35% to the designated address
+     * @dev Execute the immediate release of 35% split between two addresses
+     * 17.5B to founder address, 17.5B to specified address
      * Can only be called once by owner
      */
     function executeImmediateRelease() external onlyOwner {
         require(!immediateReleaseExecuted, "Immediate release already executed");
         immediateReleaseExecuted = true;
 
-        _transfer(address(this), immediateReleaseAddress, IMMEDIATE_RELEASE_AMOUNT);
-        emit ImmediateReleaseExecuted(immediateReleaseAddress, IMMEDIATE_RELEASE_AMOUNT);
+        uint256 halfAmount = IMMEDIATE_RELEASE_AMOUNT / 2;
+
+        // Send 17.5B to founder
+        _transfer(address(this), founderImmediateReleaseAddress, halfAmount);
+        emit ImmediateReleaseExecuted(founderImmediateReleaseAddress, halfAmount);
+
+        // Send 17.5B to specified address
+        _transfer(address(this), immediateReleaseAddress, halfAmount);
+        emit ImmediateReleaseExecuted(immediateReleaseAddress, halfAmount);
     }
 
     /**
