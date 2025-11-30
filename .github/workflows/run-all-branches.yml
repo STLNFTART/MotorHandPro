@@ -3,6 +3,9 @@ name: Run All Branches
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   run-all-branches:
     name: Run Tests Across All Branches
