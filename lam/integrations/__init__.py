@@ -2,7 +2,7 @@
 
 from .gotrax_hoverboard_integration import (
     GoTraxHoverboardController,
-    HyderabadSmartContractInterface,
+    HederaSmartContractInterface,
     LAMHoverboardInterface,
     HoverboardMotorSpec,
     TokenBurnConfig,
