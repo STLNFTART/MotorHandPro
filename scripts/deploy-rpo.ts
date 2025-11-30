@@ -13,11 +13,11 @@ async function main() {
   const IMMEDIATE_RELEASE_ADDRESS = "0x5303AfC8ef4A2322A37C2155a344aE5F7e9A7FAF";
 
   // Token allocation addresses (load from environment or use defaults)
-  const FOUNDER_ADDRESS = process.env.FOUNDER_ADDRESS || deployer.address;
-  const TREASURY_ADDRESS = process.env.TREASURY_ADDRESS || deployer.address;
-  const COMMUNITY_ADDRESS = process.env.COMMUNITY_ADDRESS || deployer.address;
-  const LEGAL_ADDRESS = process.env.LEGAL_ADDRESS || deployer.address;
-  const DEVELOPMENT_ADDRESS = process.env.DEVELOPMENT_ADDRESS || deployer.address;
+  const FOUNDER_ADDRESS = process.env.FOUNDER || process.env.FOUNDER_ADDRESS || deployer.address;
+  const TREASURY_ADDRESS = process.env.TREASURY || process.env.TREASURY_ADDRESS || deployer.address;
+  const COMMUNITY_ADDRESS = process.env.COMMUNITY || process.env.COMMUNITY_ADDRESS || deployer.address;
+  const LEGAL_ADDRESS = process.env.LEGAL || process.env.LEGAL_ADDRESS || deployer.address;
+  const DEVELOPMENT_ADDRESS = process.env.DEVELOPMENT || process.env.DEVELOPMENT_ADDRESS || deployer.address;
 
   console.log("📍 TOKEN ALLOCATION ADDRESSES:");
   console.log("━".repeat(60));
