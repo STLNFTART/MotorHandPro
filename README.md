@@ -158,6 +158,217 @@ cd drug_safety
 
 ---
 
+## Repository Structure & Tokenization
+
+MotorHandPro is organized into modular, well-documented components. Each directory serves a specific purpose with comprehensive README documentation.
+
+### 📁 Core Control System
+
+| Directory | Purpose | Key Files |
+|-----------|---------|-----------|
+| `/` (root) | Core Primal Logic implementation | `quant_full.h`, `quant_runtime.h`, `MotorHandPro.ino` |
+| `/gen/` | Generated constants (compile-time) | `quant_bridge.h`, `quant_full.h` |
+| `/analysis/` | Parameter analysis & visualization | `heatmap_fit.py`, validation reports |
+| `/validation_results/` | Comparative validation plots | Step response, disturbance rejection |
+
+### 🎛️ User Interfaces & Visualization
+
+| Directory | Purpose | Technologies |
+|-----------|---------|--------------|
+| `/control_panel/` | Web-based real-time control | Three.js, Chart.js, WebSocket |
+| `/comprehensive_visualizations/` | Mission simulation plots | Matplotlib, space scenarios |
+
+### 🧠 LAM System (Large Action Model)
+
+| Directory | Purpose | Key Features |
+|-----------|---------|--------------|
+| `/lam/` | Intelligent orchestration layer | Async control, WebSocket, MQTT |
+| `/lam/core/` | Core LAM logic | State management, routing |
+| `/lam/api/` | REST API endpoints | FastAPI, authentication |
+| `/lam/temporal_displacement.py` | **NEW** Time-aware fields | 3 methods, causality-safe |
+
+**LAM Temporal Displacement** (Latest Addition):
+- `temporal_displacement.py` - Python implementation (3 methods)
+- `temporal_displacement.d` - D language (25-100x faster)
+- `test_temporal_displacement.py` - Comprehensive validation
+- `TEMPORAL_DISPLACEMENT.md` - Complete documentation
+- `QUICKSTART_TEMPORAL.md` - 5-minute tutorial
+
+### 🔬 Experimental & Research
+
+| Directory | Purpose | Language |
+|-----------|---------|----------|
+| `/extras/` | Experimental implementations | Various |
+| `/extras/primal/` | Python Primal Logic variants | Python |
+| `/extras/primal_lang/` | Domain-specific language (DSL) | Custom |
+| `/extras/primal_llm/` | LLM-assisted control interface | JavaScript, HTML |
+| `/extras/quant_final/` | High-performance kernel | D language |
+
+### 🏗️ Infrastructure & Deployment
+
+| Directory | Purpose | Technologies |
+|-----------|---------|--------------|
+| `/infrastructure/` | Production infrastructure | Docker, Nginx, Prometheus |
+| `/k8s/` | Kubernetes deployment | K8s manifests, Helm |
+| `/docker-compose.yml` | Local deployment | Docker Compose |
+
+### 🔗 Integrations
+
+| Directory | Purpose | Protocols |
+|-----------|---------|-----------|
+| `/integrations/` | External system integrations | Various APIs |
+| `/node-red/` | Visual flow programming | MQTT, WebSocket |
+| `/regulatory-api/` | FDA compliance interfaces | REST API |
+| `/mobile/` | Mobile app (LAMApp) | React Native |
+
+### 📊 Data & ML
+
+| Directory | Purpose | Use Case |
+|-----------|---------|----------|
+| `/ml_datasets/` | Machine learning datasets | RAG, training data |
+| `/biomedical_simulation/` | Biomedical modeling | Space missions, crew health |
+| `/experiments/` | Experiment configurations | Parameter sweeps |
+
+### 📚 Documentation
+
+| Location | Content |
+|----------|---------|
+| `/docs/` | Comprehensive documentation hub |
+| `/docs/ARCHITECTURE.md` | System architecture & design |
+| `/docs/guides/USER_GUIDE.md` | Complete user guide |
+| `/docs/guides/DEPLOYMENT.md` | Deployment across environments |
+| `/docs/api/PYTHON_API.md` | Python API reference |
+| `LICENSE` | Research evaluation license |
+| `CONTRIBUTING.md` | Contribution guidelines |
+| `CODE_OF_CONDUCT.md` | Community standards |
+
+### 🗂️ Tokenization Schema
+
+The repository follows a **modular tokenization strategy**:
+
+1. **Core Components** (root level)
+   - Mathematical constants and kernels
+   - Arduino/embedded implementations
+   - Benchmark data and analysis scripts
+
+2. **System Layers** (subdirectories)
+   - **Control Layer**: `/lam/` - Orchestration and coordination
+   - **Interface Layer**: `/control_panel/`, `/node-red/` - User interaction
+   - **Infrastructure Layer**: `/infrastructure/`, `/k8s/` - Deployment
+   - **Integration Layer**: `/integrations/`, `/regulatory-api/` - External systems
+
+3. **Research & Experimental** (`/extras/`)
+   - Isolated from production code
+   - Self-contained with own dependencies
+   - Migration path: `extras/` → production when validated
+
+4. **Documentation Co-location**
+   - Each major directory has its own `README.md`
+   - Specific documentation in `/docs/` for cross-cutting concerns
+   - API references in `/docs/api/`
+
+### 📦 Module Dependencies
+
+```
+┌─────────────────────────────────────────┐
+│         User Interfaces                  │
+│  (control_panel, node-red, mobile)      │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│      LAM Orchestration Layer            │
+│   (lam/, temporal_displacement)         │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│       Primal Logic Kernel               │
+│  (quant_full.h, kernel_v4.py, gen/)    │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│    Hardware / Sensors / Actuators       │
+│  (Arduino, Raspberry Pi, Serial/GPIO)   │
+└─────────────────────────────────────────┘
+```
+
+### 🔍 Finding Specific Functionality
+
+| Need | Location | File |
+|------|----------|------|
+| **Primal Logic math** | Root | `PRIMAL_LOGIC_FRAMEWORK.md` |
+| **Temporal displacement** | `/lam/` | `TEMPORAL_DISPLACEMENT.md` |
+| **Quick start** | `/lam/` | `QUICKSTART_TEMPORAL.md` |
+| **API reference** | `/docs/api/` | `PYTHON_API.md` |
+| **Deploy to production** | `/docs/guides/` | `DEPLOYMENT.md` |
+| **User tutorial** | `/docs/guides/` | `USER_GUIDE.md` |
+| **System architecture** | `/docs/` | `ARCHITECTURE.md` |
+| **Hardware setup** | Root | `MotorHandPro.ino` |
+| **Performance benchmarks** | `/lam/` | `benchmark_temporal_displacement.py` |
+| **Integration examples** | `/lam/` | `example_distributed_control.py` |
+
+### 📈 Codebase Statistics
+
+- **Total Files**: ~500+ files
+- **Core Implementation**: Python (60%), C++ (20%), D (10%), JS (10%)
+- **Documentation**: 27 comprehensive README files
+- **Lines of Code**: ~50,000+ lines
+- **Test Coverage**: Smoke tests, benchmarks, validation suites
+
+### 🎯 Quick Navigation
+
+**New to MotorHandPro?** Start here:
+1. Read this README for overview
+2. Check `/docs/guides/USER_GUIDE.md` for detailed tutorial
+3. Try `/lam/smoke_test.py` to verify installation
+4. Explore `/lam/QUICKSTART_TEMPORAL.md` for latest features
+
+**Want to deploy?** See:
+1. `/docs/guides/DEPLOYMENT.md` - Deployment guide
+2. `/docker-compose.yml` - Docker setup
+3. `/k8s/` - Kubernetes manifests
+
+**Looking for specific features?**
+- **Temporal Displacement**: `/lam/TEMPORAL_DISPLACEMENT.md`
+- **LAM System**: `/lam/README.md`
+- **Primal Logic Theory**: `PRIMAL_LOGIC_FRAMEWORK.md`
+- **Hardware Integration**: `MotorHandPro.ino`, `/docs/guides/USER_GUIDE.md`
+
+### 🏷️ Semantic Versioning & Modules
+
+Each major component follows semantic versioning:
+- **Core Kernel**: Stable (v1.0+)
+- **LAM System**: Active development (v0.9+)
+- **Temporal Displacement**: New (v0.1+) ⚠️ Experimental
+- **Integrations**: Various stages
+
+**Import Paths** (Python):
+```python
+# Core Primal Logic
+from extras.primal.kernel_v4 import PrimalKernel
+
+# Temporal Displacement
+from lam.temporal_displacement import TemporalDisplacedField
+
+# LAM Integration
+from lam.lam_temporal_integration import LAMTemporalController
+```
+
+**C++ Includes** (Arduino/Embedded):
+```cpp
+#include "gen/quant_full.h"        // Full implementation
+#include "gen/quant_bridge.h"      // Constants only
+```
+
+**D Language** (High-performance):
+```d
+import lam.temporal_displacement;
+```
+
+---
+
 ## Usage
 
 ---
