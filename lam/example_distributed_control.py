@@ -17,12 +17,12 @@ import time
 from dataclasses import dataclass
 from typing import List
 
-from temporal_displacement import (
+from lam.temporal_displacement import (
     TemporalDisplacedField,
     TemporalDisplacementConfig,
     TrustGatedDisplacement
 )
-from lam_temporal_integration import LAMTemporalController
+from lam.lam_temporal_integration import LAMTemporalController
 
 
 @dataclass
