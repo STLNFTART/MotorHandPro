@@ -202,21 +202,32 @@ class GoTraxHoverboardController:
     def _burn_tokens(self, amount: float) -> bool:
         """
         Burn tokens for actuation.
-        Calls Hedera smart contract callback if configured.
+        Calls Hedera smart contract callback if configured for REAL on-chain burns.
         """
         if amount > self.token_balance:
             return False
 
-        self.token_balance -= amount
-        self.tokens_burned_total += amount
-
-        # Call smart contract callback if configured
+        # Call smart contract callback if configured (REAL BURNS)
         if self.token_config.burn_callback:
             try:
-                self.token_config.burn_callback(amount)
-            except Exception as e:
-                print(f"Token burn callback error: {e}")
+                actuation_seconds = amount / self.token_config.token_rate
+                result = self.token_config.burn_callback(amount, actuation_seconds)
 
+                if not result.get('success', False):
+                    print(f"❌ On-chain burn failed: {result.get('error', 'Unknown error')}")
+                    return False
+
+                print(f"🔥 Burned {amount} $RPO on-chain!")
+                if 'transaction_hash' in result:
+                    print(f"   TX: {result['transaction_hash'][:16]}...")
+
+            except Exception as e:
+                print(f"❌ Token burn callback error: {e}")
+                return False
+
+        # Update local accounting
+        self.token_balance -= amount
+        self.tokens_burned_total += amount
         return True
 
     def _compute_smooth_trajectory(self, duration: float, power_level: float,
@@ -529,8 +540,8 @@ class HederaSmartContractInterface:
             "operator_id": self.operator_id,
             "contract_address": self.contract_address or "Not configured",
             "evm_address": self.evm_address or "Not configured",
-            "token_name": "Hedera Actuation Token",
-            "token_symbol": "HAT",
+            "token_name": "Recursive Planck Operator",
+            "token_symbol": "RPO",
             "token_rate": "1 HAT = 1 second of actuation",
             "is_connected": self.is_connected
         }
@@ -542,17 +553,43 @@ class LAMHoverboardInterface:
     Integrates with PrimalLAM for action execution.
     """
 
-    def __init__(self):
-        """Initialize LAM interface"""
+    def __init__(self, use_real_burns: bool = False):
+        """
+        Initialize LAM interface
+
+        Args:
+            use_real_burns: If True, performs real on-chain $RPO burns
+        """
         # Load token configuration from environment
+        burn_callback = None
+
+        if use_real_burns:
+            try:
+                from lam.integrations.hedera_rpo_burn import initialize_rpo_burner, rpo_burn_callback
+
+                contract_id = os.getenv("HEDERA_CONTRACT_ID")
+                private_key = os.getenv("PRIVATE_KEY")
+
+                if contract_id and private_key:
+                    initialize_rpo_burner(contract_id, private_key)
+                    burn_callback = rpo_burn_callback
+                    print("✅ Real $RPO burns ENABLED")
+                else:
+                    print("⚠️  HEDERA_CONTRACT_ID or PRIVATE_KEY not set - using simulation")
+            except ImportError as e:
+                print(f"⚠️  Could not import RPO burner: {e}")
+                print("   Install: pip install web3 eth-account")
+
         token_config = TokenBurnConfig(
             contract_address=os.getenv("HEDERA_CONTRACT_ID", ""),
             token_rate=float(os.getenv("TOKEN_RATE", "1.0")),
-            min_tokens_required=float(os.getenv("MIN_TOKENS_REQUIRED", "0.1"))
+            min_tokens_required=float(os.getenv("MIN_TOKENS_REQUIRED", "0.1")),
+            burn_callback=burn_callback
         )
 
         self.controller = GoTraxHoverboardController(token_config=token_config)
         self.smart_contract = HederaSmartContractInterface()
+        self.real_burns_enabled = burn_callback is not None
 
         # Connect to Hedera network
         self.smart_contract.connect()
@@ -620,11 +657,20 @@ async def main():
     """Test GoTrax hoverboard integration"""
     print("=" * 70)
     print("GOTRAX EDGE HOVERBOARD INTEGRATION TEST")
-    print("1 Token = 1 Second of Perfectly Smooth Robotic Actuation")
+    print("1 $RPO Token = 1 Second of Perfectly Smooth Robotic Actuation")
     print("=" * 70)
 
+    # Check if real burns should be used
+    use_real_burns = os.getenv("USE_REAL_BURNS", "").lower() == "true"
+
+    if use_real_burns:
+        print("\n🔥 REAL ON-CHAIN $RPO BURNS ENABLED")
+        print("   Tokens will be burned on Hedera blockchain")
+    else:
+        print("\n⚙️  SIMULATION MODE (set USE_REAL_BURNS=true for real burns)")
+
     # Initialize interface
-    interface = LAMHoverboardInterface()
+    interface = LAMHoverboardInterface(use_real_burns=use_real_burns)
 
     # Deposit tokens
     print("\n1. Depositing tokens...")
