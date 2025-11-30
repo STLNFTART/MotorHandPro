@@ -58,8 +58,8 @@ print_success "Fetched all remote branches"
 ORIGINAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 print_info "Current branch: $ORIGINAL_BRANCH"
 
-# Get list of all remote branches
-BRANCHES=$(git branch -r | grep -v HEAD | sed 's/origin\///' | xargs)
+# Get list of all remote branches (from origin only)
+BRANCHES=$(git branch -r | grep 'origin/' | grep -v HEAD | sed 's/origin\///' | xargs)
 
 print_header "Found branches"
 for branch in $BRANCHES; do
@@ -86,7 +86,7 @@ run_branch_tests() {
     # Check for package.json and run npm test if available
     if [ -f "package.json" ]; then
         print_info "Found package.json - running npm test"
-        if npm test 2>/dev/null; then
+        if npm test; then
             print_success "npm test passed"
         else
             print_warning "npm test failed or not configured"
@@ -97,7 +97,7 @@ run_branch_tests() {
     # Check for requirements.txt and run pytest if available
     if [ -f "requirements.txt" ] || [ -f "lam/requirements.txt" ]; then
         print_info "Found Python project - running pytest"
-        if python3 -m pytest 2>/dev/null; then
+        if python3 -m pytest; then
             print_success "pytest passed"
         else
             print_warning "pytest failed or not configured"
@@ -107,7 +107,7 @@ run_branch_tests() {
     # Check for LAM tests specifically
     if [ -f "lam/tests/test_core.py" ]; then
         print_info "Running LAM core tests"
-        if python3 lam/tests/test_core.py 2>/dev/null; then
+        if python3 lam/tests/test_core.py; then
             print_success "LAM core tests passed"
         else
             print_warning "LAM core tests failed"
@@ -117,7 +117,7 @@ run_branch_tests() {
 
     if [ -f "lam/tests/test_actions.py" ]; then
         print_info "Running LAM action tests"
-        if python3 lam/tests/test_actions.py 2>/dev/null; then
+        if python3 lam/tests/test_actions.py; then
             print_success "LAM action tests passed"
         else
             print_warning "LAM action tests failed"
@@ -128,7 +128,7 @@ run_branch_tests() {
     # Check for Solidity projects (Foundry)
     if [ -f "foundry.toml" ]; then
         print_info "Found Foundry project - running forge tests"
-        if forge test 2>/dev/null; then
+        if forge test; then
             print_success "Forge tests passed"
         else
             print_warning "Forge tests failed or forge not installed"
@@ -139,7 +139,7 @@ run_branch_tests() {
     # Check for Solidity projects (Hardhat)
     if [ -f "hardhat.config.js" ] || [ -f "hardhat.config.ts" ]; then
         print_info "Found Hardhat project - running hardhat test"
-        if npx hardhat test 2>/dev/null; then
+        if npx hardhat test; then
             print_success "Hardhat tests passed"
         else
             print_warning "Hardhat tests failed or hardhat not installed"
@@ -147,14 +147,9 @@ run_branch_tests() {
         fi
     fi
 
-    # Check for Docker build
+    # Check for Dockerfile (just note its presence, actual build may be expensive)
     if [ -f "Dockerfile" ]; then
-        print_info "Found Dockerfile - verifying build syntax"
-        if docker build --check . 2>/dev/null || docker build -f Dockerfile --target syntax-check . 2>/dev/null; then
-            print_success "Dockerfile syntax valid"
-        else
-            print_info "Dockerfile syntax check not available, skipping"
-        fi
+        print_info "Found Dockerfile - Docker image build available"
     fi
 
     return $test_result
