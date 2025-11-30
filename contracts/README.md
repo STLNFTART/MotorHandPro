@@ -69,7 +69,9 @@ npm run deploy:mainnet
 After deployment, the following actions are available:
 
 ### 1. Immediate Release (Automatic)
-The deployment script automatically calls `executeImmediateRelease()` to distribute 35B tokens to the designated address.
+The deployment script automatically calls `executeImmediateRelease()` to distribute 35B tokens split equally:
+- **17.5B** to the founder address
+- **17.5B** to the specified address (`0x5303AfC8ef4A2322A37C2155a344aE5F7e9A7FAF`)
 
 ### 2. Treasury Distribution
 ```solidity
