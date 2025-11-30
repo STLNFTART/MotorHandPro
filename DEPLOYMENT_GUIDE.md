@@ -141,7 +141,7 @@ HashScan → https://hashscan.io/testnet/contract/0x...
 3. **Vesting Setup**: All vesting schedules are configured for the 5 allocation wallets
 4. **Immediate Release**: Automatically executes, sending:
    - 17.5B $RPO → Founder wallet
-   - 17.5B $RPO → Specified address (0x5303AfC8ef4A2322A37C2155a344aE5F7e9A7FAF)
+   - 17.5B $RPO → Specified address (0x27aa333e759b64fd4bb4eeedac8eaaaf107580ed)
 
 ## Verify Deployment
 
@@ -163,7 +163,7 @@ Visit HashScan and search for the wallet addresses to verify:
 - Should have: 17,500,000,000 $RPO (immediate release)
 - Plus: 25B $RPO locked in vesting (1yr cliff + 1.5yr vest)
 
-**Specified Address** (`0x5303AfC8ef4A2322A37C2155a344aE5F7e9A7FAF`):
+**Specified Address** (`0x27aa333e759b64fd4bb4eeedac8eaaaf107580ed`):
 - Should have: 17,500,000,000 $RPO (immediate release)
 
 ## Post-Deployment Actions

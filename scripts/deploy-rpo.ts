@@ -10,7 +10,7 @@ async function main() {
   console.log("━".repeat(60) + "\n");
 
   // IMMEDIATE RELEASE ADDRESS - Receives 35% of total supply
-  const IMMEDIATE_RELEASE_ADDRESS = "0x5303AfC8ef4A2322A37C2155a344aE5F7e9A7FAF";
+  const IMMEDIATE_RELEASE_ADDRESS = "0x27aa333e759b64fd4bb4eeedac8eaaaf107580ed";
 
   // Token allocation addresses (load from environment or use defaults)
   const FOUNDER_ADDRESS = process.env.FOUNDER || process.env.FOUNDER_ADDRESS || deployer.address;

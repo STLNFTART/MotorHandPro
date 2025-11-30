@@ -19,7 +19,7 @@ The **Recursive Planck Operator ($RPO)** is an ERC20 token deployed on the Heder
 - **Amount:** 35 billion $RPO (35% of total supply) - **SPLIT**
 - **Recipients:**
   - Founder: 17.5B $RPO
-  - Specified Address (`0x5303AfC8ef4A2322A37C2155a344aE5F7e9A7FAF`): 17.5B $RPO
+  - Specified Address (`0x27aa333e759b64fd4bb4eeedac8eaaaf107580ed`): 17.5B $RPO
 - **Method:** Automatically executed during deployment via `executeImmediateRelease()`
 
 ### Vesting Allocations (65%)
@@ -71,7 +71,7 @@ After deployment, the following actions are available:
 ### 1. Immediate Release (Automatic)
 The deployment script automatically calls `executeImmediateRelease()` to distribute 35B tokens split equally:
 - **17.5B** to the founder address
-- **17.5B** to the specified address (`0x5303AfC8ef4A2322A37C2155a344aE5F7e9A7FAF`)
+- **17.5B** to the specified address (`0x27aa333e759b64fd4bb4eeedac8eaaaf107580ed`)
 
 ### 2. Treasury Distribution
 ```solidity
