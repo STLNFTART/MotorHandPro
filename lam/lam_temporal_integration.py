@@ -15,7 +15,7 @@ from typing import Dict, Optional
 from dataclasses import dataclass, field
 from datetime import datetime
 
-from temporal_displacement import (
+from lam.temporal_displacement import (
     TemporalDisplacedField,
     TemporalDisplacementConfig,
     TrustGatedDisplacement,
