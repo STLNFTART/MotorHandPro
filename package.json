@@ -9,7 +9,10 @@
     "build": "echo 'No build step required for JavaScript components'",
     "analyze": "python3 analyze_runs.py",
     "build:drug-safety": "cd drug_safety && ./build.sh",
-    "run:drug-safety": "cd drug_safety && ./build.sh --run"
+    "run:drug-safety": "cd drug_safety && ./build.sh --run",
+    "compile": "hardhat compile",
+    "deploy:testnet": "hardhat run scripts/deploy-rpo.ts --network hederaTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy-rpo.ts --network hederaMainnet"
   },
   "repository": {
     "type": "git",
@@ -54,8 +57,18 @@
     "@stlnftart:registry": "https://npm.pkg.github.com"
   },
   "private": false,
-  "devDependencies": {},
-  "dependencies": {},
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@types/node": "^20.0.0",
+    "hardhat": "^2.19.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "dotenv": "^16.3.0",
+    "ethers": "^6.9.0"
+  },
   "os": [
     "darwin",
     "linux",
