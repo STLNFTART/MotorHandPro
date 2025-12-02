@@ -1,0 +1,177 @@
+MOTORHANDPRO RESEARCH EVALUATION LICENSE
+
+Copyright (c) 2025 Donte Lightfoot — The Phoney Express LLC / Locked In Safety
+All Rights Reserved.
+
+Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+"Method and System for Bounded Autonomous Vehicle Control Using Exponential
+Memory Weighting"
+Filed: July 12, 2025
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+RESEARCH AND EVALUATION LICENSE
+
+This software and associated documentation (the "Software") is made available
+solely for research, evaluation, and academic purposes under the following terms:
+
+1. PERMITTED USES
+
+   You are granted a non-exclusive, non-transferable, limited license to:
+
+   a) Review and study the Software for educational and research purposes
+   b) Validate scientific claims and methodology described in documentation
+   c) Conduct independent academic research with proper attribution
+   d) Reproduce results for peer review and publication
+   e) Create derivative works ONLY for internal research purposes
+
+2. ATTRIBUTION REQUIREMENTS
+
+   Any use of this Software must include:
+
+   a) Citation of the MotorHandPro repository and authors
+   b) Acknowledgment of U.S. Patent Pending No. 63/842,846
+   c) Reference to the Primal Logic framework and Donte constant
+   d) Copyright notice: © 2025 The Phoney Express LLC / Locked In Safety
+
+   Suggested citation format:
+
+   Lightfoot, D. (2025). MotorHandPro: Bounded Autonomous Vehicle Control
+   Using Exponential Memory Weighting. The Phoney Express LLC / Locked In Safety.
+   U.S. Patent Pending No. 63/842,846.
+
+3. PROHIBITED USES
+
+   You may NOT:
+
+   a) Use the Software for commercial purposes without explicit written permission
+   b) Distribute the Software or derivatives for commercial gain
+   c) Incorporate the Software into commercial products or services
+   d) Remove or modify copyright notices, patent references, or attributions
+   e) Sublicense, sell, rent, lease, or transfer rights to the Software
+   f) Claim invention or ownership of the underlying methods and systems
+   g) Deploy in production systems without commercial licensing agreement
+   h) Use in safety-critical applications without validation and licensing
+   i) Reverse engineer with intent to circumvent patent protection
+
+4. COLLABORATION AND LICENSING
+
+   For commercial use, licensing inquiries, or collaboration opportunities, contact:
+
+   Donte Lightfoot (STLNFTART)
+   The Phoney Express LLC / Locked In Safety
+
+   Commercial licensing, deployment partnerships, and sponsored research
+   arrangements are available by separate agreement.
+
+5. DERIVATIVE WORKS
+
+   Derivative works created for research purposes must:
+
+   a) Clearly indicate modifications made to the original Software
+   b) Maintain all original copyright and patent notices
+   c) Include acknowledgment of the original work
+   d) Not be distributed commercially
+   e) Be made available under this same license if publicly shared
+
+6. PUBLICATIONS AND ACADEMIC USE
+
+   Academic publications based on this Software:
+
+   a) Must cite the Software and patent application as specified in Section 2
+   b) Should provide the Software URL for reproducibility
+   c) May include code snippets and methodology descriptions with attribution
+   d) Are encouraged (scientific validation is welcomed)
+
+7. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+   IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES,
+   OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
+   ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+8. PATENT PROTECTION
+
+   This Software implements methods and systems that are subject to patent
+   protection under U.S. Provisional Patent Application No. 63/842,846.
+
+   Use of this Software does NOT grant any patent licenses. Patent rights are
+   explicitly reserved by the copyright holder.
+
+   Commercial use may require a patent license even if the Software is modified
+   or re-implemented independently if it practices the claimed inventions.
+
+9. SAFETY-CRITICAL SYSTEMS
+
+   This Software is research-grade and has NOT been certified for use in:
+
+   a) Life-critical medical devices
+   b) Aviation or aerospace control systems
+   c) Automotive safety systems (without extensive validation)
+   d) Nuclear facility controls
+   e) Military weapons systems
+
+   Use in safety-critical applications requires:
+   - Comprehensive validation and verification
+   - Certification by appropriate authorities
+   - Commercial licensing agreement
+   - Professional indemnification
+
+10. EXPORT CONTROL
+
+    This Software may be subject to export control regulations. Users are
+    responsible for compliance with all applicable export control laws in
+    their jurisdiction.
+
+11. TERMINATION
+
+    This license terminates automatically if you violate any of these terms.
+    Upon termination, you must destroy all copies of the Software and any
+    derivative works.
+
+12. GOVERNING LAW
+
+    This license shall be governed by and construed in accordance with the
+    laws of the United States, without regard to conflicts of law principles.
+
+13. ENTIRE AGREEMENT
+
+    This license constitutes the entire agreement between you and the copyright
+    holder regarding the Software and supersedes all prior agreements.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THIRD-PARTY COMPONENTS
+
+This Software may include or depend on third-party libraries and components,
+each governed by their respective licenses. See documentation for details.
+
+Third-party components retain their original licenses and copyrights.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ACKNOWLEDGMENTS
+
+This research builds upon decades of control theory, mathematical analysis,
+and computational science. We acknowledge the broader scientific community's
+contributions to these fields.
+
+The Donte constant (D = 149.9992314000) and Lightfoot constant (λ = 0.16905)
+are named discoveries within the Primal Logic framework.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For licensing inquiries, collaboration, or questions about this license:
+
+Contact: Donte Lightfoot (STLNFTART)
+Organization: The Phoney Express LLC / Locked In Safety
+Repository: https://github.com/STLNFTART/MotorHandPro
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Date: November 30, 2025
+Version: 1.0
