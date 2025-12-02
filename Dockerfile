@@ -32,6 +32,9 @@ RUN pip install --no-cache-dir \
 COPY lam/ /app/lam/
 COPY extras/primal/primal_constants.py /app/extras/primal/primal_constants.py
 
+# Create __init__.py files to make extras a proper Python package
+RUN touch /app/extras/__init__.py /app/extras/primal/__init__.py
+
 # Create data directories
 RUN mkdir -p /data/lam/config /data/lam/logs /data/lam/experiments
 
