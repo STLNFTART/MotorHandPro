@@ -13,6 +13,10 @@ websockets>=11.0.0
 matplotlib>=3.7.0
 plotly>=5.18.0  # Interactive 3D visualizations for NASA data
 kaleido>=0.2.1  # Static image export for Plotly
+bokeh>=3.4.0  # Real-time streaming visualizations
+altair>=5.0.0  # Declarative exploration
+vega_datasets>=0.9.0  # Altair data support
+pandas>=2.0.0  # Data manipulation for visualizations
 
 # Optional: CARLA simulator (requires separate installation)
 # Install from: https://github.com/carla-simulator/carla
@@ -22,6 +26,11 @@ kaleido>=0.2.1  # Static image export for Plotly
 # pyvista>=0.43.0  # 3D mesh visualization for celestial bodies
 # vispy>=0.14.0  # GPU-accelerated real-time visualization
 # vtk>=9.2.0  # Visualization Toolkit (PyVista dependency)
+
+# Optional: Production web dashboards (large packages)
+# dash>=2.14.0  # Production web dashboards
+# streamlit>=1.28.0  # Rapid prototyping apps
+# holoviews>=1.18.0  # Multi-plot coordination
 
 # Optional: LaTeX for PDF generation
 # System package required: sudo apt-get install texlive-full
