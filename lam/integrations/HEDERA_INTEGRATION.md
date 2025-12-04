@@ -139,8 +139,11 @@ HEDERA_NETWORK=testnet  # or "mainnet"
 HEDERA_ACCOUNT_ID=0.0.12345
 HEDERA_PRIVATE_KEY=302e020100300506032b65700422042012345...
 
-# Your deployed contract
+# Your deployed contract (ERC20 contract address)
 HEDERA_CONTRACT_ID=0.0.67890
+
+# RPO Native Token ID (Hedera HTS Token)
+HEDERA_RPO_TOKEN_ID=0.0.10164696
 
 # Token configuration
 TOKEN_BURN_RATE=1.0
@@ -231,6 +234,7 @@ result = await interface.execute_move("forward", 2.0)
 | `HEDERA_ACCOUNT_ID` | Yes* | - | Your Hedera account ID (e.g., `0.0.12345`) |
 | `HEDERA_PRIVATE_KEY` | Yes* | - | Your account private key (DER hex) |
 | `HEDERA_CONTRACT_ID` | Yes* | - | Smart contract ID (e.g., `0.0.67890`) |
+| `HEDERA_RPO_TOKEN_ID` | No | `0.0.10164696` | RPO Native Token ID on Hedera HTS |
 | `HEDERA_MOCK_MODE` | No | `false` | Enable mock mode (`true`/`false`) |
 | `TOKEN_BURN_RATE` | No | `1.0` | Tokens per second of actuation |
 | `MIN_TOKENS_REQUIRED` | No | `0.1` | Minimum tokens for operation |
