@@ -11,13 +11,17 @@ websockets>=11.0.0
 
 # Visualization
 matplotlib>=3.7.0
+plotly>=5.18.0  # Interactive 3D visualizations for NASA data
+kaleido>=0.2.1  # Static image export for Plotly
 
 # Optional: CARLA simulator (requires separate installation)
 # Install from: https://github.com/carla-simulator/carla
 # carla>=0.9.14
 
-# Optional: VTK for 3D visualization (large package)
-# vtk>=9.2.0
+# Optional: Advanced 3D visualization (large packages)
+# pyvista>=0.43.0  # 3D mesh visualization for celestial bodies
+# vispy>=0.14.0  # GPU-accelerated real-time visualization
+# vtk>=9.2.0  # Visualization Toolkit (PyVista dependency)
 
 # Optional: LaTeX for PDF generation
 # System package required: sudo apt-get install texlive-full
