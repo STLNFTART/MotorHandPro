@@ -71,6 +71,11 @@ biomedical_simulation/*.o
 validation_plots/
 sensor_data/
 
+# NASA data pipeline outputs (generated visualizations and data)
+nasa_live_output/
+test_viz_output/
+nasa_visualizations/
+
 # Environment variables (contains sensitive credentials)
 .env
 
