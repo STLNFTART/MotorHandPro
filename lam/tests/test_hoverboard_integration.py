@@ -14,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent / "extras" / "primal"
 
 from integrations.gotrax_hoverboard_integration import (
     GoTraxHoverboardController,
-    HyderabadSmartContractInterface,
+    HederaSmartContractInterface,
     LAMHoverboardInterface,
     HoverboardMotorSpec,
     TokenBurnConfig,
@@ -232,16 +232,18 @@ class TestActuationExecution(unittest.TestCase):
 
 
 class TestSmartContractInterface(unittest.TestCase):
-    """Test Hyderabad smart contract interface"""
+    """Test Hedera smart contract interface (mock mode)"""
 
     def setUp(self):
-        self.contract = HyderabadSmartContractInterface()
+        # Create contract in mock mode (no credentials provided)
+        self.contract = HederaSmartContractInterface()
 
     def test_connect(self):
-        """Test connection"""
+        """Test connection (mock mode)"""
         result = self.contract.connect()
         self.assertTrue(result)
         self.assertTrue(self.contract.is_connected)
+        self.assertTrue(self.contract.mock_mode)  # Should be in mock mode
 
     def test_get_balance(self):
         """Test balance retrieval"""
@@ -249,12 +251,14 @@ class TestSmartContractInterface(unittest.TestCase):
         self.assertEqual(balance, 100.0)  # Default mock balance
 
     def test_burn_tokens(self):
-        """Test token burn"""
+        """Test token burn (mock mode)"""
         result = self.contract.burn_tokens(10.0, 10.0)
         self.assertTrue(result['success'])
         self.assertEqual(result['tokens_burned'], 10.0)
         self.assertEqual(result['actuation_seconds'], 10.0)
         self.assertEqual(result['remaining_balance'], 90.0)
+        self.assertTrue(result['mock_mode'])  # Verify it's in mock mode
+        self.assertIn('transaction_id', result)
 
     def test_burn_insufficient_balance(self):
         """Test burn fails with insufficient balance"""
@@ -267,6 +271,8 @@ class TestSmartContractInterface(unittest.TestCase):
         info = self.contract.get_contract_info()
         self.assertEqual(info['token_symbol'], 'HAT')
         self.assertEqual(info['token_rate'], '1 HAT = 1 second of actuation')
+        self.assertEqual(info['network'], 'testnet')  # Default network
+        self.assertTrue(info['mock_mode'])  # Should be in mock mode
 
 
 class TestLAMHoverboardInterface(unittest.TestCase):

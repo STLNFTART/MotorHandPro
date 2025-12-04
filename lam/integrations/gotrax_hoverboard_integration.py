@@ -82,7 +82,11 @@ class HoverboardMotorSpec:
 @dataclass
 class TokenBurnConfig:
     """Hedera Smart Contract Token Burn Configuration"""
+ claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
+    contract_id: str = ""  # Hedera smart contract ID (e.g., "0.0.12345")
+
     contract_address: str = ""  # Hedera smart contract address
+    main
     token_rate: float = 1.0  # 1 token = 1 second of actuation
     min_tokens_required: float = 0.1  # Minimum tokens for any operation
     burn_callback: Optional[Callable] = None  # Callback for token burn events
@@ -202,21 +206,36 @@ class GoTraxHoverboardController:
     def _burn_tokens(self, amount: float) -> bool:
         """
         Burn tokens for actuation.
+claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
         Calls Hedera smart contract callback if configured.
+
+        Calls Hedera smart contract callback if configured for REAL on-chain burns.
+ main
         """
         if amount > self.token_balance:
             return False
 
-        self.token_balance -= amount
-        self.tokens_burned_total += amount
-
-        # Call smart contract callback if configured
+        # Call smart contract callback if configured (REAL BURNS)
         if self.token_config.burn_callback:
             try:
-                self.token_config.burn_callback(amount)
-            except Exception as e:
-                print(f"Token burn callback error: {e}")
+                actuation_seconds = amount / self.token_config.token_rate
+                result = self.token_config.burn_callback(amount, actuation_seconds)
 
+                if not result.get('success', False):
+                    print(f"❌ On-chain burn failed: {result.get('error', 'Unknown error')}")
+                    return False
+
+                print(f"🔥 Burned {amount} $RPO on-chain!")
+                if 'transaction_hash' in result:
+                    print(f"   TX: {result['transaction_hash'][:16]}...")
+
+            except Exception as e:
+                print(f"❌ Token burn callback error: {e}")
+                return False
+
+        # Update local accounting
+        self.token_balance -= amount
+        self.tokens_burned_total += amount
         return True
 
     def _compute_smooth_trajectory(self, duration: float, power_level: float,
@@ -463,7 +482,28 @@ class HederaSmartContractInterface:
     """
     Interface to Hedera smart contract for token burn operations.
     Implements token burn mechanism: 1 token = 1 second of actuation.
+
+    Supports both Hedera testnet and mainnet.
     """
+
+ claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
+    def __init__(self, contract_id: str = "",
+                 network: str = "testnet",
+                 account_id: str = "",
+                 private_key: str = ""):
+        """
+        Initialize Hedera smart contract interface
+
+        Args:
+            contract_id: Hedera contract ID (e.g., "0.0.12345")
+            network: "testnet" or "mainnet"
+            account_id: Hedera account ID (e.g., "0.0.12345")
+            private_key: Hedera account private key (DER encoded hex string)
+        """
+        self.contract_id = contract_id
+        self.network = network
+        self.account_id = account_id
+        self.private_key = private_key
 
     def __init__(self, contract_address: str = "",
                  network: str = "testnet",
@@ -475,15 +515,92 @@ class HederaSmartContractInterface:
         self.network = network or os.getenv("HEDERA_NETWORK", "testnet")
         self.operator_id = operator_id or os.getenv("HEDERA_OPERATOR_ID", "")
         self.operator_key = operator_key or os.getenv("HEDERA_OPERATOR_KEY", "")
-        self.evm_address = os.getenv("HEDERA_EVM_ADDRESS", "")
-
+        self.evm_address = os.getenv("HEDERA_EVM_ADDRESS", 
+        main
         self.is_connected = False
+        self.client = None
 
-        # Mock balance for simulation
+        # Mock mode flag (True if credentials not provided)
+        self.mock_mode = not (contract_id and account_id and private_key)
+
+        # Mock balance for simulation (when in mock mode)
         self._mock_balance = 100.0  # Default 100 tokens
 
     def connect(self) -> bool:
         """Connect to the Hedera network"""
+   claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
+        if self.mock_mode:
+            print("⚠️  Running in MOCK MODE - No real Hedera connection")
+            self.is_connected = True
+            return True
+
+        try:
+            from hedera import Client, AccountId, PrivateKey
+
+            # Create client based on network
+            if self.network == "mainnet":
+                self.client = Client.forMainnet()
+            else:
+                self.client = Client.forTestnet()
+
+            # Set operator (account that will pay for transactions)
+            operator_account = AccountId.fromString(self.account_id)
+            operator_key = PrivateKey.fromString(self.private_key)
+            self.client.setOperator(operator_account, operator_key)
+
+            self.is_connected = True
+            print(f"✅ Connected to Hedera {self.network}")
+            return True
+
+        except ImportError:
+            print("⚠️  Hedera SDK not installed. Running in MOCK MODE")
+            print("   Install with: pip install hedera-sdk-py")
+            self.mock_mode = True
+            self.is_connected = True
+            return True
+        except Exception as e:
+            print(f"❌ Failed to connect to Hedera: {e}")
+            print("   Falling back to MOCK MODE")
+            self.mock_mode = True
+            self.is_connected = True
+            return True
+
+    def get_balance(self, account_id: str = "") -> float:
+        """
+        Get token balance for Hedera account
+
+        Args:
+            account_id: Hedera account ID (uses operator account if not specified)
+
+        Returns:
+            Token balance
+        """
+        if self.mock_mode:
+            return self._mock_balance
+
+        try:
+            from hedera import ContractCallQuery, ContractFunctionParameters, AccountId
+
+            target_account = account_id or self.account_id
+
+            # Query the smart contract's balanceOf function
+            query = (
+                ContractCallQuery()
+                .setContractId(self.contract_id)
+                .setGas(100000)
+                .setFunction(
+                    "balanceOf",
+                    ContractFunctionParameters()
+                    .addAddress(AccountId.fromString(target_account).toSolidityAddress())
+                )
+            )
+
+            result = query.execute(self.client)
+            balance = result.getUint256(0)
+
+            # Convert from smallest unit (assuming 8 decimals like HBAR)
+            return float(balance) / 100000000.0
+
         # In production, this would establish Hedera SDK connection
         # using the operator ID and key to create a client
         print(f"Connecting to Hedera {self.network}...")
@@ -492,48 +609,140 @@ class HederaSmartContractInterface:
         print(f"  EVM Address: {self.evm_address}")
         self.is_connected = True
         return True
+ main
 
-    def get_balance(self, wallet_address: str = "") -> float:
-        """Get token balance for wallet"""
-        # In production, call smart contract balanceOf()
-        return self._mock_balance
+        except Exception as e:
+            print(f"⚠️  Error getting balance from Hedera: {e}")
+            print("   Returning mock balance")
+            return self._mock_balance
 
     def burn_tokens(self, amount: float, actuation_duration: float) -> Dict[str, Any]:
         """
-        Burn tokens for actuation.
+        Burn tokens for actuation via Hedera smart contract.
         1 token = 1 second of perfectly smooth robotic actuation.
+
+        Args:
+            amount: Number of tokens to burn
+            actuation_duration: Duration in seconds (for logging/verification)
+
+        Returns:
+            Transaction result with success status and transaction ID
         """
-        if amount > self._mock_balance:
+        if self.mock_mode:
+            # Mock mode
+            if amount > self._mock_balance:
+                return {
+                    "success": False,
+                    "error": "Insufficient balance",
+                    "requested": amount,
+                    "available": self._mock_balance,
+                    "mock_mode": True
+                }
+
+            self._mock_balance -= amount
+
             return {
-                "success": False,
-                "error": "Insufficient balance",
-                "requested": amount,
-                "available": self._mock_balance
+                "success": True,
+                "tokens_burned": amount,
+                "actuation_seconds": actuation_duration,
+                "remaining_balance": self._mock_balance,
+                "transaction_id": f"0.0.{int(datetime.now().timestamp())}@{datetime.now().timestamp()}",
+                "transaction_hash": f"0x{'0' * 10}MOCK{'0' * 50}",
+                "timestamp": datetime.now().isoformat(),
+                "mock_mode": True,
+                "network": "mock"
             }
 
-        self._mock_balance -= amount
+        # Real Hedera transaction
+        try:
+            from hedera import (
+                ContractExecuteTransaction,
+                ContractFunctionParameters,
+                Hbar
+            )
 
-        return {
-            "success": True,
-            "tokens_burned": amount,
-            "actuation_seconds": actuation_duration,
-            "remaining_balance": self._mock_balance,
-            "transaction_hash": f"0x{'0' * 10}MOCK{'0' * 50}",  # Clearly marked mock hash
-            "timestamp": datetime.now().isoformat()
-        }
+            # Convert amount to smallest unit (assuming 8 decimals)
+            amount_in_smallest_unit = int(amount * 100000000)
+
+            # Execute the burn function on the smart contract
+            transaction = (
+                ContractExecuteTransaction()
+                .setContractId(self.contract_id)
+                .setGas(200000)  # Adjust based on contract complexity
+                .setFunction(
+                    "burnTokens",
+                    ContractFunctionParameters()
+                    .addUint256(amount_in_smallest_unit)
+                    .addUint256(int(actuation_duration * 1000))  # Duration in milliseconds
+                )
+            )
+
+            # Submit transaction
+            tx_response = transaction.execute(self.client)
+
+            # Get receipt to confirm success
+            receipt = tx_response.getReceipt(self.client)
+
+            # Get transaction ID
+            transaction_id = str(tx_response.transactionId)
+
+            # Get updated balance
+            new_balance = self.get_balance()
+
+            return {
+                "success": True,
+                "tokens_burned": amount,
+                "actuation_seconds": actuation_duration,
+                "remaining_balance": new_balance,
+                "transaction_id": transaction_id,
+                "receipt_status": str(receipt.status),
+                "timestamp": datetime.now().isoformat(),
+                "mock_mode": False,
+                "network": self.network
+            }
+
+        except Exception as e:
+            return {
+                "success": False,
+                "error": f"Hedera transaction failed: {str(e)}",
+                "requested": amount,
+                "timestamp": datetime.now().isoformat(),
+                "mock_mode": False,
+                "network": self.network
+            }
 
     def get_contract_info(self) -> Dict[str, Any]:
-        """Get smart contract information"""
+        """Get Hedera smart contract information"""
         return {
+ claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
+            "contract_id": self.contract_id or "Not configured",
+            "network": self.network,
+            "account_id": self.account_id or "Not configured",
+            "token_name": "Hedera Actuation Token",
+            "token_symbol": "HAT",
+=======
             "network": self.network,
             "operator_id": self.operator_id,
             "contract_address": self.contract_address or "Not configured",
             "evm_address": self.evm_address or "Not configured",
-            "token_name": "Hedera Actuation Token",
-            "token_symbol": "HAT",
+            "token_name": "Recursive Planck Operator",
+            "token_symbol": "RPO",
+ main
             "token_rate": "1 HAT = 1 second of actuation",
-            "is_connected": self.is_connected
+            "is_connected": self.is_connected,
+            "mock_mode": self.mock_mode
         }
+
+    def disconnect(self):
+        """Disconnect from Hedera network"""
+        if self.client:
+            try:
+                self.client.close()
+            except Exception:
+
+                pass
+        self.is_connected = False
+        self.client = None
 
 
 class LAMHoverboardInterface:
@@ -542,20 +751,71 @@ class LAMHoverboardInterface:
     Integrates with PrimalLAM for action execution.
     """
 
-    def __init__(self):
-        """Initialize LAM interface"""
+  claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
+    def __init__(self, hedera_config: Dict[str, str] = None):
+=======
+    def __init__(self, use_real_burns: bool = False):
+ main
+        """
+        Initialize LAM interface
+
+        Args:
+ claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
+            hedera_config: Optional Hedera configuration dict with keys:
+                - contract_id: Hedera contract ID
+                - network: "testnet" or "mainnet"
+                - account_id: Hedera account ID
+                - private_key: Hedera private key
+        """
+        self.controller = GoTraxHoverboardController()
+
+        if hedera_config:
+            self.smart_contract = HederaSmartContractInterface(
+                contract_id=hedera_config.get("contract_id", ""),
+                network=hedera_config.get("network", "testnet"),
+                account_id=hedera_config.get("account_id", ""),
+                private_key=hedera_config.get("private_key", "")
+            )
+            # Auto-connect
+            self.smart_contract.connect()
+        else:
+            self.smart_contract = HederaSmartContractInterface(
+           use_real_burns: If True, performs real on-chain $RPO burns
+        """
         # Load token configuration from environment
+        burn_callback = None
+
+        if use_real_burns:
+            try:
+                from lam.integrations.hedera_rpo_burn import initialize_rpo_burner, rpo_burn_callback
+
+                contract_id = os.getenv("HEDERA_CONTRACT_ID")
+                private_key = os.getenv("PRIVATE_KEY")
+
+                if contract_id and private_key:
+                    initialize_rpo_burner(contract_id, private_key)
+                    burn_callback = rpo_burn_callback
+                    print("✅ Real $RPO burns ENABLED")
+                else:
+                    print("⚠️  HEDERA_CONTRACT_ID or PRIVATE_KEY not set - using simulation")
+            except ImportError as e:
+                print(f"⚠️  Could not import RPO burner: {e}")
+                print("   Install: pip install web3 eth-account")
+
         token_config = TokenBurnConfig(
             contract_address=os.getenv("HEDERA_CONTRACT_ID", ""),
             token_rate=float(os.getenv("TOKEN_RATE", "1.0")),
-            min_tokens_required=float(os.getenv("MIN_TOKENS_REQUIRED", "0.1"))
+            min_tokens_required=float(os.getenv("MIN_TOKENS_REQUIRED", "0.1")),
+            burn_callback=burn_callback
         )
 
         self.controller = GoTraxHoverboardController(token_config=token_config)
         self.smart_contract = HederaSmartContractInterface()
+        self.real_burns_enabled = burn_callback is not None
 
         # Connect to Hedera network
         self.smart_contract.connect()
+ main
 
     async def execute_move(self, mode: str, duration: float,
                            power: float = 0.5) -> Dict[str, Any]:
@@ -620,11 +880,20 @@ async def main():
     """Test GoTrax hoverboard integration"""
     print("=" * 70)
     print("GOTRAX EDGE HOVERBOARD INTEGRATION TEST")
-    print("1 Token = 1 Second of Perfectly Smooth Robotic Actuation")
+    print("1 $RPO Token = 1 Second of Perfectly Smooth Robotic Actuation")
     print("=" * 70)
 
+    # Check if real burns should be used
+    use_real_burns = os.getenv("USE_REAL_BURNS", "").lower() == "true"
+
+    if use_real_burns:
+        print("\n🔥 REAL ON-CHAIN $RPO BURNS ENABLED")
+        print("   Tokens will be burned on Hedera blockchain")
+    else:
+        print("\n⚙️  SIMULATION MODE (set USE_REAL_BURNS=true for real burns)")
+
     # Initialize interface
-    interface = LAMHoverboardInterface()
+    interface = LAMHoverboardInterface(use_real_burns=use_real_burns)
 
     # Deposit tokens
     print("\n1. Depositing tokens...")
