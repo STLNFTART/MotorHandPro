@@ -82,11 +82,8 @@ class HoverboardMotorSpec:
 @dataclass
 class TokenBurnConfig:
     """Hedera Smart Contract Token Burn Configuration"""
- claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
     contract_id: str = ""  # Hedera smart contract ID (e.g., "0.0.12345")
-
     contract_address: str = ""  # Hedera smart contract address
-    main
     token_rate: float = 1.0  # 1 token = 1 second of actuation
     min_tokens_required: float = 0.1  # Minimum tokens for any operation
     burn_callback: Optional[Callable] = None  # Callback for token burn events
@@ -206,7 +203,6 @@ class GoTraxHoverboardController:
     def _burn_tokens(self, amount: float) -> bool:
         """
         Burn tokens for actuation.
-claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
         Calls Hedera smart contract callback if configured.
 
         Calls Hedera smart contract callback if configured for REAL on-chain burns.
@@ -486,7 +482,6 @@ class HederaSmartContractInterface:
     Supports both Hedera testnet and mainnet.
     """
 
- claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
     def __init__(self, contract_id: str = "",
                  network: str = "testnet",
                  account_id: str = "",
@@ -528,7 +523,6 @@ class HederaSmartContractInterface:
 
     def connect(self) -> bool:
         """Connect to the Hedera network"""
-   claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
         if self.mock_mode:
             print("⚠️  Running in MOCK MODE - No real Hedera connection")
             self.is_connected = True
@@ -714,7 +708,6 @@ class HederaSmartContractInterface:
     def get_contract_info(self) -> Dict[str, Any]:
         """Get Hedera smart contract information"""
         return {
- claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
             "contract_id": self.contract_id or "Not configured",
             "network": self.network,
             "account_id": self.account_id or "Not configured",
@@ -751,7 +744,6 @@ class LAMHoverboardInterface:
     Integrates with PrimalLAM for action execution.
     """
 
-  claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
     def __init__(self, hedera_config: Dict[str, str] = None):
 =======
     def __init__(self, use_real_burns: bool = False):
@@ -760,7 +752,6 @@ class LAMHoverboardInterface:
         Initialize LAM interface
 
         Args:
- claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
             hedera_config: Optional Hedera configuration dict with keys:
                 - contract_id: Hedera contract ID
                 - network: "testnet" or "mainnet"
