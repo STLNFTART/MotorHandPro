@@ -39,6 +39,7 @@ def load_hedera_config(env_file: Optional[str] = None) -> Dict[str, str]:
     # Load configuration from environment variables
     config = {
         "contract_id": os.getenv("HEDERA_CONTRACT_ID", ""),
+        "rpo_token_id": os.getenv("HEDERA_RPO_TOKEN_ID", "0.0.10164696"),
         "network": os.getenv("HEDERA_NETWORK", "testnet"),
         "account_id": os.getenv("HEDERA_ACCOUNT_ID", ""),
         "private_key": os.getenv("HEDERA_PRIVATE_KEY", ""),
@@ -79,8 +80,11 @@ def validate_hedera_config(config: Dict[str, str]) -> tuple[bool, str]:
         return False, f"Invalid network: {network}. Must be 'testnet' or 'mainnet'"
 
     # Validate Hedera ID format (basic check)
-    for field in ["contract_id", "account_id"]:
+    for field in ["contract_id", "account_id", "rpo_token_id"]:
         value = config.get(field, "")
+        # Skip validation for contract_id if it's an EVM address (starts with 0x)
+        if field == "contract_id" and value.startswith("0x"):
+            continue
         if value and not value.startswith("0.0."):
             return False, f"Invalid {field} format: {value}. Expected format: 0.0.12345"
 
@@ -100,13 +104,14 @@ def print_hedera_config_status(config: Dict[str, str]):
 
     is_valid, message = validate_hedera_config(config)
 
-    print(f"Network:      {config.get('network', 'Not set')}")
-    print(f"Contract ID:  {config.get('contract_id', 'Not set')}")
-    print(f"Account ID:   {config.get('account_id', 'Not set')}")
-    print(f"Private Key:  {'***configured***' if config.get('private_key') else 'Not set'}")
-    print(f"Mock Mode:    {config.get('mock_mode', False)}")
-    print(f"Token Rate:   {config.get('token_burn_rate', 1.0)} token/second")
-    print(f"Min Tokens:   {config.get('min_tokens_required', 0.1)}")
+    print(f"Network:       {config.get('network', 'Not set')}")
+    print(f"Contract ID:   {config.get('contract_id', 'Not set')}")
+    print(f"RPO Token ID:  {config.get('rpo_token_id', 'Not set')}")
+    print(f"Account ID:    {config.get('account_id', 'Not set')}")
+    print(f"Private Key:   {'***configured***' if config.get('private_key') else 'Not set'}")
+    print(f"Mock Mode:     {config.get('mock_mode', False)}")
+    print(f"Token Rate:    {config.get('token_burn_rate', 1.0)} token/second")
+    print(f"Min Tokens:    {config.get('min_tokens_required', 0.1)}")
     print()
     print(f"Status:       {'✅ VALID' if is_valid else '❌ INVALID'}")
     print(f"Message:      {message}")
