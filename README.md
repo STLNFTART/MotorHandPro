@@ -8,6 +8,42 @@ MotorHandPro implements the Primal Logic control framework for robotic actuator 
 
 **Key Innovation:** Exponential memory weighting ensures Lipschitz contractivity and prevents unbounded integration.
 
+## Quick Setup
+
+### Automated Setup (Recommended)
+
+Use the automated setup script to configure your environment:
+
+```bash
+# Clone the repository
+git clone https://github.com/STLNFTART/MotorHandPro.git
+cd MotorHandPro
+
+# Run automated setup
+bash setup.sh --full
+```
+
+**Setup Options:**
+- `--minimal` - Core dependencies only (~2-3 min)
+- `--full` - Complete installation (~5-10 min, recommended)
+- `--dev` - Include development tools
+
+**See [SETUP.md](SETUP.md) for detailed installation guide.**
+
+### Manual Setup
+
+```bash
+# Install Python dependencies
+pip install -r requirements.txt
+pip install -r lam_requirements.txt
+
+# Install Node.js dependencies (optional)
+npm install
+
+# Run smoke test
+python3 lam/smoke_test.py
+```
+
 ## Complete Variable Definitions
 
 ### Core State Variables
