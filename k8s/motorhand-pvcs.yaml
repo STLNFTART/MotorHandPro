@@ -1,0 +1,52 @@
+# MotorHandPro Persistent Volume Claims
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: motorhand-experiments-pvc
+  namespace: motorhand
+  labels:
+    app: motorhand
+    component: storage
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 50Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: motorhand-validation-results-pvc
+  namespace: motorhand
+  labels:
+    app: motorhand
+    component: storage
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: motorhand-ml-datasets-pvc
+  namespace: motorhand
+  labels:
+    app: motorhand
+    component: storage
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 200Gi
+  storageClassName: standard

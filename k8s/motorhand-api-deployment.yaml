@@ -1,0 +1,117 @@
+# MotorHandPro API Deployment (LAM + Primal Logic FastAPI)
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: motorhand-api
+  namespace: motorhand
+  labels:
+    app: motorhand-api
+    tier: backend
+    component: api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: motorhand-api
+  template:
+    metadata:
+      labels:
+        app: motorhand-api
+        tier: backend
+        component: api
+    spec:
+      containers:
+        - name: motorhand-api
+          image: ghcr.io/stlnftart/motorhandpro-api:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+              name: http
+              protocol: TCP
+            - containerPort: 8080
+              name: websocket
+              protocol: TCP
+          envFrom:
+            - secretRef:
+                name: motorhand-env
+            - configMapRef:
+                name: motorhand-config
+          env:
+            - name: PYTHONUNBUFFERED
+              value: "1"
+            - name: LAM_LOG_LEVEL
+              value: "INFO"
+            - name: ENV
+              value: "production"
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "1Gi"
+            limits:
+              cpu: "2000m"
+              memory: "4Gi"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            timeoutSeconds: 10
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 3
+          volumeMounts:
+            - name: validation-results
+              mountPath: /app/validation_results
+            - name: ml-datasets
+              mountPath: /app/ml_datasets
+            - name: experiments
+              mountPath: /app/experiments
+            - name: logs
+              mountPath: /app/logs
+      volumes:
+        - name: validation-results
+          persistentVolumeClaim:
+            claimName: motorhand-validation-results-pvc
+        - name: ml-datasets
+          persistentVolumeClaim:
+            claimName: motorhand-ml-datasets-pvc
+        - name: experiments
+          persistentVolumeClaim:
+            claimName: motorhand-experiments-pvc
+        - name: logs
+          emptyDir: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: motorhand-api
+  namespace: motorhand
+  labels:
+    app: motorhand-api
+spec:
+  type: ClusterIP
+  selector:
+    app: motorhand-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+      protocol: TCP
+    - name: websocket
+      port: 8080
+      targetPort: 8080
+      protocol: TCP
+  sessionAffinity: ClientIP
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
