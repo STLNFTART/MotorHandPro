@@ -1,0 +1,95 @@
+# MotorHandPro GPU Worker Extension
+# Use with: docker-compose -f docker-compose.yml -f docker-compose.gpu.yml up
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+version: '3.9'
+
+services:
+  # ============================================================================
+  # motorhand-worker-gpu: GPU-Accelerated Simulations
+  # ============================================================================
+  motorhand-worker-gpu:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+    image: motorhandpro/worker-gpu:latest
+    container_name: motorhand-worker-gpu
+    command: ["python", "-u", "run_comprehensive_sweep.py"]
+    volumes:
+      - ./experiments:/workspace/experiments
+      - ./validation_results:/workspace/validation_results
+      - ./ml_datasets:/workspace/ml_datasets
+      - ./logs:/workspace/logs
+      - ./notebooks:/workspace/notebooks
+    environment:
+      - PYTHONPATH=/workspace
+      - PYTHONUNBUFFERED=1
+      - WORKER_MODE=gpu
+      - CUDA_VISIBLE_DEVICES=0
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    env_file:
+      - .env
+    networks:
+      - motorhand-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+              count: 1
+    healthcheck:
+      test: ["CMD", "python", "-c", "import torch; assert torch.cuda.is_available()"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # ============================================================================
+  # jupyter-gpu: Jupyter Lab with GPU (for Brev-like local development)
+  # ============================================================================
+  jupyter-gpu:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+    image: motorhandpro/jupyter-gpu:latest
+    container_name: motorhand-jupyter-gpu
+    command: ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/workspace/notebooks
+      - ./experiments:/workspace/experiments
+      - ./validation_results:/workspace/validation_results
+      - ./ml_datasets:/workspace/ml_datasets
+      - ./lam:/workspace/lam
+      - ./extras:/workspace/extras
+    environment:
+      - PYTHONPATH=/workspace
+      - PYTHONUNBUFFERED=1
+      - JUPYTER_ENABLE_LAB=yes
+      - CUDA_VISIBLE_DEVICES=0
+    env_file:
+      - .env
+    networks:
+      - motorhand-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+              count: 1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+networks:
+  motorhand-network:
+    external: true
