@@ -35,6 +35,16 @@ from datetime import timezone
 # MQTT for real-time messaging
 import paho.mqtt.client as mqtt
 
+# NASA Data Integration
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..', 'network_simulation_cluster', 'data_sources'))
+from pathlib import Path
+try:
+    from nasa_comet_data import NASACometDataClient, RecursivePlanckOperator, CometObservation
+except ImportError:
+    NASACometDataClient = None
+    RecursivePlanckOperator = None
+    CometObservation = None
+
 # ============================================================================
 # Configuration
 # ============================================================================
@@ -140,6 +150,32 @@ class ExperimentConfig(BaseModel):
     description: Optional[str] = None
     configuration: Dict[str, Any]
 
+class NASACometDataRequest(BaseModel):
+    """Request for NASA comet data"""
+    data_source: str = Field(..., description="Data source: 'horizons', 'mpc', or 'simulated'")
+    start_time: Optional[str] = None
+    end_time: Optional[str] = None
+    step: str = "1h"
+    days_back: int = 7
+
+class NASACometObservation(BaseModel):
+    """NASA comet observation data"""
+    timestamp: str
+    ra: float
+    dec: float
+    distance_au: float
+    velocity_km_s: Optional[float] = None
+    magnitude: Optional[float] = None
+    gas_production_rate: Optional[float] = None
+    tail_length_km: Optional[float] = None
+
+class NASAProcessedState(BaseModel):
+    """Processed NASA data with PRIMAL state"""
+    timestamp: str
+    observation: NASACometObservation
+    primal_state: Dict[str, float]
+    lam_integration: Optional[Dict[str, Any]] = None
+
 # ============================================================================
 # Database Connection Pool
 # ============================================================================
@@ -167,6 +203,21 @@ def get_mqtt_client():
         mqtt_client.connect(MQTT_BROKER.split(':')[0], int(MQTT_BROKER.split(':')[1]) if ':' in MQTT_BROKER else 1883, 60)
         mqtt_client.loop_start()
     return mqtt_client
+
+# ============================================================================
+# NASA Data Client
+# ============================================================================
+
+nasa_client = None
+nasa_operator = None
+
+def get_nasa_client():
+    """Get NASA data client"""
+    global nasa_client, nasa_operator
+    if NASACometDataClient and nasa_client is None:
+        nasa_client = NASACometDataClient()
+        nasa_operator = RecursivePlanckOperator()
+    return nasa_client, nasa_operator
 
 # ============================================================================
 # API Endpoints
@@ -368,6 +419,283 @@ async def list_experiments(token: dict = Depends(verify_token)):
 
         return [dict(row) for row in rows]
 
+# ============================================================================
+# NASA Data Endpoints
+# ============================================================================
+
+@app.get("/nasa/status")
+async def nasa_status():
+    """Get NASA data client status"""
+    client, operator = get_nasa_client()
+    if client is None:
+        return {
+            "status": "unavailable",
+            "message": "NASA comet data client not available",
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+
+    return {
+        "status": "available",
+        "client": "NASACometDataClient",
+        "data_sources": ["horizons", "mpc", "simulated"],
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
+
+@app.post("/nasa/comet/fetch")
+async def fetch_nasa_comet_data(request: NASACometDataRequest, token: dict = Depends(verify_token)):
+    """Fetch NASA comet data from specified source"""
+    client, operator = get_nasa_client()
+
+    if client is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="NASA comet data client not available"
+        )
+
+    try:
+        observations = []
+
+        if request.data_source == "horizons":
+            start = datetime.fromisoformat(request.start_time) if request.start_time else datetime.now()
+            end = datetime.fromisoformat(request.end_time) if request.end_time else start + timedelta(hours=24)
+
+            observations = client.fetch_horizons_ephemeris(
+                start_time=start,
+                end_time=end,
+                step=request.step
+            )
+
+        elif request.data_source == "mpc":
+            observations = client.fetch_mpc_astrometry(days_back=request.days_back)
+
+        elif request.data_source == "simulated":
+            observations = client.simulate_live_feed(
+                duration_hours=24.0,
+                update_rate_hz=0.1
+            )
+
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail=f"Unknown data source: {request.data_source}"
+            )
+
+        # Convert observations to dict
+        obs_data = [
+            {
+                "timestamp": obs.timestamp.isoformat(),
+                "ra": obs.ra,
+                "dec": obs.dec,
+                "distance_au": obs.distance_au,
+                "velocity_km_s": obs.velocity_km_s,
+                "magnitude": obs.magnitude,
+                "gas_production_rate": obs.gas_production_rate,
+                "tail_length_km": obs.tail_length_km
+            }
+            for obs in observations
+        ]
+
+        # Store in database
+        pool = await get_db_pool()
+        async with pool.acquire() as conn:
+            for obs in obs_data:
+                await conn.execute("""
+                    INSERT INTO nasa_data.comet_observations (
+                        time, ra, dec, distance_au, velocity_km_s,
+                        magnitude, gas_production_rate, tail_length_km, data_source
+                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+                    ON CONFLICT (time) DO UPDATE SET
+                        ra = EXCLUDED.ra,
+                        dec = EXCLUDED.dec,
+                        distance_au = EXCLUDED.distance_au,
+                        velocity_km_s = EXCLUDED.velocity_km_s,
+                        magnitude = EXCLUDED.magnitude,
+                        gas_production_rate = EXCLUDED.gas_production_rate,
+                        tail_length_km = EXCLUDED.tail_length_km
+                """,
+                    datetime.fromisoformat(obs["timestamp"]),
+                    obs["ra"], obs["dec"], obs["distance_au"],
+                    obs["velocity_km_s"], obs["magnitude"],
+                    obs["gas_production_rate"], obs["tail_length_km"],
+                    request.data_source
+                )
+
+        # Publish to MQTT for real-time streaming
+        mqtt_cli = get_mqtt_client()
+        mqtt_cli.publish(
+            "motorhand/nasa/comet/observations",
+            json.dumps({"count": len(obs_data), "source": request.data_source})
+        )
+
+        return {
+            "status": "ok",
+            "data_source": request.data_source,
+            "count": len(obs_data),
+            "observations": obs_data
+        }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching NASA data: {str(e)}"
+        )
+
+@app.get("/nasa/comet/observations")
+async def get_nasa_comet_observations(
+    limit: int = 100,
+    data_source: Optional[str] = None,
+    token: dict = Depends(verify_token)
+):
+    """Get stored NASA comet observations"""
+    pool = await get_db_pool()
+
+    try:
+        async with pool.acquire() as conn:
+            if data_source:
+                rows = await conn.fetch("""
+                    SELECT * FROM nasa_data.comet_observations
+                    WHERE data_source = $1
+                    ORDER BY time DESC
+                    LIMIT $2
+                """, data_source, limit)
+            else:
+                rows = await conn.fetch("""
+                    SELECT * FROM nasa_data.comet_observations
+                    ORDER BY time DESC
+                    LIMIT $1
+                """, limit)
+
+            return {
+                "status": "ok",
+                "count": len(rows),
+                "observations": [dict(row) for row in rows]
+            }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error querying observations: {str(e)}"
+        )
+
+@app.post("/nasa/comet/process")
+async def process_nasa_comet_data(token: dict = Depends(verify_token)):
+    """Process recent NASA comet observations through Recursive Planck Operator"""
+    client, operator = get_nasa_client()
+
+    if operator is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="NASA operator not available"
+        )
+
+    try:
+        # Get recent unprocessed observations
+        pool = await get_db_pool()
+        async with pool.acquire() as conn:
+            rows = await conn.fetch("""
+                SELECT * FROM nasa_data.comet_observations
+                WHERE NOT processed
+                ORDER BY time ASC
+                LIMIT 1000
+            """)
+
+            if not rows:
+                return {"status": "ok", "message": "No unprocessed observations", "count": 0}
+
+            processed_states = []
+
+            for row in rows:
+                # Create observation object
+                obs = type('obj', (object,), {
+                    'timestamp': row['time'],
+                    'ra': row['ra'],
+                    'dec': row['dec'],
+                    'distance_au': row['distance_au'],
+                    'velocity_km_s': row['velocity_km_s'],
+                    'magnitude': row['magnitude'],
+                    'gas_production_rate': row['gas_production_rate'],
+                    'tail_length_km': row['tail_length_km']
+                })()
+
+                # Process through operator
+                state = operator.update(obs)
+                anomaly_score = operator.get_anomaly_score()
+
+                # Store processed state
+                await conn.execute("""
+                    INSERT INTO nasa_data.processed_states (
+                        time, observation_id, primal_n, signal, memory_integral,
+                        error, anomaly_score
+                    ) VALUES ($1, $2, $3, $4, $5, $6, $7)
+                """,
+                    row['time'], row['id'], state.n, state.signal,
+                    state.memory_integral, state.error, anomaly_score
+                )
+
+                # Mark observation as processed
+                await conn.execute("""
+                    UPDATE nasa_data.comet_observations
+                    SET processed = true
+                    WHERE id = $1
+                """, row['id'])
+
+                processed_states.append({
+                    "timestamp": row['time'].isoformat(),
+                    "primal_state": {
+                        "n": state.n,
+                        "signal": state.signal,
+                        "memory_integral": state.memory_integral,
+                        "error": state.error,
+                        "anomaly_score": anomaly_score
+                    }
+                })
+
+            # Publish to MQTT
+            mqtt_cli = get_mqtt_client()
+            mqtt_cli.publish(
+                "motorhand/nasa/comet/processed",
+                json.dumps({"count": len(processed_states)})
+            )
+
+            return {
+                "status": "ok",
+                "count": len(processed_states),
+                "processed_states": processed_states
+            }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error processing NASA data: {str(e)}"
+        )
+
+@app.get("/nasa/comet/processed")
+async def get_processed_nasa_data(limit: int = 100, token: dict = Depends(verify_token)):
+    """Get processed NASA comet states"""
+    pool = await get_db_pool()
+
+    try:
+        async with pool.acquire() as conn:
+            rows = await conn.fetch("""
+                SELECT ps.*, co.ra, co.dec, co.distance_au
+                FROM nasa_data.processed_states ps
+                JOIN nasa_data.comet_observations co ON ps.observation_id = co.id
+                ORDER BY ps.time DESC
+                LIMIT $1
+            """, limit)
+
+            return {
+                "status": "ok",
+                "count": len(rows),
+                "processed_states": [dict(row) for row in rows]
+            }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error querying processed states: {str(e)}"
+        )
+
 @app.get("/metrics")
 async def metrics():
     """Prometheus metrics endpoint"""
@@ -382,6 +710,7 @@ async def startup_event():
     """Initialize connections on startup"""
     await get_db_pool()
     get_mqtt_client()
+    get_nasa_client()
     print("MotorHandPro FastAPI server started successfully!")
 
 @app.on_event("shutdown")
