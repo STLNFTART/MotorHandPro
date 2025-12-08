@@ -37,6 +37,7 @@ import paho.mqtt.client as mqtt
 
 # NASA Data Integration
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..', 'network_simulation_cluster', 'data_sources'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..', 'integrations'))
 from pathlib import Path
 try:
     from nasa_comet_data import NASACometDataClient, RecursivePlanckOperator, CometObservation
@@ -44,6 +45,12 @@ except ImportError:
     NASACometDataClient = None
     RecursivePlanckOperator = None
     CometObservation = None
+
+try:
+    from nasa_eonet_client import NASAEONETClient, EONETEvent
+except ImportError:
+    NASAEONETClient = None
+    EONETEvent = None
 
 # ============================================================================
 # Configuration
@@ -219,14 +226,22 @@ def get_mqtt_client():
 
 nasa_client = None
 nasa_operator = None
+eonet_client = None
 
 def get_nasa_client():
-    """Get NASA data client"""
+    """Get NASA comet data client"""
     global nasa_client, nasa_operator
     if NASACometDataClient and nasa_client is None:
         nasa_client = NASACometDataClient()
         nasa_operator = RecursivePlanckOperator()
     return nasa_client, nasa_operator
+
+def get_eonet_client():
+    """Get NASA EONET client"""
+    global eonet_client
+    if NASAEONETClient and eonet_client is None:
+        eonet_client = NASAEONETClient()
+    return eonet_client
 
 # ============================================================================
 # API Endpoints
@@ -711,6 +726,155 @@ async def get_processed_nasa_data(limit: int = 100, token: dict = Depends(verify
             detail=f"Error querying processed states: {str(e)}"
         )
 
+# ============================================================================
+# EONET (Natural Events) Endpoints
+# ============================================================================
+
+@app.get("/eonet/status")
+async def eonet_status():
+    """Get EONET client status"""
+    client = get_eonet_client()
+    if client is None:
+        return {
+            "status": "unavailable",
+            "message": "EONET client not available",
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    return {
+        "status": "available",
+        "client": "NASAEONETClient",
+        "base_url": "https://eonet.gsfc.nasa.gov/api/v3",
+        "categories_available": 13,
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
+
+@app.get("/eonet/events")
+async def get_eonet_events(
+    status_filter: str = "all",
+    limit: int = 100,
+    days: Optional[int] = None,
+    category: Optional[str] = None,
+    token: dict = Depends(verify_token)
+):
+    """
+    Get natural events from EONET
+
+    Parameters:
+    - status_filter: 'open', 'closed', or 'all' (default: all)
+    - limit: Maximum number of events to return (default: 100)
+    - days: Number of days to look back (optional)
+    - category: Filter by category (e.g., 'wildfires', 'volcanoes', etc.)
+    """
+    client = get_eonet_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="EONET client unavailable")
+
+    try:
+        events = client.get_events(
+            status=status_filter,
+            limit=limit,
+            days=days,
+            category=category
+        )
+
+        return {
+            "status": "ok",
+            "count": len(events),
+            "query": {
+                "status": status_filter,
+                "limit": limit,
+                "days": days,
+                "category": category
+            },
+            "events": [
+                {
+                    "id": e.id,
+                    "title": e.title,
+                    "description": e.description,
+                    "categories": e.categories,
+                    "event_date": e.event_date.isoformat() if e.event_date else None,
+                    "latitude": e.latitude,
+                    "longitude": e.longitude,
+                    "link": e.link,
+                    "closed_date": e.closed_date.isoformat() if e.closed_date else None
+                }
+                for e in events
+            ],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching EONET events: {str(e)}"
+        )
+
+@app.get("/eonet/categories")
+async def get_eonet_categories(token: dict = Depends(verify_token)):
+    """Get EONET event categories"""
+    client = get_eonet_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="EONET client unavailable")
+
+    try:
+        categories = client.get_categories()
+        return {
+            "status": "ok",
+            "count": len(categories),
+            "categories": [
+                {
+                    "id": c.id,
+                    "title": c.title,
+                    "description": c.description
+                }
+                for c in categories
+            ],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching EONET categories: {str(e)}"
+        )
+
+@app.get("/eonet/event/{event_id}")
+async def get_eonet_event_by_id(event_id: str, token: dict = Depends(verify_token)):
+    """Get specific EONET event by ID"""
+    client = get_eonet_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="EONET client unavailable")
+
+    try:
+        event = client.get_event_by_id(event_id)
+        if not event:
+            raise HTTPException(status_code=404, detail=f"Event {event_id} not found")
+
+        return {
+            "status": "ok",
+            "event": {
+                "id": event.id,
+                "title": event.title,
+                "description": event.description,
+                "categories": event.categories,
+                "event_date": event.event_date.isoformat() if event.event_date else None,
+                "latitude": event.latitude,
+                "longitude": event.longitude,
+                "link": event.link,
+                "closed_date": event.closed_date.isoformat() if event.closed_date else None
+            },
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching event {event_id}: {str(e)}"
+        )
+
+# ============================================================================
+# Metrics Endpoint
+# ============================================================================
+
 @app.get("/metrics")
 async def metrics():
     """Prometheus metrics endpoint"""
@@ -726,6 +890,7 @@ async def startup_event():
     await get_db_pool()
     get_mqtt_client()
     get_nasa_client()
+    get_eonet_client()
     print("MotorHandPro FastAPI server started successfully!")
 
 @app.on_event("shutdown")
