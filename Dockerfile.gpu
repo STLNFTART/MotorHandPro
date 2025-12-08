@@ -1,0 +1,81 @@
+# MotorHandPro GPU Worker & Brev Launchable
+# Optimized for: motorhand-worker-gpu, Brev scientific computing
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+FROM nvcr.io/nvidia/pytorch:24.04-py3
+
+LABEL maintainer="Donte Lightfoot <donte@primaltechinvest.com>"
+LABEL description="MotorHandPro GPU-Accelerated Worker for Simulations & Analysis"
+LABEL version="1.0.0"
+LABEL gpu.required="true"
+
+# Set working directory
+WORKDIR /workspace
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    build-essential \
+    curl \
+    wget \
+    vim \
+    htop \
+    nvtop \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy repository
+COPY . /workspace/
+
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir -r lam_requirements.txt
+
+# Install Jupyter and data science tools for Brev
+RUN pip install --no-cache-dir \
+    jupyter \
+    jupyterlab \
+    ipykernel \
+    ipywidgets \
+    nbformat \
+    nbconvert
+
+# Install GPU-specific dependencies
+RUN pip install --no-cache-dir \
+    cupy-cuda12x \
+    numba \
+    pycuda
+
+# Create necessary directories
+RUN mkdir -p \
+    /workspace/experiments/results \
+    /workspace/validation_results \
+    /workspace/ml_datasets \
+    /workspace/logs \
+    /workspace/output
+
+# Set environment variables
+ENV PYTHONPATH=/workspace
+ENV PYTHONUNBUFFERED=1
+ENV CUDA_VISIBLE_DEVICES=0
+ENV NVIDIA_VISIBLE_DEVICES=all
+ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
+ENV TORCH_CUDA_ARCH_LIST="7.0;7.5;8.0;8.6;8.9;9.0"
+
+# Configure Jupyter
+RUN jupyter notebook --generate-config && \
+    echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.token = ''" >> ~/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.password = ''" >> ~/.jupyter/jupyter_notebook_config.py
+
+# Expose Jupyter port
+EXPOSE 8888
+
+# Health check for GPU availability
+HEALTHCHECK --interval=60s --timeout=10s --start-period=10s --retries=3 \
+    CMD python -c "import torch; assert torch.cuda.is_available(), 'GPU not available'; print(f'GPU OK: {torch.cuda.get_device_name(0)}')" || exit 1
+
+# Default command - Jupyter Lab for Brev
+# Override with specific scripts for worker deployments
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]

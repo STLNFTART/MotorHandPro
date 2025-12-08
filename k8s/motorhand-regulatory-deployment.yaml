@@ -1,0 +1,86 @@
+# MotorHandPro Regulatory API Deployment (FDA/RPO Integration)
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: regulatory-api
+  namespace: motorhand
+  labels:
+    app: regulatory-api
+    tier: backend
+    component: regulatory
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: regulatory-api
+  template:
+    metadata:
+      labels:
+        app: regulatory-api
+        tier: backend
+        component: regulatory
+    spec:
+      containers:
+        - name: regulatory-api
+          image: ghcr.io/stlnftart/motorhandpro-regulatory:latest
+          imagePullPolicy: Always
+          command: ["npm", "run", "start:prod"]
+          ports:
+            - containerPort: 9000
+              name: http
+              protocol: TCP
+          envFrom:
+            - secretRef:
+                name: motorhand-env
+            - configMapRef:
+                name: motorhand-config
+          env:
+            - name: NODE_ENV
+              value: "production"
+            - name: PORT
+              value: "9000"
+            - name: API_URL
+              value: "http://motorhand-api:80"
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 9000
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 9000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: regulatory-api
+  namespace: motorhand
+  labels:
+    app: regulatory-api
+spec:
+  type: ClusterIP
+  selector:
+    app: regulatory-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: 9000
+      protocol: TCP

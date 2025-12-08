@@ -1,7 +1,12 @@
-# LAM Docker Container
-# Production-ready container for Large Action Model
+# MotorHandPro Multi-Service Base Image
+# Supports: motorhand-api, motorhand-regulatory
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
 
-FROM python:3.11-slim
+FROM python:3.11-slim AS base
+
+LABEL maintainer="Donte Lightfoot <donte@primaltechinvest.com>"
+LABEL description="MotorHandPro LAM + Primal Logic API"
+LABEL version="1.0.0"
 
 # Set working directory
 WORKDIR /app
@@ -10,45 +15,44 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     git \
     build-essential \
+    curl \
+    wget \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements
-COPY lam/requirements.txt /app/lam/requirements.txt
+# Copy entire repository
+COPY . /app/
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r /app/lam/requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir -r lam_requirements.txt
 
-# Install additional dependencies for Phase 3
-RUN pip install --no-cache-dir \
-    fastapi \
-    uvicorn[standard] \
-    websockets \
-    python-multipart \
-    SpeechRecognition \
-    pyttsx3 \
-    numpy
-
-# Copy application code
-COPY lam/ /app/lam/
-COPY extras/primal/primal_constants.py /app/extras/primal/primal_constants.py
-
-# Create __init__.py files to make extras a proper Python package
-RUN touch /app/extras/__init__.py /app/extras/primal/__init__.py
-
-# Create data directories
-RUN mkdir -p /data/lam/config /data/lam/logs /data/lam/experiments
+# Create necessary directories
+RUN mkdir -p \
+    /data/lam/config \
+    /data/lam/logs \
+    /data/lam/experiments \
+    /app/logs \
+    /app/data \
+    /app/output \
+    /app/results \
+    /app/validation_results
 
 # Set environment variables
 ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
 ENV LAM_DATA_DIR=/data/lam
 ENV LAM_LOG_LEVEL=INFO
 
 # Expose ports
-EXPOSE 8000 8080
+# 8000: FastAPI (LAM API)
+# 8080: WebSocket
+# 9000: Regulatory API
+EXPOSE 8000 8080 9000
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD python -c "import sys; sys.path.insert(0, '/app'); from lam.core.primal_lam import PrimalLAM; lam = PrimalLAM(); print('OK')"
+# Health check for API service
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
 
-# Default command - interactive mode
-CMD ["python", "-u", "lam/lam_main.py"]
+# Default command - can be overridden by docker-compose
+CMD ["uvicorn", "lam.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
