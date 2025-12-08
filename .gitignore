@@ -74,6 +74,7 @@ sensor_data/
 # NASA data pipeline outputs (generated visualizations and data)
 nasa_live_output/
 test_viz_output/
+test_pipeline_output/
 all_visualizations/
 
 # Environment variables (contains sensitive credentials)
