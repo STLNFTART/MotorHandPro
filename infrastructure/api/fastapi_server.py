@@ -52,6 +52,11 @@ except ImportError:
     NASAEONETClient = None
     EONETEvent = None
 
+try:
+    from nasa_api_client import NASAAPIClient
+except ImportError:
+    NASAAPIClient = None
+
 # ============================================================================
 # Configuration
 # ============================================================================
@@ -59,6 +64,7 @@ except ImportError:
 DATABASE_URL = env_os.getenv("DATABASE_URL", "postgresql://motorhand:motorhand_secure_password_change_in_production@timescaledb:5432/motorhand")
 MQTT_BROKER = env_os.getenv("MQTT_BROKER", "mqtt://mqtt:1883").replace("mqtt://", "")
 JWT_SECRET = env_os.getenv("JWT_SECRET", "change_this_secret_in_production")
+NASA_API_KEY = env_os.getenv("NASA_API_KEY", "DEMO_KEY")
 JWT_ALGORITHM = "HS256"
 JWT_EXPIRATION_HOURS = 24
 
@@ -227,6 +233,7 @@ def get_mqtt_client():
 nasa_client = None
 nasa_operator = None
 eonet_client = None
+nasa_api_client = None
 
 def get_nasa_client():
     """Get NASA comet data client"""
@@ -242,6 +249,13 @@ def get_eonet_client():
     if NASAEONETClient and eonet_client is None:
         eonet_client = NASAEONETClient()
     return eonet_client
+
+def get_nasa_api_client():
+    """Get NASA API client (APOD, DONKI, Mars, NEO, etc.)"""
+    global nasa_api_client
+    if NASAAPIClient and nasa_api_client is None:
+        nasa_api_client = NASAAPIClient(api_key=NASA_API_KEY)
+    return nasa_api_client
 
 # ============================================================================
 # API Endpoints
@@ -872,6 +886,351 @@ async def get_eonet_event_by_id(event_id: str, token: dict = Depends(verify_toke
         )
 
 # ============================================================================
+# NASA API Endpoints (APOD, DONKI, Mars, NEO)
+# ============================================================================
+
+@app.get("/nasa/api/status")
+async def nasa_api_status():
+    """Get NASA API client status"""
+    client = get_nasa_api_client()
+    if client is None:
+        return {
+            "status": "unavailable",
+            "message": "NASA API client not available",
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    return {
+        "status": "available",
+        "client": "NASAAPIClient",
+        "api_key_set": NASA_API_KEY != "DEMO_KEY",
+        "available_apis": [
+            "APOD - Astronomy Picture of the Day",
+            "DONKI - Space Weather Events",
+            "Mars InSight - Mars Weather",
+            "Mars Rover Photos",
+            "NEO - Near Earth Objects"
+        ],
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
+
+# ----------------------------------------------------------------------------
+# APOD (Astronomy Picture of the Day)
+# ----------------------------------------------------------------------------
+
+@app.get("/nasa/apod")
+async def get_apod(
+    date: Optional[str] = None,
+    hd: bool = True,
+    token: dict = Depends(verify_token)
+):
+    """
+    Get Astronomy Picture of the Day
+
+    Parameters:
+    - date: Date in YYYY-MM-DD format (optional, default: today)
+    - hd: Include HD URL if available (default: true)
+    """
+    client = get_nasa_api_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="NASA API client unavailable")
+
+    try:
+        date_obj = None
+        if date:
+            date_obj = datetime.strptime(date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+
+        apod = client.get_apod(date=date_obj, hd=hd)
+        if not apod:
+            raise HTTPException(status_code=503, detail="NASA APOD API temporarily unavailable")
+
+        return {
+            "status": "ok",
+            "data": {
+                "date": apod.date.strftime("%Y-%m-%d"),
+                "title": apod.title,
+                "explanation": apod.explanation,
+                "url": apod.url,
+                "hdurl": apod.hdurl,
+                "media_type": apod.media_type,
+                "copyright": apod.copyright
+            },
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching APOD: {str(e)}"
+        )
+
+@app.get("/nasa/apod/range")
+async def get_apod_range(
+    start_date: str,
+    end_date: str,
+    token: dict = Depends(verify_token)
+):
+    """Get APOD for a date range (max 7 days)"""
+    client = get_nasa_api_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="NASA API client unavailable")
+
+    try:
+        start = datetime.strptime(start_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        end = datetime.strptime(end_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+
+        if (end - start).days > 7:
+            raise HTTPException(status_code=400, detail="Date range must be 7 days or less")
+
+        apods = client.get_apod_range(start, end)
+        return {
+            "status": "ok",
+            "count": len(apods),
+            "data": [
+                {
+                    "date": apod.date.strftime("%Y-%m-%d"),
+                    "title": apod.title,
+                    "url": apod.url,
+                    "media_type": apod.media_type
+                }
+                for apod in apods
+            ],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=f"Invalid date format: {str(e)}")
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching APOD range: {str(e)}"
+        )
+
+# ----------------------------------------------------------------------------
+# DONKI (Space Weather)
+# ----------------------------------------------------------------------------
+
+@app.get("/nasa/space-weather")
+async def get_space_weather(
+    event_type: str = "all",
+    days: int = 30,
+    token: dict = Depends(verify_token)
+):
+    """
+    Get space weather events from DONKI
+
+    Parameters:
+    - event_type: Event type (CME, GST, IPS, FLR, SEP, MPC, RBE, HSS, or 'all')
+    - days: Number of days to look back (default: 30)
+    """
+    client = get_nasa_api_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="NASA API client unavailable")
+
+    try:
+        end_date = datetime.now(timezone.utc)
+        start_date = end_date - timedelta(days=days)
+
+        events = client.get_space_weather_events(
+            event_type=event_type,
+            start_date=start_date,
+            end_date=end_date
+        )
+
+        return {
+            "status": "ok",
+            "count": len(events),
+            "query": {
+                "event_type": event_type,
+                "days": days
+            },
+            "events": [
+                {
+                    "event_id": event.event_id,
+                    "event_type": event.event_type,
+                    "event_time": event.event_time.isoformat(),
+                    "instruments": event.instruments,
+                    "link": event.link
+                }
+                for event in events
+            ],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching space weather: {str(e)}"
+        )
+
+# ----------------------------------------------------------------------------
+# Mars InSight Weather
+# ----------------------------------------------------------------------------
+
+@app.get("/nasa/mars/weather")
+async def get_mars_weather(token: dict = Depends(verify_token)):
+    """Get recent Mars weather data from InSight lander"""
+    client = get_nasa_api_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="NASA API client unavailable")
+
+    try:
+        weather = client.get_mars_weather()
+        return {
+            "status": "ok",
+            "count": len(weather),
+            "data": [
+                {
+                    "sol": w.sol,
+                    "earth_date": w.earth_date.strftime("%Y-%m-%d"),
+                    "season": w.season,
+                    "min_temp_c": w.min_temp,
+                    "max_temp_c": w.max_temp,
+                    "pressure_pa": w.pressure,
+                    "wind_speed_ms": w.wind_speed,
+                    "wind_direction": w.wind_direction
+                }
+                for w in weather
+            ],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching Mars weather: {str(e)}"
+        )
+
+# ----------------------------------------------------------------------------
+# Mars Rover Photos
+# ----------------------------------------------------------------------------
+
+@app.get("/nasa/mars/photos/{rover}")
+async def get_mars_photos(
+    rover: str,
+    sol: Optional[int] = None,
+    earth_date: Optional[str] = None,
+    camera: Optional[str] = None,
+    page: int = 1,
+    token: dict = Depends(verify_token)
+):
+    """
+    Get Mars Rover photos
+
+    Parameters:
+    - rover: Rover name (curiosity, opportunity, spirit, perseverance)
+    - sol: Martian sol number (optional)
+    - earth_date: Earth date YYYY-MM-DD (optional)
+    - camera: Camera name (FHAZ, RHAZ, MAST, CHEMCAM, etc.)
+    - page: Page number (default: 1)
+    """
+    client = get_nasa_api_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="NASA API client unavailable")
+
+    try:
+        earth_date_obj = None
+        if earth_date:
+            earth_date_obj = datetime.strptime(earth_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+
+        photos = client.get_mars_rover_photos(
+            rover=rover,
+            sol=sol,
+            earth_date=earth_date_obj,
+            camera=camera,
+            page=page
+        )
+
+        return {
+            "status": "ok",
+            "count": len(photos),
+            "query": {
+                "rover": rover,
+                "sol": sol,
+                "earth_date": earth_date,
+                "camera": camera,
+                "page": page
+            },
+            "photos": [
+                {
+                    "photo_id": photo.photo_id,
+                    "sol": photo.sol,
+                    "camera": photo.camera_name,
+                    "camera_full_name": photo.camera_full_name,
+                    "earth_date": photo.earth_date.strftime("%Y-%m-%d"),
+                    "img_src": photo.img_src,
+                    "rover": photo.rover_name
+                }
+                for photo in photos
+            ],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=f"Invalid parameter: {str(e)}")
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching Mars photos: {str(e)}"
+        )
+
+# ----------------------------------------------------------------------------
+# Near Earth Objects (Asteroids)
+# ----------------------------------------------------------------------------
+
+@app.get("/nasa/neo")
+async def get_near_earth_objects(
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None,
+    token: dict = Depends(verify_token)
+):
+    """
+    Get Near Earth Objects (asteroids)
+
+    Parameters:
+    - start_date: Start date YYYY-MM-DD (default: today)
+    - end_date: End date YYYY-MM-DD (default: 7 days from start)
+    """
+    client = get_nasa_api_client()
+    if not client:
+        raise HTTPException(status_code=503, detail="NASA API client unavailable")
+
+    try:
+        start = None
+        end = None
+        if start_date:
+            start = datetime.strptime(start_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        if end_date:
+            end = datetime.strptime(end_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+
+        neos = client.get_near_earth_objects(start_date=start, end_date=end)
+
+        return {
+            "status": "ok",
+            "count": len(neos),
+            "query": {
+                "start_date": start.strftime("%Y-%m-%d") if start else "today",
+                "end_date": end.strftime("%Y-%m-%d") if end else "+7 days"
+            },
+            "objects": [
+                {
+                    "neo_id": neo.neo_id,
+                    "name": neo.name,
+                    "nasa_jpl_url": neo.nasa_jpl_url,
+                    "absolute_magnitude": neo.absolute_magnitude,
+                    "estimated_diameter_km": neo.estimated_diameter_km,
+                    "is_potentially_hazardous": neo.is_potentially_hazardous,
+                    "close_approach_date": neo.close_approach_date.strftime("%Y-%m-%d"),
+                    "miss_distance_km": neo.miss_distance_km,
+                    "relative_velocity_kmh": neo.relative_velocity_kmh
+                }
+                for neo in neos
+            ],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=f"Invalid date format: {str(e)}")
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error fetching NEO data: {str(e)}"
+        )
+
+# ============================================================================
 # Metrics Endpoint
 # ============================================================================
 
@@ -891,6 +1250,7 @@ async def startup_event():
     get_mqtt_client()
     get_nasa_client()
     get_eonet_client()
+    get_nasa_api_client()
     print("MotorHandPro FastAPI server started successfully!")
 
 @app.on_event("shutdown")
