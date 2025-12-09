@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "comet": "12P/Pons-Brooks",
+    "apparition": "2023-2024",
+    "observations": 1397,
+    "time_span_days": 349,
+    "outburst_count": 431,
+    "data_source": "Synthetic (based on published observations)",
+    "references": [
+      "MNRAS 2025: Mass of particles released by comet 12P/Pons\u2013Brooks",
+      "British Astronomical Association",
+      "TRAPPIST Observatory (ATel #16282)"
+    ]
+  },
+  "analysis_date": "2025-12-08T20:36:48.236019",
+  "methods": {
+    "rpo": {
+      "method": "RPO (\u03bc=0.16905)",
+      "precision": 1.0,
+      "recall": 0.16241299303944315,
+      "f1_score": 0.27944111776447106,
+      "accuracy": 0.7415891195418755,
+      "true_positives": 70,
+      "false_positives": 0,
+      "false_negatives": 361,
+      "true_negatives": 966
+    },
+    "magnitude_threshold": {
+      "method": "Magnitude Threshold (2\u03c3)",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "accuracy": 0.6914817465998568,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 431,
+      "true_negatives": 966
+    },
+    "production_threshold": {
+      "method": "Production Rate (1.5\u00d7)",
+      "precision": 1.0,
+      "recall": 0.3990719257540603,
+      "f1_score": 0.5704809286898839,
+      "accuracy": 0.8146027201145312,
+      "true_positives": 172,
+      "false_positives": 0,
+      "false_negatives": 259,
+      "true_negatives": 966
+    }
+  },
+  "best_method": "Production Rate (1.5\u00d7)",
+  "rpo_parameters": {
+    "mu": 0.16905,
+    "alpha": 1.618,
+    "beta": 0.5,
+    "D": 149.9992314
+  },
+  "summary": {
+    "total_observations": 1397,
+    "true_outbursts": 431,
+    "rpo_detections": 70,
+    "time_span_days": 349
+  }
+}
