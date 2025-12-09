@@ -71,5 +71,23 @@ biomedical_simulation/*.o
 validation_plots/
 sensor_data/
 
+# NASA data pipeline outputs (generated visualizations and data)
+nasa_live_output/
+test_viz_output/
+ claude/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ
+test_pipeline_output/
+all_visualizations/
+=======
+nasa_visualizations/
+ main
+
 # Environment variables (contains sensitive credentials)
 .env
+
+# Hardhat files
+cache/
+artifacts/
+typechain-types/
+coverage/
+coverage.json
+*.tsbuildinfo

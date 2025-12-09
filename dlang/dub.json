@@ -1,0 +1,92 @@
+{
+    "name": "motorhandpro-dlang",
+    "description": "D Language modules for MotorHandPro - Primal Logic control system",
+    "authors": ["MotorHandPro Team"],
+    "copyright": "Copyright © 2024-2025, U.S. Patent Application 63/842,846",
+    "license": "Proprietary",
+    "version": "1.0.0",
+
+    "targetType": "library",
+
+    "configurations": [
+        {
+            "name": "library",
+            "targetType": "library"
+        },
+        {
+            "name": "primal-kernel",
+            "targetType": "executable",
+            "targetName": "primal_kernel",
+            "sourceFiles": ["core_control/primal_kernel.d"],
+            "mainSourceFile": "core_control/primal_kernel.d"
+        },
+        {
+            "name": "motor-hand",
+            "targetType": "executable",
+            "targetName": "motor_hand",
+            "sourceFiles": [
+                "core_control/primal_kernel.d",
+                "robotic_control/motor_hand.d"
+            ],
+            "mainSourceFile": "robotic_control/motor_hand.d"
+        },
+        {
+            "name": "drug-safety",
+            "targetType": "executable",
+            "targetName": "drug_safety",
+            "sourceFiles": ["../drug_safety/**/*.d"]
+        },
+        {
+            "name": "biomedical",
+            "targetType": "executable",
+            "targetName": "biomedical",
+            "sourceFiles": ["../biomedical_simulation/**/*.d"]
+        }
+    ],
+
+    "buildTypes": {
+        "release": {
+            "buildOptions": ["releaseMode", "optimize", "inline"],
+            "dflags": ["-O3", "-release", "-inline", "-boundscheck=off"]
+        },
+        "debug": {
+            "buildOptions": ["debugMode", "debugInfo"],
+            "dflags": ["-g", "-debug"]
+        },
+        "unittest": {
+            "buildOptions": ["unittests", "debugMode", "debugInfo"],
+            "dflags": ["-unittest", "-g", "-debug"]
+        },
+        "profile": {
+            "buildOptions": ["releaseMode", "optimize", "inline", "profile"],
+            "dflags": ["-O3", "-release", "-profile"]
+        }
+    },
+
+    "buildRequirements": ["allowWarnings"],
+
+    "dflags": ["-w", "-vcolumns"],
+
+    "lflags": ["-L/usr/local/lib"],
+
+    "sourcePaths": [
+        "core_control",
+        "robotic_control",
+        "embedded"
+    ],
+
+    "importPaths": [
+        "core_control",
+        "robotic_control",
+        "embedded"
+    ],
+
+    "stringImportPaths": ["resources"],
+
+    "versions": ["MotorHandPro", "PrimalLogic"],
+
+    "toolchainRequirements": {
+        "dmd": ">=2.100.0",
+        "ldc": ">=1.30.0"
+    }
+}

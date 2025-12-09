@@ -32,6 +32,15 @@ LAM (Large Action Model) is an intelligent agent system that helps users accompl
 - **Task Completion**: Execute general tasks with quantum optimization
 - **Resonance Monitoring**: Real-time stability tracking with Lightfoot/Donte constants
 
+### ⏱️ Temporal Displacement (NEW)
+- **Time-Aware Fields**: Three methods for temporal displacement in control systems
+- **Causality-Aware Sensing**: Enforce realistic signal propagation delays
+- **Trust-Gated Adaptation**: Adaptive displacement based on signal confidence
+- **Load Shedding**: Graceful degradation under high system load
+- **Multi-Agent Sync**: Synchronization across distributed agents with clock offsets
+
+**See:** [TEMPORAL_DISPLACEMENT.md](TEMPORAL_DISPLACEMENT.md) for complete documentation
+
 ## Installation
 
 ### Requirements

@@ -1,0 +1,110 @@
+# MotorHandPro GPU Worker Deployment
+# Requires Kubernetes cluster with NVIDIA GPU Operator installed
+# Patent Pending: U.S. Provisional Patent Application No. 63/842,846
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: motorhand-worker-gpu
+  namespace: motorhand
+  labels:
+    app: motorhand-worker-gpu
+    tier: compute
+    component: worker
+spec:
+  replicas: 1  # Scale based on GPU availability
+  selector:
+    matchLabels:
+      app: motorhand-worker-gpu
+  template:
+    metadata:
+      labels:
+        app: motorhand-worker-gpu
+        tier: compute
+        component: worker
+    spec:
+      containers:
+        - name: motorhand-worker-gpu
+          image: ghcr.io/stlnftart/motorhandpro-worker-gpu:latest
+          imagePullPolicy: Always
+          command: ["python", "-u", "run_comprehensive_sweep.py"]
+          envFrom:
+            - secretRef:
+                name: motorhand-env
+            - configMapRef:
+                name: motorhand-config
+          env:
+            - name: PYTHONUNBUFFERED
+              value: "1"
+            - name: WORKER_MODE
+              value: "gpu"
+            - name: CUDA_VISIBLE_DEVICES
+              value: "0"
+          resources:
+            requests:
+              cpu: "2000m"
+              memory: "8Gi"
+              nvidia.com/gpu: 1
+            limits:
+              cpu: "4000m"
+              memory: "16Gi"
+              nvidia.com/gpu: 1
+          volumeMounts:
+            - name: experiments
+              mountPath: /workspace/experiments
+            - name: validation-results
+              mountPath: /workspace/validation_results
+            - name: ml-datasets
+              mountPath: /workspace/ml_datasets
+            - name: logs
+              mountPath: /workspace/logs
+          livenessProbe:
+            exec:
+              command:
+                - python
+                - -c
+                - "import torch; assert torch.cuda.is_available()"
+            initialDelaySeconds: 60
+            periodSeconds: 120
+            timeoutSeconds: 10
+            failureThreshold: 3
+      volumes:
+        - name: experiments
+          persistentVolumeClaim:
+            claimName: motorhand-experiments-pvc
+        - name: validation-results
+          persistentVolumeClaim:
+            claimName: motorhand-validation-results-pvc
+        - name: ml-datasets
+          persistentVolumeClaim:
+            claimName: motorhand-ml-datasets-pvc
+        - name: logs
+          emptyDir: {}
+      # Node selector for GPU nodes
+      nodeSelector:
+        nvidia.com/gpu: "true"
+      # Toleration for GPU nodes (if tainted)
+      tolerations:
+        - key: nvidia.com/gpu
+          operator: Equal
+          value: "true"
+          effect: NoSchedule
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: motorhand-worker-gpu
+  namespace: motorhand
+  labels:
+    app: motorhand-worker-gpu
+spec:
+  type: ClusterIP
+  selector:
+    app: motorhand-worker-gpu
+  ports:
+    - name: metrics
+      port: 9100
+      targetPort: 9100
+      protocol: TCP
+  clusterIP: None  # Headless service
