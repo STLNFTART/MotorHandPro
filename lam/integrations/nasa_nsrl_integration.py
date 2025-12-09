@@ -462,7 +462,7 @@ def demo_nasa_nsrl_integration():
 
     # Generate NASA report
     report_path = nsrl.generate_nasa_report_pdf(report)
-
+    print(f"NASA report generated at: {report_path}")
     print("\n" + "=" * 70)
     print("Demo complete!")
     print("=" * 70)
