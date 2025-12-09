@@ -1,0 +1,493 @@
+{
+  "metadata": {
+    "object": "3I/ATLAS = C/2025 N1",
+    "object_type": "Interstellar Comet (CONFIRMED)",
+    "discovery_date": "2025-07-01",
+    "discoverer": "ATLAS (Asteroid Terrestrial-impact Last Alert System)",
+    "designation": "3rd interstellar object",
+    "observations": 801,
+    "time_span_days": 200,
+    "outburst_count": 140,
+    "data_source": "Real observations (MPC/Rubin/ATLAS-based)",
+    "orbital_elements": {
+      "perihelion_date": "2025-10-29",
+      "perihelion_distance_au": 1.3745928,
+      "eccentricity": 6.2769203,
+      "inclination_deg": 175.11669,
+      "v_infinity_km_s": 57.9763
+    },
+    "references": [
+      "MPC MPEC 2025-N12",
+      "ArXiv 2507.13409: Rubin Observatory Observations",
+      "ArXiv 2508.15768: Direct Spacecraft Exploration",
+      "ArXiv 2509.05181: Extreme Negative Polarisation"
+    ]
+  },
+  "analysis_date": "2025-12-09T01:07:34.786301",
+  "rpo_parameters": {
+    "mu": 0.16905,
+    "alpha": 1.618,
+    "beta": 0.5,
+    "D": 149.9992314,
+    "threshold_percentile": 71.0,
+    "threshold_value": 0.34940798912810656
+  },
+  "performance": {
+    "precision": 0.3146551724137931,
+    "recall": 0.5214285714285715,
+    "f1_score": 0.39247311827956993,
+    "accuracy": 0.717852684144819,
+    "true_positives": 73,
+    "false_positives": 159,
+    "false_negatives": 67,
+    "true_negatives": 502
+  },
+  "statistics": {
+    "total_observations": 801,
+    "true_outbursts": 140,
+    "detected_events": 232,
+    "mean_anomaly": 0.30351927289880787,
+    "max_anomaly": 2.420650937525837,
+    "max_state": 17.2328565866665
+  },
+  "detected_outbursts": [
+    {
+      "timestamp": "2025-07-12T12:00:00",
+      "anomaly_score": 0.38681230794767796,
+      "ni_flux_g_s": 0.7318769205232198,
+      "magnitude": 16.022702982543482
+    },
+    {
+      "timestamp": "2025-07-14T06:00:00",
+      "anomaly_score": 0.5197261505720345,
+      "ni_flux_g_s": -0.5972615057203455,
+      "magnitude": 16.000892216514774
+    },
+    {
+      "timestamp": "2025-09-07T00:00:00",
+      "anomaly_score": 0.7529144517862507,
+      "ni_flux_g_s": -2.929144517862507,
+      "magnitude": 14.7890101355048
+    },
+    {
+      "timestamp": "2025-09-07T06:00:00",
+      "anomaly_score": 0.35006031096425977,
+      "ni_flux_g_s": 1.099396890357402,
+      "magnitude": 14.757060319403685
+    },
+    {
+      "timestamp": "2025-09-07T12:00:00",
+      "anomaly_score": 0.5066498972062211,
+      "ni_flux_g_s": 9.666498972062211,
+      "magnitude": 14.75036259577564
+    },
+    {
+      "timestamp": "2025-09-09T00:00:00",
+      "anomaly_score": 0.9476699602752776,
+      "ni_flux_g_s": 14.076699602752775,
+      "magnitude": 14.648015072292527
+    },
+    {
+      "timestamp": "2025-09-10T00:00:00",
+      "anomaly_score": 0.61426560358793,
+      "ni_flux_g_s": 10.7426560358793,
+      "magnitude": 14.613896762196413
+    },
+    {
+      "timestamp": "2025-09-11T06:00:00",
+      "anomaly_score": 0.3648736290509703,
+      "ni_flux_g_s": 8.248736290509703,
+      "magnitude": 14.522714658179067
+    },
+    {
+      "timestamp": "2025-09-11T18:00:00",
+      "anomaly_score": 0.4807178964658233,
+      "ni_flux_g_s": 9.407178964658232,
+      "magnitude": 14.498260344961302
+    },
+    {
+      "timestamp": "2025-09-12T00:00:00",
+      "anomaly_score": 0.4240654398476309,
+      "ni_flux_g_s": 8.840654398476309,
+      "magnitude": 14.495203652057892
+    },
+    {
+      "timestamp": "2025-09-12T12:00:00",
+      "anomaly_score": 0.4815710944233656,
+      "ni_flux_g_s": 9.415710944233656,
+      "magnitude": 14.431302872448708
+    },
+    {
+      "timestamp": "2025-09-12T18:00:00",
+      "anomaly_score": 0.43885774336901207,
+      "ni_flux_g_s": 0.21142256630987896,
+      "magnitude": 14.450678309040445
+    },
+    {
+      "timestamp": "2025-09-13T00:00:00",
+      "anomaly_score": 0.6608523806850123,
+      "ni_flux_g_s": 11.208523806850122,
+      "magnitude": 14.416398268945775
+    },
+    {
+      "timestamp": "2025-09-13T06:00:00",
+      "anomaly_score": 0.7987906310179357,
+      "ni_flux_g_s": 12.587906310179356,
+      "magnitude": 14.393674434659308
+    },
+    {
+      "timestamp": "2025-09-13T12:00:00",
+      "anomaly_score": 0.8241436602810082,
+      "ni_flux_g_s": 12.84143660281008,
+      "magnitude": 14.403912766603398
+    },
+    {
+      "timestamp": "2025-09-13T18:00:00",
+      "anomaly_score": 1.1594104411380983,
+      "ni_flux_g_s": 16.194104411380984,
+      "magnitude": 14.342748737616786
+    },
+    {
+      "timestamp": "2025-10-22T06:00:00",
+      "anomaly_score": 0.518811530894695,
+      "ni_flux_g_s": 9.78811530894695,
+      "magnitude": 14.06066717971132
+    },
+    {
+      "timestamp": "2025-10-22T12:00:00",
+      "anomaly_score": 1.5744941610429586,
+      "ni_flux_g_s": 20.344941610429586,
+      "magnitude": 14.07229668407588
+    },
+    {
+      "timestamp": "2025-10-23T00:00:00",
+      "anomaly_score": 1.1545070587994313,
+      "ni_flux_g_s": 16.14507058799431,
+      "magnitude": 14.058207121504996
+    },
+    {
+      "timestamp": "2025-10-23T06:00:00",
+      "anomaly_score": 0.8150940816611909,
+      "ni_flux_g_s": 12.750940816611909,
+      "magnitude": 14.072155935666876
+    },
+    {
+      "timestamp": "2025-10-23T12:00:00",
+      "anomaly_score": 1.6255238949772326,
+      "ni_flux_g_s": 20.855238949772325,
+      "magnitude": 14.074992675946076
+    },
+    {
+      "timestamp": "2025-10-23T18:00:00",
+      "anomaly_score": 0.7305752752773722,
+      "ni_flux_g_s": 11.905752752773722,
+      "magnitude": 14.079408414536026
+    },
+    {
+      "timestamp": "2025-10-24T00:00:00",
+      "anomaly_score": 0.8894761850732161,
+      "ni_flux_g_s": 13.49476185073216,
+      "magnitude": 14.030684839015937
+    },
+    {
+      "timestamp": "2025-10-24T12:00:00",
+      "anomaly_score": 1.170451917013541,
+      "ni_flux_g_s": 16.30451917013541,
+      "magnitude": 14.032853046705087
+    },
+    {
+      "timestamp": "2025-10-24T18:00:00",
+      "anomaly_score": 0.8433629937750554,
+      "ni_flux_g_s": 13.033629937750554,
+      "magnitude": 14.031681241589101
+    },
+    {
+      "timestamp": "2025-10-25T00:00:00",
+      "anomaly_score": 0.7226742678552867,
+      "ni_flux_g_s": 11.826742678552867,
+      "magnitude": 13.982700544916975
+    },
+    {
+      "timestamp": "2025-10-25T18:00:00",
+      "anomaly_score": 0.788364767837934,
+      "ni_flux_g_s": 12.48364767837934,
+      "magnitude": 14.013011559663793
+    },
+    {
+      "timestamp": "2025-10-26T06:00:00",
+      "anomaly_score": 0.9395255382658532,
+      "ni_flux_g_s": 13.99525538265853,
+      "magnitude": 13.924977777007753
+    },
+    {
+      "timestamp": "2025-10-27T12:00:00",
+      "anomaly_score": 0.8904602377867723,
+      "ni_flux_g_s": 13.504602377867723,
+      "magnitude": 13.902218135232811
+    },
+    {
+      "timestamp": "2025-10-27T18:00:00",
+      "anomaly_score": 2.0804342510696285,
+      "ni_flux_g_s": 25.404342510696285,
+      "magnitude": 13.908283779735072
+    },
+    {
+      "timestamp": "2025-10-28T00:00:00",
+      "anomaly_score": 0.846285355184779,
+      "ni_flux_g_s": 13.06285355184779,
+      "magnitude": 13.838904256380804
+    },
+    {
+      "timestamp": "2025-10-28T12:00:00",
+      "anomaly_score": 0.6014453710462474,
+      "ni_flux_g_s": 10.614453710462474,
+      "magnitude": 13.846384258963923
+    },
+    {
+      "timestamp": "2025-10-28T18:00:00",
+      "anomaly_score": 0.4674232975694155,
+      "ni_flux_g_s": 9.274232975694154,
+      "magnitude": 13.830206906116569
+    },
+    {
+      "timestamp": "2025-11-02T00:00:00",
+      "anomaly_score": 0.6886612188881681,
+      "ni_flux_g_s": 11.486612188881681,
+      "magnitude": 13.587430934661858
+    },
+    {
+      "timestamp": "2025-11-02T06:00:00",
+      "anomaly_score": 0.8550669312022426,
+      "ni_flux_g_s": 13.150669312022426,
+      "magnitude": 13.58422439268627
+    },
+    {
+      "timestamp": "2025-11-02T12:00:00",
+      "anomaly_score": 1.1350288601417242,
+      "ni_flux_g_s": 15.950288601417242,
+      "magnitude": 13.587755293057214
+    },
+    {
+      "timestamp": "2025-11-02T18:00:00",
+      "anomaly_score": 0.7354177491573755,
+      "ni_flux_g_s": 11.954177491573754,
+      "magnitude": 13.584598831990853
+    },
+    {
+      "timestamp": "2025-11-03T06:00:00",
+      "anomaly_score": 1.665337786787535,
+      "ni_flux_g_s": 21.253377867875347,
+      "magnitude": 13.53476899338256
+    },
+    {
+      "timestamp": "2025-11-03T12:00:00",
+      "anomaly_score": 0.7716412816640537,
+      "ni_flux_g_s": 12.316412816640536,
+      "magnitude": 13.526687910870068
+    },
+    {
+      "timestamp": "2025-11-03T18:00:00",
+      "anomaly_score": 2.420650937525837,
+      "ni_flux_g_s": 28.80650937525837,
+      "magnitude": 13.536295707885182
+    },
+    {
+      "timestamp": "2025-11-04T00:00:00",
+      "anomaly_score": 0.5962616818280461,
+      "ni_flux_g_s": 10.56261681828046,
+      "magnitude": 13.497992585948904
+    },
+    {
+      "timestamp": "2025-11-04T06:00:00",
+      "anomaly_score": 0.38018921583836124,
+      "ni_flux_g_s": 8.401892158383612,
+      "magnitude": 13.471599598606677
+    },
+    {
+      "timestamp": "2025-11-04T12:00:00",
+      "anomaly_score": 1.0022010545959263,
+      "ni_flux_g_s": 14.622010545959263,
+      "magnitude": 13.472833298865508
+    },
+    {
+      "timestamp": "2025-11-05T00:00:00",
+      "anomaly_score": 0.7285718830020981,
+      "ni_flux_g_s": 11.88571883002098,
+      "magnitude": 13.4315712703919
+    },
+    {
+      "timestamp": "2025-11-05T12:00:00",
+      "anomaly_score": 0.8971965090677699,
+      "ni_flux_g_s": 13.571965090677699,
+      "magnitude": 13.42983473767304
+    },
+    {
+      "timestamp": "2025-11-05T18:00:00",
+      "anomaly_score": 0.8715836006528621,
+      "ni_flux_g_s": 13.31583600652862,
+      "magnitude": 13.420711578686719
+    },
+    {
+      "timestamp": "2025-11-06T06:00:00",
+      "anomaly_score": 0.7985228016943189,
+      "ni_flux_g_s": 12.585228016943189,
+      "magnitude": 13.37902842886656
+    },
+    {
+      "timestamp": "2025-11-06T18:00:00",
+      "anomaly_score": 0.6347264469501036,
+      "ni_flux_g_s": 10.947264469501036,
+      "magnitude": 13.385476588355958
+    },
+    {
+      "timestamp": "2025-11-07T06:00:00",
+      "anomaly_score": 1.3037535757448961,
+      "ni_flux_g_s": 17.637535757448962,
+      "magnitude": 13.32212687157962
+    },
+    {
+      "timestamp": "2025-11-07T12:00:00",
+      "anomaly_score": 0.8169314840930806,
+      "ni_flux_g_s": 12.769314840930805,
+      "magnitude": 13.31778080594985
+    },
+    {
+      "timestamp": "2025-11-07T18:00:00",
+      "anomaly_score": 1.8047803600672077,
+      "ni_flux_g_s": 22.647803600672077,
+      "magnitude": 13.323679362751257
+    },
+    {
+      "timestamp": "2025-11-08T00:00:00",
+      "anomaly_score": 0.7889887502626098,
+      "ni_flux_g_s": 12.489887502626098,
+      "magnitude": 13.269200290104857
+    },
+    {
+      "timestamp": "2025-11-08T12:00:00",
+      "anomaly_score": 1.0797543747557046,
+      "ni_flux_g_s": 15.397543747557046,
+      "magnitude": 13.280906378442372
+    },
+    {
+      "timestamp": "2025-11-08T18:00:00",
+      "anomaly_score": 0.8432262834055889,
+      "ni_flux_g_s": 13.032262834055889,
+      "magnitude": 13.294569750757477
+    },
+    {
+      "timestamp": "2025-12-07T06:00:00",
+      "anomaly_score": 0.462727688267651,
+      "ni_flux_g_s": 9.22727688267651,
+      "magnitude": 12.006993896204857
+    },
+    {
+      "timestamp": "2025-12-07T12:00:00",
+      "anomaly_score": 0.7136155049675802,
+      "ni_flux_g_s": 11.736155049675801,
+      "magnitude": 12.008351488151384
+    },
+    {
+      "timestamp": "2025-12-07T18:00:00",
+      "anomaly_score": 1.5184855470737035,
+      "ni_flux_g_s": 19.784855470737035,
+      "magnitude": 12.006267762223727
+    },
+    {
+      "timestamp": "2025-12-08T00:00:00",
+      "anomaly_score": 0.9134031392770279,
+      "ni_flux_g_s": 13.734031392770278,
+      "magnitude": 12.004153101423578
+    },
+    {
+      "timestamp": "2025-12-08T06:00:00",
+      "anomaly_score": 0.7015184919880978,
+      "ni_flux_g_s": 11.615184919880978,
+      "magnitude": 11.975536837356787
+    },
+    {
+      "timestamp": "2025-12-08T12:00:00",
+      "anomaly_score": 0.36560779351003403,
+      "ni_flux_g_s": 8.25607793510034,
+      "magnitude": 11.975611816813704
+    },
+    {
+      "timestamp": "2025-12-08T18:00:00",
+      "anomaly_score": 0.5545734949540423,
+      "ni_flux_g_s": 10.145734949540422,
+      "magnitude": 11.975070897756673
+    },
+    {
+      "timestamp": "2025-12-09T00:00:00",
+      "anomaly_score": 0.6446537733625861,
+      "ni_flux_g_s": 11.046537733625861,
+      "magnitude": 11.968051893030074
+    },
+    {
+      "timestamp": "2025-12-09T06:00:00",
+      "anomaly_score": 0.44911985642509666,
+      "ni_flux_g_s": 9.091198564250966,
+      "magnitude": 11.967979976685582
+    },
+    {
+      "timestamp": "2025-12-09T18:00:00",
+      "anomaly_score": 1.0235106740567264,
+      "ni_flux_g_s": 14.835106740567264,
+      "magnitude": 11.944735249441093
+    },
+    {
+      "timestamp": "2025-12-10T00:00:00",
+      "anomaly_score": 1.6133354686653782,
+      "ni_flux_g_s": 20.733354686653783,
+      "magnitude": 11.973683152888169
+    },
+    {
+      "timestamp": "2025-12-10T12:00:00",
+      "anomaly_score": 0.3545339972112725,
+      "ni_flux_g_s": 8.145339972112724,
+      "magnitude": 11.984324763833467
+    },
+    {
+      "timestamp": "2025-12-10T18:00:00",
+      "anomaly_score": 0.8811039673208734,
+      "ni_flux_g_s": 13.411039673208734,
+      "magnitude": 12.033782254943517
+    },
+    {
+      "timestamp": "2025-12-11T06:00:00",
+      "anomaly_score": 1.787595948416552,
+      "ni_flux_g_s": 22.47595948416552,
+      "magnitude": 12.03473074725152
+    },
+    {
+      "timestamp": "2025-12-11T12:00:00",
+      "anomaly_score": 0.5072305559274582,
+      "ni_flux_g_s": 9.672305559274582,
+      "magnitude": 12.043139201540733
+    },
+    {
+      "timestamp": "2025-12-12T00:00:00",
+      "anomaly_score": 1.2154707495056636,
+      "ni_flux_g_s": 16.754707495056635,
+      "magnitude": 12.08589782575179
+    },
+    {
+      "timestamp": "2025-12-13T00:00:00",
+      "anomaly_score": 0.7445959348817748,
+      "ni_flux_g_s": 12.045959348817748,
+      "magnitude": 12.139838242159334
+    },
+    {
+      "timestamp": "2025-12-13T06:00:00",
+      "anomaly_score": 0.430555182167806,
+      "ni_flux_g_s": 8.90555182167806,
+      "magnitude": 12.159902611361634
+    },
+    {
+      "timestamp": "2025-12-13T18:00:00",
+      "anomaly_score": 1.6288492196057476,
+      "ni_flux_g_s": 20.888492196057477,
+      "magnitude": 12.199838468063705
+    }
+  ]
+}
