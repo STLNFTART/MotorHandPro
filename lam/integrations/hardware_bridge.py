@@ -475,7 +475,7 @@ def demo_hardware_integration():
 
     # Calibrate sensors
     print("\n[2] Calibrating sensors...")
-    baselines = integration.hardware.calibrate()
+    integration.hardware.calibrate()
 
     # Execute LAM-controlled gesture
     print("\n[3] Executing LAM-controlled gesture...")
