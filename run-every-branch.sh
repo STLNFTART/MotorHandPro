@@ -183,8 +183,12 @@ done
 
 # Restore original branch
 print_header "Restoring original branch"
-git checkout -f "$ORIGINAL_BRANCH"
-print_success "Restored to branch: $ORIGINAL_BRANCH"
+if git checkout -f "$ORIGINAL_BRANCH"; then
+    print_success "Restored to branch: $ORIGINAL_BRANCH"
+else
+    print_error "Failed to restore original branch: $ORIGINAL_BRANCH"
+    print_warning "Repository is currently on: $(git rev-parse --abbrev-ref HEAD)"
+fi
 
 # Print summary
 print_header "Summary"
