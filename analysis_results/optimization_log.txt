@@ -1,0 +1,160 @@
+================================================================================
+RPO PARAMETER OPTIMIZATION FOR COMET OUTBURST DETECTION
+================================================================================
+
+📂 Loading dataset: /home/user/MotorHandPro/data/12p_pons_brooks_realistic.json
+✅ Loaded 1397 observations
+
+================================================================================
+EXPERIMENT 1: OPTIMAL μ (DAMPING CONSTANT)
+================================================================================
+🔬 PARAMETER SWEEP: μ (Damping Constant)
+   Testing 31 values from 0.140 to 0.200
+   Fixed: α=1.618, β=0.5
+
+   [1/31] Testing μ = 0.14000... F1=0.279, P=1.000, R=0.162
+   [2/31] Testing μ = 0.14200... F1=0.279, P=1.000, R=0.162
+   [3/31] Testing μ = 0.14400... F1=0.279, P=1.000, R=0.162
+   [4/31] Testing μ = 0.14600... F1=0.279, P=1.000, R=0.162
+   [5/31] Testing μ = 0.14800... F1=0.279, P=1.000, R=0.162
+   [6/31] Testing μ = 0.15000... F1=0.279, P=1.000, R=0.162
+   [7/31] Testing μ = 0.15200... F1=0.279, P=1.000, R=0.162
+   [8/31] Testing μ = 0.15400... F1=0.279, P=1.000, R=0.162
+   [9/31] Testing μ = 0.15600... F1=0.279, P=1.000, R=0.162
+   [10/31] Testing μ = 0.15800... F1=0.279, P=1.000, R=0.162
+   [11/31] Testing μ = 0.16000... F1=0.279, P=1.000, R=0.162
+   [12/31] Testing μ = 0.16200... F1=0.279, P=1.000, R=0.162
+   [13/31] Testing μ = 0.16400... F1=0.279, P=1.000, R=0.162
+   [14/31] Testing μ = 0.16600... F1=0.279, P=1.000, R=0.162
+   [15/31] Testing μ = 0.16800... F1=0.279, P=1.000, R=0.162
+   [16/31] Testing μ = 0.17000... F1=0.279, P=1.000, R=0.162
+   [17/31] Testing μ = 0.17200... F1=0.279, P=1.000, R=0.162
+   [18/31] Testing μ = 0.17400... F1=0.279, P=1.000, R=0.162
+   [19/31] Testing μ = 0.17600... F1=0.279, P=1.000, R=0.162
+   [20/31] Testing μ = 0.17800... F1=0.279, P=1.000, R=0.162
+   [21/31] Testing μ = 0.18000... F1=0.279, P=1.000, R=0.162
+   [22/31] Testing μ = 0.18200... F1=0.279, P=1.000, R=0.162
+   [23/31] Testing μ = 0.18400... F1=0.279, P=1.000, R=0.162
+   [24/31] Testing μ = 0.18600... F1=0.279, P=1.000, R=0.162
+   [25/31] Testing μ = 0.18800... F1=0.279, P=1.000, R=0.162
+   [26/31] Testing μ = 0.19000... F1=0.279, P=1.000, R=0.162
+   [27/31] Testing μ = 0.19200... F1=0.279, P=1.000, R=0.162
+   [28/31] Testing μ = 0.19400... F1=0.279, P=1.000, R=0.162
+   [29/31] Testing μ = 0.19600... F1=0.279, P=1.000, R=0.162
+   [30/31] Testing μ = 0.19800... F1=0.279, P=1.000, R=0.162
+   [31/31] Testing μ = 0.20000... F1=0.279, P=1.000, R=0.162
+
+📊 Results:
+   Best F1-Score: 0.279 at μ = 0.14000
+      Precision: 1.000
+      Recall: 0.162
+      False Positives: 0.0
+
+   Best Precision (F1>0.2): 1.000 at μ = 0.14000
+      F1-Score: 0.279
+      Recall: 0.162
+      False Positives: 0.0
+
+   Current (μ=0.16905): F1=0.279
+
+✅ Saved: analysis_results/mu_optimization.csv
+
+================================================================================
+EXPERIMENT 2: THRESHOLD OPTIMIZATION
+================================================================================
+
+🎯 THRESHOLD OPTIMIZATION
+   Testing 29 threshold values
+   Fixed: μ=0.14, α=1.618, β=0.5
+
+   [1/29] Testing 70.0th percentile... F1=0.960, FP=11
+   [2/29] Testing 71.0th percentile... F1=0.964, FP=2
+   [3/29] Testing 72.0th percentile... F1=0.951, FP=0
+   [4/29] Testing 73.0th percentile... F1=0.933, FP=0
+   [5/29] Testing 74.0th percentile... F1=0.914, FP=0
+   [6/29] Testing 75.0th percentile... F1=0.895, FP=0
+   [7/29] Testing 76.0th percentile... F1=0.876, FP=0
+   [8/29] Testing 77.0th percentile... F1=0.855, FP=0
+   [9/29] Testing 78.0th percentile... F1=0.834, FP=0
+   [10/29] Testing 79.0th percentile... F1=0.811, FP=0
+   [11/29] Testing 80.0th percentile... F1=0.788, FP=0
+   [12/29] Testing 81.0th percentile... F1=0.763, FP=0
+   [13/29] Testing 82.0th percentile... F1=0.738, FP=0
+   [14/29] Testing 83.0th percentile... F1=0.712, FP=0
+   [15/29] Testing 84.0th percentile... F1=0.684, FP=0
+   [16/29] Testing 85.0th percentile... F1=0.655, FP=0
+   [17/29] Testing 86.0th percentile... F1=0.625, FP=0
+   [18/29] Testing 87.0th percentile... F1=0.594, FP=0
+   [19/29] Testing 88.0th percentile... F1=0.561, FP=0
+   [20/29] Testing 89.0th percentile... F1=0.526, FP=0
+   [21/29] Testing 90.0th percentile... F1=0.490, FP=0
+   [22/29] Testing 91.0th percentile... F1=0.452, FP=0
+   [23/29] Testing 92.0th percentile... F1=0.413, FP=0
+   [24/29] Testing 93.0th percentile... F1=0.371, FP=0
+   [25/29] Testing 94.0th percentile... F1=0.326, FP=0
+   [26/29] Testing 95.0th percentile... F1=0.279, FP=0
+   [27/29] Testing 96.0th percentile... F1=0.230, FP=0
+   [28/29] Testing 97.0th percentile... F1=0.178, FP=0
+   [29/29] Testing 98.0th percentile... F1=0.122, FP=0
+
+📊 Results:
+   Best Threshold: 71.0th percentile
+      F1-Score: 0.964
+      Precision: 0.995
+      Recall: 0.935
+      False Positives: 2.0
+
+✅ Saved: analysis_results/threshold_optimization.csv
+
+================================================================================
+EXPERIMENT 3: MULTI-SCALE RPO ENSEMBLE
+================================================================================
+
+🔀 MULTI-SCALE RPO ENSEMBLE
+   Running 5 RPO instances with different α values
+
+   α = 0.800 (memory timescale τ = 1.250)... Detections=70, FP=0
+   α = 1.000 (memory timescale τ = 1.000)... Detections=70, FP=0
+   α = 1.618 (memory timescale τ = 0.618)... Detections=70, FP=0
+   α = 2.000 (memory timescale τ = 0.500)... Detections=70, FP=0
+   α = 2.500 (memory timescale τ = 0.400)... Detections=70, FP=0
+
+   📊 Ensemble Results:
+      Precision: 1.000
+      Recall: 0.162
+      F1-Score: 0.279
+      False Positives: 0
+
+✅ Saved: analysis_results/ensemble_results.json
+
+================================================================================
+OPTIMIZATION SUMMARY
+================================================================================
+
+🔬 KEY FINDINGS:
+
+1. OPTIMAL μ:
+   Best F1: μ = 0.14000 → F1 = 0.279
+   Current: μ = 0.16905 → F1 = 0.279
+   ⚠️  Could improve F1 by 0.0% using μ = 0.14000
+
+2. OPTIMAL THRESHOLD:
+   Best: 71.0th percentile
+   Achieves: Precision=0.995, Recall=0.935
+   False Positives: 2.0
+
+3. ENSEMBLE METHOD:
+   F1-Score: 0.279
+   Precision: 1.000
+   Recall: 0.162
+   False Positives: 0
+
+================================================================================
+✅ OPTIMIZATION COMPLETE
+================================================================================
+
+📁 Results saved to analysis_results/
+   - mu_optimization.csv
+   - threshold_optimization.csv
+   - ensemble_results.json
+
