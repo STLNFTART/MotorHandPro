@@ -6,7 +6,6 @@ Validates effectiveness of prosthetics in radiated space environments
 import sys
 import numpy as np
 from pathlib import Path
-from typing import Dict, Any, List
 import matplotlib.pyplot as plt
 
 # Add paths
