@@ -70,12 +70,12 @@ fi
 print_info "Current branch: $ORIGINAL_BRANCH"
 
 # Get list of all remote branches (from origin only)
-BRANCHES=$(git branch -r | grep 'origin/' | grep -v HEAD | sed 's/origin\///' | xargs)
+BRANCHES=$(git branch -r | grep 'origin/' | grep -v HEAD | sed 's/origin\///' | sed 's/^[[:space:]]*//')
 
 print_header "Found branches"
-for branch in $BRANCHES; do
+while IFS= read -r branch; do
     echo "  • $branch"
-done
+done <<< "$BRANCHES"
 echo ""
 
 # Function to run tests/build for a branch
