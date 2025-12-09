@@ -63,6 +63,10 @@ print_success "Fetched all remote branches"
 
 # Get current branch to restore later
 ORIGINAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$ORIGINAL_BRANCH" = "HEAD" ]; then
+    print_warning "Currently in detached HEAD state"
+    ORIGINAL_COMMIT=$(git rev-parse HEAD)
+fi
 print_info "Current branch: $ORIGINAL_BRANCH"
 
 # Get list of all remote branches (from origin only)
