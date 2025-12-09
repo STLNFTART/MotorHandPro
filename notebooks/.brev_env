@@ -1,0 +1,35 @@
+# Brev.dev Environment Configuration for MotorHandPro Notebooks
+
+# Python version
+PYTHON_VERSION=3.9
+
+# Jupyter configuration
+JUPYTER_ENABLE_LAB=yes
+JUPYTER_PORT=8888
+
+# Required packages
+PACKAGES="numpy pandas matplotlib plotly scipy jupyter jupyterlab ipywidgets"
+
+# Environment setup script
+cat > /tmp/setup_brev.sh <<'SETUP'
+#!/bin/bash
+echo "🚀 Setting up MotorHandPro for Brev.dev..."
+
+# Install Python packages
+pip install --upgrade pip
+pip install numpy pandas matplotlib plotly scipy jupyter jupyterlab ipywidgets
+
+# Enable Jupyter extensions
+jupyter nbextension enable --py widgetsnbextension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
+# Create workspace symlink if needed
+if [ ! -L ~/notebooks ]; then
+    ln -s ~/MotorHandPro/notebooks ~/notebooks
+fi
+
+echo "✅ Setup complete!"
+echo "📓 Start Jupyter: jupyter lab --ip=0.0.0.0 --port=8888"
+SETUP
+
+chmod +x /tmp/setup_brev.sh
