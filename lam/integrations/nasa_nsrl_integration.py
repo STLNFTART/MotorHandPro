@@ -249,7 +249,6 @@ class NASANSRLIntegration:
         # Simulate radiation exposure effects
         see_events = 0
         functional_interrupts = 0
-        performance_before = 100.0
 
         # Run test multiple times during exposure
         num_test_cycles = int(beam_config.exposure_duration_s)
