@@ -424,7 +424,8 @@ def test_prosthetic_device_at_nsrl(prosthetic_device: Any) -> float:
 
         return max(0.0, min(100.0, performance))
 
-    except Exception:
+    except (AttributeError, KeyError) as e:
+        print(f"Error getting performance from device: {e}")
         return 0.0
 
 
