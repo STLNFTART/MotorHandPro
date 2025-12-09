@@ -2,12 +2,28 @@ name: Run All Branches
 
 on:
   workflow_dispatch:
+ copilot/add-run-all-branches-script
+  schedule:
+    - cron: '0 0 * * 0'  # Run weekly on Sundays
+=======
+ main
 
 permissions:
   contents: read
 
 jobs:
   run-all-branches:
+ copilot/add-run-all-branches-script
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run tests across all branches
+        run: ./run-every-branch.sh
+=======
     name: Run Tests Across All Branches
     runs-on: ubuntu-latest
 
@@ -20,3 +36,4 @@ jobs:
       run: |
         chmod +x run-every-branch.sh
         ./run-every-branch.sh
+ main

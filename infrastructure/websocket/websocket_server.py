@@ -173,6 +173,49 @@ async def handle_query(websocket, query_type: str, params: dict):
                     "data": [dict(row) for row in rows]
                 }
 
+            elif query_type == "nasa_comet_observations":
+                data_source = params.get("data_source")
+                limit = params.get("limit", 100)
+
+                if data_source:
+                    rows = await conn.fetch("""
+                        SELECT * FROM nasa_data.comet_observations
+                        WHERE data_source = $1
+                        ORDER BY time DESC
+                        LIMIT $2
+                    """, data_source, limit)
+                else:
+                    rows = await conn.fetch("""
+                        SELECT * FROM nasa_data.comet_observations
+                        ORDER BY time DESC
+                        LIMIT $1
+                    """, limit)
+
+                return {
+                    "status": "ok",
+                    "query_type": "nasa_comet_observations",
+                    "count": len(rows),
+                    "data": [dict(row) for row in rows]
+                }
+
+            elif query_type == "nasa_processed_states":
+                limit = params.get("limit", 100)
+
+                rows = await conn.fetch("""
+                    SELECT ps.*, co.ra, co.dec, co.distance_au
+                    FROM nasa_data.processed_states ps
+                    JOIN nasa_data.comet_observations co ON ps.observation_id = co.id
+                    ORDER BY ps.time DESC
+                    LIMIT $1
+                """, limit)
+
+                return {
+                    "status": "ok",
+                    "query_type": "nasa_processed_states",
+                    "count": len(rows),
+                    "data": [dict(row) for row in rows]
+                }
+
             else:
                 return {"status": "error", "message": "Unknown query type"}
 
