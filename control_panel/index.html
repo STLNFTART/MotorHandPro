@@ -8,8 +8,35 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="https://unpkg.com/vtk.js"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .skip-to-content {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            z-index: -999;
+        }
+        .skip-to-content:focus {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            z-index: 999;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
     <div class="container">
         <!-- Header -->
         <header>
@@ -21,7 +48,7 @@
         </header>
 
         <!-- Main Dashboard -->
-        <div class="dashboard">
+        <div class="dashboard" id="main-content">
             <!-- Left Panel: System Control -->
             <div class="panel control-panel">
                 <h2>System Control</h2>
