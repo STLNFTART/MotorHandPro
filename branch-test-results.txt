@@ -1,0 +1,8 @@
+./run-every-branch.sh: line 4: copilot/add-run-all-branches-script: No such file or directory
+./run-every-branch.sh: line 5: =======: command not found
+./run-every-branch.sh: line 6: copilot/add-test-build-script: No such file or directory
+./run-every-branch.sh: line 7: =======: command not found
+./run-every-branch.sh: line 8: copilot/add-run-all-branches-script-again: No such file or directory
+./run-every-branch.sh: line 9: ======: command not found
+./run-every-branch.sh: line 11: main: command not found
+./run-every-branch.sh: line 39: copilot/add-test-build-script: No such file or directory

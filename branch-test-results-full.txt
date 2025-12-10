@@ -1,0 +1,4025 @@
+[0;34mℹ Using existing repository at: /home/user/MotorHandPro[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Fetching all remote branches[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;32m✓ Fetched all remote branches[0m
+[0;34mℹ Current branch: claude/fix-skip-content-link-014TkokNNffPp3Sf69qctXHM[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Found branches[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+  • STLNFTART-patch-1
+  • STLNFTART-patch-2
+  • claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
+  • claude/add-company-repo-links-0197RM2HDn8ECYtEvYnPPone
+  • claude/add-missing-documents-01YR1A2sBb4hyJJASj683xPX
+  • claude/add-motorhandpro-setup-script-01CoVnS3WDGjYSnTyL6S1DZy
+  • claude/add-rpo-token-address-01WkVCCpdBQyzSPeik31FpxW
+  • claude/add-tests-empirical-constants-017pjiVmkhws1SveL1quwwne
+  • claude/add-wiki-01SPzhcqge1UCyWqcaiwMgHn
+  • claude/clarify-primal-logic-framework-017zZnydRhSAKDgsFnSwPPAz
+  • claude/d-drug-safety-system-018rRJDG7HFGRoppR3YF8zJm
+  • claude/deploy-rpo-token-01SdxJTDSkwoG4b4eLeGDe9x
+  • claude/fix-skip-navigation-01H7E4941zXDorx6x42J714j
+  • claude/generate-max-value-019GSMm4MQyyd15LzUGWmWxe
+  • claude/implement-lam-framework-01S25pRJzLaUFdoVbJYwhZRN
+  • claude/implement-simulation-01XDCjvPrGe5XeCKQ6oZxAJQ
+  • claude/implement-validate-algorithms-01DLfrnYQj9EGgYzWQteCqFs
+  • claude/integrate-radiation-effects-01YJoxRHvzvoAuqou1kW3Pxx
+  • claude/lam-prolog-interface-01Hv8RBmGEXTVBT5AeS97JFJ
+  • claude/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ
+  • claude/nasa-starlink-api-01WrjyTUaZvA3TpZLi67QCSG
+  • claude/network-simulation-cluster-01DCmdhEKQV66866pymadSTC
+  • claude/node-red-integration-01AmUXEAxYnDvktLT2HBLhgY
+  • claude/primallang-transpilation-01Mei8ASx3H7UKbk6FDpUfhw
+  • claude/quantum-resistant-crypto-kernel-011CV3mpkif8bZQjGEUtYF5c
+  • claude/regulatory-api-integration-015CEcokqTc3i6waB6ib4S2N
+  • claude/rewrite-multi-language-01Rm4u6LZHt9hjeJp4b6Bjjp
+  • claude/run-all-branches-max-output-01RnbrcthoKHEQ8fXcwrMsNt
+  • claude/run-all-iterations-data-vis-01SVxJhgrYD4xFmNB5a5GG5h
+  • claude/run-full-tests-018tNx5zkS9Lc3DTkWuU3sLY
+  • claude/run-r-script-011ZmFB249vghDR5R1YGMmxe
+  • claude/setup-hedera-testnet-018bQHdjMhHtcHoZdHzJ79LT
+  • claude/setup-nasa-data-api-01N6euNYuZefx9FXBqiXGzWe
+  • claude/test-satellite-integration-01UaNQjhYRRZwqodZpzcUiuo
+  • claude/update-earth-radius-wgs84-013kdrMxarbhNsGSLKcUGgyW
+  • copilot/add-run-every-branch-script
+  • copilot/sub-pr-62
+  • copilot/sub-pr-62-again
+  • copilot/sub-pr-62-another-one
+  • main
+  • restore-original
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Running tests on all branches[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: STLNFTART-patch-1[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/STLNFTART-patch-1'.
+[0;32m✓ Checked out branch: STLNFTART-patch-1[0m
+[0;32m✓ Branch STLNFTART-patch-1: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: STLNFTART-patch-2[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/STLNFTART-patch-2'.
+[0;32m✓ Checked out branch: STLNFTART-patch-2[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.013s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch STLNFTART-patch-2: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD'.
+[0;32m✓ Checked out branch: claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.015s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/add-company-repo-links-0197RM2HDn8ECYtEvYnPPone[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/add-company-repo-links-0197RM2HDn8ECYtEvYnPPone'.
+[0;32m✓ Checked out branch: claude/add-company-repo-links-0197RM2HDn8ECYtEvYnPPone[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;32m✓ Branch claude/add-company-repo-links-0197RM2HDn8ECYtEvYnPPone: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/add-missing-documents-01YR1A2sBb4hyJJASj683xPX[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/add-missing-documents-01YR1A2sBb4hyJJASj683xPX'.
+[0;32m✓ Checked out branch: claude/add-missing-documents-01YR1A2sBb4hyJJASj683xPX[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.013s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.003s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/add-missing-documents-01YR1A2sBb4hyJJASj683xPX: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/add-motorhandpro-setup-script-01CoVnS3WDGjYSnTyL6S1DZy[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/add-motorhandpro-setup-script-01CoVnS3WDGjYSnTyL6S1DZy'.
+[0;32m✓ Checked out branch: claude/add-motorhandpro-setup-script-01CoVnS3WDGjYSnTyL6S1DZy[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/add-motorhandpro-setup-script-01CoVnS3WDGjYSnTyL6S1DZy: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/add-rpo-token-address-01WkVCCpdBQyzSPeik31FpxW[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/add-rpo-token-address-01WkVCCpdBQyzSPeik31FpxW'.
+[0;32m✓ Checked out branch: claude/add-rpo-token-address-01WkVCCpdBQyzSPeik31FpxW[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/add-rpo-token-address-01WkVCCpdBQyzSPeik31FpxW: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/add-tests-empirical-constants-017pjiVmkhws1SveL1quwwne[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/add-tests-empirical-constants-017pjiVmkhws1SveL1quwwne'.
+[0;32m✓ Checked out branch: claude/add-tests-empirical-constants-017pjiVmkhws1SveL1quwwne[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/add-tests-empirical-constants-017pjiVmkhws1SveL1quwwne: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/add-wiki-01SPzhcqge1UCyWqcaiwMgHn[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/add-wiki-01SPzhcqge1UCyWqcaiwMgHn'.
+[0;32m✓ Checked out branch: claude/add-wiki-01SPzhcqge1UCyWqcaiwMgHn[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/add-wiki-01SPzhcqge1UCyWqcaiwMgHn: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/clarify-primal-logic-framework-017zZnydRhSAKDgsFnSwPPAz[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/clarify-primal-logic-framework-017zZnydRhSAKDgsFnSwPPAz'.
+[0;32m✓ Checked out branch: claude/clarify-primal-logic-framework-017zZnydRhSAKDgsFnSwPPAz[0m
+[0;32m✓ Branch claude/clarify-primal-logic-framework-017zZnydRhSAKDgsFnSwPPAz: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/d-drug-safety-system-018rRJDG7HFGRoppR3YF8zJm[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/d-drug-safety-system-018rRJDG7HFGRoppR3YF8zJm'.
+[0;32m✓ Checked out branch: claude/d-drug-safety-system-018rRJDG7HFGRoppR3YF8zJm[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;32m✓ Branch claude/d-drug-safety-system-018rRJDG7HFGRoppR3YF8zJm: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/deploy-rpo-token-01SdxJTDSkwoG4b4eLeGDe9x[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/deploy-rpo-token-01SdxJTDSkwoG4b4eLeGDe9x'.
+[0;32m✓ Checked out branch: claude/deploy-rpo-token-01SdxJTDSkwoG4b4eLeGDe9x[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.015s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/deploy-rpo-token-01SdxJTDSkwoG4b4eLeGDe9x: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/fix-skip-navigation-01H7E4941zXDorx6x42J714j[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/fix-skip-navigation-01H7E4941zXDorx6x42J714j'.
+[0;32m✓ Checked out branch: claude/fix-skip-navigation-01H7E4941zXDorx6x42J714j[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/fix-skip-navigation-01H7E4941zXDorx6x42J714j: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/generate-max-value-019GSMm4MQyyd15LzUGWmWxe[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/generate-max-value-019GSMm4MQyyd15LzUGWmWxe'.
+[0;32m✓ Checked out branch: claude/generate-max-value-019GSMm4MQyyd15LzUGWmWxe[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;32m✓ Branch claude/generate-max-value-019GSMm4MQyyd15LzUGWmWxe: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/implement-lam-framework-01S25pRJzLaUFdoVbJYwhZRN[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/implement-lam-framework-01S25pRJzLaUFdoVbJYwhZRN'.
+[0;32m✓ Checked out branch: claude/implement-lam-framework-01S25pRJzLaUFdoVbJYwhZRN[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/implement-lam-framework-01S25pRJzLaUFdoVbJYwhZRN: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/implement-simulation-01XDCjvPrGe5XeCKQ6oZxAJQ[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/implement-simulation-01XDCjvPrGe5XeCKQ6oZxAJQ'.
+[0;32m✓ Checked out branch: claude/implement-simulation-01XDCjvPrGe5XeCKQ6oZxAJQ[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;32m✓ Branch claude/implement-simulation-01XDCjvPrGe5XeCKQ6oZxAJQ: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/implement-validate-algorithms-01DLfrnYQj9EGgYzWQteCqFs[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/implement-validate-algorithms-01DLfrnYQj9EGgYzWQteCqFs'.
+[0;32m✓ Checked out branch: claude/implement-validate-algorithms-01DLfrnYQj9EGgYzWQteCqFs[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;32m✓ Branch claude/implement-validate-algorithms-01DLfrnYQj9EGgYzWQteCqFs: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/integrate-radiation-effects-01YJoxRHvzvoAuqou1kW3Pxx[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/integrate-radiation-effects-01YJoxRHvzvoAuqou1kW3Pxx'.
+[0;32m✓ Checked out branch: claude/integrate-radiation-effects-01YJoxRHvzvoAuqou1kW3Pxx[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;32m✓ Branch claude/integrate-radiation-effects-01YJoxRHvzvoAuqou1kW3Pxx: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/lam-prolog-interface-01Hv8RBmGEXTVBT5AeS97JFJ[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;32m✓ Checked out branch: claude/lam-prolog-interface-01Hv8RBmGEXTVBT5AeS97JFJ[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.013s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/lam-prolog-interface-01Hv8RBmGEXTVBT5AeS97JFJ: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ'.
+[0;32m✓ Checked out branch: claude/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/nasa-starlink-api-01WrjyTUaZvA3TpZLi67QCSG[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/nasa-starlink-api-01WrjyTUaZvA3TpZLi67QCSG'.
+[0;32m✓ Checked out branch: claude/nasa-starlink-api-01WrjyTUaZvA3TpZLi67QCSG[0m
+[0;32m✓ Branch claude/nasa-starlink-api-01WrjyTUaZvA3TpZLi67QCSG: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/network-simulation-cluster-01DCmdhEKQV66866pymadSTC[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/network-simulation-cluster-01DCmdhEKQV66866pymadSTC'.
+[0;32m✓ Checked out branch: claude/network-simulation-cluster-01DCmdhEKQV66866pymadSTC[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.015s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/network-simulation-cluster-01DCmdhEKQV66866pymadSTC: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/node-red-integration-01AmUXEAxYnDvktLT2HBLhgY[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/node-red-integration-01AmUXEAxYnDvktLT2HBLhgY'.
+[0;32m✓ Checked out branch: claude/node-red-integration-01AmUXEAxYnDvktLT2HBLhgY[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/node-red-integration-01AmUXEAxYnDvktLT2HBLhgY: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/primallang-transpilation-01Mei8ASx3H7UKbk6FDpUfhw[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/primallang-transpilation-01Mei8ASx3H7UKbk6FDpUfhw'.
+[0;32m✓ Checked out branch: claude/primallang-transpilation-01Mei8ASx3H7UKbk6FDpUfhw[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/primallang-transpilation-01Mei8ASx3H7UKbk6FDpUfhw: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/quantum-resistant-crypto-kernel-011CV3mpkif8bZQjGEUtYF5c[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/quantum-resistant-crypto-kernel-011CV3mpkif8bZQjGEUtYF5c'.
+[0;32m✓ Checked out branch: claude/quantum-resistant-crypto-kernel-011CV3mpkif8bZQjGEUtYF5c[0m
+[0;32m✓ Branch claude/quantum-resistant-crypto-kernel-011CV3mpkif8bZQjGEUtYF5c: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/regulatory-api-integration-015CEcokqTc3i6waB6ib4S2N[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/regulatory-api-integration-015CEcokqTc3i6waB6ib4S2N'.
+[0;32m✓ Checked out branch: claude/regulatory-api-integration-015CEcokqTc3i6waB6ib4S2N[0m
+[0;32m✓ Branch claude/regulatory-api-integration-015CEcokqTc3i6waB6ib4S2N: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/rewrite-multi-language-01Rm4u6LZHt9hjeJp4b6Bjjp[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/rewrite-multi-language-01Rm4u6LZHt9hjeJp4b6Bjjp'.
+[0;32m✓ Checked out branch: claude/rewrite-multi-language-01Rm4u6LZHt9hjeJp4b6Bjjp[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/rewrite-multi-language-01Rm4u6LZHt9hjeJp4b6Bjjp: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/run-all-branches-max-output-01RnbrcthoKHEQ8fXcwrMsNt[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/run-all-branches-max-output-01RnbrcthoKHEQ8fXcwrMsNt'.
+[0;32m✓ Checked out branch: claude/run-all-branches-max-output-01RnbrcthoKHEQ8fXcwrMsNt[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/run-all-branches-max-output-01RnbrcthoKHEQ8fXcwrMsNt: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/run-all-iterations-data-vis-01SVxJhgrYD4xFmNB5a5GG5h[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/run-all-iterations-data-vis-01SVxJhgrYD4xFmNB5a5GG5h'.
+[0;32m✓ Checked out branch: claude/run-all-iterations-data-vis-01SVxJhgrYD4xFmNB5a5GG5h[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/run-all-iterations-data-vis-01SVxJhgrYD4xFmNB5a5GG5h: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/run-full-tests-018tNx5zkS9Lc3DTkWuU3sLY[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/run-full-tests-018tNx5zkS9Lc3DTkWuU3sLY'.
+[0;32m✓ Checked out branch: claude/run-full-tests-018tNx5zkS9Lc3DTkWuU3sLY[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/run-full-tests-018tNx5zkS9Lc3DTkWuU3sLY: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/run-r-script-011ZmFB249vghDR5R1YGMmxe[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/run-r-script-011ZmFB249vghDR5R1YGMmxe'.
+[0;32m✓ Checked out branch: claude/run-r-script-011ZmFB249vghDR5R1YGMmxe[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;32m✓ Branch claude/run-r-script-011ZmFB249vghDR5R1YGMmxe: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/setup-hedera-testnet-018bQHdjMhHtcHoZdHzJ79LT[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/setup-hedera-testnet-018bQHdjMhHtcHoZdHzJ79LT'.
+[0;32m✓ Checked out branch: claude/setup-hedera-testnet-018bQHdjMhHtcHoZdHzJ79LT[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/setup-hedera-testnet-018bQHdjMhHtcHoZdHzJ79LT: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/setup-nasa-data-api-01N6euNYuZefx9FXBqiXGzWe[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/setup-nasa-data-api-01N6euNYuZefx9FXBqiXGzWe'.
+[0;32m✓ Checked out branch: claude/setup-nasa-data-api-01N6euNYuZefx9FXBqiXGzWe[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.015s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch claude/setup-nasa-data-api-01N6euNYuZefx9FXBqiXGzWe: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/test-satellite-integration-01UaNQjhYRRZwqodZpzcUiuo[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/test-satellite-integration-01UaNQjhYRRZwqodZpzcUiuo'.
+[0;32m✓ Checked out branch: claude/test-satellite-integration-01UaNQjhYRRZwqodZpzcUiuo[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;32m✓ Branch claude/test-satellite-integration-01UaNQjhYRRZwqodZpzcUiuo: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: claude/update-earth-radius-wgs84-013kdrMxarbhNsGSLKcUGgyW[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/claude/update-earth-radius-wgs84-013kdrMxarbhNsGSLKcUGgyW'.
+[0;32m✓ Checked out branch: claude/update-earth-radius-wgs84-013kdrMxarbhNsGSLKcUGgyW[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch claude/update-earth-radius-wgs84-013kdrMxarbhNsGSLKcUGgyW: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: copilot/add-run-every-branch-script[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/copilot/add-run-every-branch-script'.
+[0;32m✓ Checked out branch: copilot/add-run-every-branch-script[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;32m✓ Branch copilot/add-run-every-branch-script: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: copilot/sub-pr-62[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/copilot/sub-pr-62'.
+[0;32m✓ Checked out branch: copilot/sub-pr-62[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.013s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch copilot/sub-pr-62: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: copilot/sub-pr-62-again[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/copilot/sub-pr-62-again'.
+[0;32m✓ Checked out branch: copilot/sub-pr-62-again[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch copilot/sub-pr-62-again: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: copilot/sub-pr-62-another-one[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/copilot/sub-pr-62-another-one'.
+[0;32m✓ Checked out branch: copilot/sub-pr-62-another-one[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch copilot/sub-pr-62-another-one: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: main[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/main'.
+[0;32m✓ Checked out branch: main[0m
+[0;34mℹ Found package.json - running npm test[0m
+
+> @stlnftart/motorhandpro@1.0.0 test
+> python3 -m pytest tests/
+
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ npm test failed or not configured[0m
+[0;34mℹ Found Python project - running pytest[0m
+/usr/local/bin/python3: No module named pytest
+[1;33m⚠ pytest failed or not configured[0m
+[0;34mℹ Running LAM core tests[0m
+test_get_state (__main__.TestQuantumResonanceField.test_get_state)
+Test state retrieval ... ok
+test_initialization (__main__.TestQuantumResonanceField.test_initialization)
+Test resonance field initializes with correct constants ... ok
+test_lipschitz_constant (__main__.TestQuantumResonanceField.test_lipschitz_constant)
+Test Lipschitz constant is computed correctly and < 1.0 ... ok
+test_resonance_update (__main__.TestQuantumResonanceField.test_resonance_update)
+Test resonance parameters update within bounds ... ok
+test_semantic_bounds (__main__.TestQuantumResonanceField.test_semantic_bounds)
+Test parameters stay within semantic bounds ... ok
+test_stability_check (__main__.TestQuantumResonanceField.test_stability_check)
+Test stability checking ... ok
+test_action_recording (__main__.TestPrimalLAM.test_action_recording)
+Test action recording works correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_answer_question (__main__.TestPrimalLAM.test_answer_question)
+Test question answering ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_complete_task (__main__.TestPrimalLAM.test_complete_task)
+Test task completion ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_get_status (__main__.TestPrimalLAM.test_get_status)
+Test status retrieval ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_initialization (__main__.TestPrimalLAM.test_initialization)
+Test LAM initializes correctly ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_plan_trip (__main__.TestPrimalLAM.test_plan_trip)
+Test trip planning ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_resonance_updates_on_action (__main__.TestPrimalLAM.test_resonance_updates_on_action)
+Test resonance field updates when actions are performed ... Primal LAM initialized with:
+  Lightfoot constant (λ): 0.16905
+  Donte attractor (D): 149.9992314
+  Lipschitz bound: 0.000129932
+  Time constant (τ): 5.92s
+ok
+test_convergence_to_attractor (__main__.TestResonanceStability.test_convergence_to_attractor)
+Test system shows tendency toward Donte attractor ... ok
+test_long_term_stability (__main__.TestResonanceStability.test_long_term_stability)
+Test resonance field remains stable over many updates ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.016s
+
+OK
+[0;32m✓ LAM core tests passed[0m
+[0;34mℹ Running LAM action tests[0m
+test_budget_analysis (__main__.TestTripPlanner.test_budget_analysis)
+Test budget analysis ... ok
+test_execution_history (__main__.TestTripPlanner.test_execution_history)
+Test action recording ... ok
+test_flight_search (__main__.TestTripPlanner.test_flight_search)
+Test flight search ... ok
+test_plan_trip (__main__.TestTripPlanner.test_plan_trip)
+Test basic trip planning ... ok
+test_cancel_reservation (__main__.TestReservationManager.test_cancel_reservation)
+Test canceling a reservation ... ok
+test_confirmation_code_format (__main__.TestReservationManager.test_confirmation_code_format)
+Test confirmation code is generated ... ok
+test_make_reservation (__main__.TestReservationManager.test_make_reservation)
+Test making a reservation ... ok
+test_delivery_time_estimation (__main__.TestFoodOrderer.test_delivery_time_estimation)
+Test delivery time is estimated ... ok
+test_order_food (__main__.TestFoodOrderer.test_order_food)
+Test ordering food ... ok
+test_price_calculation (__main__.TestFoodOrderer.test_price_calculation)
+Test pricing calculation ... ok
+test_cancel_subscription (__main__.TestSubscriptionManager.test_cancel_subscription)
+Test canceling a subscription ... ok
+test_immediate_cancellation (__main__.TestSubscriptionManager.test_immediate_cancellation)
+Test immediate cancellation ... ok
+test_list_subscriptions (__main__.TestSubscriptionManager.test_list_subscriptions)
+Test listing subscriptions ... ok
+test_modify_subscription (__main__.TestSubscriptionManager.test_modify_subscription)
+Test modifying subscription ... ok
+test_pending_cancellation (__main__.TestSubscriptionManager.test_pending_cancellation)
+Test pending cancellation ... ok
+test_make_reservation_action (__main__.TestActionOrchestrator.test_make_reservation_action)
+Test reservation through orchestrator ... ok
+test_order_food_action (__main__.TestActionOrchestrator.test_order_food_action)
+Test food ordering through orchestrator ... ok
+test_plan_trip_action (__main__.TestActionOrchestrator.test_plan_trip_action)
+Test trip planning through orchestrator ... ok
+test_unknown_action (__main__.TestActionOrchestrator.test_unknown_action)
+Test unknown action type ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+[0;32m✓ LAM action tests passed[0m
+[0;34mℹ Found Hardhat project - running hardhat test[0m
+Error HHE22: Trying to use a non-local installation of Hardhat, which is not supported.
+
+Please install Hardhat locally using pnpm, npm or yarn, and try again.
+
+For more info go to https://hardhat.org/HHE22 or run Hardhat with --show-stack-traces
+[1;33m⚠ Hardhat tests failed or hardhat not installed[0m
+[0;34mℹ Found Dockerfile - Docker image build available[0m
+[0;31m✗ Branch main: FAILED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Testing branch: restore-original[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Your branch is up to date with 'origin/restore-original'.
+[0;32m✓ Checked out branch: restore-original[0m
+[0;32m✓ Branch restore-original: PASSED[0m
+
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Restoring original branch[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+Switched to branch 'claude/fix-skip-content-link-014TkokNNffPp3Sf69qctXHM'
+Your branch is based on 'origin/claude/fix-skip-content-link-014TkokNNffPp3Sf69qctXHM', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+[0;32m✓ Restored to branch: claude/fix-skip-content-link-014TkokNNffPp3Sf69qctXHM[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+[0;34m  Summary[0m
+[0;34m════════════════════════════════════════════════════════════════[0m
+
+[0;32mPassed (27):[0m
+  [0;32m✓[0m STLNFTART-patch-1
+  [0;32m✓[0m STLNFTART-patch-2
+  [0;32m✓[0m claude/add-company-repo-links-0197RM2HDn8ECYtEvYnPPone
+  [0;32m✓[0m claude/add-missing-documents-01YR1A2sBb4hyJJASj683xPX
+  [0;32m✓[0m claude/add-tests-empirical-constants-017pjiVmkhws1SveL1quwwne
+  [0;32m✓[0m claude/clarify-primal-logic-framework-017zZnydRhSAKDgsFnSwPPAz
+  [0;32m✓[0m claude/d-drug-safety-system-018rRJDG7HFGRoppR3YF8zJm
+  [0;32m✓[0m claude/generate-max-value-019GSMm4MQyyd15LzUGWmWxe
+  [0;32m✓[0m claude/implement-lam-framework-01S25pRJzLaUFdoVbJYwhZRN
+  [0;32m✓[0m claude/implement-simulation-01XDCjvPrGe5XeCKQ6oZxAJQ
+  [0;32m✓[0m claude/implement-validate-algorithms-01DLfrnYQj9EGgYzWQteCqFs
+  [0;32m✓[0m claude/integrate-radiation-effects-01YJoxRHvzvoAuqou1kW3Pxx
+  [0;32m✓[0m claude/nasa-starlink-api-01WrjyTUaZvA3TpZLi67QCSG
+  [0;32m✓[0m claude/network-simulation-cluster-01DCmdhEKQV66866pymadSTC
+  [0;32m✓[0m claude/node-red-integration-01AmUXEAxYnDvktLT2HBLhgY
+  [0;32m✓[0m claude/primallang-transpilation-01Mei8ASx3H7UKbk6FDpUfhw
+  [0;32m✓[0m claude/quantum-resistant-crypto-kernel-011CV3mpkif8bZQjGEUtYF5c
+  [0;32m✓[0m claude/regulatory-api-integration-015CEcokqTc3i6waB6ib4S2N
+  [0;32m✓[0m claude/run-all-branches-max-output-01RnbrcthoKHEQ8fXcwrMsNt
+  [0;32m✓[0m claude/run-all-iterations-data-vis-01SVxJhgrYD4xFmNB5a5GG5h
+  [0;32m✓[0m claude/run-full-tests-018tNx5zkS9Lc3DTkWuU3sLY
+  [0;32m✓[0m claude/run-r-script-011ZmFB249vghDR5R1YGMmxe
+  [0;32m✓[0m claude/setup-hedera-testnet-018bQHdjMhHtcHoZdHzJ79LT
+  [0;32m✓[0m claude/test-satellite-integration-01UaNQjhYRRZwqodZpzcUiuo
+  [0;32m✓[0m claude/update-earth-radius-wgs84-013kdrMxarbhNsGSLKcUGgyW
+  [0;32m✓[0m copilot/add-run-every-branch-script
+  [0;32m✓[0m restore-original
+
+[0;31mFailed (14):[0m
+  [0;31m✗[0m claude/actuator-token-burn-01QLBbocBiTULQ32EbrxMHAD
+  [0;31m✗[0m claude/add-motorhandpro-setup-script-01CoVnS3WDGjYSnTyL6S1DZy
+  [0;31m✗[0m claude/add-rpo-token-address-01WkVCCpdBQyzSPeik31FpxW
+  [0;31m✗[0m claude/add-wiki-01SPzhcqge1UCyWqcaiwMgHn
+  [0;31m✗[0m claude/deploy-rpo-token-01SdxJTDSkwoG4b4eLeGDe9x
+  [0;31m✗[0m claude/fix-skip-navigation-01H7E4941zXDorx6x42J714j
+  [0;31m✗[0m claude/lam-prolog-interface-01Hv8RBmGEXTVBT5AeS97JFJ
+  [0;31m✗[0m claude/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ
+  [0;31m✗[0m claude/rewrite-multi-language-01Rm4u6LZHt9hjeJp4b6Bjjp
+  [0;31m✗[0m claude/setup-nasa-data-api-01N6euNYuZefx9FXBqiXGzWe
+  [0;31m✗[0m copilot/sub-pr-62
+  [0;31m✗[0m copilot/sub-pr-62-again
+  [0;31m✗[0m copilot/sub-pr-62-another-one
+  [0;31m✗[0m main
+
+[0;31m✗ Some branches failed tests[0m
