@@ -1,0 +1,445 @@
+{
+  "summary": {
+    "total_notebooks": 42,
+    "notebooks_with_errors": 0,
+    "total_errors": 0,
+    "total_warnings": 2
+  },
+  "errors": [],
+  "warnings": [],
+  "results": [
+    {
+      "path": "/home/user/MotorHandPro/notebooks/01_primal_logic_introduction.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5095,
+      "cell_count": 227
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/02_multi_language_comparison.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5013,
+      "cell_count": 219
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/03_gpu_acceleration.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5151,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/02_nasa_data_visualization.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5110,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/03_fixed_point_convergence.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5027,
+      "cell_count": 224
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/01_getting_started.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5057,
+      "cell_count": 228
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/research/03_primal_echo_stack.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/research/01_unified_field_theory.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/research/02_quantum_algorithms.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/lam/01_lam_introduction.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5063,
+      "cell_count": 231
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/lam/03_lam_reasoning.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/lam/temporal_displacement_complete.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5075,
+      "cell_count": 225
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/lam/04_lab_assistant.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/lam/02_temporal_displacement.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/compliance/01_regulatory_compliance.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/biomedical/03_drug_safety.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5024,
+      "cell_count": 226
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/biomedical/02_organ_chip_integration.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5024,
+      "cell_count": 226
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/biomedical/01_cardiac_models.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5024,
+      "cell_count": 226
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/tutorials/03_multi_language_guide.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/tutorials/02_theory_to_code.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/tutorials/01_control_fundamentals.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/experiments/prosthetics_complete_5000.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5151,
+      "cell_count": 225
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/experiments/prosthetics_complete_experiments.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5075,
+      "cell_count": 225
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/experiments/radiation_testing_complete.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5075,
+      "cell_count": 225
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/experiments/01_parameter_sweep_analysis.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5030,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/experiments/04_benchmark_analysis.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/experiments/02_mars_mission_explorer.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5066,
+      "cell_count": 234
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/experiments/03_swarm_simulation.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5063,
+      "cell_count": 231
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/experiments/emg_dataset_analysis.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5075,
+      "cell_count": 225
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/hardware/03_hardware_validation.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/hardware/02_motor_hand_control.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/hardware/01_sensor_integration.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/hardware/hardware_integration_complete.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5075,
+      "cell_count": 225
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/blockchain/01_rpo_token.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/visualization/01_comprehensive_viz.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/visualization/02_heatmap_generation.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/visualization/03_quantum_state.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/nasa/03_space_environment.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/nasa/04_crew_health_dashboard.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/nasa/02_satellite_mechanics.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/notebooks/nasa/01_nasa_data_pipeline.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [],
+      "line_count": 5061,
+      "cell_count": 229
+    },
+    {
+      "path": "/home/user/MotorHandPro/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ/notebooks/NASA_RPO_Comet_Analysis.ipynb",
+      "valid_json": true,
+      "valid_structure": true,
+      "syntax_errors": [],
+      "import_warnings": [],
+      "execution_warnings": [
+        {
+          "notebook": "/home/user/MotorHandPro/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ/notebooks/NASA_RPO_Comet_Analysis.ipynb",
+          "type": "Execution Order Warning",
+          "cell_index": 20,
+          "warning": "Cell executed out of order (count 16 after 17)"
+        },
+        {
+          "notebook": "/home/user/MotorHandPro/nasa-data-visualization-016KXTEY4nfAPoi65hwC2FRQ/notebooks/NASA_RPO_Comet_Analysis.ipynb",
+          "type": "Execution Order Warning",
+          "cell_index": 24,
+          "warning": "Cell executed out of order (count 15 after 16)"
+        }
+      ],
+      "line_count": 642,
+      "cell_count": 25
+    }
+  ]
+}

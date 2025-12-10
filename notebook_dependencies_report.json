@@ -1,0 +1,102 @@
+{
+  "total_notebooks": 42,
+  "total_imports": 23,
+  "third_party_imports": 13,
+  "available_packages": [
+    "lam",
+    "matplotlib",
+    "numpy",
+    "textwrap"
+  ],
+  "missing_packages": [
+    "IPython",
+    "ipywidgets",
+    "nasa_comet_data",
+    "pandas",
+    "plotly",
+    "scipy",
+    "seaborn",
+    "sklearn",
+    "torch"
+  ],
+  "package_details": [
+    {
+      "module": "lam",
+      "available": true,
+      "version": "1.0.0",
+      "error": null
+    },
+    {
+      "module": "matplotlib",
+      "available": true,
+      "version": "3.10.7",
+      "error": null
+    },
+    {
+      "module": "numpy",
+      "available": true,
+      "version": "2.3.5",
+      "error": null
+    },
+    {
+      "module": "textwrap",
+      "available": true,
+      "version": null,
+      "error": null
+    },
+    {
+      "module": "IPython",
+      "available": false,
+      "version": null,
+      "error": "No module named 'IPython'"
+    },
+    {
+      "module": "ipywidgets",
+      "available": false,
+      "version": null,
+      "error": "No module named 'ipywidgets'"
+    },
+    {
+      "module": "nasa_comet_data",
+      "available": false,
+      "version": null,
+      "error": "No module named 'nasa_comet_data'"
+    },
+    {
+      "module": "pandas",
+      "available": false,
+      "version": null,
+      "error": "No module named 'pandas'"
+    },
+    {
+      "module": "plotly",
+      "available": false,
+      "version": null,
+      "error": "No module named 'plotly'"
+    },
+    {
+      "module": "scipy",
+      "available": false,
+      "version": null,
+      "error": "No module named 'scipy'"
+    },
+    {
+      "module": "seaborn",
+      "available": false,
+      "version": null,
+      "error": "No module named 'seaborn'"
+    },
+    {
+      "module": "sklearn",
+      "available": false,
+      "version": null,
+      "error": "No module named 'sklearn'"
+    },
+    {
+      "module": "torch",
+      "available": false,
+      "version": null,
+      "error": "No module named 'torch'"
+    }
+  ]
+}
