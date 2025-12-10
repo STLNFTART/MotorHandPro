@@ -296,9 +296,35 @@
             font-size: 12px;
             font-weight: bold;
         }
+
+        .skip-to-content {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            z-index: -999;
+        }
+        .skip-to-content:focus {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            z-index: 9999;
+            padding: 10px 15px;
+            background: #6495ED;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(100, 149, 237, 0.6);
+        }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
     <div id="container">
         <div id="header">
             <h1>
@@ -370,6 +396,7 @@
         </div>
 
         <div id="main-view">
+            <div id="main-content"></div>
             <div class="tabs">
                 <div class="tab active" onclick="switchTab('overview')">Overview</div>
                 <div class="tab" onclick="switchTab('coverage')">Coverage Map</div>
