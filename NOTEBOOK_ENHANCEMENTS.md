@@ -83,22 +83,57 @@ The following template-based duplicates were removed:
 
 ## Brev.dev Integration
 
-**All 38 notebooks** now include Brev setup cells with:
+**All 37 notebooks** now include comprehensive Brev.dev support with **3 dedicated cells per notebook**:
 
-- 🚀 Quick start instructions
-- 📊 GPU configuration recommendations (Tesla T4, A100)
-- 💰 Performance vs. cost comparisons
+### Cell 1: Brev Setup Guide (Markdown)
+- 🚀 Quick start instructions for launching Brev instances
+- 📊 GPU configuration table (T4, A100, V100 comparisons)
+- 💰 Performance vs. cost analysis
 - ⚙️ Installation and setup commands
-- 🔧 Docker image specifications
+- 🔧 Recommended Docker image: `nvcr.io/nvidia/pytorch:24.04-py3`
+- 📦 Storage and memory recommendations (50GB+, 16GB+ RAM)
 
-### Recommended Brev Configuration
-
-```yaml
-GPU: Tesla T4 (~$0.40/hr) or A100 (~$2.50/hr)
-Image: nvcr.io/nvidia/pytorch:24.04-py3
-Storage: 50GB+ for datasets
-Performance: 20-60x speedup vs CPU
+### Cell 2: Environment Detection (Python Code)
+Automatically detects and configures the runtime environment:
+```python
+- Detects Google Colab vs Brev vs Local execution
+- Checks for GPU availability with nvidia-smi
+- Shows GPU information (model, VRAM, driver version)
+- Installs platform-specific dependencies
+- Provides environment-specific setup instructions
 ```
+
+### Cell 3: Platform Comparison (Markdown)
+Comprehensive comparison table covering:
+- **Feature comparison**: Cost, GPU access, timeouts, storage, SSH, VSCode
+- **Use case recommendations**: When to use Local vs Colab vs Brev
+- **Cost analysis**: 24-hour training cost comparison across platforms
+- **Pro tips**: Optimize costs by mixing platforms
+
+### Brev Configuration Recommendations
+
+| Setting | Value | Notes |
+|---------|-------|-------|
+| **GPU** | Tesla T4 or A100 | T4 for development, A100 for production |
+| **Base Image** | `nvcr.io/nvidia/pytorch:24.04-py3` | CUDA + PyTorch + Scientific stack |
+| **Storage** | 50GB+ | Persistent across sessions |
+| **Memory** | 16GB+ RAM | For data processing workloads |
+
+### Performance & Cost Comparison
+
+| GPU Model | VRAM | Speedup | Cost/Hour | Best For |
+|-----------|------|---------|-----------|----------|
+| **Tesla T4** | 16GB | 20-30x | ~$0.40 | Most experiments, development |
+| **A100** | 40GB | 50-60x | ~$2.50 | Heavy ML, large datasets |
+| **V100** | 16GB | 30-40x | ~$1.50 | Balanced performance/cost |
+
+### Brev-Specific Features Highlighted
+
+- ✅ **Persistent storage**: Data survives between sessions (unlike Colab)
+- ✅ **SSH access**: `brev ssh <instance>` for direct terminal access
+- ✅ **VSCode integration**: `brev open <instance>` for native IDE
+- ✅ **No timeouts**: Run experiments for days/weeks without interruption
+- ✅ **Full control**: Custom environments and package installations
 
 ## New Capabilities Added
 
@@ -143,12 +178,13 @@ struct MotorController {
 
 ## Notebook Statistics
 
-- **Total notebooks**: 38 (down from 42 after removing duplicates)
+- **Total notebooks**: 37 (down from 42 after removing duplicates)
 - **APL enhancements**: 16 notebooks
 - **D enhancements**: 8 notebooks
 - **Prolog enhancements**: 7 notebooks
 - **All three languages**: 7 notebooks
-- **Brev configurations**: 38 notebooks (100%)
+- **Brev configurations**: 37 notebooks (100%)
+- **Total Brev cells added**: 111 cells (3 per notebook)
 
 ## Category Breakdown
 
@@ -312,17 +348,24 @@ For developers:
 
 ## Summary
 
-**38 unique notebooks** now feature comprehensive multi-language implementations:
-- **APL** for mathematical excellence
-- **D** for systems performance
-- **Prolog** for logical reasoning
+**37 unique notebooks** now feature comprehensive multi-language implementations:
+- **APL** for mathematical excellence (16 notebooks)
+- **D** for systems performance (8 notebooks)
+- **Prolog** for logical reasoning (7 notebooks)
+- **All three languages** for complex tasks (7 notebooks)
 
-Each notebook includes **Brev.dev support** for GPU-accelerated cloud execution, with clear documentation and example code for all three languages.
+Each notebook includes **3 dedicated Brev.dev support cells** (111 cells total) for GPU-accelerated cloud execution, with:
+- Comprehensive setup and configuration guides
+- Automatic environment detection
+- Platform comparison tables
+- Cost analysis and optimization tips
 
 ---
 
 **Enhancement Date**: 2025-12-12
-**Notebooks Enhanced**: 38
+**Notebooks Enhanced**: 37
+**Duplicates Removed**: 4
 **Languages Added**: APL, D, Prolog
-**Cloud Platform**: Brev.dev integrated
+**Cloud Platform**: Brev.dev (3 cells per notebook)
+**Total Cells Added**: 111 Brev cells + language implementation cells
 **Status**: ✅ Complete
