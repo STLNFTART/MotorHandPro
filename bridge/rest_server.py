@@ -13,6 +13,15 @@ import logging
 
 from apl_prolog_bridge import IntegrationBridge
 
+# Try to import GCP backend (optional)
+try:
+    from gcp_backend import router as gcp_router, GCP_ENABLED
+    GCP_BACKEND_AVAILABLE = True
+except ImportError:
+    GCP_BACKEND_AVAILABLE = False
+    GCP_ENABLED = False
+    logger.warning("GCP backend not available")
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -34,6 +43,11 @@ app.add_middleware(
 
 # Initialize bridge
 bridge = IntegrationBridge()
+
+# Include GCP backend router if available
+if GCP_BACKEND_AVAILABLE:
+    app.include_router(gcp_router)
+    logger.info(f"GCP backend router included (enabled={GCP_ENABLED})")
 
 
 # ========== Request/Response Models ==========

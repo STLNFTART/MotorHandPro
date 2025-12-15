@@ -1,0 +1,68 @@
+[
+  {
+    "name": "timestamp",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Event timestamp (UTC)"
+  },
+  {
+    "name": "source",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Telemetry source identifier (sensor_id, experiment_name, etc.)"
+  },
+  {
+    "name": "event_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Event type (sensor_reading, state_change, error, etc.)"
+  },
+  {
+    "name": "value",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Numeric measurement value"
+  },
+  {
+    "name": "unit",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Unit of measurement (meters, degrees, volts, etc.)"
+  },
+  {
+    "name": "quality",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Data quality indicator (good, suspect, bad)"
+  },
+  {
+    "name": "metadata",
+    "type": "JSON",
+    "mode": "NULLABLE",
+    "description": "Additional metadata as JSON object"
+  },
+  {
+    "name": "run_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Associated experiment run identifier"
+  },
+  {
+    "name": "device_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Physical device identifier"
+  },
+  {
+    "name": "location",
+    "type": "GEOGRAPHY",
+    "mode": "NULLABLE",
+    "description": "Geographic location (if applicable)"
+  },
+  {
+    "name": "ingestion_time",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "Data ingestion timestamp (auto-populated)"
+  }
+]

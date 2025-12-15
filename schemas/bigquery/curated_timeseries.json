@@ -1,0 +1,74 @@
+[
+  {
+    "name": "timestamp",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Time series timestamp (UTC)"
+  },
+  {
+    "name": "series_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Time series identifier"
+  },
+  {
+    "name": "metric_name",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Metric name (e.g., temperature, pressure, velocity)"
+  },
+  {
+    "name": "value",
+    "type": "FLOAT64",
+    "mode": "REQUIRED",
+    "description": "Measurement value"
+  },
+  {
+    "name": "unit",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unit of measurement"
+  },
+  {
+    "name": "aggregation",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Aggregation type (mean, min, max, sum, count)"
+  },
+  {
+    "name": "window_seconds",
+    "type": "INT64",
+    "mode": "NULLABLE",
+    "description": "Aggregation window size in seconds"
+  },
+  {
+    "name": "quality_score",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Data quality score (0.0-1.0)"
+  },
+  {
+    "name": "outlier_flag",
+    "type": "BOOLEAN",
+    "mode": "NULLABLE",
+    "description": "Outlier detection flag"
+  },
+  {
+    "name": "run_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Associated experiment run"
+  },
+  {
+    "name": "processing_timestamp",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "Processing/curation timestamp"
+  },
+  {
+    "name": "tags",
+    "type": "JSON",
+    "mode": "NULLABLE",
+    "description": "Classification and indexing tags"
+  }
+]

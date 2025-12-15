@@ -1,0 +1,98 @@
+[
+  {
+    "name": "timestamp",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Validation timestamp"
+  },
+  {
+    "name": "validation_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique validation identifier"
+  },
+  {
+    "name": "run_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Associated experiment run"
+  },
+  {
+    "name": "metric_name",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Metric being validated"
+  },
+  {
+    "name": "validation_type",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Validation type (range_check, anomaly_detection, consistency, etc.)"
+  },
+  {
+    "name": "status",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Validation status (passed, failed, warning)"
+  },
+  {
+    "name": "expected_value",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Expected value (for threshold checks)"
+  },
+  {
+    "name": "actual_value",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Actual measured value"
+  },
+  {
+    "name": "deviation",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Deviation from expected (percentage or absolute)"
+  },
+  {
+    "name": "threshold_min",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Minimum acceptable threshold"
+  },
+  {
+    "name": "threshold_max",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Maximum acceptable threshold"
+  },
+  {
+    "name": "anomaly_score",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Anomaly detection score"
+  },
+  {
+    "name": "validation_rule",
+    "type": "JSON",
+    "mode": "NULLABLE",
+    "description": "Validation rule definition"
+  },
+  {
+    "name": "message",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Validation message or error description"
+  },
+  {
+    "name": "severity",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Issue severity (info, warning, error, critical)"
+  },
+  {
+    "name": "remediation",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Suggested remediation action"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "name": "run_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique run identifier (UUID or timestamp-based)"
+  },
+  {
+    "name": "experiment_name",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Experiment name"
+  },
+  {
+    "name": "timestamp",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Run start timestamp"
+  },
+  {
+    "name": "status",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Run status (running, completed, failed, cancelled)"
+  },
+  {
+    "name": "parameters",
+    "type": "JSON",
+    "mode": "NULLABLE",
+    "description": "Experiment parameters (hyperparameters, configuration)"
+  },
+  {
+    "name": "metrics",
+    "type": "JSON",
+    "mode": "NULLABLE",
+    "description": "Result metrics and performance indicators"
+  },
+  {
+    "name": "artifacts_path",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "GCS path to artifacts (gs://bucket/experiments/run_id/)"
+  },
+  {
+    "name": "duration_seconds",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Execution duration in seconds"
+  },
+  {
+    "name": "user",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "User who initiated the run"
+  },
+  {
+    "name": "environment",
+    "type": "JSON",
+    "mode": "NULLABLE",
+    "description": "Execution environment details (platform, versions, resources)"
+  },
+  {
+    "name": "git_commit",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Git commit hash for reproducibility"
+  },
+  {
+    "name": "parent_run_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Parent run ID for nested/child runs"
+  },
+  {
+    "name": "tags",
+    "type": "REPEATED",
+    "mode": "NULLABLE",
+    "description": "Classification tags",
+    "fields": [
+      {
+        "name": "key",
+        "type": "STRING",
+        "mode": "REQUIRED"
+      },
+      {
+        "name": "value",
+        "type": "STRING",
+        "mode": "REQUIRED"
+      }
+    ]
+  },
+  {
+    "name": "error_message",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Error message if run failed"
+  },
+  {
+    "name": "completion_timestamp",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "Run completion timestamp"
+  }
+]
