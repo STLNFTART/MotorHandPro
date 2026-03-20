@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.4.0",
+    "@vercel/analytics": "^2.0.1",
     "dotenv": "^16.3.0",
     "ethers": "^6.9.0"
   },
