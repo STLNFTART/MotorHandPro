@@ -12,6 +12,8 @@ from typing import Dict, Any, List, Optional
 from datetime import datetime
 from dataclasses import dataclass, asdict
 import hashlib
+from .prosthetics_integration import ProstheticsController
+from .dataset_loader import EMGDatasetLoader
 
 # Add paths
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -134,9 +136,6 @@ class BenchmarkPublisher:
         print("\n" + "="*70)
         print("Running Comprehensive Benchmark Suite")
         print("="*70)
-
-        from prosthetics_integration import ProstheticsController
-        from dataset_loader import EMGDatasetLoader
 
         # Initialize
         loader = EMGDatasetLoader()

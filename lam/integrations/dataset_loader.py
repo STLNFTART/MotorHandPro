@@ -3,19 +3,13 @@
 Automated EMG Dataset Loader and Integrator
 Downloads and integrates popular prosthetics datasets seamlessly
 """
-import os
 import sys
 import json
-import requests
 import numpy as np
-import hashlib
 from pathlib import Path
-from typing import Dict, Any, List, Optional, Tuple
+from typing import Dict, Any, List, Optional
 from datetime import datetime
 from dataclasses import dataclass
-from urllib.parse import urlparse
-import zipfile
-import tarfile
 
 # Add paths
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
