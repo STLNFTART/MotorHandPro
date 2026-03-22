@@ -8,9 +8,10 @@ import sys
 import os
 from pathlib import Path
 
-# Add the repo to path
-sys.path.insert(0, '/home/user/MotorHandPro')
-sys.path.insert(0, str(Path('/home/user/MotorHandPro') / "extras" / "primal"))
+# Ensure the repo root is importable without a hard-coded absolute path.
+_REPO_ROOT = Path(__file__).parent.resolve()
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
 
 from lam.core.primal_lam import PrimalLAM
 try:

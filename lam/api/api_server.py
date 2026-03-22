@@ -3,13 +3,8 @@
 LAM REST API Server
 FastAPI-based API for LAM operations
 """
-import sys
-from pathlib import Path
 from typing import Dict, Any, Optional, List
 from datetime import datetime
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
@@ -17,9 +12,9 @@ from pydantic import BaseModel
 import uvicorn
 
 try:
-    from lam_main import LAM
-    from core.primal_lam import PrimalLAM
-    from monitoring.logger import LAMLogger
+    from lam.lam_main import LAM
+    from lam.core.primal_lam import PrimalLAM
+    from lam.monitoring.logger import LAMLogger
     LAM_AVAILABLE = True
 except ImportError as e:
     print(f"Warning: LAM not fully available: {e}")
@@ -27,7 +22,7 @@ except ImportError as e:
 
 # Import webhook support
 try:
-    from api.webhook_routes import router as webhook_router
+    from lam.api.webhook_routes import router as webhook_router
     from api.webhook_manager import webhook_manager, emit_action_event, EventType
     WEBHOOKS_AVAILABLE = True
 except ImportError as e:

@@ -16,12 +16,15 @@ Date: 2025-11-17
 
 import numpy as np
 import sys
+from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
 from dataclasses import dataclass
 
-# Import our modules
-sys.path.insert(0, '/home/user/MotorHandPro')
+# Ensure the repo root is importable without a hard-coded absolute path.
+_REPO_ROOT = Path(__file__).parent.resolve()
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
 from field_coupled_validation import gravity_acceleration, gravity_potential, MU_EARTH, R_EARTH, G_EARTH
 from integrations.satellite_orbital_mechanics import SimplifiedSGP4, OrbitalElements, ConstellationGenerator
 

@@ -3,23 +3,15 @@
 LAM Main Interface - Unified Large Action Model
 Integrates all LAM components with Lightfoot & Donte constants
 """
-import sys
 import json
-from pathlib import Path
+import sys
 from typing import Dict, Any, Optional
 
-# Add paths for imports
-sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(0, str(Path(__file__).parent / "core"))
-sys.path.insert(0, str(Path(__file__).parent / "wizards"))
-sys.path.insert(0, str(Path(__file__).parent / "assistants"))
-sys.path.insert(0, str(Path(__file__).parent / "actions"))
-
 try:
-    from core.primal_lam import PrimalLAM, QuantumResonanceField
-    from wizards.setup_wizard import SetupWizard
-    from assistants.lab_assistant import LabAssistant
-    from actions.action_executors import ActionOrchestrator
+    from lam.core.primal_lam import PrimalLAM, QuantumResonanceField
+    from lam.wizards.setup_wizard import SetupWizard
+    from lam.assistants.lab_assistant import LabAssistant
+    from lam.actions.action_executors import ActionOrchestrator
     COMPONENTS_LOADED = True
 except ImportError as e:
     print(f"Warning: Could not load all components: {e}")
@@ -36,8 +28,10 @@ class LAM:
         print("With Lightfoot & Donte Constants Integration\n")
 
         if not COMPONENTS_LOADED:
-            print("ERROR: Components not loaded. Check imports.")
-            return
+            raise RuntimeError(
+                "LAM components failed to import. "
+                "Run `pip install -e .` from the repo root and verify all dependencies."
+            )
 
         # Core LAM engine
         self.engine = PrimalLAM(api_base)
@@ -55,11 +49,12 @@ class LAM:
         print("✓ LAM initialized successfully\n")
 
     def _load_credentials(self) -> Dict[str, Dict[str, str]]:
-        """Load credentials from setup wizard"""
+        """Load credentials from setup wizard; return empty dict if unavailable."""
         try:
             all_creds = self.wizard.load_credentials()
             return all_creds
-        except:
+        except Exception as e:
+            print(f"Warning: Could not load credentials ({e}). Continuing without them.")
             return {}
 
     def run_setup_wizard(self):
