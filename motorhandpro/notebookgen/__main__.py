@@ -20,6 +20,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from typing import List, Optional
 
 from motorhandpro.notebookgen._core import (
     count_lines,
@@ -299,7 +300,7 @@ def _build_parser() -> argparse.ArgumentParser:
     return p
 
 
-def main(argv: list | None = None) -> int:
+def main(argv: Optional[List[str]] = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
 

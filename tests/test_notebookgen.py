@@ -85,8 +85,10 @@ class TestSpecialCells:
     def test_colab_badge_is_markdown(self):
         cell = colab_badge_cell("notebooks/foo.ipynb")
         assert cell["cell_type"] == "markdown"
-        assert "colab.research.google.com" in "".join(cell["source"])
-        assert "notebooks/foo.ipynb" in "".join(cell["source"])
+        source = "".join(cell["source"])
+        # Check the full expected URL prefix, not just a substring of the domain.
+        assert "https://colab.research.google.com/github/STLNFTART/MotorHandPro" in source
+        assert "notebooks/foo.ipynb" in source
 
     def test_env_setup_is_code(self):
         cell = env_setup_cell()

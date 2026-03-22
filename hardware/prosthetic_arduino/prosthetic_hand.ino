@@ -112,7 +112,7 @@ void setup() {
 
   StaticJsonDocument<64> ready;
   ready["status"]  = "ready";
-  ready["version"] = "2.0";
+  ready["version"] = "2.0";  // v2.0: replaced manual string parsing with ArduinoJson
   serializeJson(ready, Serial);
   Serial.println();
 }
