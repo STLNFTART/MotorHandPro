@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motorhandpro"
+version = "0.1.0"
+description = "Radiation-hardened EMG-based prosthetic control with Large Action Models"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+api = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "httpx",
+]
+
+[project.scripts]
+motorhandpro-lam          = "lam.lam_main:main"
+motorhandpro-api          = "lam.api.api_server:main"
+motorhandpro-experiments  = "run_experiments:main"
+motorhandpro-pipeline     = "run_full_prosthetics_pipeline:main"
+motorhandpro-notebookgen  = "motorhandpro.notebookgen.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["motorhandpro*", "lam*"]
+
+[tool.setuptools.package-dir]
+"" = "."

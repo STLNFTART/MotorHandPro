@@ -5,7 +5,12 @@ Quick validation to ensure basic functionality works.
 """
 
 import sys
-sys.path.insert(0, '/home/user/MotorHandPro/lam')
+from pathlib import Path
+
+# Ensure the lam package is importable without a hard-coded absolute path.
+_LAM_ROOT = Path(__file__).parent.resolve()
+if str(_LAM_ROOT) not in sys.path:
+    sys.path.insert(0, str(_LAM_ROOT))
 
 from temporal_displacement import (
     TemporalDisplacedField,

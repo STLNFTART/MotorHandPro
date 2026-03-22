@@ -10,9 +10,10 @@ Seamlessly integrates all components:
 import sys
 from pathlib import Path
 
-# Add paths
-sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(0, str(Path(__file__).parent / "lam" / "integrations"))
+# Ensure the repo root is importable without a hard-coded absolute path.
+_REPO_ROOT = Path(__file__).parent.resolve()
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
 
 
 def main():
